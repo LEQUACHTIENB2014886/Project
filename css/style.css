@@ -1,6 +1,6 @@
 /* header */
 .view {
-    background: url("../image/1.jpg")no-repeat center center;
+    background: url("../image/background.jpg")no-repeat center center;
     background-size: cover;
 }
 
