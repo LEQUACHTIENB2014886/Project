@@ -1,4 +1,7 @@
 <?php
-include './header.php';
-include './homepage.php';
-include './footer.php';
+
+include './views/header.php';
+include './views/homepage.php';
+include './views/footer.php';
+
+?>

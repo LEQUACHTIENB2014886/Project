@@ -19,22 +19,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active ">
-                        <a class="nav-link" href="#">Trang chủ<span class="sr-only ">(current)</span></a>
+                        <a class="nav-link" href="../index.php">Trang chủ<span class="sr-only ">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Khóa học</a>
+                        <a class="nav-link" href="../views/course.php">Khóa học</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tra cứu</a>
+                        <a class="nav-link" href="../views/features.php">Công cụ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng ký</a>
+                        <a class="nav-link" href="../views/register.php">Đăng ký</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng nhập</a>
+                        <a class="nav-link" href="../views/login.php">Đăng nhập</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
+                        <a class="nav-link" href="../views/introduce">Giới thiệu</a>
                     </li>
                 </ul>
             </div>
