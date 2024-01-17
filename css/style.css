@@ -22,7 +22,28 @@ header,
     height: 100%;
     overflow-x: hidden;
 }
+
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff; /*màu sắc trắng */
-  }
+    color: #ffffff;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 /* header */
