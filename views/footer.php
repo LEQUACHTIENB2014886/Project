@@ -8,8 +8,8 @@
         <div class="col-md-7 col-lg-8 text-center text-md-start">
           <!-- LeQuachTienB2014886 -->
           <div class="p-3">
-            LeQuachTienB2014886:
-            <a class="text-white" href="#">Guitar.com</a>
+            MelodyTalent designed by LeQuachTien
+            <a class="text-white" href="#"></a>
           </div>
           <!-- LeQuachTienB2014886 -->
         </div>

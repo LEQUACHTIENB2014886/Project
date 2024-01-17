@@ -13,6 +13,7 @@
 
 .navbar {
     z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.3);
 }
 
 html,
@@ -27,9 +28,20 @@ header,
     color: #ffffff;
 }
 
-.fadeInUp {
-    animation-name: fadeInUp;
-    animation-duration: 1s;
+.fadeHomepage {
+    opacity: 0;
+    animation: fade-in-animation 2s forwards;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
 @keyframes fadeInUp {
@@ -44,6 +56,36 @@ header,
     }
 }
 
+.buttonToCourse {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: SlateGrey;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 25px;
+    border: 2px solid SlateGrey;
+    transition: border-color 0.3s;
+}
 
+.buttonToCourse:hover {
+    border-color: whitesmoke;
+    color: white;
+}
+
+.fadeNavheader {
+    opacity: 0;
+    animation: fade-in-animation 2s forwards;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* header */
