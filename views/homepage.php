@@ -17,6 +17,7 @@
                     <div class="text-center">
                         <a href="course.php" class="buttonToCourse">Đến khóa học</a>
                     </div>
+                    <br><br><br><br><br><br><br><br>
                 </div>
             </div>
         </div>
