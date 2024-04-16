@@ -1,14 +1,50 @@
 <div class="container course fadeHomepage">
-    <div class="box">
-        <div class="content">
-            <h2>Guitar</h2>
-            <p>Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../image/guitar.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+                <div class="text-center text-light" style="text-shadow: 2px 3px 5px black; margin-bottom: 25px;">
+                    <h1><strong>Hãy lựa chọn khóa học phù hợp với bạn !</strong></h1>
+                </div><br><br>
+            </div>
+            <div class="col-1">
+            </div>
         </div>
     </div>
-</div><br>
+    <div class="box" >
+        <div class="content">
+            <h2>Người mới bắt đầu</h2>
+            <p>Bước đầu trong việc học nhạc lý<a href="./1.php"></a></p>
+        </div>
+        <div class="image">
+            <img src="../image/features/guitar.jpg">
+        </div>
+        <br>
+    </div>
+    <div class="box">
+        <div class="content">
+            <h2>Người đã có nền cơ bản</h2>
+            <p>Bước tiếp theo trong việc học nhạc lý<a href="./2.php"></a></p>
+        </div>
+
+        <div class="image">
+            <img src="../image/features/tuner.jpg">
+        </div>
+        <br>
+    </div>
+    <div class="box">
+        <div class="content">
+            <h2>Người kì cựu</h2>
+            <p>Sau khi đã có nền tảng vững chắc.<a href="./3.php"></a></p>
+        </div>
+        <div class="image">
+            <img src="../image/features/bass-guitar.jpg">
+        </div>
+        <br>
+    </div>
+</div>
+</div><br><br><br>
 <style>
     .course {
         display: flex;

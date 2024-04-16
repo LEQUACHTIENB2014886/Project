@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse fadeNavheader" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active ">
-                            <a class="nav-link" href="../index.php">Trang chủ<span class="sr-only ">(current)</span></a>
+                            <a class="nav-link" href="./index.php">Trang chủ<span class="sr-only ">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./course.php">Khóa học</a>
