@@ -12,36 +12,41 @@
             </div>
         </div>
     </div>
-    <div class="box" >
-        <div class="content">
-            <h2>Người mới bắt đầu</h2>
-            <p>Bước đầu trong việc học nhạc lý<a href="./1.php"></a></p>
-        </div>
-        <div class="image">
-            <img src="../image/features/guitar.jpg">
-        </div>
-        <br>
+    <div class="box">
+        <a href="../courses/1.php">
+            <div class="content">
+                <h2>Người mới bắt đầu</h2>
+                <p>Bước đầu trong việc học nhạc lý</p>
+            </div>
+            <div class="image">
+                <img src="../image/features/guitar.jpg">
+            </div>
+            <br>
+        </a>
     </div>
     <div class="box">
-        <div class="content">
-            <h2>Người đã có nền cơ bản</h2>
-            <p>Bước tiếp theo trong việc học nhạc lý<a href="./2.php"></a></p>
-        </div>
-
-        <div class="image">
-            <img src="../image/features/tuner.jpg">
-        </div>
-        <br>
+        <a href="../courses/2.php">
+            <div class="content">
+                <h2>Người đã có nền cơ bản</h2>
+                <p>Bước tiếp theo trong việc học nhạc lý</p>
+            </div>
+            <div class="image">
+                <img src="../image/features/tuner.jpg">
+            </div>
+            <br>
+        </a>
     </div>
     <div class="box">
-        <div class="content">
-            <h2>Người kì cựu</h2>
-            <p>Sau khi đã có nền tảng vững chắc.<a href="./3.php"></a></p>
-        </div>
-        <div class="image">
-            <img src="../image/features/bass-guitar.jpg">
-        </div>
-        <br>
+        <a href="../courses/3.php">
+            <div class="content">
+                <h2>Người kì cựu</h2>
+                <p>Sau khi đã có nền tảng vững chắc.</p>
+            </div>
+            <div class="image">
+                <img src="../image/features/bass-guitar.jpg">
+            </div>
+            <br>
+        </a>
     </div>
 </div>
 </div><br><br><br>
@@ -65,7 +70,18 @@
         text-align: center;
         padding: 15px;
     }
+    .box a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit the color from the parent element */
+    }
 
+    .box a:hover {
+        color: gray; /* Change the text color to blue on hover */
+    }
+
+    .box a:active {
+        color: white; /* Change the text color to blue when active (during click) */
+    }
     .image {
         text-align: center;
         padding: 10px;

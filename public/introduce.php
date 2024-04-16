@@ -1,5 +1,5 @@
 <?php
-include './views/header.php';
+include '../views/header.php';
 ?>
 <main class="main-flex">
     <div>
@@ -27,5 +27,5 @@ include './views/header.php';
     </div>
 </main>
 <?php
-include './views/footer.php';
+include '../views/footer.php';
 ?>

@@ -21,22 +21,22 @@
                 <div class="collapse navbar-collapse fadeNavheader" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active ">
-                            <a class="nav-link" href="./index.php">Trang chủ<span class="sr-only ">(current)</span></a>
+                            <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only ">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./course.php">Khóa học</a>
+                            <a class="nav-link" href="../public/course.php">Khóa học</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./features.php">Công cụ</a>
+                            <a class="nav-link" href="../public/features.php">Công cụ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./register.php">Đăng ký</a>
+                            <a class="nav-link" href="../public/register.php">Đăng ký</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./login.php">Đăng nhập</a>
+                            <a class="nav-link" href="../public/login.php">Đăng nhập</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./introduce.php">Giới thiệu</a>
+                            <a class="nav-link" href="../public/introduce.php">Giới thiệu</a>
                         </li>
                     </ul>
                 </div>
