@@ -1,8 +1,4 @@
 /* header */
-.view {
-    background: url("../image/interview/background.jpg")no-repeat center center;
-    background-size: cover;
-}
 
 @media (min-width: 768px) {
     .view {
