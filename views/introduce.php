@@ -5,12 +5,12 @@
                 <div class="container">
                     <br><br><br><br><br><br><br><br>
                     <div class="text-center">
-                        <h1><strong>Học lý thuyết âm nhạc miễn phí</strong></h1>
+                        <h1><strong>Đôi lời giới thiệu về MelodyTalent</strong></h1>
                     </div><br><br>
                     <div class="row text-center">
                         <div class="col-2"></div>
                         <div class="col-8">
-                            <a style="font-size: 24px;">MelodyTalent giúp bạn nâng cao khả năng đọc, viết và chơi nhạc thông qua các bài tập hiệu quả và các công cụ vô cùng hữu ích ! </a>
+                            <a style="font-size: 24px;">Đây là trang Web rất hữu ích,giúp bạn học nhạc lý và nhạc cụ một cách nhanh chóng và hiệu quả. Với những giáo trình, công cụ mình hi vọng chúng sẽ hỗ trợ đắc lực và tạo cho bạn một nền nhạc lý cực kỳ vững chắc !!! </a>
                         </div>
                         <div class="col-2"></div>
                     </div><br><br><br>
@@ -18,7 +18,6 @@
                         <a href="course.php" class="buttonToCourse">Đến khóa học</a>
                     </div>
                 </div>
-                <br><br>
             </div>
         </div>
     </div>

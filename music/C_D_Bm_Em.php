@@ -6,17 +6,25 @@
 </head>
 <body>
   <button id="playChordsButton">Phát chuỗi hợp âm</button>
-
+  <!-- C D Bm Em C D G G7 C D Bm Em C D Asus4 A -->
   <script>
     const chordSequence = [
-      ["C4", "E4", "G4"],
+      ["C4", "E4", "G4"], 
       ["D4", "F#4", "A4"],
       ["B3", "D4", "F#4"],
       ["E4", "G4", "B4"],
       ["C4", "E4", "G4"],
       ["D4", "F#4", "A4"],
       ["G4", "B4", "D5"],
-      ["G4", "F4", "B4", "D5"]
+      ["G4", "F4", "B4"], 
+      ["C4", "E4", "G4"],
+      ["D4", "F#4", "A4"],
+      ["B3", "D4", "F#4"],
+      ["E4", "G4", "B4"],
+      ["C4", "E4", "G4"],
+      ["D4", "F#4", "A4"],
+      ["E4", "B4", "A4"],
+      ["E4", "B4", "G#4"]
     ];
 
     const playChordsButton = document.getElementById('playChordsButton');
@@ -30,7 +38,7 @@
           playChord(chord);
         }, delay);
         
-        delay += 1800; // Chờ 2.0 giây trước khi chuyển sang hợp âm tiếp theo
+        delay += 1800; // Thời gian trước khi chuyển sang hợp âm tiếp theo
       });
     }
 
