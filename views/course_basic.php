@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../courses/course_1.php">
+        <a href="../courses/basic_note.php">
             <div class="content">
                 <h2>Nốt nhạc</h2>
                 <p>Là những nốt cơ bản nhất, cấu tạo nên nhạc</p>
@@ -31,7 +31,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_2.php">
+        <a href="../courses/basic_chord.php">
             <div class="content">
                 <h2>Hợp âm</h2>
                 <p>Là tập hợp của nhiều nốt nhạc</p>
@@ -43,7 +43,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_3.php">
+        <a href="../courses/basic_melody.php">
             <div class="content">
                 <h2>Nhịp diệu</h2>
                 <p>Sự kết hợp của các hợp âm them qui luật</p>

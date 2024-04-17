@@ -1,4 +1,10 @@
 <div class="container course fadeHomepage">
+    <a href="../public/course.php">
+        <div class="text-light" style="text-shadow: 2px 3px 5px black;">
+            <h5>
+                << Trở về</h5>
+        </div>
+    </a>
     <div class="container">
         <div class="row">
             <div class="col-1">
@@ -13,7 +19,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../courses/course_1.php">
+        <a href="../courses/medium_note.php">
             <div class="content">
                 <h2>Nốt nhạc</h2>
                 <p>Là những nốt cơ bản nhất, cấu tạo nên nhạc</p>
@@ -25,7 +31,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_2.php">
+        <a href="../courses/medium_note.php">
             <div class="content">
                 <h2>Hợp âm</h2>
                 <p>Là tập hợp của nhiều nốt nhạc</p>
@@ -37,7 +43,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_3.php">
+        <a href="../courses/medium_note.php">
             <div class="content">
                 <h2>Nhịp diệu</h2>
                 <p>Sự kết hợp của các hợp âm them qui luật</p>
@@ -70,18 +76,20 @@
         text-align: center;
         padding: 15px;
     }
+
     .box a {
-        text-decoration: none; 
+        text-decoration: none;
         color: inherit;
     }
 
     .box a:hover {
-        color: gray; 
+        color: gray;
     }
 
     .box a:active {
-        color: white; 
+        color: white;
     }
+
     .image {
         text-align: center;
         padding: 10px;

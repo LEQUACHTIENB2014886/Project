@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../courses/course_1.php">
+        <a href="../courses/course_basic.php">
             <div class="content">
                 <h2>Người mới bắt đầu</h2>
                 <p>Bước đầu trong việc học nhạc lý</p>
@@ -25,7 +25,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_2.php">
+        <a href="../courses/course_medium.php">
             <div class="content">
                 <h2>Người đã có nền cơ bản</h2>
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
@@ -37,7 +37,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_3.php">
+        <a href="../courses/course_hard.php">
             <div class="content">
                 <h2>Người kì cựu</h2>
                 <p>Sau khi đã có nền tảng vững chắc.</p>

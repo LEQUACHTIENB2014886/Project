@@ -13,15 +13,15 @@
 
 <body class="view intro-2">
     <header>
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark black fadeNavheader"> -->
-        <nav class="navbar navbar-expand-lg navbar-dark black fw-lighter">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark black fadeNavheader  fw-lighter"> -->
+        <nav class="navbar navbar-expand-lg navbar-dark black">
             <div class="container ">
                 <a class="navbar-brand" href="#"><strong>MelodyTalent</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- <div class="collapse navbar-collapse fadeNavheader" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;"> -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;font-size:18px;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active ">
                             <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only ">(current)</span></a>
