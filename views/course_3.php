@@ -5,7 +5,7 @@
             </div>
             <div class="col-10">
                 <div class="text-center text-light" style="text-shadow: 2px 3px 5px black; margin-bottom: 25px;">
-                    <h1><strong>Hãy lựa chọn khóa học phù hợp với bạn !</strong></h1>
+                    <h1><strong>Bài tập âm nhạc dành cho bạn !!!</strong></h1>
                 </div><br><br>
             </div>
             <div class="col-1">
@@ -15,11 +15,11 @@
     <div class="box">
         <a href="../courses/course_1.php">
             <div class="content">
-                <h2>Người mới bắt đầu</h2>
-                <p>Bước đầu trong việc học nhạc lý</p>
+                <h2>Nốt nhạc</h2>
+                <p>Là những nốt cơ bản nhất, cấu tạo nên nhạc</p>
             </div>
             <div class="image">
-                <img src="../image/features/guitar.jpg">
+                <img src="../image/courses/4_1.png">
             </div>
             <br>
         </a>
@@ -27,11 +27,11 @@
     <div class="box">
         <a href="../courses/course_2.php">
             <div class="content">
-                <h2>Người đã có nền cơ bản</h2>
-                <p>Bước tiếp theo trong việc học nhạc lý</p>
+                <h2>Hợp âm</h2>
+                <p>Là tập hợp của nhiều nốt nhạc</p>
             </div>
             <div class="image">
-                <img src="../image/features/tuner.jpg">
+                <img src="../image/courses/4_2.png">
             </div>
             <br>
         </a>
@@ -39,11 +39,11 @@
     <div class="box">
         <a href="../courses/course_3.php">
             <div class="content">
-                <h2>Người kì cựu</h2>
-                <p>Sau khi đã có nền tảng vững chắc.</p>
+                <h2>Nhịp diệu</h2>
+                <p>Sự kết hợp của các hợp âm them qui luật</p>
             </div>
             <div class="image">
-                <img src="../image/features/bass-guitar.jpg">
+                <img src="../image/courses/4_3.png">
             </div>
             <br>
         </a>
