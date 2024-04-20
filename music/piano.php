@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chạy mã Tone.js với nhiều hợp âm</title>
+  <title></title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"></script>
 </head>
 <body>
-  <button id="playChordsButton">Phát chuỗi hợp âm</button>
+  <button id="playChordsButton">Play</button>
   <!-- C D Bm Em C D G G7 C D Bm Em C D Asus4 A -->
   <script>
     const chordSequence = [
