@@ -1,19 +1,33 @@
-<div class="container course fadeHomepage">
-    <div class="container">
+<link rel="stylesheet" href="../public/css/course.css">\
+<div class="container course fst-italic fadeHomepage">
+    <a href="../public/index.php">
+        <div class="text-light">
+            <h5>
+                << Trở về</h5>
+        </div>
+    </a>
+    <a href="../public/theory_basic.php">
+        <div class="text-light text-right">
+            <h5>
+                Lý thuyết cơ bản >></h5>
+        </div>
+    </a>
+    <div class="container" style="margin-top:-20px;">
         <div class="row">
             <div class="col-1">
             </div>
             <div class="col-10">
-                <div class="text-center text-light" style="text-shadow: 2px 3px 5px black; margin-bottom: 25px;">
+                <div class="title_course text-center text-light">
                     <h1><strong>Hãy lựa chọn khóa học phù hợp với bạn !</strong></h1>
-                </div><br><br>
+                    <h5>*Nếu bạn chưa học nhạc lý bao giờ cả thì nên tham khảo lý thuyết cơ bản</h5>
+                </div><br>
             </div>
             <div class="col-1">
             </div>
         </div>
     </div>
     <div class="box">
-        <a href="../courses/course_basic.php">
+        <a href="../public/course_select.php?course_level=basic">
             <div class="content">
                 <h2>Người mới bắt đầu</h2>
                 <p>Bước đầu trong việc học nhạc lý</p>
@@ -25,7 +39,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_medium.php">
+        <a href="../public/course_select.php?course_level=medium">
             <div class="content">
                 <h2>Người đã có nền cơ bản</h2>
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
@@ -37,7 +51,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../courses/course_hard.php">
+        <a href="../public/course_select.php?course_level=hard">
             <div class="content">
                 <h2>Người kì cựu</h2>
                 <p>Sau khi đã có nền tảng vững chắc.</p>
@@ -50,56 +64,3 @@
     </div>
 </div>
 </div><br><br><br><br><br><br><br>
-<style>
-    .course {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 15px;
-        margin-top: -600px;
-    }
-
-    .box {
-        width: calc(33.33% - 10px);
-        background-color: #f3f3f3;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .content {
-        text-align: center;
-        padding: 15px;
-    }
-    .box a {
-        text-decoration: none; 
-        color: inherit;
-    }
-
-    .box a:hover {
-        color: gray; 
-    }
-
-    .box a:active {
-        color: white; 
-    }
-    .image {
-        text-align: center;
-        padding: 10px;
-        height: 100%;
-    }
-
-    .image img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-    }
-
-    .tools {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .tools:hover {
-        color: inherit;
-    }
-</style>

@@ -1,4 +1,4 @@
 <?php
-include '../views/header.php';
-include '../views/introduce.php';
-include '../views/footer.php';
+include '../view/header.php';
+include '../view/introduce.php';
+include '../view/footer.php';

@@ -14,7 +14,7 @@
 <body class="view intro-2">
     <header>
         <!-- <nav class="navbar navbar-expand-lg navbar-dark black fadeNavheader  fw-lighter"> -->
-        <nav class="navbar navbar-expand-lg navbar-dark black">
+        <nav class="navbar navbar-expand-lg navbar-dark black fst-italic">
             <div class="container ">
                 <a class="navbar-brand" href="#"><strong>MelodyTalent</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

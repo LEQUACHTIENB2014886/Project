@@ -1,3 +1,3 @@
 <?php
-include '../views/header.php';
-include '../views/footer.php';
+include '../view/header.php';
+include '../view/footer.php';
