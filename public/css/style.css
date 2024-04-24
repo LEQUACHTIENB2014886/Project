@@ -1,5 +1,6 @@
 /* header */
 
+
 @media (min-width: 768px) {
     .view {
         overflow: visible;
@@ -92,6 +93,5 @@ a {
         opacity: 1;
     }
 }
+
 /* header */
-
-

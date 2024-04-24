@@ -1,4 +1,4 @@
-<div class="container fadeHomepage" style="background-color: #ffffff; margin-top:-650px;">
+<div class="container fadeHomepage rounded" style="background-color: #ffffff; margin-top:-650px;">
 <br>
     <div class="row">
         <div class="col-1"></div>

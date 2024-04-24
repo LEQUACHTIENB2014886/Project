@@ -74,7 +74,8 @@ $conn = null;
     <br>
 
 <?php else : ?>
-    <div id="congratulations" >Chúc mừng! Bạn đã hoàn thành tất cả câu hỏi.</div>
+    <div id="congratulations" class="text-center" style="font-size:40px">Chúc mừng! Bạn đã hoàn thành tất cả câu hỏi.</div><br><br><br><br><br>
+
 <?php endif; ?>
 <script>
     // Lắng nghe sự kiện click trên các button
@@ -83,7 +84,7 @@ $conn = null;
         button.addEventListener('click', function(event) {
             var selectedButton = event.target;
             var selectedAnswer = selectedButton.value;
-            var correctAnswer = <?php echo $correctAnswer; ?>;
+            var correctAnswer =<?php echo $correctAnswer;?>;
 
             if (selectedAnswer != correctAnswer) {
                 selectedButton.classList.add('wrong-answer');

@@ -39,6 +39,12 @@
                             <a class="nav-link" href="../public/login.php">Đăng nhập</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="../public/chord_database.php">Tra cứu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/theory_basic.php">Lý thuyết</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="../public/introduce.php">Giới thiệu</a>
                         </li>
                     </ul>
@@ -46,3 +52,9 @@
             </div>
         </nav>
     </header>
+    <style>
+        .navbar-brand {
+            border: 1px solid white;
+            padding: 5px 10px;
+        }
+    </style>
