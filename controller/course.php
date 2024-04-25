@@ -1,5 +1,4 @@
 <?php
-session_start();
 $currentQuestionIndex = isset($_POST['questionIndex']) ? $_POST['questionIndex'] : 0;
 $selectedAnswer = [];
 $questionCount = 0; // Biến đếm số lượng câu hỏi
@@ -84,7 +83,7 @@ $conn = null;
         button.addEventListener('click', function(event) {
             var selectedButton = event.target;
             var selectedAnswer = selectedButton.value;
-            var correctAnswer =<?php echo $correctAnswer;?>;
+            var correctAnswer = <?php echo $correctAnswer; ?>;
 
             if (selectedAnswer != correctAnswer) {
                 selectedButton.classList.add('wrong-answer');

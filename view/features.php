@@ -6,7 +6,7 @@
             <p>Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/guitar.jpg">
+            <img src="../library/image/features/guitar.jpg">
         </div>
     </div>
     <div class="box" onclick="ToPiano()">
@@ -15,7 +15,7 @@
             <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
         </div>
         <div class="image">
-            <img src="../image/features/piano.jpg">
+            <img src="../library/image/features/piano.jpg">
         </div>
     </div>
     <div class="box">
@@ -24,7 +24,7 @@
             <p>Chơi guitar bass ảo và hình dung nốt, âm giai<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/bass-guitar.jpg">
+            <img src="../library/image/features/bass-guitar.jpg">
         </div>
     </div>
 
@@ -34,7 +34,7 @@
             <p>Chơi trống ảo và thực hành tập chơi các nhịp trống.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/drums.jpg">
+            <img src="../library/image/features/drums.jpg">
         </div>
     </div>
     <div class="box">
@@ -43,7 +43,7 @@
             <p>Sáng tạo và nghe thử giai điệu trống của bạn.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/drum-machine.jpg">
+            <img src="../library/image/features/drum-machine.jpg">
         </div>
     </div>
     <div class="box">
@@ -52,7 +52,7 @@
             <p>Tạo ra các chùm hợp âm và nhạc nền.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/chord-player.jpg">
+            <img src="../library/image/features/chord-player.jpg">
         </div>
     </div>
     <div class="box">
@@ -61,7 +61,7 @@
             <p>Khám phá những bài hát giúp xác định quãng<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/interval-song-chart.jpg">
+            <img src="../library/image/features/interval-song-chart.jpg">
         </div>
     </div>
     <div class="box">
@@ -70,7 +70,7 @@
             <p>Cải thiện khả năng vào nhịp khi chơi nhạc của bạn.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/metronome.jpg">
+            <img src="../library/image/features/metronome.jpg">
         </div>
     </div>
     <div class="box">
@@ -79,7 +79,7 @@
             <p>In bản thảo cho nhiều loại nhạc cụ.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/staff-paper.jpg">
+            <img src="../library/image/features/staff-paper.jpg">
         </div>
     </div>
     <div class="box">
@@ -88,7 +88,7 @@
             <p>Học những thuật ngữ âm nhạc phổ biến.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/tempo-markings.jpg">
+            <img src="../library/image/features/tempo-markings.jpg">
         </div>
     </div>
     <div class="box">
@@ -97,7 +97,7 @@
             <p>Công cụ đo âm trực tuyến cho nhạc cụ.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/tuner.jpg">
+            <img src="../library/image/features/tuner.jpg">
         </div>
     </div>
     <div class="box">
@@ -106,7 +106,7 @@
             <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/chord-finder.jpg">
+            <img src="../library/image/features/chord-finder.jpg">
         </div>
     </div>
     <div class="box">
@@ -115,7 +115,7 @@
             <p>Tìm kiếm quãng trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/interval-finder.jpg">
+            <img src="../library/image/features/interval-finder.jpg">
         </div>
     </div>
     <div class="box">
@@ -124,7 +124,7 @@
             <p>Tìm các nốt nhạc trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/note-finder.jpg">
+            <img src="../library/image/features/note-finder.jpg">
         </div>
     </div>
     <div class="box">
@@ -133,7 +133,7 @@
             <p>Tìm kiếm âm giai trên đàn các nhạc cụ khuông nhạc.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../image/features/scale-finder.jpg">
+            <img src="../library/image/features/scale-finder.jpg">
         </div>
     </div>
 

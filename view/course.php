@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="../public/css/course.css">
-
 <div class="container course fst-italic fadeHomepage">
     <a href="../public/index.php">
         <div class="back text-light">
@@ -22,13 +21,13 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/course_theory.php">
+        <a href="../public/theory.php">
             <div class="content">
                 <h2>Lý thuyết âm nhạc</h2>
                 <p>Nhạc lý rất quan trọng, lý thuyết là nền tảng.</p>
             </div>
             <div class="image">
-                <img src="../image/features/tempo-markings.jpg">
+                <img src="../library/image/features/tempo-markings.jpg">
             </div>
             <br>
         </a>
@@ -40,7 +39,7 @@
                 <p>Bước tiếp theo sao khi đã tiếp thu lý thuyết.</p>
             </div>
             <div class="image">
-                <img src="../image/features/staff-paper.jpg">
+                <img src="../library/image/features/staff-paper.jpg">
             </div>
             <br>
         </a>
@@ -52,7 +51,7 @@
                 <p>Các tính năng hỗ trợ cho âm nhạc.</p>
             </div>
             <div class="image">
-                <img src="../image/features/metronome.jpg">
+                <img src="../library/image/features/metronome.jpg">
             </div>
             <br>
         </a>

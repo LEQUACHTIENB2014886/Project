@@ -4,15 +4,16 @@
 
         </div>
         <div class="col-6" style="background:#ffffff">
-            
+
             <!-- Pills content -->
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
                     <form id="loginForm">
-                    <br> <div class="text-center">
+                        <br>
+                        <div class="text-center">
                             <p>Đăng nhập</p>
-                        </div> <br>  
-                    <!-- Email input -->
+                        </div> <br>
+                        <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
                             <input type="email" id="loginName" class="form-control" />
                             <label class="form-label" for="loginName">Email or username</label>
@@ -120,16 +121,16 @@
         <div class="col-3">
 
         </div>
-        
+
     </div>
 </div><br><br><br><br><br>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         // Lấy form đăng nhập
         var loginForm = document.getElementById('loginForm');
 
         // Xử lý sự kiện submit form
-        loginForm.addEventListener('submit', function (event) {
+        loginForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Ngăn chặn form submit
 
             // Lấy giá trị email và password
