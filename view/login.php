@@ -1,151 +1,130 @@
-<div class="container" style="margin-top:-600px;">
-    <div class="row">
-        <div class="col-3">
+<!DOCTYPE html>
+<html>
 
-        </div>
-        <div class="col-6" style="background:#ffffff">
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-container {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 4px;
+        }
 
-            <!-- Pills content -->
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                    <form id="loginForm">
-                        <br>
-                        <div class="text-center">
-                            <p>Đăng nhập</p>
-                        </div> <br>
-                        <!-- Email input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="email" id="loginName" class="form-control" />
-                            <label class="form-label" for="loginName">Email or username</label>
-                        </div>
+        .custom-tab-content {
+            margin-top: 20px;
+        }
 
-                        <!-- Password input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" />
-                            <label class="form-label" for="loginPassword">Password</label>
-                        </div>
+        .custom-tab-pane {
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
 
-                        <!-- 2 column grid layout -->
-                        <div class="row mb-4">
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check mb-3 mb-md-0">
-                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-                                    <label class="form-check-label" for="loginCheck"> Remember me </label>
-                                </div>
+        .custom-form-group label {
+            font-weight: bold;
+        }
+
+        .custom-btn-primary {
+            width: 100%;
+        }
+
+        .custom-nav-tabs {
+            margin-bottom: 20px;
+        }
+
+        .custom-nav-link {
+            color: #000000;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-container fst-italic fadeHomepage" style="margin-top:-650px">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav custom-nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active custom-nav-link" id="custom-login-tab" data-toggle="tab" href="#custom-login">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" id="custom-register-tab" data-toggle="tab" href="#custom-register">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content custom-tab-content">
+                    <div class="tab-pane fade show active" id="custom-login">
+                        <h3 style="color: black;">Đăng nhập</h3>
+                        <form id="loginForm">
+                            <div class="form-group custom-form-group">
+                                <label for="loginName">Email:</label>
+                                <input type="email" class="form-control" id="loginName">
                             </div>
-
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Simple link -->
-                                <a href="#!">Forgot password?</a>
+                            <div class="form-group custom-form-group">
+                                <label for="loginPassword">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="loginPassword">
                             </div>
-                        </div>
-
-                        <!-- Submit button -->
-                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
-
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>Not a member? <a href="#!">Register</a></p>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-                    <form>
-                        <div class="text-center mb-3">
-                            <p>Sign up with:</p>
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </button>
-
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-google"></i>
-                            </button>
-
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-twitter"></i>
-                            </button>
-
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-
-                        <p class="text-center">or:</p>
-
-                        <!-- Name input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="text" id="registerName" class="form-control" />
-                            <label class="form-label" for="registerName">Name</label>
-                        </div>
-
-                        <!-- Username input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="text" id="registerUsername" class="form-control" />
-                            <label class="form-label" for="registerUsername">Username</label>
-                        </div>
-
-                        <!-- Email input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="email" id="registerEmail" class="form-control" />
-                            <label class="form-label" for="registerEmail">Email</label>
-                        </div>
-
-                        <!-- Password input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="registerPassword" class="form-control" />
-                            <label class="form-label" for="registerPassword">Password</label>
-                        </div>
-
-                        <!-- Repeat Password input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="registerRepeatPassword" class="form-control" />
-                            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-                        </div>
-
-                        <!-- Checkbox -->
-                        <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
-                            <label class="form-check-label" for="registerCheck">
-                                I have read and agree to the terms
-                            </label>
-                        </div>
-
-                        <!-- Submit button -->
-                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-3">Sign in</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary custom-btn-primary">Đăng nhập</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-register">
+                        <h3 style="color: black;">Đăng ký</h3>
+                        <form id="registerForm">
+                            <div class="form-group custom-form-group">
+                                <label for="registerEmail">Email:</label>
+                                <input type="email" class="form-control" id="registerEmail">
+                            </div>
+                            <div class="form-group custom-form-group">
+                                <label for="registerPassword">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="registerPassword">
+                            </div>
+                            <div class="form-group custom-form-group">
+                                <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                            <button type="submit" class="btn btn-primary custom-btn-primary">Đăng ký</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <!-- Pills content -->
         </div>
-        <div class="col-3">
-
-        </div>
-
     </div>
-</div><br><br><br><br><br>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Lấy form đăng nhập
-        var loginForm = document.getElementById('loginForm');
+<br><br><br><br><br><br><br><br>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy form đăng nhập
+            var loginForm = document.getElementById('loginForm');
 
-        // Xử lý sự kiện submit form
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Ngăn chặn form submit
+            // Xử lý sự kiện submit form
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Ngăn chặn form submit
 
-            // Lấy giá trị email và password
-            var email = document.getElementById('loginName').value;
-            var password = document.getElementById('loginPassword').value;
+                // Lấy giá trị email và password
+                var email = document.getElementById('loginName').value;
+                var password = document.getElementById('loginPassword').value;
 
-            // In giá trị email và password ra console
-            console.log('Email:', email);
-            console.log('Password:', password);
+                // In giá trị email và password ra console
+                console.log('Email:', email);
+                console.log('Password:', password);
 
-            // Thực hiện các tác vụ khác sau khi lấy giá trị email và password
-            // ...
+                // Thực hiện các tác vụ khác sau khi lấy giá trị email và password
+                // ...
 
-            // Reset form
-            loginForm.reset();
+                // Reset form
+                loginForm.reset();
+            });
         });
-    });
-</script>
+    </script>
+</body>
+
+</html

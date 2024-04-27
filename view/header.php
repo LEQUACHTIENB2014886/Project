@@ -33,9 +33,6 @@
                             <a class="nav-link" href="../public/features.php">Công cụ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/register.php">Đăng ký</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="../public/login.php">Đăng nhập</a>
                         </li>
                         <li class="nav-item">
@@ -56,5 +53,10 @@
         .navbar-brand {
             border: 1px solid white;
             padding: 5px 10px;
+        }
+
+        .view {
+            background: url("../../library/image/interview/background.jpg")no-repeat center center;
+            background-size: cover;
         }
     </style>

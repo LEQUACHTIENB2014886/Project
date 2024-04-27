@@ -60,13 +60,28 @@ $conn = null;
         <div class='answer-buttons'>
             <input type="hidden" name="questionIndex" value="<?php echo $currentQuestionIndex; ?>">
             <?php
-            echo "<button id='answer-1' type='submit' name='answer' value='1' class='" . ($selectedAnswer == 1 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Đô</button>";
-            echo "<button id='answer-2' type='submit' name='answer' value='2' class='" . ($selectedAnswer == 2 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Rê</button>";
-            echo "<button id='answer-3' type='submit' name='answer' value='3' class='" . ($selectedAnswer == 3 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Mi</button>";
-            echo "<button id='answer-4' type='submit' name='answer' value='4' class='" . ($selectedAnswer == 4 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Fa</button>";
-            echo "<button id='answer-5' type='submit' name='answer' value='5' class='" . ($selectedAnswer == 5 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Sol</button>";
-            echo "<button id='answer-6' type='submit' name='answer' value='6' class='" . ($selectedAnswer == 6 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>La</button>";
-            echo "<button id='answer-7' type='submit' name='answer' value='7' class='" . ($selectedAnswer == 7 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Si</button>";
+            if ($course_type === 'note') {
+                echo "<button id='answer-1' type='submit' name='answer' value='1' class='" . ($selectedAnswer == 1 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Đô</button>";
+                echo "<button id='answer-2' type='submit' name='answer' value='2' class='" . ($selectedAnswer == 2 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Rê</button>";
+                echo "<button id='answer-3' type='submit' name='answer' value='3' class='" . ($selectedAnswer == 3 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Mi</button>";
+                echo "<button id='answer-4' type='submit' name='answer' value='4' class='" . ($selectedAnswer == 4 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Fa</button>";
+                echo "<button id='answer-5' type='submit' name='answer' value='5' class='" . ($selectedAnswer == 5 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Sol</button>";
+                echo "<button id='answer-6' type='submit' name='answer' value='6' class='" . ($selectedAnswer == 6 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>La</button>";
+                echo "<button id='answer-7' type='submit' name='answer' value='7' class='" . ($selectedAnswer == 7 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Si</button>";
+            }
+            if ($course_type === 'chord'){
+                echo "<button id='answer-1' type='submit' name='answer' value='1' class='" . ($selectedAnswer == 1 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Trưởng</button>";
+                echo "<button id='answer-2' type='submit' name='answer' value='2' class='" . ($selectedAnswer == 2 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Thứ</button>";
+            }
+            if ($course_type === 'melody') {
+                echo "<button id='answer-1' type='submit' name='answer' value='1' class='" . ($selectedAnswer == 1 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Đô</button>";
+                echo "<button id='answer-2' type='submit' name='answer' value='2' class='" . ($selectedAnswer == 2 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Rê</button>";
+                echo "<button id='answer-3' type='submit' name='answer' value='3' class='" . ($selectedAnswer == 3 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Mi</button>";
+                echo "<button id='answer-4' type='submit' name='answer' value='4' class='" . ($selectedAnswer == 4 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Fa</button>";
+                echo "<button id='answer-5' type='submit' name='answer' value='5' class='" . ($selectedAnswer == 5 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Sol</button>";
+                echo "<button id='answer-6' type='submit' name='answer' value='6' class='" . ($selectedAnswer == 6 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>La</button>";
+                echo "<button id='answer-7' type='submit' name='answer' value='7' class='" . ($selectedAnswer == 7 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Si</button>";
+            }
             ?>
         </div>
     </form>
