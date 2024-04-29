@@ -1,22 +1,15 @@
 <link rel="stylesheet" href="../public/css/features.css">
 <div class="container instrument fadeHomepage">
-    <div class="box">
-        <div class="content">
-            <h2>Guitar</h2>
-            <p>Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/guitar.jpg">
-        </div>
-    </div>
     <div class="box" onclick="ToPiano()">
-        <div class="content">
-            <h2>Piano</h2>
-            <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/piano.jpg">
-        </div>
+        <a class="custom-link" href="../public/guitar_features.php">
+            <div class="content">
+                <h2 class="text-dark">Piano</h2>
+                <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
+            </div>
+            <div class="image">
+                <img src="../library/image/features/piano.jpg">
+            </div>
+        </a>
     </div>
     <div class="box">
         <div class="content">
