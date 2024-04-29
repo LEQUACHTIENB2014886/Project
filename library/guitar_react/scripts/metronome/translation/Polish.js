@@ -1,0 +1,1 @@
+window.metronome_translation={buttons:{start:'START',stop:'STOPP',tempo:'WYSTUKAJ TEMPO'},BPM:"BPM",mute_bar_text:{single:"takt",plural:"takty",text:{playPre:"Zagraj",playPost:"",mutePre:"i wycisz",mutePost:"",}},};

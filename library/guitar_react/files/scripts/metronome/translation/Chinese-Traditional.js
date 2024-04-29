@@ -1,0 +1,1 @@
+window.metronome_translation={buttons:{start:"開始",stop:"停止",tempo:"拍子速度",},BPM:"BPM",mute_bar_text:{single:"小節",plural:"小節",text:{playPre:"播放",playPost:"",mutePre:"並靜音",mutePost:"",}},};

@@ -1,0 +1,1 @@
+window.metronome_translation={buttons:{start:'शुरू करें',stop:'बंद करें ',tempo:'टेम्पो टैप करें'},BPM:"BPM",mute_bar_text:{single:"बार",plural:"बार",text:{playPre:"",playPost:"बजाएं और",mutePre:"",mutePost:"म्यूट करें",}},};

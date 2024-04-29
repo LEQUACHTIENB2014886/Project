@@ -1,0 +1,1 @@
+window.metronome_translation={buttons:{start:'BAŞLAT',stop:'DURDUR',tempo:'TEMPO TUT'},BPM:"BPM",mute_bar_text:{single:"ölçü",plural:"ölçü",text:{playPre:"",playPost:"çal ve",mutePre:"",mutePost:"sustur",}},};

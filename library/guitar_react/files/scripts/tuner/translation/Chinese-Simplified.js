@@ -1,0 +1,1 @@
+window.translation={button_names:{start_tune:'开始调音',stop_tune:'结束调音',},tune_up:'再调高',tune_down:'再调低',in_tune:'已调准',click_to_start:'点击按钮开始调音',listening:'收音中…',accidentals:{C:'C','C#':'升C',D:'D','D#':'降E',E:'E',F:'F','F#':'升F',G:'G','G#':'升G',A:'A','A#':'降B',B:'B',},};

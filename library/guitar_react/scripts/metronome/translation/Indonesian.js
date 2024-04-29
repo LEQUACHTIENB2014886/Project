@@ -1,0 +1,1 @@
+window.metronome_translation={buttons:{start:'MULAI',stop:'STOP',tempo:'TENTUKAN TEMPO'},BPM:"BPM",mute_bar_text:{single:"bar",plural:"bar",text:{playPre:"Mainkan",playPost:"",mutePre:"dan mute",mutePost:"",}},};
