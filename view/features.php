@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../public/css/features.css"><br><br>
+<link rel="stylesheet" href="../public/css/features.css">
 <div class="container instrument fadeHomepage">
     <div class="box" onclick="redirectToPage('../public/guitar.php')">
         <a class="custom-link" href="#">
@@ -146,6 +146,9 @@
             <img src="../library/image/features/scale-finder.jpg">
         </div>
     </div>
-
-
-</div><br>
+</div><br><br>
+<style>
+    .box:hover {
+        transform: scale(1.025);
+    }
+</style>
