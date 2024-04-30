@@ -38,13 +38,13 @@
 						D</a>,
 					<a class="text-muted" href="./guitar.php?notes=b0.g2.d3.a3.h1.f1.e1&amp;highlighted=">
 						E</a>,
-					<a class="text-muted" href="./guitar.php?notes=b0.e1.g1.d2.a2.e2&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=b0.f2.h2.e2.g3.d4.a4&amp;highlighted=">
 						F</a>,
-					<a class="text-muted" href="./guitar.php?notes=f1.h2.g1.d3.a4.e1&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=h1.g1.d1.f4.a3.e4&amp;highlighted=">
 						G</a>,
-					<a class="text-muted" href="./guitar.php?notes=f1.h2.g1.d3.a4.e1&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=h3.g3.d3.f1.a1.e1&amp;highlighted=">
 						A</a>,
-					<a class="text-muted" href="./guitar.php?notes=f1.h2.g1.d3.a4.e1&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=f3.h5.g5.d5.a3.e3&amp;highlighted=">
 						B</a>,
 				</p>
 				<h2>Chơi guitar online</h2>
