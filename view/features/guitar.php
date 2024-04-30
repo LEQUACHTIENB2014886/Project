@@ -12,10 +12,10 @@
 						<meta itemprop="inLanguage" content="en-GB">
 						<div itemprop="articleBody">
 							<div class="default__page__content">
-								<h1 class="text-center">Guitar Online</h1>
+								<h1 class="text-center">Guitar Online</h1><br>
 								<link href="../library/guitar_react/files/scripts/virtual-guitar/static/css/app.css" rel="stylesheet">
 								<div id="classic-guitar"></div>
-								
+
 								<script>
 									document.addEventListener('click', function() {
 										var audioContext = new(window.AudioContext || window.webkitAudioContext)();

@@ -6,7 +6,7 @@ window.translation = {
       playButton: "Chơi",
       resetButton: "Xoá",
       tunerButton: "Công cụ đo âm",
-      highlightButton: "Nốt nhạc trên đàn",
+      highlightButton: "Nốt trên đàn",
       soundsDropDown: {
         defaultButton: "Guitar",
         countryGuitarButton: "Guitar dây sắt",
