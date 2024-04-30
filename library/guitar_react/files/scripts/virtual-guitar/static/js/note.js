@@ -1275,7 +1275,7 @@
             for (var e = 0; e < this.notesHowler.length; e++) {
               var s = this.notesHowler[e];
               this.howlerObject[s] = new C["Howl"]({
-                src: ["../../library/guitar_react/lydfiler/guitar/".concat(t, "/") + s + ".mp3"],
+                src: ["../library/guitar_react/lydfiler/guitar/".concat(t, "/") + s + ".mp3"],
               });
             }
             this.itemsObj = {
