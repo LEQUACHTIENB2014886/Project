@@ -16,7 +16,6 @@
 								<script>
 									document.addEventListener('click', function() {
 										var audioContext = new(window.AudioContext || window.webkitAudioContext)();
-										//audioContext
 									});
 								</script>
 								<script src="../library/guitar_react/files/scripts/virtual-guitar/translation/Vietnamese.js"></script>
