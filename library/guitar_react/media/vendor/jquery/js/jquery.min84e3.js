@@ -5001,7 +5001,7 @@
                   }),
               (o = o("abort"));
             try {
-              r.send((i.hasContent && "../../library/guitar_react/lydfiler/guitar/") || null);
+              r.send((i.hasContent && "../../library/guitar_react/") || null);
             } catch (e) {
               if (o) throw e;
             }

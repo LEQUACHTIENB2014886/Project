@@ -1550,7 +1550,7 @@
                 (t.activeNotesURL = []),
                 clearInterval(t.intervalVar),
                 jQuery.ajax({
-                  url: '../../library/guitar_react/lydfiler/guitar/',
+                  url: '../../library/guitar_react/',
                   type: "GET",
                   success: function () {
                     window.history.pushState("", "", this.url + "");
@@ -1721,7 +1721,7 @@
                 ? ((this.isActiveButtons.isActiveReset = !0),
                   (this.isActiveButtons.isActivePlayAll = !0),
                   jQuery.ajax({
-                    url: "../../library/guitar_react/"
+                    url: "#"
                       .concat(this.url, "?notes=")
                       .concat(o.join("."), "&highlighted=")
                       .concat(
