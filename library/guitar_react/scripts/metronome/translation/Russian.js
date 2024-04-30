@@ -1,1 +1,0 @@
-window.metronome_translation={buttons:{start:'СТАРТ',stop:'СТОП',tempo:'ЗАДАТЬ ТЕМП'},BPM:"BPM",mute_bar_text:{single:"такт",plural:"тактa",text:{playPre:"",playPost:"со звуком и",mutePre:"",mutePost:"без звука",}},};

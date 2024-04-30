@@ -1,7 +1,24 @@
-<link rel="stylesheet" href="../public/css/features.css">
+<link rel="stylesheet" href="../public/css/features.css"><br><br>
 <div class="container instrument fadeHomepage">
+    <div class="box" onclick="redirectToPage('../public/guitar.php')">
+        <a class="custom-link" href="#">
+            <div class="content">
+                <h2 class="text-dark">Guitar</h2>
+                <p><a class="tools">Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.</a></p>
+            </div>
+            <div class="image">
+                <img src="../library/image/features/guitar.jpg">
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
     <div class="box" onclick="ToPiano()">
-        <a class="custom-link" href="../public/guitar_features.php">
+        <a class="custom-link" href="../public/piano_features.php">
             <div class="content">
                 <h2 class="text-dark">Piano</h2>
                 <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>

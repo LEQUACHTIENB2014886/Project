@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/js/scripts.js">
-    <link rel="stylesheet" href="../public/css/bg.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--Main Navigation-->
@@ -55,7 +54,7 @@
         }
 
         .view {
-            background: url("../../library/image/interview/background.jpg")no-repeat center center;
+            background: url("../library/image/interview/background.jpg")no-repeat center center;
             background-size: cover;
         }
     </style>

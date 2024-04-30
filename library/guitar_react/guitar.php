@@ -21,7 +21,7 @@
 								</script>
 								<script src="../library/guitar_react/files/scripts/virtual-guitar/translation/Vietnamese.js"></script>
 								<script src="../library/guitar_react/files/scripts/virtual-guitar/static/js/chunk-vendors.js"></script>
-								<script src="../library/guitar_react/files/scripts/virtual-guitar/static/js/note.js"></script>
+								<script src="../library/guitar_react/files/scripts/virtual-guitar/static/js/ggg.js"></script>
 							</div>
 						</div>
 					</article>

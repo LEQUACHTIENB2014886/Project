@@ -1275,7 +1275,7 @@
             for (var e = 0; e < this.notesHowler.length; e++) {
               var s = this.notesHowler[e];
               this.howlerObject[s] = new C["Howl"]({
-                src: ["./lydfiler/guitar/".concat(t, "/") + s + ".mp3"],
+                src: ["../../library/guitar_react/lydfiler/guitar/".concat(t, "/") + s + ".mp3"],
               });
             }
             this.itemsObj = {
@@ -1550,7 +1550,7 @@
                 (t.activeNotesURL = []),
                 clearInterval(t.intervalVar),
                 jQuery.ajax({
-                  url: t.url,
+                  url: '../../library/guitar_react/lydfiler/guitar/',
                   type: "GET",
                   success: function () {
                     window.history.pushState("", "", this.url + "");
@@ -1721,7 +1721,7 @@
                 ? ((this.isActiveButtons.isActiveReset = !0),
                   (this.isActiveButtons.isActivePlayAll = !0),
                   jQuery.ajax({
-                    url: ""
+                    url: "../../library/guitar_react/"
                       .concat(this.url, "?notes=")
                       .concat(o.join("."), "&highlighted=")
                       .concat(
