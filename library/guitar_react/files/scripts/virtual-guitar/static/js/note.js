@@ -1275,7 +1275,11 @@
             for (var e = 0; e < this.notesHowler.length; e++) {
               var s = this.notesHowler[e];
               this.howlerObject[s] = new C["Howl"]({
-                src: ["../library/guitar_react/lydfiler/guitar/".concat(t, "/") + s + ".mp3"],
+                src: [
+                  "../library/guitar_react/lydfiler/guitar/".concat(t, "/") +
+                    s +
+                    ".mp3",
+                ],
               });
             }
             this.itemsObj = {
@@ -1550,7 +1554,7 @@
                 (t.activeNotesURL = []),
                 clearInterval(t.intervalVar),
                 jQuery.ajax({
-                  url: '../../library/guitar_react/',
+                  url: "../../library/guitar_react/",
                   type: "GET",
                   success: function () {
                     window.history.pushState("", "", this.url + "");
@@ -1675,6 +1679,7 @@
               o = this.isActiveNote,
               n = t.substr(0, 1) + 0,
               r = this.noteObj[n];
+              var parentDirectory = this.url.substring(0, this.url.lastIndexOf("/")); 
             if (((this.tunerNote = n), this.isActiveButtons.isActiveTuner)) {
               clearInterval(this.intervalVar),
                 this.isActiveNote.splice(0, this.isActiveNote.length);
@@ -1721,8 +1726,8 @@
                 ? ((this.isActiveButtons.isActiveReset = !0),
                   (this.isActiveButtons.isActivePlayAll = !0),
                   jQuery.ajax({
-                    url: "#"
-                      .concat(this.url, "?notes=")
+                    url: parentDirectory
+                    .concat(this.url, ".php", "?notes=")
                       .concat(o.join("."), "&highlighted=")
                       .concat(
                         Object.keys(this.activeNoteNamesUrl).join("."),
@@ -1735,7 +1740,7 @@
                       ),
                     type: "GET",
                     success: function (t) {
-                      window.history.pushState("", "", this.url + "");
+                      window.history.pushState("", "", this.url);
                     },
                     error: function () {
                       console.log("There was a problem with the request.");
@@ -1744,10 +1749,10 @@
                 : ((this.isActiveButtons.isActiveReset = !1),
                   (this.isActiveButtons.isActivePlayAll = !1),
                   jQuery.ajax({
-                    url: this.url,
+                    url: this.url +".php",
                     type: "GET",
                     success: function () {
-                      window.history.pushState("", "", this.url + "");
+                      window.history.pushState("", "", this.url);
                     },
                     error: function () {
                       console.log("There was a problem with the request.");
