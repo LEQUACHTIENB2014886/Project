@@ -1554,7 +1554,7 @@
                 (t.activeNotesURL = []),
                 clearInterval(t.intervalVar),
                 jQuery.ajax({
-                  url: "../../library/guitar_react/",
+                  url: this.url,
                   type: "GET",
                   success: function () {
                     window.history.pushState("", "", this.url + "");
@@ -1586,7 +1586,7 @@
                 t.toggleNoteNames(s),
                 jQuery.ajax({
                   url: ""
-                    .concat(t.url, "?notes=")
+                    .concat(t.url, ".php", "?notes=")
                     .concat(t.isActiveNote.join("."), "&highlighted=")
                     .concat(
                       Object.keys(t.activeNoteNamesUrl).join("."),

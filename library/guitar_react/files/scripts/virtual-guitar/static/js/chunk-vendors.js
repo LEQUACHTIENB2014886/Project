@@ -1709,6 +1709,7 @@
                 p(r.buffer, t);
               } else {
                 var o = new XMLHttpRequest();
+                
                 o.open(t._xhr.method, e, !0),
                   (o.withCredentials = t._xhr.withCredentials),
                   (o.responseType = "arraybuffer"),
@@ -1766,6 +1767,7 @@
                 ((t._state = "loaded"), t._emit("load"), t._loadQueue());
             },
             h = function () {
+              
               if (a.usingWebAudio) {
                 try {
                   "undefined" !== typeof AudioContext
