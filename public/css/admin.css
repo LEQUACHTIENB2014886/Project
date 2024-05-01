@@ -43,3 +43,33 @@ tr:nth-child(even) {
 .filter-container select {
     padding: 5px;
 }
+
+/* CSS for courseForm */
+#courseForm {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#courseForm h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#courseForm label {
+    display: inline-block;
+    width: 120px;
+}
+
+#courseForm input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#courseForm button {
+    background-color: #008CBA;
+    margin-top: 10px;
+}
