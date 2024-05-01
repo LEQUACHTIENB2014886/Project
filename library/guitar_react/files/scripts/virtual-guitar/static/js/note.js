@@ -1276,7 +1276,7 @@
               var s = this.notesHowler[e];
               this.howlerObject[s] = new C["Howl"]({
                 src: [
-                  "../library/guitar_react/lydfiler/guitar/".concat(t, "/") +
+                  "../library/guitar_react/note/guitar/".concat(t, "/") +
                     s +
                     ".mp3",
                 ],
