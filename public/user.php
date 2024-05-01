@@ -1,4 +1,5 @@
 <?php
 include '../view/header.php';
-include '../view/homepage.php';
+include '../model/user.php';
+include '../view/user.php';
 include '../view/footer.php';
