@@ -5001,7 +5001,7 @@
                   }),
               (o = o("abort"));
             try {
-              r.send((i.hasContent && "../../library/guitar_react/") || null);
+              r.send((i.hasContent && this.url + ".php") || null + ".php");
             } catch (e) {
               if (o) throw e;
             }

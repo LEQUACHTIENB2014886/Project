@@ -1,4 +1,4 @@
 <?php 
-// include '../view/header.php';
-include __DIR__ . '/../library/guitar_react/guitar.php';
-// include '../view/footer.php';
+include '../view/header.php';
+include __DIR__ . '/../view/features/guitar.php';
+include '../view/footer.php';
