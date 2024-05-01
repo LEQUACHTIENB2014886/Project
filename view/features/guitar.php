@@ -35,9 +35,9 @@
 						C</a>,
 					<a class="text-muted" href="./guitar.php?notes=f3.h4.g3.d1.e3&amp;highlighted=">
 						D</a>,
-					<a class="text-muted" href="./guitar.php?notes=b0.g2.d3.a3.h1.f1.e1&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=g2.d3.a3.h1.f1.e1&amp;highlighted=">
 						E</a>,
-					<a class="text-muted" href="./guitar.php?notes=b0.f2.h2.e2.g3.d4.a4&amp;highlighted=">
+					<a class="text-muted" href="./guitar.php?notes=f2.h2.g3.d4.a4.e2&amp;highlighted=">
 						F</a>,
 					<a class="text-muted" href="./guitar.php?notes=h1.g1.d1.f4.a3.e4&amp;highlighted=">
 						G</a>,
