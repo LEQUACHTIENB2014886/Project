@@ -57,8 +57,9 @@
 				<p>Lưu bản đánh dấu trên guitar bằng cách sao chép địa chỉ web trên trình duyệt của bạn. Việc này cho phép bạn chia sẻ bản đánh dấu với những người khác. Ví dụ, đây là một
 					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f1.g1.d3.a4.h1&amp;highlighted=">
 						hợp âm 7 của Đô trưởng</a>
-					và một
-					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=a1.a3.d3.e1.e3.a5.e5.d2&amp;highlighted=&amp;inverted=d2.e5.a5">âm giai Mi trưởng</a>.
+					và 
+					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f3.h3.g3.d5.a5.e3&amp;highlighted=">Hợp âm Fa thăng thứ - Các nốt thăng</a>,
+					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f3.h3.g3.d5.a5.e3&amp;highlighted=&amp;inverted=f3.h3.g3.d5.a5.e3">Hợp âm Fa thăng thứ - Các nốt giáng</a>.
 				</p>
 				<h2>Cách chỉnh dây guitar online</h2>
 				<p>Hãy sử dụng

@@ -39,7 +39,7 @@
             if (currentIndex < audioFiles.length) {
                 playSound(currentIndex);
                 currentIndex++;
-                setTimeout(playSounds, 1800); // Chờ 2 giây trước khi phát âm thanh tiếp theo
+                setTimeout(playSounds, 2500); // Chờ 2 giây trước khi phát âm thanh tiếp theo
             }
         }
     </script>
