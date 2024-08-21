@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chạy mã Tone.js với nhiều hợp âm</title>
+  <title>Tone.js </title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"></script>
 </head>
 <body>

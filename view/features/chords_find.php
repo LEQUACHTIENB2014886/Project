@@ -30,21 +30,21 @@
 			</div>
 			<div class="tools__page__content">
 				<h2>Hợp âm cơ bản</h2>
-				<p> 
+				<p>
 					<a class="text-muted" href="./guitar.php?notes=f1.h2.g1.d3.a4.e1&amp;highlighted=">
 						C</a>,
-					<a class="text-muted" href="./guitar.php?notes=f4.h1.g1.d1.a3.e4&amp;highlighted=">
-						G</a>,
-					<a class="text-muted" href="./guitar.php?notes=d3.a3.h1.f1.e1.g1&amp;highlighted=">
-						Em</a>,
-					<a class="text-muted" href="./guitar.php?notes=d3.f1.e1.h2.g3.a1&amp;highlighted=">
-						Am</a>,
+					<a class="text-muted" href="./guitar.php?notes=f3.h4.g3.d1.e3&amp;highlighted=">
+						D</a>,
+					<a class="text-muted" href="./guitar.php?notes=g2.d3.a3.h1.f1.e1&amp;highlighted=">
+						E</a>,
 					<a class="text-muted" href="./guitar.php?notes=f2.h2.g3.d4.a4.e2&amp;highlighted=">
 						F</a>,
-					<a class="text-muted" href="./guitar.php?notes=f2.h2.g3.d1&amp;highlighted=">
-						Dm7</a>,
-					<a class="text-muted" href="./guitar.php?notes=f1.h2.d3.a4.e1.g4&amp;highlighted=">
-						C7</a>.
+					<a class="text-muted" href="./guitar.php?notes=h1.g1.d1.f4.a3.e4&amp;highlighted=">
+						G</a>,
+					<a class="text-muted" href="./guitar.php?notes=h3.g3.d3.f1.a1.e1&amp;highlighted=">
+						A</a>,
+					<a class="text-muted" href="./guitar.php?notes=f3.h5.g5.d5.a3.e3&amp;highlighted=">
+						B</a>,
 				</p>
 				<h2>Chơi guitar online</h2>
 				<p>Sử dụng bàn phím máy tính như một công cụ để điều chỉnh dây guitar. Bốn dòng trên cùng của bàn phím tương ứng với bốn dây đàn thấp nhất của guitar. Ấn và giữ phím shift (⇧) và sử dụng hai dòng trên cùng của bàn phím để chơi hai dây cao.</p>

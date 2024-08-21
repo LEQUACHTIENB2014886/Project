@@ -110,7 +110,7 @@
             <img src="../library/image/features/tuner.jpg">
         </div>
     </div>
-    <div class="box">
+    <div class="box" onclick="redirectToPage('../public/chords_find.php')">
         <div class="content">
             <h2>Tìm kiếm hợp âm</h2>
             <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
