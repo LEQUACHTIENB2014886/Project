@@ -1,1 +1,0 @@
-window.metronome_translation={buttons:{start:'시작하기',stop:'멈추기',tempo:'템포 맞추기'},BPM:"BPM",mute_bar_text:{single:"개",plural:"개",text:{playPre:"",playPost:"마디 재생하고",mutePre:"",mutePost:"마디 음소거하기",}},};

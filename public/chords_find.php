@@ -1,4 +1,4 @@
-<?php 
+<?php
 include '../view/header.php';
-include __DIR__ . '/../view/features/chords_find.php';
+include "../controller/tombatossals.github.io/chord_library.php";
 include '../view/footer.php';

@@ -17,8 +17,8 @@
             window.location.href = url;
         }
     </script>
-    <div class="box" onclick="ToPiano()">
-        <a class="custom-link" href="../public/piano_features.php">
+    <div class="box" onclick="redirectToPage('../public/piano.php')">
+        <a class="custom-link" href="../public/piano.php">
             <div class="content">
                 <h2 class="text-dark">Piano</h2>
                 <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
@@ -27,6 +27,15 @@
                 <img src="../library/image/features/piano.jpg">
             </div>
         </a>
+    </div>
+    <div class="box" onclick="redirectToPage('../public/chords_find.php')">
+        <div class="content">
+            <h2>Tìm kiếm hợp âm</h2>
+            <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/tuner.jpg">
+        </div>
     </div>
     <div class="box">
         <div class="content">
@@ -38,7 +47,7 @@
         </div>
     </div>
 
-    <div class="box">
+    <div class="box" onclick="redirectToPage('../public/drum.php')">
         <div class="content">
             <h2>Trống</h2>
             <p>Chơi trống ảo và thực hành tập chơi các nhịp trống.<a href="#"></a></p>
@@ -107,18 +116,10 @@
             <p>Công cụ đo âm trực tuyến cho nhạc cụ.<a href="#"></a></p>
         </div>
         <div class="image">
-            <img src="../library/image/features/tuner.jpg">
-        </div>
-    </div>
-    <div class="box" onclick="redirectToPage('../public/chords_find.php')">
-        <div class="content">
-            <h2>Tìm kiếm hợp âm</h2>
-            <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
-        </div>
-        <div class="image">
             <img src="../library/image/features/chord-finder.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Tìm kiếm quãng</h2>

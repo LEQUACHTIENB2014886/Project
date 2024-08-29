@@ -1,1 +1,0 @@
-window.metronome_translation={buttons:{start:'COMEÇAR',stop:'PARAR',tempo:'MARCAR TEMPO'},BPM:"BPM",mute_bar_text:{single:"compasso",plural:"compassos",text:{playPre:"Tocar",playPost:"",mutePre:"e silenciar",mutePost:"",}},};

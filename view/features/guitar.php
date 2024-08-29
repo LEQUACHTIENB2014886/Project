@@ -1,7 +1,4 @@
-<link href="../library/guitar_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
-<link href="../library/guitar_react/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
-<script src="../library/guitar_react/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
-<div class="wrapper bg-light" style="margin-top:-650px">
+<div class="wrapper bg-light" style="margin-top:-675px">
 	<div class="content fst-italic">
 		<div class="container">
 			<br>
@@ -30,15 +27,15 @@
 			</div>
 			<div class="tools__page__content">
 				<h2>Hợp âm cơ bản</h2>
-				<p> 
+				<p>
 					<a class="text-muted" href="./guitar.php?notes=f1.h2.g1.d3.a4.e1&amp;highlighted=">
 						C</a>,
 					<a class="text-muted" href="./guitar.php?notes=f4.h1.g1.d1.a3.e4&amp;highlighted=">
 						G</a>,
-					<a class="text-muted" href="./guitar.php?notes=d3.a3.h1.f1.e1.g1&amp;highlighted=">
-						Em</a>,
 					<a class="text-muted" href="./guitar.php?notes=d3.f1.e1.h2.g3.a1&amp;highlighted=">
 						Am</a>,
+					<a class="text-muted" href="./guitar.php?notes=d3.a3.h1.f1.e1.g1&amp;highlighted=">
+						Em</a>,
 					<a class="text-muted" href="./guitar.php?notes=f2.h2.g3.d4.a4.e2&amp;highlighted=">
 						F</a>,
 					<a class="text-muted" href="./guitar.php?notes=f2.h2.g3.d1&amp;highlighted=">
@@ -57,7 +54,7 @@
 				<p>Lưu bản đánh dấu trên guitar bằng cách sao chép địa chỉ web trên trình duyệt của bạn. Việc này cho phép bạn chia sẻ bản đánh dấu với những người khác. Ví dụ, đây là một
 					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f1.g1.d3.a4.h1&amp;highlighted=">
 						hợp âm 7 của Đô trưởng</a>
-					và 
+					và
 					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f3.h3.g3.d5.a5.e3&amp;highlighted=">Hợp âm Fa thăng thứ - Các nốt thăng</a>,
 					<a class="text-muted text-decoration-underline" href="./guitar.php?notes=f3.h3.g3.d5.a5.e3&amp;highlighted=&amp;inverted=f3.h3.g3.d5.a5.e3">Hợp âm Fa thăng thứ - Các nốt giáng</a>.
 				</p>
@@ -87,4 +84,10 @@
 	.dropdown--highlight {
 		padding-left: 0px;
 	}
+	#main-header .navbar {
+		margin-left: -16px;
+	}
 </style>
+<link href="../library/guitar_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
+<link href="../library/guitar_react/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
+<script src="../library/guitar_react/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
