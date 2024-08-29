@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../public/css/features.css">
-<div class="container instrument fadeHomepage">
+<div class="container instrument fadeHomepage" style="margin-top:0px">
     <div class="box" onclick="redirectToPage('../public/guitar.php')">
         <a class="custom-link" href="#">
             <div class="content">

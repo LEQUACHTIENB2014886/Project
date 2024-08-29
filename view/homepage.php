@@ -1,4 +1,4 @@
-<main class="main-flex">
+<main class="main-flex" id="homepage-button" >
     <div>
         <div class="full-bg-img">
             <div class="text-white fadeHomepage" style="text-shadow: 2px 3px 5px black;">
@@ -18,7 +18,7 @@
                         <a href="course.php" class="buttonToCourse">Đến khóa học</a>
                     </div>
                 </div>
-                <br><br>
+                <br><br><br><br><br>
             </div>
         </div>
     </div>

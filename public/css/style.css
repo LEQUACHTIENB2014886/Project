@@ -1,5 +1,5 @@
 #main-header {
-    background-color: #333;
+    background-color: #33333300;
     color: white;
     padding: 10px;
 }
@@ -48,4 +48,21 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#homepage-button .buttonToCourse {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: SlateGrey;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 2px solid rgb(55, 66, 76);
+    transition: border-color 0.3s;
+}
+
+#homepage-button .buttonToCourse:hover {
+    border-color: whitesmoke;
+    color: white;
 }

@@ -6,7 +6,6 @@
     <link rel="icon" href="../library/image/interview/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/js/scripts.js">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -52,7 +51,87 @@
         }
 
         .view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
             background: url("../library/image/interview/background.jpg") no-repeat center center;
             background-size: cover;
+        }
+
+        #main-header {
+            background-color: #33333300;
+            color: white;
+            padding: 10px;
+        }
+
+        #main-header .navbar {
+            z-index: 1;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        #main-header .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        #main-header .buttonToCourse {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: SlateGrey;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            border: 2px solid rgb(55, 66, 76);
+            transition: border-color 0.3s;
+        }
+
+        #main-header .buttonToCourse:hover {
+            border-color: whitesmoke;
+            color: white;
+        }
+
+        #main-header a {
+            text-decoration: none;
+        }
+
+        #main-header .fadeNavheader {
+            opacity: 0;
+            animation: fade-in-animation 2s forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #homepage-button .buttonToCourse {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: SlateGrey;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            border: 2px solid rgb(55, 66, 76);
+            transition: border-color 0.3s;
+        }
+
+        #homepage-button .buttonToCourse:hover {
+            border-color: whitesmoke;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>

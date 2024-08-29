@@ -1,7 +1,7 @@
 <main class="main-flex">
     <div>
         <div class="full-bg-img">
-            <div class="text-light fadeHomepage" style="text-shadow: 3px 4px 6px black;">
+            <div class="text-light fadeHomepage" style="text-shadow: 3px 4px 6px black; margin-top:-50px">
                 <div class="container">
                     <br><br><br><br><br><br><br><br>
                     <div class="text-center">
@@ -14,7 +14,7 @@
                         </div>
                         <div class="col-2"></div>
                     </div><br><br><br>
-                    <div class="text-center">
+                    <div class="text-center" id="homepage-button">
                         <a href="course.php" class="buttonToCourse">Đến khóa học</a>
                     </div>
                 </div>
