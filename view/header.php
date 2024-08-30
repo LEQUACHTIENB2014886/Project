@@ -45,6 +45,14 @@
         </nav>
     </header>
     <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
         .navbar-brand {
             border: 1px solid white;
             padding: 5px 10px;
@@ -54,11 +62,17 @@
             position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
+            width: 100%;
+            height: 100%;
             z-index: -1;
             background: url("../library/image/interview/background.jpg") no-repeat center center;
             background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
         }
 
         #main-header {
@@ -156,11 +170,14 @@
         a {
             text-decoration: none;
         }
-        
     </style>
-    <!-- <script>
-        // Add a class to trigger the slide in transition after a delay
-        setTimeout(function() {
-            document.querySelector('.slide-in').classList.add('show');
-        }, 200); // Delay of 1 second
-    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var slideInElement = document.querySelector('.slide-in');
+                if (slideInElement) {
+                    slideInElement.classList.add('show');
+                }
+            }, 200); // Delay of 200 milliseconds
+        });
+    </script>

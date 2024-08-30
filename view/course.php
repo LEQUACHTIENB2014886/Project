@@ -1,5 +1,5 @@
 <!-- <link rel="stylesheet" href="./course.css"> -->
-<div class="container course fst-italic fadeHomepage" style="margin-top:0px;">
+<div class="container course fst-italic slide-in" style="margin-top:0px;">
     <a href="../public/index.php">
         <div class="back text-light">
             <h5>

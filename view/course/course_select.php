@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../public/css/course_select.css">
 <br>
-<div class="container course fadeHomepage fst-italic" style="margin-top:0px;">
+<div class="container course slide-in fst-italic" style="margin-top:0px;">
     <a href="../public/course_exercise.php">
         <div class="back text-light">
             <h5>

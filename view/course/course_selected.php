@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../public/css/course_selected.css">
 <main class="main-flex" style="margin-top:0px;">
     <div>
-        <div class="full-bg-img fst-italic" >
+        <div class="full-bg-img fst-italic slide-in" >
             <div class="text-white" style="text-shadow: 2px 3px 5px black;">
                 <div class="container">
                     <br><br><br><br><br><br>

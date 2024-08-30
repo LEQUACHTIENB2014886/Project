@@ -1,4 +1,4 @@
-<div class="container fadeHomepage rounded" style="background-color: #ffffff; margin-top:0px;">
+<div class="container slide-in rounded" style="background-color: #ffffff; margin-top:0px;">
     <br>
     <div class="row">
         <a href="../public/theory.php">
