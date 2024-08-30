@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../public/css/login.css">
 <br>
-<div class="custom-container rounded" style="margin-top:0px">
+<div class="custom-container rounded fadeHomepage" style="margin-top:0px">
     <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
             <a class="nav-link text-dark active" id="custom-login-tab" data-bs-toggle="tab" href="#custom-login">Đăng nhập</a>

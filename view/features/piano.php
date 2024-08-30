@@ -3,19 +3,17 @@
 <script src="../library/piano_react/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
 <script src="../library/piano_react/media/merged_joomla_script.min9aa9.js?20231024"></script>
 <script src="../library/piano_react/modules/mod_ads/js/min/width_test.min5034.js?v=202402141905"></script>
-<!-- <script defer src="../library/piano_react/templates/musicca/js/app.minc683.js"></script> -->
-<br>
 <div class="wrapper bg-white" style="margin-top:0px">
     <br>
     <div class="content fst-italic ">
-        <div class="container border border-dark">
+        <div class="container">
             <div class="content__right col-9-m col- ">
                 <div id="system-message-container " aria-live="polite"></div>
                 <article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
                     <meta itemprop="inLanguage" content="en-GB">
-                    <div class="page-header default__page__header">
+                    <div class="page-header default__page__header text-center">
                         <h1 class="h1 default__page__title" itemprop="name">
-                            Piano </h1>
+                            Piano Online</h1>
                     </div>
                     <div itemprop="articleBody">
                         <div class="default__page__content">
@@ -159,8 +157,22 @@
                 <div class="after__content">
                     <h2>Hợp âm cơ bản</h2>
                     <p>
-                        <a class="text-muted" href="./piano.php?1f.1gis.2c.2dis">
-                            F7</a>
+                        <a class="text-muted" href="./piano.php?2c.1f.2a">
+                            F,</a>
+                        <a class="text-muted" href="./piano.php?1g.2b.2d">
+                            G,</a>
+                        <a class="text-muted" href="./piano.php?1g.2b.2e">
+                            Em,</a>
+                        <a class="text-muted" href="./piano.php?2a.2c.2e">
+                            Am,</a>
+                        <a class="text-muted" href="./piano.php?2c.2e.1g">
+                            C,</a>
+                        <a class="text-muted" href="./piano.php?2c.2e.1g.2ais.3ais">
+                            C7,</a>
+                        <a class="text-muted" href="./piano.php?2a.2d.2e">
+                            Asus4,</a>
+                        <a class="text-muted" href="./piano.php?2a.2cis.2e">
+                            A.</a>
                     </p>
                     <h2>Âm giai cơ bản</h2>
                     <p>

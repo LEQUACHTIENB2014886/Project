@@ -3,7 +3,7 @@
         <div class="full-bg-img">
             <div class="text-light fadeHomepage" style="text-shadow: 3px 4px 6px black; margin-top:-50px">
                 <div class="container">
-                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br>
                     <div class="text-center">
                         <h1><strong>Đôi lời giới thiệu về MelodyTalent</strong></h1>
                     </div><br><br>
@@ -21,4 +21,5 @@
             </div>
         </div>
     </div>
+    <br><br><br><br>
 </main>

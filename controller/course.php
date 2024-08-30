@@ -1,3 +1,4 @@
+
 <?php
 $currentQuestionIndex = isset($_POST['questionIndex']) ? $_POST['questionIndex'] : 0;
 $selectedAnswer = [];

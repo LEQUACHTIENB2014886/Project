@@ -1,9 +1,9 @@
 <main class="main-flex" id="homepage-button" >
     <div>
         <div class="full-bg-img">
-            <div class="text-white fadeHomepage" style="text-shadow: 2px 3px 5px black;">
+            <div class="text-white fadefast" style="text-shadow: 2px 3px 5px black;">
                 <div class="container">
-                    <br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br>
                     <div class="text-center">
                         <h1><strong>Học lý thuyết âm nhạc miễn phí</strong></h1>
                     </div><br><br>

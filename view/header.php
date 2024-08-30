@@ -97,21 +97,43 @@
             text-decoration: none;
         }
 
-        #main-header .fadeNavheader {
-            opacity: 0;
-            animation: fade-in-animation 2s forwards;
-        }
-
-        @keyframes fadeInUp {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(100%);
             }
 
             to {
                 opacity: 1;
-                transform: translateY(0);
             }
+        }
+
+        .fadeHomepage {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadefast {
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        .slide-in {
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .slide-in.show {
+            opacity: 1;
+            transform: translateX(0);
         }
 
         #homepage-button .buttonToCourse {
@@ -134,4 +156,11 @@
         a {
             text-decoration: none;
         }
+        
     </style>
+    <!-- <script>
+        // Add a class to trigger the slide in transition after a delay
+        setTimeout(function() {
+            document.querySelector('.slide-in').classList.add('show');
+        }, 200); // Delay of 1 second
+    </script> -->

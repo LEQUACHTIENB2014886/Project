@@ -20,7 +20,7 @@
     </style>
 </head>
 <a>
-    <div class="iframe-container" style="margin-top:-675px;" >
+    <div class="iframe-container" >
         <div class="iframe-content">
             <iframe src="https://tombatossals.github.io/react-chords/guitar/index.html" style="width: 100%; height: 100%; background-color: #ffffff; border: none; border-radius: 10px; "></iframe>
         </div>

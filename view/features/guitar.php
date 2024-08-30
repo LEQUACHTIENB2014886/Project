@@ -84,9 +84,6 @@
 	.dropdown--highlight {
 		padding-left: 0px;
 	}
-	#main-header .navbar {
-		margin-left: -16px;
-	}
 </style>
 <link href="../library/guitar_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
 <link href="../library/guitar_react/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
