@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="../public/css/features.css">
+<script>
+    function redirectToPage(url) {
+        window.location.href = url;
+    }
+</script>
 <div class="container instrument fadeHomepage" style="margin-top:0px">
+
     <div class="box" onclick="redirectToPage('../public/guitar.php')">
         <a class="custom-link" href="#">
             <div class="content">
@@ -12,11 +18,6 @@
         </a>
     </div>
 
-    <script>
-        function redirectToPage(url) {
-            window.location.href = url;
-        }
-    </script>
     <div class="box" onclick="redirectToPage('../public/piano.php')">
         <a class="custom-link" href="../public/piano.php">
             <div class="content">
@@ -28,22 +29,24 @@
             </div>
         </a>
     </div>
+
     <div class="box" onclick="redirectToPage('../public/chords_find.php')">
         <div class="content">
             <h2>Tìm kiếm hợp âm</h2>
-            <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
+            <p>Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.<a href="../public/chords_find.php"></a></p>
         </div>
         <div class="image">
             <img src="../library/image/features/tuner.jpg">
         </div>
     </div>
-    <div class="box">
+
+    <div class="box" onclick="redirectToPage('../public/interval-finder.php')">
         <div class="content">
-            <h2>Bass-guitar</h2>
-            <p>Chơi guitar bass ảo và hình dung nốt, âm giai<a href="#"></a></p>
+            <h2>Tìm kiếm quãng</h2>
+            <p>Tìm kiếm quãng trên các nhạc cụ và khuông nhạc.<a href="../public/interval-finder.php"></a></p>
         </div>
         <div class="image">
-            <img src="../library/image/features/bass-guitar.jpg">
+            <img src="../library/image/features/interval-finder.jpg">
         </div>
     </div>
 
@@ -56,6 +59,27 @@
             <img src="../library/image/features/drums.jpg">
         </div>
     </div>
+
+    <div class="box" onclick="redirectToPage('../public/chord_player.php')">
+        <div class="content">
+            <h2>Ứng dụng Đệm Hợp âm</h2>
+            <p>Tạo ra các chùm hợp âm và nhạc nền.<a href="../public/chord_player.php"></a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/chord-player.jpg">
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="content">
+            <h2>Bass-guitar</h2>
+            <p>Chơi guitar bass ảo và hình dung nốt, âm giai<a href="#"></a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/bass-guitar.jpg">
+        </div>
+    </div>
+
     <div class="box">
         <div class="content">
             <h2>Trống điện tử</h2>
@@ -65,15 +89,7 @@
             <img src="../library/image/features/drum-machine.jpg">
         </div>
     </div>
-    <div class="box">
-        <div class="content">
-            <h2>Ứng dụng Đệm Hợp âm</h2>
-            <p>Tạo ra các chùm hợp âm và nhạc nền.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/chord-player.jpg">
-        </div>
-    </div>
+
     <div class="box">
         <div class="content">
             <h2>Bài hát luyện quãng</h2>
@@ -83,6 +99,7 @@
             <img src="../library/image/features/interval-song-chart.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Máy đếm nhịp</h2>
@@ -92,6 +109,7 @@
             <img src="../library/image/features/metronome.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Giấy chép nhạc</h2>
@@ -101,6 +119,7 @@
             <img src="../library/image/features/staff-paper.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Thuật ngữ âm nhạc</h2>
@@ -110,6 +129,7 @@
             <img src="../library/image/features/tempo-markings.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Công cụ đo âm</h2>
@@ -122,15 +142,6 @@
 
     <div class="box">
         <div class="content">
-            <h2>Tìm kiếm quãng</h2>
-            <p>Tìm kiếm quãng trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/interval-finder.jpg">
-        </div>
-    </div>
-    <div class="box">
-        <div class="content">
             <h2>Tìm kiếm nốt</h2>
             <p>Tìm các nốt nhạc trên các nhạc cụ và khuông nhạc.<a href="#"></a></p>
         </div>
@@ -138,6 +149,7 @@
             <img src="../library/image/features/note-finder.jpg">
         </div>
     </div>
+
     <div class="box">
         <div class="content">
             <h2>Tìm kiếm âm giai</h2>
@@ -147,6 +159,7 @@
             <img src="../library/image/features/scale-finder.jpg">
         </div>
     </div>
+
 </div><br><br>
 <style>
     .box:hover {

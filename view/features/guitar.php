@@ -1,4 +1,4 @@
-<div class="wrapper bg-light" style="margin-top:-0px">
+<div class="wrapper bg-light">
 	<div class="content fst-italic">
 		<div class="container">
 			<br>
@@ -66,14 +66,13 @@
 				<p>Nếu dây đàn của bạn bị lệch tông, bạn sẽ nghe thấy tiếng đập giữa hai âm thanh. Khi bạn chỉnh dây, cường độ tăng lên và sự va đập giảm xuống. Khi hai nốt tương ứng hoàn hảo, sự va đập chấm dứt, và hai nốt sẽ hoà làm một.</p>
 				<h2>Kho tra cứu hợp âm</h2>
 				<p>Ngoài ra để xem thêm nhiều hợp âm khác trên đàn guitar ta có thể xem thêm
-					<a class="text-muted text-decoration-underline" href="./chord_database.php">TẠI ĐÂY</a>
+					<a class="text-muted text-decoration-underline" href="./chords_find.php">TẠI ĐÂY</a>
 				</p>
 
 			</div>
 			<h2></h2>
 		</div>
 	</div>
-	<br><br><br><br><br><br><br><br><br>
 </div>
 <style>
 	p {
@@ -83,6 +82,9 @@
 
 	.dropdown--highlight {
 		padding-left: 0px;
+	}
+	#main-header .navbar {
+		margin-right:16px;
 	}
 </style>
 <link href="../library/guitar_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />

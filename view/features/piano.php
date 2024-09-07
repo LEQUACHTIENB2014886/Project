@@ -167,7 +167,7 @@
                             Am,</a>
                         <a class="text-muted" href="./piano.php?2c.2e.1g">
                             C,</a>
-                        <a class="text-muted" href="./piano.php?2c.2e.1g.2ais.3ais">
+                        <a class="text-muted" href="./piano.php?2c.2e.1g.2ais">
                             C7,</a>
                         <a class="text-muted" href="./piano.php?2a.2d.2e">
                             Asus4,</a>

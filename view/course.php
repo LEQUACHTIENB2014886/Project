@@ -57,7 +57,7 @@
         </a>
     </div>
 </div>
-</div><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br><br>
 <style>
     .back:hover {
         transform: scale(1.02);

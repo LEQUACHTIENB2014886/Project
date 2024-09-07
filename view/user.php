@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../public/css/login.css">
-<br>
+<br><br><br>
 <div class="custom-container rounded fadeHomepage" style="margin-top:0px">
     <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
@@ -51,6 +51,4 @@
         </div>
     </div>
 </div>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>

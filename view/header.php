@@ -1,4 +1,4 @@
-<!DOCTYPE html id="custom-doctype">
+<!DOCTYPE html >
 <html lang="en" class="full-height">
 
 <head>
@@ -53,7 +53,7 @@
             overflow-y: auto;
         }
 
-        .navbar-brand {
+        #main-header .navbar-brand {
             border: 1px solid white;
             padding: 5px 10px;
         }
