@@ -424,7 +424,13 @@ button:hover {
     top: 223px
 }
 
-
+.headstock-wrap .headstock {
+    position: relative;
+    height: 240px;
+    box-shadow: inset -10px 0 30px rgba(92, 58, 12, .3);
+    background-image: url(./maple-lg.jpg);
+    background-size: cover
+}
 
 .headstock-wrap .headstock .headstock-string-E {
     height: 3px;
@@ -549,7 +555,7 @@ button:hover {
 
 .guitar-neck-wrap li:first-of-type:before {
     content: "";
-    background-image: url(../../library/app_react/gdae.jpg);
+    background-image: url(./gdae.jpg);
     opacity: .8;
     top: 0;
     left: 0;
@@ -1165,7 +1171,7 @@ button:hover {
     position: relative;
     height: 200px;
     box-shadow: inset -10px 0 30px rgba(92, 58, 12, .3);
-    background-image: url(../../img/maple-lg.jpg);
+    background-image: url(./maple-lg.jpg);
     background-size: cover
 }
 
@@ -1277,7 +1283,7 @@ button:hover {
 
 .ukulele-neck-wrap li:first-of-type:before {
     content: "";
-    background-image: url(../../img/gdae.jpg);
+    background-image: url(./gdae.jpg);
     opacity: .8;
     top: 0;
     left: 0;
@@ -1528,7 +1534,15 @@ button:hover {
     }
 }
 
+@font-face {
+    font-family: Helsinki Std;
+    src: url(./HelsinkiStd.otf) format("truetype")
+}
 
+@font-face {
+    font-family: Opus Chords Std;
+    src: url(./OpusChordsStd.otf) format("truetype")
+}
 
 .chord-selector {
     display: flex;

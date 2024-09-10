@@ -2870,7 +2870,7 @@ article.my-profile {
     background-image: url(../images/checkbox_yes%402x.png)
 }
 
-/* .custom-checkbox input[type="checkbox"] {
+.custom-checkbox input[type="checkbox"] {
     margin: 0;
     position: absolute;
     z-index: 2;
@@ -2882,7 +2882,7 @@ article.my-profile {
     filter: alpha(opacity=0);
     -khtml-opacity: 0;
     -moz-opacity: 0
-} */
+}
 
 .main__footer {
     background-color: #58585a
@@ -4024,7 +4024,7 @@ span.inline_audio {
     vertical-align: middle;
     font-size: 1em;
     zoom: 1;
-    display: inline;
+    *display: inline;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -5653,7 +5653,7 @@ input[type=number] {
     vertical-align: middle;
     font-size: 1em;
     zoom: 1;
-    display: inline;
+    *display: inline;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;

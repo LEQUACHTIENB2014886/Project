@@ -8691,7 +8691,7 @@
                       for (var e = 0; e < He.length; e++)
                         Ye[He[e]] = new We.Howl({
                           src: [
-                            "../library/app_react/lydfiler/guitar/".concat(He[e], ".mp3"),
+                            "../library/interval-finder_react/lydfiler/guitar/".concat(He[e], ".mp3"),
                           ],
                         });
                       (ze.e0 = Ye.f1),
@@ -9287,7 +9287,7 @@
           n++
         )
           ot[n] = new We.Howl({
-            src: ["../library/app_react/lydfiler/piano/".concat(n, ".mp3")],
+            src: ["../library/interval-finder_react/lydfiler/piano/".concat(n, ".mp3")],
             volume: f,
           });
       })();
@@ -10406,7 +10406,8 @@
                       for (var e = 0; e < dt.length; e++)
                         gt[dt[e]] = new We.Howl({
                           src: [
-                            "../library/app_react/lydfiler/guitar/".concat(dt[e], ".mp3"),
+                            // "/lydfiler/guitar/classical/".concat(dt[e], ".mp3"),
+                            "../library/interval-finder_react/lydfiler/guitar/".concat(dt[e], ".mp3"),
                           ],
                         });
                       vt = {
