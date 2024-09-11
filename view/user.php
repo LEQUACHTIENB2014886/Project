@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="../public/css/login.css">
 <br><br><br>
-<div class="custom-container rounded fadeHomepage" style="margin-top:0px">
+
+<div class="custom-container rounded fadeHomepage">
     <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
             <a class="nav-link text-dark active" id="custom-login-tab" data-bs-toggle="tab" href="#custom-login">Đăng nhập</a>
@@ -52,3 +52,16 @@
     </div>
 </div>
 <br><br><br><br><br><br><br><br><br>
+<style>
+    .custom-container {
+        max-width: 450px;
+        margin: 0 auto;
+
+    }
+
+
+    .custom-container {
+        background-color: #ffffff;
+        padding: 30px;
+    }
+</style>

@@ -22,7 +22,7 @@
 </html>
 <style>
   body {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     min-height: 60vh;
   }
