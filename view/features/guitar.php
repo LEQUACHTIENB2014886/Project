@@ -10,16 +10,16 @@
 						<div itemprop="articleBody">
 							<div class="default__page__content">
 								<h1 class="text-center">Guitar Online</h1><br>
-								<link href="../library/guitar_react/files/scripts/virtual-guitar/static/css/app.css" rel="stylesheet">
+								<link href="../library/guitar/files/scripts/virtual-guitar/static/css/app.css" rel="stylesheet">
 								<script>
 									document.addEventListener('click', function() {
 										var audioContext = new(window.AudioContext || window.webkitAudioContext)();
 									});
 								</script>
 								<div id="classic-guitar"></div>
-								<script src="../library/guitar_react/files/scripts/virtual-guitar/translation/Vietnamese.js"></script>
-								<script src="../library/guitar_react/files/scripts/virtual-guitar/static/js/chunk-vendors.js"></script>
-								<script src="../library/guitar_react/files/scripts/virtual-guitar/static/js/note.js"></script>
+								<script src="../library/guitar/files/scripts/virtual-guitar/translation/Vietnamese.js"></script>
+								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/chunk-vendors.js"></script>
+								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/note.js"></script>
 							</div>
 						</div>
 					</article>
@@ -87,6 +87,6 @@
 		margin-right:16px;
 	}
 </style>
-<link href="../library/guitar_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
-<link href="../library/guitar_react/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
-<script src="../library/guitar_react/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
+<link href="../library/guitar/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
+<link href="../library/guitar/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
+<script src="../library/guitar/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
