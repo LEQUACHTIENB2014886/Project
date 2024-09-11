@@ -1,4 +1,3 @@
-<!-- Footer -->
 <footer class="text-center text-white" style="background-color: SlateGrey;">
   <div class="container">
     <div class="row align-items-center">
@@ -8,16 +7,9 @@
         </div>
       </div>
       <div class="col-lg-6 ml-lg-0 text-center text-md-end">
-        <!-- Facebook -->
         <a href="#" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
         <a href="#" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
         <a href="#" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
         <a href="#" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
       </div>
       <br><br><br>
@@ -25,7 +17,30 @@
     </div>
   </div>
 </footer>
-<!-- Footer -->
 </body>
 
 </html>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+  }
+
+  footer {
+    margin-top: auto;
+    background-color: SlateGrey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  footer hr {
+    border-top: 1px solid white;
+    margin: 20px 0;
+  }
+</style>

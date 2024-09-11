@@ -2877,7 +2877,7 @@ article.my-profile {
     cursor: pointer;
     outline: none;
     opacity: 0;
-    _noFocusLine: expression(this.hideFocus=true);
+    /* _noFocusLine: expression(this.hideFocus=true); */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     -khtml-opacity: 0;
@@ -4024,7 +4024,7 @@ span.inline_audio {
     vertical-align: middle;
     font-size: 1em;
     zoom: 1;
-    *display: inline;
+    /* *display: inline; */
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -5653,7 +5653,7 @@ input[type=number] {
     vertical-align: middle;
     font-size: 1em;
     zoom: 1;
-    *display: inline;
+    /* *display: inline; */
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;

@@ -43,6 +43,7 @@
             </div>
         </nav>
     </header>
+
     <style>
         body,
         html {
@@ -75,40 +76,16 @@
         }
 
         #main-header {
-            background-color: #33333300;
+            background-color: rgba(51, 51, 51, 0);
             color: white;
             padding: 10px;
-        }
-
-        #main-header .navbar {
-            z-index: 1;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.3);
         }
 
         #main-header .navbar-dark .navbar-nav .nav-link {
             color: #ffffff;
         }
 
-        #main-header .buttonToCourse {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: SlateGrey;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 20px;
-            border: 2px solid rgb(55, 66, 76);
-            transition: border-color 0.3s;
-        }
-
-        #main-header .buttonToCourse:hover {
-            border-color: whitesmoke;
-            color: white;
-        }
-
-        #main-header a {
-            text-decoration: none;
-        }
+        /* Other styles... */
 
         @keyframes fadeIn {
             from {
@@ -124,20 +101,6 @@
             animation: fadeIn 0.5s ease-in;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .fadefast {
-            animation: fadeIn 0.2s ease-in;
-        }
-
         .slide-in {
             opacity: 0;
             transform: translateX(-100%);
@@ -148,28 +111,8 @@
             opacity: 1;
             transform: translateX(0);
         }
-
-        #homepage-button .buttonToCourse {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: SlateGrey;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 20px;
-            border: 2px solid rgb(55, 66, 76);
-            transition: border-color 0.3s;
-        }
-
-        #homepage-button .buttonToCourse:hover {
-            border-color: whitesmoke;
-            color: white;
-        }
-
-        a {
-            text-decoration: none;
-        }
     </style>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
