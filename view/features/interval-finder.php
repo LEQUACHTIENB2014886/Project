@@ -4,7 +4,8 @@
 <script src="../library/interval-finder/merged_joomla_script.min9aa9.js?20231024"></script>
 <script src="../library/interval-finder/width_test.min5034.js?v=202402141905"></script>
 <!-- <link rel="stylesheet" href="../library/interval-finder/screen.mine4c3.css?v=?v=20240402160335"> -->
-<link rel="stylesheet" href="../library/interval-finder/guitar.css">
+<link rel="stylesheet" href="../public/css/guitar.css">
+<link rel="stylesheet" href="../public/css/piano.css">
 <script defer="" src="../library/interval-finder/app.minc683.js?v=?v=20231207215500"></script>
 
 
@@ -20,7 +21,7 @@
                                 <meta itemprop="inLanguage" content="en-GB">
                                 <div itemprop="articleBody">
                                     <div class="default__page__content">
-                                        <link href="../library/interval-finder/main.chunk.css" rel="stylesheet">
+                                        <link href="../library/interval-finder/strings.css" rel="stylesheet">
                                         <div id="interactive-finder">
                                             <div class="App">
                                                 <div class="chord-selector">
@@ -148,8 +149,8 @@
                                         </div>
                                         <script src="../library/interval-finder/translation/Vietnamese.js"></script>
                                         <script src="../library/interval-finder/keycodes.js"></script>
-                                        <script src="../library/interval-finder/script.chunk.js"></script>
-                                        <script src="../library/interval-finder/main.chunk.js"></script>
+                                        <script src="../library/interval-finder/audio.js"></script>
+                                        <script src="../library/interval-finder/process_audio.js"></script>
                                         <script src="../library/interval-finder/runtime_main.js"></script>
 
                                     </div>

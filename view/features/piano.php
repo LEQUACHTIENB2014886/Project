@@ -3,6 +3,7 @@
 <script src="../library/piano/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
 <script src="../library/piano/media/merged_joomla_script.min9aa9.js?20231024"></script>
 <script src="../library/piano/modules/mod_ads/js/min/width_test.min5034.js?v=202402141905"></script>
+<link rel="stylesheet" href="../public/css/piano.css">
 <div class="wrapper bg-white" style="margin-top:0px">
     <br>
     <div class="content fst-italic ">

@@ -1,86 +1,8 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   {
-    11: function (e) {
+    12: function (e) {
       e.exports = {
-        alteration_guitar: {
-          C: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "C#dim7": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "b" },
-          },
-          D: {
-            "": { 1: "#", 6: "#", 8: "b", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          E: {
-            "": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          F: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "b", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-            "F#dim7": { 1: "#", 3: "b", 6: "#", 8: "#", 10: "#" },
-          },
-          G: {
-            "": { 1: "b", 3: "b", 6: "#", 8: "b", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          A: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          B: {
-            "": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "#", 8: "b", 10: "b" },
-          },
-        },
-        alteration_ukulele: {
-          C: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "C#dim7": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "b" },
-          },
-          D: {
-            "": { 1: "#", 6: "#", 8: "b", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          E: {
-            "": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          F: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "b", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-            "F#dim7": { 1: "#", 3: "b", 6: "#", 8: "#", 10: "#" },
-          },
-          G: {
-            "": { 1: "b", 3: "b", 6: "#", 8: "b", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          A: {
-            "": { 1: "#", 3: "b", 6: "b", 8: "#", 10: "b" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b" },
-          },
-          B: {
-            "": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            "#": { 1: "#", 3: "#", 6: "#", 8: "#", 10: "#" },
-            b: { 1: "b", 3: "b", 6: "#", 8: "b", 10: "b" },
-          },
-        },
         alteration: {
           C: {
             "": { 1: "b", 3: "b", 6: "b", 8: "#", 10: "b", 13: "b", 15: "#" },
@@ -1979,7 +1901,7 @@
             { p: "4,3,4,3,4,x", f: "21314" },
           ],
           Abm9: [
-            { p: "4,3,5,3,4,3", f: "214131" },
+            { p: "4,6,4,4,4,6", f: "131141" },
             { p: "x,11,9,11,11,x", f: "2134;2133" },
             { p: "x,11,9,11,11,11", f: "21333" },
             { p: "x,x,6,4,7,6", f: "2143" },
@@ -2842,7 +2764,7 @@
             { p: "x,3,2,2,0,0", f: "312" },
           ],
           Cadd9: [
-            { p: "x,3,0,0,3,0", f: "12" },
+            { p: "x,3,2,0,3,0", f: "12" },
             { p: "x,x,10,9,8,10", f: "3214" },
             { p: "x,3,2,0,3,3", f: "2134" },
             { p: "x,3,5,7,5,3", f: "12431" },
@@ -3233,6 +3155,10 @@
             { p: "10,x,10,10,12,12", f: "23344;12344" },
             { p: "x,5,7,5,6,7", f: "13124" },
             { p: "x,5,3,5,5,7", f: "21334" },
+          ],
+          DMaj13: [
+            { p: "x,5,4,4,2,2", f: "43211" },
+            { p: "10,10,11,11,12,12", f: "111234" },
           ],
           Dadd9: [
             { p: "x,x,0,2,5,2", f: "141" },
@@ -3825,10 +3751,10 @@
             { p: "x,8,x,8,9,6", f: "2341" },
           ],
           FMaj11: [
-            { p: "1, 1, 2, 0, 1, 0", f: "1243" },
-            { p: "1, 0, 3, 3, 1, 0 ", f: "" },
-            { p: "x, 8, 8, 9, 10, 8", f: "" },
-            { p: "13, 13, 14, 14, x, 13", f: "" },
+            { p: "1,1,2,0,1,0", f: "1243" },
+            { p: "1,0,3,3,1,0", f: "" },
+            { p: "x,8,8,9,10,8", f: "" },
+            { p: "13,13,14,14,x,13", f: "" },
           ],
           F13: [
             { p: "1,0,0,0,4,3", f: "132" },
@@ -4209,7 +4135,7 @@
             { p: "3,x,4,2,3,x", f: "2413" },
           ],
           G11: [
-            { p: "3,3,3,4,3,5", f: "111214" },
+            { p: "3,x,3,2,1,1", f: "34211" },
             { p: "3,5,3,5,3,5", f: "121314" },
             { p: "x,10,10,10,10,10", f: "11111" },
             { p: "x,10,9,10,8,8", f: "32411" },
@@ -5337,12 +5263,6 @@
             { p: "7,9,8,10", f: "1324" },
             { p: "12,12,10,12", f: "2314" },
           ],
-          D6: [
-            { p: "4,2,2,0", f: "412" },
-            { p: "4,6,5,5", f: "1423" },
-            { p: "7,9,7,9", f: "1324" },
-            { p: "11,11,10,12", f: "2213" },
-          ],
           Dm6: [
             { p: "4,2,1,0", f: "421" },
             { p: "4,5,5,5", f: "1234" },
@@ -5393,6 +5313,12 @@
             { p: "6,6,7,7", f: "1122" },
             { p: "9,11,9,9", f: "1311" },
             { p: "11,13,12,14", f: "1324" },
+          ],
+          D6: [
+            { p: "4,2,2,0", f: "412" },
+            { p: "4,6,5,5", f: "1423" },
+            { p: "7,9,7,9", f: "1324" },
+            { p: "11,11,10,12", f: "2213" },
           ],
           Dadd9: [
             { p: "2,4,2,5", f: "1314" },
@@ -6309,8 +6235,8 @@
     },
     33: function (e) {
       e.exports = {
-        semitones: { "": [-24, -12, 0, 12, 24] },
-        scaleSteps: { "": [1] },
+        semitones: { "": [-12, 0, 12] },
+        scaleSteps: { "": [1, 13, 25] },
         accidentals: {
           C: { "": {} },
           D: { "": {} },
@@ -6423,15 +6349,6 @@
         accidentals: {
           C: {
             "": { 1: "b", 3: "b", 6: "b", 8: "b", 10: "b", 13: "b", 15: "#" },
-            chromatic: {
-              1: "#",
-              3: "#",
-              6: "#",
-              8: "#",
-              10: "#",
-              13: "#",
-              15: "#",
-            },
             bchromatic: {
               0: "b",
               2: "b",
@@ -6440,6 +6357,15 @@
               9: "b",
               11: "b",
               12: "b",
+            },
+            chromatic: {
+              1: "#",
+              3: "#",
+              6: "#",
+              8: "#",
+              10: "#",
+              13: "#",
+              15: "#",
             },
             "#chromatic": { 0: "#", 2: "#", 5: "#", 7: "#", 9: "#", 12: "#" },
             bwhole_tone: {
@@ -6471,7 +6397,7 @@
               11: "#",
               12: "#",
             },
-            half_whole_diminished: {
+            lydian: {
               1: "b",
               3: "b",
               6: "#",
@@ -6480,7 +6406,7 @@
               13: "b",
               15: "#",
             },
-            lydian: {
+            half_whole_diminished: {
               1: "b",
               3: "b",
               6: "#",
@@ -6501,8 +6427,8 @@
           },
           D: {
             "": { 1: "b", 4: "#", 6: "#", 8: "b", 11: "#" },
-            chromatic: { 1: "#", 4: "#", 6: "#", 8: "#", 11: "#" },
             bchromatic: { 0: "b", 2: "b", 5: "b", 7: "b", 9: "b", 12: "b" },
+            chromatic: { 1: "#", 4: "#", 6: "#", 8: "#", 11: "#" },
             "#chromatic": { 0: "#", 3: "#", 5: "#", 7: "#", 10: "#", 12: "#" },
             blues: { 1: "#", 4: "#", 6: "b", 8: "b", 11: "#" },
             locrian: { 1: "b", 4: "#", 6: "b", 8: "b", 11: "#" },
@@ -6513,8 +6439,8 @@
           },
           E: {
             "": { 2: "#", 4: "#", 6: "b", 9: "#", 11: "#", 14: "#", 21: "#" },
-            chromatic: { 2: "#", 4: "#", 6: "#", 9: "#", 11: "#" },
             bchromatic: { 0: "b", 3: "b", 5: "b", 7: "b", 10: "b" },
+            chromatic: { 2: "#", 4: "#", 6: "#", 9: "#", 11: "#" },
             "#chromatic": {
               0: "#",
               1: "#",
@@ -6576,6 +6502,7 @@
               1: "b",
               3: "b",
               5: "b",
+              6: "b",
               8: "b",
               10: "b",
               13: "b",
@@ -6612,6 +6539,36 @@
               17: "b",
             },
             "#whole_tone": { 0: "#", 2: "#", 4: "#", 6: "#", 9: "#", 12: "#" },
+            lydian: {
+              1: "b",
+              3: "b",
+              5: "b",
+              8: "b",
+              10: "b",
+              13: "b",
+              15: "#",
+              17: "b",
+            },
+            half_whole_diminished: {
+              1: "b",
+              3: "b",
+              5: "b",
+              8: "b",
+              10: "b",
+              13: "b",
+              15: "#",
+              17: "b",
+            },
+            hungarian_minor: {
+              1: "b",
+              3: "b",
+              5: "b",
+              8: "b",
+              10: "b",
+              13: "b",
+              15: "#",
+              17: "b",
+            },
           },
           G: {
             "": { 1: "b", 3: "b", 6: "b", 8: "b", 11: "#", 13: "b", 15: "#" },
@@ -6668,8 +6625,8 @@
               15: "#",
               21: "#",
             },
-            chromatic: { 1: "#", 4: "#", 6: "#", 9: "#", 11: "#" },
             bchromatic: { 0: "b", 2: "b", 5: "b", 7: "b", 10: "b", 12: "b" },
+            chromatic: { 1: "#", 4: "#", 6: "#", 9: "#", 11: "#" },
             "#chromatic": { 0: "#", 3: "#", 5: "#", 8: "#", 10: "#", 12: "#" },
             lydian: {
               1: "b",
@@ -6724,6 +6681,16 @@
           },
           B: {
             "": { 2: "#", 4: "#", 7: "#", 9: "#", 11: "#", 14: "#", 21: "#" },
+            lydian: {
+              2: "#",
+              4: "#",
+              6: "#",
+              7: "#",
+              9: "#",
+              11: "#",
+              14: "#",
+              21: "#",
+            },
             bchromatic: { 0: "b", 3: "b", 5: "b", 8: "b", 10: "b", 12: "b" },
             "#chromatic": {
               0: "#",
@@ -6916,17 +6883,17 @@
       f.r(t);
       var n = f(0),
         a = f.n(n),
-        p = f(13),
+        p = f(14),
         i = f.n(p),
         r = f(2),
         o = f(3),
         s = f(5),
         c = f(4),
         x = f(1),
-        l = f(9),
-        m = f(7),
-        b = f(21),
-        u = f(11),
+        l = f(7),
+        m = f(8),
+        u = f(21),
+        b = f(12),
         d = f(33),
         h = f(34),
         E = f(35),
@@ -6934,8 +6901,8 @@
         v = window.translation.finder_name,
         y = "chord finder" === v,
         C = "scale finder" === v,
-        _ = "interval finder" === v,
-        j = "note finder" === v,
+        j = "interval finder" === v,
+        _ = "note finder" === v,
         A = {
           "chord finder": g,
           "scale finder": h,
@@ -6952,13 +6919,13 @@
           { value: "A", label: D.A },
           { value: "B", label: D.B },
         ],
-        F = [
+        M = [
           { value: "natural", label: "\u266e", sign: "", symbol: "" },
           { value: "sharp", label: "\xa9", sign: "\xa9", symbol: "#" },
           { value: "flat", label: "\xa8", sign: "\xa8", symbol: "b" },
         ];
-      j &&
-        F.push(
+      _ &&
+        M.push(
           { value: "double_sharp", label: "x", sign: "x", symbol: "x" },
           {
             value: "double_flat",
@@ -6968,7 +6935,7 @@
           }
         );
       for (
-        var M = {
+        var F = {
             "chord finder": ["C", "E", "G"],
             "scale finder": ["C", "D", "E", "F", "G", "A", "B", "C"],
             "interval finder": ["C", "C"],
@@ -6989,31 +6956,54 @@
           k = {},
           w = {},
           S = ["B", "C", "D", "E", "F", "G", "A"],
-          P = 0,
-          T = 0;
-        T < 3;
-        T++
+          O = 0,
+          P = 0;
+        P < 3;
+        P++
       )
-        for (var O = 0; O < S.length; O++) {
-          var R = S[O];
-          (k[P] = R), P++;
+        for (var T = 0; T < S.length; T++) {
+          var R = S[T];
+          (k[O] = R), O++;
         }
       for (var I = -12, L = 0; L < 4; L++)
         for (var H = 0; H < 12; H++) (w[I] = H), I++;
       var U = {
-        C: { sound: 0, index: 0 },
-        D: { sound: 2, index: 1 },
-        E: { sound: 4, index: 2 },
-        F: { sound: 5, index: 3 },
-        G: { sound: 7, index: 4 },
-        A: { sound: 9, index: 5 },
-        B: { sound: 11, index: 6 },
-      };
-      function K(e) {
+          C: { sound: 0, index: 0 },
+          D: { sound: 2, index: 1 },
+          E: { sound: 4, index: 2 },
+          F: { sound: 5, index: 3 },
+          G: { sound: 7, index: 4 },
+          A: { sound: 9, index: 5 },
+          B: { sound: 11, index: 6 },
+        },
+        K = {
+          control: function (e) {
+            return Object(l.a)({}, e, {
+              boxShadow: "#72ac51",
+              borderColor: "hsl(0, 0%, 80%)",
+              "&:hover": { borderColor: "hsl(0, 0%, 70%)" },
+              cursor: "pointer",
+            });
+          },
+          option: function (e, t) {
+            return Object(l.a)({}, e, {
+              backgroundColor: t.isSelected ? "#72ac51" : "#fff",
+              cursor: "pointer",
+              "&:hover": {
+                backgroundColor: "hsl(98, 36%, 50%, 0.3)",
+                color: "#000",
+              },
+            });
+          },
+          singleValue: function (e) {
+            return Object(l.a)({}, e, { color: "rgb(128, 128, 128)" });
+          },
+        };
+      function W(e) {
         var t = e.chord,
           f = e.altered,
           n = e.interval,
-          a = u.alteration,
+          a = b.alteration,
           p = A.semitones,
           i = A.scaleSteps,
           r = A.accidentals,
@@ -7047,10 +7037,10 @@
             null
           );
         });
-        var b = B(t, f),
+        var u = B(t, f),
           d = [],
           h = o.map(function (e, t) {
-            return d.push(t), C ? t : w[e + b];
+            return d.push(t), C ? t : w[e + u];
           }),
           E = l.map(function (e, t) {
             return e + m[t];
@@ -7059,10 +7049,10 @@
           l.map(function (e, t) {
             return (E[h[t]] = e + m[t]);
           }),
-          Math.max.apply(null, o) + b + 12 <= 35 && (b += 12);
+          Math.max.apply(null, o) + u + 12 <= 35 && (u += 12);
         var g = ["G", "A", "B"].includes(t),
           v = ["E#", "F", "F#"].includes(t + f),
-          _ = [
+          j = [
             "Fb13",
             "Fbm13",
             "FbMaj13",
@@ -7076,361 +7066,358 @@
             "D#m13",
             "D#Maj13",
           ].includes(t + f + n);
-        (g || v || _) && b - 12 > 0 && (b -= 12);
-        var j = o.map(function (e) {
-          return e + b;
+        (g || v || j) && u - 12 > 0 && (u -= 12);
+        var _ = o.map(function (e) {
+          return e + u;
         });
         return {
           chordNotes: l,
           notesInChordSign: m,
-          getNoteNum: j,
+          getNoteNum: _,
           getNumPosHighlight: h,
           getNumPosHighlightScales: d,
           noteNamesGuitar: E,
         };
       }
-      var W = window.translation.element_dropdown,
-        Y = function () {
+      var Y = window.translation.element_dropdown,
+        z = function () {
           var e = {};
           return (
-            Object.keys(W).map(function (t, f) {
-              return (e[t] = W[t].replace(/@/gi, ""));
+            Object.keys(Y).map(function (t, f) {
+              return (e[t] = Y[t].replace(/@/gi, ""));
             }),
             [
-              { minor: "", name: "major", value: W.major, label: e.major },
+              { minor: "", name: "major", value: Y.major, label: e.major },
               {
                 minor: "",
                 name: "natural_minor",
-                value: W.natural_minor,
+                value: Y.natural_minor,
                 label: e.natural_minor,
               },
               {
                 minor: "",
                 name: "harmonic_minor",
-                value: W.harmonic_minor,
+                value: Y.harmonic_minor,
                 label: e.harmonic_minor,
               },
               {
                 minor: "",
                 name: "melodic_minor",
-                value: W.melodic_minor,
+                value: Y.melodic_minor,
                 label: e.melodic_minor,
               },
               {
                 minor: "",
                 name: "major_pentatonic",
-                value: W.major_pentatonic,
+                value: Y.major_pentatonic,
                 label: e.major_pentatonic,
               },
               {
                 minor: "",
                 name: "minor_pentatonic",
-                value: W.minor_pentatonic,
+                value: Y.minor_pentatonic,
                 label: e.minor_pentatonic,
               },
-              { minor: "", name: "blues", value: W.blues, label: e.blues },
-              { minor: "", name: "ionian", value: W.ionian, label: e.ionian },
-              { minor: "", name: "dorian", value: W.dorian, label: e.dorian },
+              { minor: "", name: "blues", value: Y.blues, label: e.blues },
+              { minor: "", name: "ionian", value: Y.ionian, label: e.ionian },
+              { minor: "", name: "dorian", value: Y.dorian, label: e.dorian },
               {
                 minor: "",
                 name: "phrygian",
-                value: W.phrygian,
+                value: Y.phrygian,
                 label: e.phrygian,
               },
-              { minor: "", name: "lydian", value: W.lydian, label: e.lydian },
+              { minor: "", name: "lydian", value: Y.lydian, label: e.lydian },
               {
                 minor: "",
                 name: "mixolydian",
-                value: W.mixolydian,
+                value: Y.mixolydian,
                 label: e.mixolydian,
               },
               {
                 minor: "",
                 name: "aeolian",
-                value: W.aeolian,
+                value: Y.aeolian,
                 label: e.aeolian,
               },
               {
                 minor: "",
                 name: "locrian",
-                value: W.locrian,
+                value: Y.locrian,
                 label: e.locrian,
               },
               {
                 minor: "",
                 name: "chromatic",
-                value: W.chromatic,
+                value: Y.chromatic,
                 label: e.chromatic,
               },
               {
                 minor: "",
                 name: "whole_tone",
-                value: W.whole_tone,
+                value: Y.whole_tone,
                 label: e.whole_tone,
               },
               {
                 minor: "",
                 name: "half_whole_diminished",
-                value: W.half_whole_diminished,
+                value: Y.half_whole_diminished,
                 label: e.half_whole_diminished,
               },
               {
                 minor: "",
                 name: "whole_half_diminished",
-                value: W.whole_half_diminished,
+                value: Y.whole_half_diminished,
                 label: e.whole_half_diminished,
               },
               {
                 minor: "",
                 name: "bebop_major",
-                value: W.bebop_major,
+                value: Y.bebop_major,
                 label: e.bebop_major,
               },
               {
                 minor: "",
                 name: "bebop_dominant",
-                value: W.bebop_dominant,
+                value: Y.bebop_dominant,
                 label: e.bebop_dominant,
               },
               {
                 minor: "",
                 name: "harmonic_major",
-                value: W.harmonic_major,
+                value: Y.harmonic_major,
                 label: e.harmonic_major,
               },
               {
                 minor: "",
                 name: "hungarian_minor",
-                value: W.hungarian_minor,
+                value: Y.hungarian_minor,
                 label: e.hungarian_minor,
               },
             ]
           );
         },
-        z = window.translation.element_dropdown,
-        V = function () {
+        V = window.translation.element_dropdown,
+        X = function () {
           return [
-            { name: "", minor: "", value: "", label: z.major },
-            { name: "m", minor: "m", value: "m", label: z.minor },
+            { name: "", minor: "", value: "", label: V.major },
+            { name: "m", minor: "m", value: "m", label: V.minor },
             {
               name: "dim",
               minor: "",
               value:
-                '<span class="sign-dim"><svg height="30" width="30"><circle cx="15" cy="15" r="12" stroke="#72ac51" stroke-width="4" fill="#fff" /></svg></span>',
-              label: z.diminished,
+                '<sup style="top: 0;"><svg height="30" width="30"><circle cx="13" cy="13" r="10" stroke="#72ac51" stroke-width="3" fill="#fff" /></svg></sup>',
+              label: V.diminished,
             },
             {
               name: "aug",
               minor: "",
-              value: '<span class="sign-dim">+</span>',
-              label: z.augmented,
+              value: '<sup style="font-size: 40px;">+</sup>',
+              label: V.augmented,
             },
-            { name: "7", minor: "", value: "7", label: z[7] },
-            { name: "m7", minor: "m", value: "m7", label: z.m7 },
+            { name: "7", minor: "", value: "<sup>7</sup>", label: V[7] },
+            { name: "m7", minor: "m", value: "m<sup>7</sup>", label: V.m7 },
             {
               name: "Maj7",
               minor: "",
-              value: "<span class='sign-maj'>\ua554</span>",
-              label: z.maj7,
+              value: "<sup>maj7</sup>",
+              label: V.maj7,
             },
             {
               name: "dim7",
               minor: "",
-              value:
-                '<span class="sign-dim"><svg height="30" width="30"><circle cx="15" cy="15" r="12" stroke="#72ac51" stroke-width="4" fill="#fff" /></svg></span>7',
-              label: z.dim7,
+              value: "<sup>dim7</sup>",
+              label: V.dim7,
             },
             {
               name: "m7b5",
               minor: "m",
-              value: "m7(<span class='--accidentals'>\xa8</span>5)",
-              label: z["m7(\u266d5)"],
+              value: "m<sup>7(<span class='--accidentals'>\xa8</span>5)</sup>",
+              label: V["m7(\u266d5)"],
             },
-            { name: "sus4", minor: "", value: "sus4", label: z.sus4 },
-            { name: "sus2", minor: "", value: "sus2", label: z.sus2 },
-            { name: "7sus4", minor: "", value: "7sus4", label: z["7sus4"] },
-            { name: "6", minor: "", value: "6", label: z[6] },
-            { name: "m6", minor: "m", value: "m6", label: z.m6 },
-            { name: "9", minor: "", value: "9", label: z[9] },
-            { name: "m9", minor: "m", value: "m9", label: z.m9 },
+            {
+              name: "sus4",
+              minor: "",
+              value: "<sup>sus4</sup>",
+              label: V.sus4,
+            },
+            {
+              name: "sus2",
+              minor: "",
+              value: "<sup>sus2</sup>",
+              label: V.sus2,
+            },
+            {
+              name: "7sus4",
+              minor: "",
+              value: "<sup>7sus4</sup>",
+              label: V["7sus4"],
+            },
+            { name: "6", minor: "", value: "<sup>6</sup>", label: V[6] },
+            { name: "m6", minor: "m", value: "m<sup>6</sup>", label: V.m6 },
+            { name: "9", minor: "", value: "<sup>9</sup>", label: V[9] },
+            { name: "m9", minor: "m", value: "m<sup>9</sup>", label: V.m9 },
             {
               name: "Maj9",
               minor: "",
-              value: "<span class='sign-maj'>\ua554</span>9",
-              label: z.maj9,
+              value: "<sup>maj9</sup>",
+              label: V.maj9,
             },
-            {
-              name: "11",
-              minor: "",
-              value: '<span class="sign-spacing">11</span>',
-              label: z[11],
-            },
-            {
-              name: "m11",
-              minor: "m",
-              value: "m<span class='sign-spacing'>11</span>",
-              label: z.m11,
-            },
+            { name: "11", minor: "", value: "<sup>11</sup>", label: V[11] },
+            { name: "m11", minor: "m", value: "m<sup>11</sup>", label: V.m11 },
             {
               name: "Maj11",
               minor: "",
-              value:
-                "<span class='sign-maj'>\ua554</span><span class='sign-spacing'>11</span>",
-              label: z.maj11,
+              value: "<sup>maj11</sup>",
+              label: V.maj11,
             },
-            {
-              name: "13",
-              minor: "",
-              value: "<span class='sign-spacing'>13</span>",
-              label: z[13],
-            },
-            {
-              name: "m13",
-              minor: "m",
-              value: "m<span class='sign-spacing'>13</span>",
-              label: z.m13,
-            },
+            { name: "13", minor: "", value: "<sup>13</sup>", label: V[13] },
+            { name: "m13", minor: "m", value: "m<sup>13</sup>", label: V.m13 },
             {
               name: "Maj13",
               minor: "",
-              value:
-                "<span class='sign-maj'>\ua554</span><span class='sign-spacing'>13</span>",
-              label: z.maj13,
+              value: "<sup>maj13</sup>",
+              label: V.maj13,
             },
-            { name: "add9", minor: "", value: "add9", label: z.add9 },
-            { name: "69", minor: "", value: "6/9", label: z["6/9"] },
-            { name: "5", minor: "", value: "5", label: z[5] },
+            {
+              name: "add9",
+              minor: "",
+              value: "<sup>add9</sup>",
+              label: V.add9,
+            },
+            { name: "69", minor: "", value: "<sup>6/9</sup>", label: V["6/9"] },
+            { name: "5", minor: "", value: "<sup>5</sup>", label: V[5] },
             {
               name: "7b5",
               minor: "",
-              value: "7(<span class='--accidentals'>\xa8</span>5)",
-              label: z["7(\u266d5)"],
+              value: "<sup>7(<span class='--accidentals'>\xa8</span>5)</sup>",
+              label: V["7(\u266d5)"],
             },
             {
               name: "7b9",
               minor: "",
-              value: "7(<span class='--accidentals'>\xa8</span>9)",
-              label: z["7(\u266d9)"],
+              value: "<sup>7(<span class='--accidentals'>\xa8</span>9)</sup>",
+              label: V["7(\u266d9)"],
             },
             {
               name: "7#9",
               minor: "",
-              value: "7(<span class='--accidentals'>\xa9</span>9)",
-              label: z["7(\u266f9)"],
+              value: "<sup>7(<span class='--accidentals'>\xa9</span>9)</sup>",
+              label: V["7(\u266f9)"],
             },
           ];
         },
-        X = window.translation.element_dropdown,
-        J = function () {
+        J = window.translation.element_dropdown,
+        Z = function () {
           var e = {};
           return (
-            Object.keys(X).map(function (t, f) {
-              return (e[t] = X[t].replace(/@/gi, ""));
+            Object.keys(J).map(function (t, f) {
+              return (e[t] = J[t].replace(/@/gi, ""));
             }),
             [
-              { minor: "", name: "unison", value: X.unison, label: e.unison },
+              { minor: "", name: "unison", value: J.unison, label: e.unison },
               {
                 minor: "",
                 name: "minor_second",
-                value: X.minor_second,
+                value: J.minor_second,
                 label: e.minor_second,
               },
               {
                 minor: "",
                 name: "major_second",
-                value: X.major_second,
+                value: J.major_second,
                 label: e.major_second,
               },
               {
                 minor: "",
                 name: "minor_third",
-                value: X.minor_third,
+                value: J.minor_third,
                 label: e.minor_third,
               },
               {
                 minor: "",
                 name: "major_third",
-                value: X.major_third,
+                value: J.major_third,
                 label: e.major_third,
               },
               {
                 minor: "",
                 name: "perfect_fourth",
-                value: X.perfect_fourth,
+                value: J.perfect_fourth,
                 label: e.perfect_fourth,
               },
               {
                 minor: "",
                 name: "augmented_fourth",
-                value: X.augmented_fourth,
+                value: J.augmented_fourth,
                 label: e.augmented_fourth,
               },
               {
                 minor: "",
                 name: "diminished_fifth",
-                value: X.diminished_fifth,
+                value: J.diminished_fifth,
                 label: e.diminished_fifth,
               },
               {
                 minor: "",
                 name: "perfect_fifth",
-                value: X.perfect_fifth,
+                value: J.perfect_fifth,
                 label: e.perfect_fifth,
               },
               {
                 minor: "",
                 name: "minor_sixth",
-                value: X.minor_sixth,
+                value: J.minor_sixth,
                 label: e.minor_sixth,
               },
               {
                 minor: "",
                 name: "major_sixth",
-                value: X.major_sixth,
+                value: J.major_sixth,
                 label: e.major_sixth,
               },
               {
                 minor: "",
                 name: "minor_seventh",
-                value: X.minor_seventh,
+                value: J.minor_seventh,
                 label: e.minor_seventh,
               },
               {
                 minor: "",
                 name: "major_seventh",
-                value: X.major_seventh,
+                value: J.major_seventh,
                 label: e.major_seventh,
               },
-              { minor: "", name: "octave", value: X.octave, label: e.octave },
+              { minor: "", name: "octave", value: J.octave, label: e.octave },
               {
                 minor: "",
                 name: "minor_ninth",
-                value: X.minor_ninth,
+                value: J.minor_ninth,
                 label: e.minor_ninth,
               },
               {
                 minor: "",
                 name: "major_ninth",
-                value: X.major_ninth,
+                value: J.major_ninth,
                 label: e.major_ninth,
               },
               {
                 minor: "",
                 name: "minor_tenth",
-                value: X.minor_tenth,
+                value: J.minor_tenth,
                 label: e.minor_tenth,
               },
               {
                 minor: "",
                 name: "major_tenth",
-                value: X.major_tenth,
+                value: J.major_tenth,
                 label: e.major_tenth,
               },
             ]
           );
         };
       f(51);
-      function Z(e) {
+      function $(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -7456,25 +7443,25 @@
           return Object(c.a)(this, f);
         };
       }
-      var $ = window.translation,
-        q = $.notes_text,
-        Q = $.notes_text_chromatic,
-        ee = $.root_note_dropdown,
-        te = $.root_note_green_circle,
-        fe = $.root_note_accidentals,
-        ne = $.element_dropdown,
-        ae = $.text_before_root_note,
-        pe = $.text_after_root_note,
-        ie = $.finder_name,
-        re = (function (e) {
+      var q = window.translation,
+        Q = q.notes_text,
+        ee = q.notes_text_chromatic,
+        te = q.root_note_dropdown,
+        fe = q.root_note_green_circle,
+        ne = q.root_note_accidentals,
+        ae = q.element_dropdown,
+        pe = q.text_before_root_note,
+        ie = q.text_after_root_note,
+        re = q.finder_name,
+        oe = (function (e) {
           Object(s.a)(f, e);
-          var t = Z(f);
+          var t = $(f);
           function f(e) {
             var n;
             return (
               Object(r.a)(this, f),
               ((n = t.call(this, e)).handleChange = function (e) {
-                var t = K({
+                var t = W({
                     chord: e.value,
                     altered: n.state.symbol,
                     interval: n.state.names.interval,
@@ -7498,7 +7485,7 @@
                   n.props.onChordUpdate(e.value);
               }),
               (n.handleAlteration = function (e) {
-                var t = K({
+                var t = W({
                     chord: n.state.chordName,
                     altered: e.symbol,
                     interval: n.state.names.interval,
@@ -7523,7 +7510,7 @@
                   });
               }),
               (n.handleIntervals = function (e) {
-                var t = K({
+                var t = W({
                     chord: n.state.chordName,
                     altered: n.state.symbol,
                     interval: e.name,
@@ -7548,20 +7535,20 @@
                   n.props.onIntervalUpdate(e.name);
               }),
               (n.state = {
-                chord: ee.C,
+                chord: te.C,
                 chordName: "C",
                 altered: "",
                 interval: "",
                 symbol: "",
                 minor: "",
-                chordNotes: M[ie],
+                chordNotes: F[re],
                 notesInChordSign: ["", "", ""],
                 notesToHighlightScales: [0, 1, 2],
                 notesToHighlightPiano: [12, 16, 19],
                 notesToHighlightGuitars: [0, 4, 7],
                 names: { chord: "C", altered: "", interval: "" },
               }),
-              (n.intervals = C ? Y() : _ ? J() : V()),
+              (n.intervals = C ? z() : j ? Z() : X()),
               n
             );
           }
@@ -7570,7 +7557,7 @@
               {
                 key: "componentDidMount",
                 value: function () {
-                  var e = K({
+                  var e = W({
                       chord: this.state.chordName,
                       altered: this.state.symbol,
                       interval: "",
@@ -7597,35 +7584,44 @@
                     t = this.state,
                     f = t.chord,
                     n = t.chordName,
-                    p = t.interval,
-                    i = t.chordNotes,
-                    r = t.notesInChordSign,
-                    o = t.minor,
-                    s = t.notesToHighlightPiano,
-                    c = t.notesToHighlightGuitars,
-                    x = t.notesToHighlightScales,
-                    m = t.symbol,
-                    u = t.names,
-                    d = this.props,
-                    h = d.note,
-                    E = d.instrument,
-                    g = "".concat(fe[n + m]),
-                    v = p;
-                  y ||
-                    j ||
-                    ((v = p.includes("@")
-                      ? "<p>".concat(
-                          p.replace(/@/gi, "".concat(ae).concat(g).concat(pe)),
-                          "</p>"
-                        )
-                      : "<p>"
-                          .concat(ae)
-                          .concat(g)
-                          .concat(pe)
-                          .concat(p, "</p>")),
-                    (g = ""));
-                  var C = "chromatic" === u.interval,
-                    A = {
+                    p = t.altered,
+                    i = t.interval,
+                    r = t.chordNotes,
+                    o = t.notesInChordSign,
+                    s = t.minor,
+                    c = t.notesToHighlightPiano,
+                    x = t.notesToHighlightGuitars,
+                    m = t.notesToHighlightScales,
+                    b = t.symbol,
+                    d = t.names,
+                    h = this.props,
+                    E = h.note,
+                    g = h.instrument,
+                    v = "".concat(ne[n + b]),
+                    C = i;
+                  "\xa9" === p &&
+                    (v = v.replace(
+                      "<span class='--accidentals'>",
+                      "<span class='--accidentals' style='vertical-align: middle;'>"
+                    )),
+                    y ||
+                      _ ||
+                      ((C = i.includes("@")
+                        ? "<p>".concat(
+                            i.replace(
+                              /@/gi,
+                              "".concat(pe).concat(v).concat(ie)
+                            ),
+                            "</p>"
+                          )
+                        : "<p>"
+                            .concat(pe)
+                            .concat(v)
+                            .concat(ie)
+                            .concat(i, "</p>")),
+                      (v = ""));
+                  var A = "chromatic" === d.interval,
+                    D = {
                       container: function (e) {
                         return Object(l.a)({}, e, { minWidth: y ? 135 : 210 });
                       },
@@ -7633,7 +7629,7 @@
                   return a.a.createElement(
                     "div",
                     {
-                      className: j
+                      className: _
                         ? "chord-selector notes-finder"
                         : "chord-selector",
                     },
@@ -7642,49 +7638,91 @@
                       { className: "selector-wrap" },
                       a.a.createElement(
                         "div",
-                        {
-                          className: j
-                            ? "selector-chord-name notes-finder"
-                            : "selector-chord-name",
-                        },
+                        { className: "selector-chord-name" },
                         a.a.createElement("span", {
-                          dangerouslySetInnerHTML: { __html: g },
+                          className: "selector-root-alter",
+                          dangerouslySetInnerHTML: { __html: v },
                         }),
                         a.a.createElement(
                           "span",
                           { className: "selector-minor" },
-                          o
+                          s
                         ),
                         a.a.createElement("span", {
                           className: "selector-interval",
                           dangerouslySetInnerHTML: {
-                            __html: "m" === o ? p.slice(1) : v,
+                            __html: "m" === s ? i.slice(1) : C,
                           },
                         })
                       ),
                       a.a.createElement(
                         "div",
                         { className: "selector" },
-                        a.a.createElement(b.a, {
+                        a.a.createElement(u.a, {
                           placeholder: f,
                           onChange: this.handleChange,
                           options: N,
                           isSearchable: !1,
                           blurInputOnSelect: !0,
                           className: "select-chord",
+                          styles: Object(l.a)({}, K, {
+                            menu: function (e) {
+                              return Object(l.a)({}, e, {
+                                marginTop: 0,
+                                paddingTop: 0,
+                                paddingBottom: 0,
+                              });
+                            },
+                            menuList: function (e) {
+                              return Object(l.a)({}, e, { padding: 0 });
+                            },
+                          }),
                         }),
-                        a.a.createElement(b.a, {
+                        a.a.createElement(u.a, {
                           placeholder: "\u266e",
                           onChange: this.handleAlteration,
-                          options: F,
+                          options: M,
                           isSearchable: !1,
                           blurInputOnSelect: !0,
                           className: "select",
+                          styles: Object(l.a)({}, K, {
+                            menu: function (e) {
+                              return Object(l.a)({}, e, {
+                                marginTop: 0,
+                                paddingTop: 0,
+                                paddingBottom: 0,
+                              });
+                            },
+                            menuList: function (e) {
+                              return Object(l.a)({}, e, { padding: 0 });
+                            },
+                            singleValue: function (e) {
+                              return Object(l.a)({}, e, {
+                                color: "rgb(128, 128, 128)",
+                                top: "60%",
+                              });
+                            },
+                          }),
                         }),
-                        !j &&
-                          a.a.createElement(b.a, {
-                            styles: A,
-                            placeholder: ne[_ ? "unison" : "major"].replace(
+                        !_ &&
+                          a.a.createElement(u.a, {
+                            styles: Object(l.a)({}, K, D, {
+                              menu: function (e) {
+                                return Object(l.a)({}, e, {
+                                  marginTop: 0,
+                                  height: "304px",
+                                  paddingTop: 0,
+                                  paddingBottom: 0,
+                                });
+                              },
+                              menuList: function (e) {
+                                return Object(l.a)({}, e, {
+                                  padding: 0,
+                                  maxHeight: "304px",
+                                });
+                              },
+                            }),
+                            placeholder: ae[j ? "unison" : "major"].replace(
                               /@/gi,
                               ""
                             ),
@@ -7692,18 +7730,25 @@
                             options: this.intervals,
                             isSearchable: !1,
                             blurInputOnSelect: !0,
-                            className: "select-interval",
+                            className: "dropdown select-interval",
                             captureMenuScroll: !1,
                           })
                       ),
                       a.a.createElement(
                         "div",
-                        { className: "chord-notes" },
+                        {
+                          className: "chord-notes",
+                          style: _ ? { display: "none" } : {},
+                        },
+                        a.a.createElement(
+                          "span",
+                          { className: "chord-notes-text" },
+                          Q
+                        ),
                         a.a.createElement(
                           "ul",
                           { className: "notes" },
-                          a.a.createElement("span", null, q),
-                          j || C
+                          _ || A
                             ? a.a.createElement(
                                 "span",
                                 {
@@ -7713,50 +7758,55 @@
                                     paddingLeft: "5px",
                                   },
                                 },
-                                Q
+                                ee
                               )
-                            : i.map(function (t, f) {
-                                return a.a.createElement("li", {
-                                  key: f,
-                                  onMouseEnter: function () {
-                                    return e.props.highlightNote(
-                                      s[f],
-                                      c[f],
-                                      x[f]
-                                    );
+                            : r.map(function (t, f) {
+                                return a.a.createElement(
+                                  "li",
+                                  {
+                                    key: f,
+                                    onMouseEnter: function () {
+                                      return e.props.highlightNote(
+                                        c[f],
+                                        x[f],
+                                        m[f]
+                                      );
+                                    },
+                                    onMouseOut: function () {
+                                      return e.props.highlightNote(!1, !1, !1);
+                                    },
+                                    className: "\n                      "
+                                      .concat(
+                                        E === c[f] && "Piano" === g
+                                          ? "active"
+                                          : "",
+                                        "\n                      "
+                                      )
+                                      .concat(
+                                        E === x[f] && "Guitar" === g
+                                          ? "active"
+                                          : "",
+                                        "\n                      "
+                                      )
+                                      .concat(
+                                        E === x[f] && "Ukulele" === g
+                                          ? "active"
+                                          : "",
+                                        "\n                      "
+                                      )
+                                      .concat(
+                                        E === m[f] && "Notation" === g
+                                          ? "active"
+                                          : "",
+                                        "\n                    "
+                                      ),
                                   },
-                                  onMouseOut: function () {
-                                    return e.props.highlightNote(!1, !1, !1);
-                                  },
-                                  className: "\n                      "
-                                    .concat(
-                                      h === s[f] && "Piano" === E
-                                        ? "active"
-                                        : "",
-                                      "\n                      "
-                                    )
-                                    .concat(
-                                      h === c[f] && "Guitar" === E
-                                        ? "active"
-                                        : "",
-                                      "\n                      "
-                                    )
-                                    .concat(
-                                      h === c[f] && "Ukulele" === E
-                                        ? "active"
-                                        : "",
-                                      "\n                      "
-                                    )
-                                    .concat(
-                                      h === x[f] && "Notation" === E
-                                        ? "active"
-                                        : "",
-                                      "\n                    "
-                                    ),
-                                  dangerouslySetInnerHTML: {
-                                    __html: te[t + r[f]],
-                                  },
-                                });
+                                  a.a.createElement("span", {
+                                    dangerouslySetInnerHTML: {
+                                      __html: fe[t + o[f]],
+                                    },
+                                  })
+                                );
                               })
                         )
                       )
@@ -7768,7 +7818,7 @@
             f
           );
         })(n.Component),
-        oe = Object(m.b)(
+        se = Object(m.b)(
           function (e) {
             return {
               instrument: e.buttonsReducer.instrument,
@@ -7799,8 +7849,8 @@
               },
             };
           }
-        )(re);
-      function se(e) {
+        )(oe);
+      function ce(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -7826,12 +7876,12 @@
           return Object(c.a)(this, f);
         };
       }
-      var ce = window.translation.button_names.instrument,
-        xe = ce.default_name,
-        le = ce.names,
-        me = (function (e) {
+      var xe = window.translation.button_names.instrument,
+        le = xe.default_name,
+        me = xe.names,
+        ue = (function (e) {
           Object(s.a)(f, e);
-          var t = se(f);
+          var t = ce(f);
           function f(e) {
             var n;
             return (
@@ -7839,7 +7889,7 @@
               ((n = t.call(this, e)).state = {
                 isActiveMenu: !1,
                 activeIndex: 0,
-                name: xe,
+                name: le,
                 instruments: [
                   { name: "Piano", isActiveClef: !1 },
                   { name: "Guitar", isActiveClef: !1 },
@@ -7847,7 +7897,7 @@
                   { name: "Notation", isActiveClef: !0 },
                 ],
               }),
-              _ && n.state.instruments.splice(2, 1),
+              j && n.state.instruments.splice(2, 1),
               (n.toggleMenu = function (e) {
                 n.setState(function () {
                   return { isActiveMenu: e };
@@ -7900,7 +7950,7 @@
                             key: f,
                             className: i === f ? "active" : "",
                             onClick: function () {
-                              e.changeName(le[f], f),
+                              e.changeName(me[f], f),
                                 e.props.onSwitchInstrument(
                                   t.name,
                                   t.isActiveClef
@@ -7908,7 +7958,7 @@
                                 e.toggleMenu(!1);
                             },
                           },
-                          le[f]
+                          me[f]
                         );
                       })
                     )
@@ -7933,8 +7983,8 @@
               },
             };
           }
-        )(me);
-      function ue(e) {
+        )(ue);
+      function de(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -7960,12 +8010,12 @@
           return Object(c.a)(this, f);
         };
       }
-      var de = window.translation.button_names.clef,
-        he = de.default_name,
-        Ee = de.names,
-        ge = (function (e) {
+      var he = window.translation.button_names.clef,
+        Ee = he.default_name,
+        ge = he.names,
+        ve = (function (e) {
           Object(s.a)(f, e);
-          var t = ue(f);
+          var t = de(f);
           function f(e) {
             var n;
             return (
@@ -7973,7 +8023,7 @@
               ((n = t.call(this, e)).state = {
                 isActiveMenu: !1,
                 activeIndex: 0,
-                name: he,
+                name: Ee,
                 instruments: [
                   { name: "treble", sign: "&" },
                   { name: "bass", sign: "?" },
@@ -8038,12 +8088,12 @@
                                   key: f,
                                   className: i === f ? "active" : "",
                                   onClick: function () {
-                                    e.handleClick(Ee[f], f),
+                                    e.handleClick(ge[f], f),
                                       e.props.onClefUpdate(t),
                                       e.toggleMenu(!1);
                                   },
                                 },
-                                Ee[f]
+                                ge[f]
                               );
                             })
                           )
@@ -8056,7 +8106,7 @@
             f
           );
         })(n.Component),
-        ve = Object(m.b)(
+        ye = Object(m.b)(
           function (e) {
             return { isActiveClef: e.buttonsReducer.isActiveClef };
           },
@@ -8070,8 +8120,8 @@
               },
             };
           }
-        )(ge);
-      function ye(e) {
+        )(ve);
+      function Ce(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -8097,24 +8147,24 @@
           return Object(c.a)(this, f);
         };
       }
-      var Ce = window.translation,
-        _e = Ce.button_names,
-        je = _e.show_note_names,
-        Ae = _e.show_fingering,
-        De = "chord finder" === Ce.finder_name,
-        Ne = (function (e) {
+      var je = window.translation,
+        _e = je.button_names,
+        Ae = _e.show_note_names,
+        De = _e.show_fingering,
+        Ne = "chord finder" === je.finder_name,
+        Me = (function (e) {
           Object(s.a)(f, e);
-          var t = ye(f);
+          var t = Ce(f);
           function f(e) {
             var n;
             return (
               Object(r.a)(this, f),
               ((n = t.call(this, e)).state = {
                 isFingering: !1,
-                fingeringText: je,
+                fingeringText: Ae,
               }),
               (n.handleFingeringClick = function () {
-                var e = n.state.fingeringText === je ? Ae : je;
+                var e = n.state.fingeringText === Ae ? De : Ae;
                 n.setState(function (t) {
                   return { isFingering: !t.isFingering, fingeringText: e };
                 }),
@@ -8130,7 +8180,7 @@
                 value: function () {
                   var e = this.props.isGuitars,
                     t = !1;
-                  (De & ("Ukulele" === e) || De & ("Guitar" === e)) && (t = !0);
+                  (Ne & ("Ukulele" === e) || Ne & ("Guitar" === e)) && (t = !0);
                   var f = a.a.createElement(
                     "button",
                     { onClick: this.handleFingeringClick },
@@ -8154,10 +8204,10 @@
               },
             };
           }
-        )(Ne),
-        Me = f(8),
-        Ge = "BUTTONS/PLAY_CHORD";
-      function Be(e) {
+        )(Me),
+        Ge = f(9),
+        Be = "BUTTONS/PLAY_CHORD";
+      function ke(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -8183,10 +8233,10 @@
           return Object(c.a)(this, f);
         };
       }
-      var ke = window.translation.button_names.play,
-        we = (function (e) {
+      var we = window.translation.button_names.play,
+        Se = (function (e) {
           Object(s.a)(f, e);
-          var t = Be(f);
+          var t = ke(f);
           function f(e) {
             var n;
             return (
@@ -8210,7 +8260,7 @@
                 key: "handlePlayChord",
                 value: function () {
                   var e = this,
-                    t = new Me.ReduxEvent(Ge, { date: Date.now() });
+                    t = new Ge.ReduxEvent(Be, { date: Date.now() });
                   this.props.dispatchEvent(t),
                     this.setState({ isActive: !0 }),
                     setTimeout(function () {
@@ -8242,7 +8292,7 @@
                       className: !0 === e ? "active" : "",
                       onClick: this.handlePlayChord.bind(this),
                     },
-                    ke
+                    we
                   );
                 },
               },
@@ -8250,13 +8300,13 @@
             f
           );
         })(n.Component),
-        Se = Object(m.b)(null, function (e) {
+        Oe = Object(m.b)(null, function (e) {
           return {
             dispatchEvent: function (t) {
-              return e(Object(Me.dispatchEvent)(t));
+              return e(Object(Ge.dispatchEvent)(t));
             },
           };
-        })(we);
+        })(Se);
       f(67);
       function Pe(e) {
         var t = (function () {
@@ -8307,9 +8357,9 @@
                       "div",
                       { className: "buttons" },
                       a.a.createElement(be, null),
-                      a.a.createElement(Se, null),
+                      a.a.createElement(Oe, null),
                       a.a.createElement(Fe, null),
-                      a.a.createElement(ve, null)
+                      a.a.createElement(ye, null)
                     )
                   );
                 },
@@ -8318,10 +8368,10 @@
             f
           );
         })(n.Component),
-        Oe = f(14),
-        Re = f(15),
-        Ie = ["E", "a", "d", "g", "b", "e"],
-        Le = [
+        Re = f(10),
+        Ie = f(15),
+        Le = ["E", "a", "d", "g", "b", "e"],
+        He = [
           [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5],
           [9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
           [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3],
@@ -8329,7 +8379,7 @@
           [11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0],
           [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5],
         ],
-        He = [
+        Ue = [
           "f1",
           "f2",
           "f3",
@@ -8369,7 +8419,7 @@
           "e4",
           "e5",
         ];
-      function Ue(e, t) {
+      function Ke(e, t) {
         var f = e.chord,
           n = e.altered,
           a = e.interval,
@@ -8388,23 +8438,23 @@
           r = [(i = p[i] ? p[i] : [f, n].join("")), a].join(""),
           o = [],
           s = null;
-        if (y) (o = Re.EADGBE[r][0].p.split(",")), (s = Re.EADGBE[r][0].f);
-        else if (j) {
+        if (y) (o = Ie.EADGBE[r][0].p.split(",")), (s = Ie.EADGBE[r][0].f);
+        else if (_) {
           var c = B(f, n);
-          Le.forEach(function (e, t) {
+          He.forEach(function (e, t) {
             var f = [];
             e.forEach(function (e, n) {
-              e === c && f.push(Ie[t] + n);
+              e === c && f.push(Le[t] + n);
             }),
               o.push(f.join(","));
           });
         } else {
           var x = [f, n].join("");
-          o = Re[C ? "chromatic" : "intervals"].EADGBE[x];
+          o = Ie[C ? "chromatic" : "intervals"].EADGBE[x];
         }
         t(o, s);
       }
-      var Ke = function () {
+      var We = function () {
           return a.a.createElement(
             "div",
             { className: "headstock-wrap" },
@@ -8436,10 +8486,10 @@
             )
           );
         },
-        We = f(17),
-        Ye = {},
-        ze = {};
-      function Ve(e) {
+        Ye = f(17),
+        ze = {},
+        Ve = {};
+      function Xe(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -8465,16 +8515,14 @@
           return Object(c.a)(this, f);
         };
       }
-      var Xe = window.translation,
-        Je = Xe.root_note_green_circle,
-        Ze = Xe.guitarSettings,
-        $e = Ze.open_string_fret_width,
-        qe = Ze.open_string_notes_guitar,
-        Qe = A.semitones,
-        et = window.keyCodes.guitar,
-        tt = (function (e) {
+      var Je = window.translation,
+        Ze = Je.root_note_green_circle,
+        $e = Je.guitarSettings.open_string_notes_guitar,
+        qe = A.semitones,
+        Qe = window.keyCodes.guitar,
+        et = (function (e) {
           Object(s.a)(f, e);
-          var t = Ve(f);
+          var t = Xe(f);
           function f(e) {
             var n;
             return (
@@ -8493,16 +8541,16 @@
                         e
                       );
                     });
-                var t = ze[e].play();
+                var t = Ve[e].play();
                 n.setState(function (f) {
                   return (
                     (f.isPlayingNote = t),
-                    (f.prevHowlerNote = ze[e]),
+                    (f.prevHowlerNote = Ve[e]),
                     (f.isPlayingFretNote = e),
                     f
                   );
                 }),
-                  ze[e].fade(1, 0, 2e3, t),
+                  Ve[e].fade(1, 0, 2e3, t),
                   (n.isPlayingFretNoteTimeout = setTimeout(function () {
                     n.setState(function (e) {
                       return (e.isPlayingFretNote = null), e;
@@ -8511,17 +8559,17 @@
               }),
               (n.playSound = function (e) {
                 n.props.setActiveNote(e);
-                var t = ze[e].play();
-                ze[e].fade(1, 0, 2e3, t);
+                var t = Ve[e].play();
+                Ve[e].fade(1, 0, 2e3, t);
               }),
               (n.playFullChord = function (e) {
                 var t = 0,
                   f = e.length,
-                  a = Object(Oe.a)(e);
+                  a = Object(Re.a)(e);
                 !(function e(f, p) {
                   clearTimeout(n.playNoteTimeout),
                     setTimeout(function () {
-                      var i = Ie[t] + +a[t];
+                      var i = Le[t] + +a[t];
                       "x" !== a[t] && n.playSound(i),
                         5 === t ? (t = 0) : (t += 1),
                         --f > 0 && e(f, p);
@@ -8563,7 +8611,7 @@
                 var e = 0,
                   t = n.activeNotesScales;
                 1 === n.activeNotesScales.length &&
-                  t.push.apply(t, Object(Oe.a)(n.activeNotesScales));
+                  t.push.apply(t, Object(Re.a)(n.activeNotesScales));
                 !(function f(a) {
                   clearTimeout(n.playNoteTimeout),
                     (n.playNoteTimeout = setTimeout(function () {
@@ -8591,7 +8639,7 @@
                   ? n.playFullChord(e)
                   : C
                   ? n.playScale(e)
-                  : j
+                  : _
                   ? n.playNotes(e)
                   : n.playInterval(e);
               }),
@@ -8608,26 +8656,26 @@
                       );
                     })),
                     n.props.setActiveNote(t);
-                  var f = ze[t].play();
+                  var f = Ve[t].play();
                   n.setState(function (n) {
                     return (
                       (n.isPlayingNote = f),
-                      n.isNotesArray.push(ze[t]),
+                      n.isNotesArray.push(Ve[t]),
                       n.isPlayingNotesArray.push(f),
                       (n.keyPressLock[e.keyCode] = !0),
                       n
                     );
                   });
                 };
-                e.repeat || !et.keyPressHandle[e.keyCode] || e.shiftKey
+                e.repeat || !Qe.keyPressHandle[e.keyCode] || e.shiftKey
                   ? !e.repeat &&
-                    et.keyPressHandle[e.keyCode] &&
+                    Qe.keyPressHandle[e.keyCode] &&
                     e.shiftKey &&
-                    (et.keyPressShiftHandle[e.keyCode]
-                      ? t(et.keyPressShiftHandle[e.keyCode])
-                      : et.keyPressShiftHandle[e.code] &&
-                        t(et.keyPressShiftHandle[e.code]))
-                  : t(et.keyPressHandle[e.keyCode]);
+                    (Qe.keyPressShiftHandle[e.keyCode]
+                      ? t(Qe.keyPressShiftHandle[e.keyCode])
+                      : Qe.keyPressShiftHandle[e.code] &&
+                        t(Qe.keyPressShiftHandle[e.code]))
+                  : t(Qe.keyPressHandle[e.keyCode]);
               }),
               (n.onKeyUp = function (e) {
                 n.setState(function (t) {
@@ -8648,6 +8696,11 @@
               (n.activeNotesScales = []),
               (n.playNoteTimeout = null),
               (n.playNoteIntervalTimeout = null),
+              (n.elementRefs = Array(6)
+                .fill()
+                .map(function () {
+                  return a.a.createRef();
+                })),
               n
             );
           }
@@ -8659,7 +8712,7 @@
                   var t, f;
                   Array.isArray(e.chord)
                     ? (t = e.chord)
-                    : Ue(e.chords, function (e, n) {
+                    : Ke(e.chords, function (e, n) {
                         (t = e), (f = n);
                       }),
                     e.playChord &&
@@ -8683,106 +8736,117 @@
                 key: "componentDidMount",
                 value: function () {
                   var e, t;
-                  Ue(this.props.chords, function (f, n) {
+                  Ke(this.props.chords, function (f, n) {
                     (e = f), (t = n);
                   }),
-                    this.setState({ activeNotes: e, fingering: t }),
+                    this.setState({ activeNotes: e, fingering: t });
+                  var f = Math.max.apply(
+                    Math,
+                    Object(Re.a)(
+                      this.elementRefs.map(function (e) {
+                        return e.current.offsetWidth;
+                      })
+                    )
+                  );
+                  this.elementRefs.forEach(function (e) {
+                    e.current.style.width = "".concat(f, "px");
+                  }),
                     (function () {
-                      for (var e = 0; e < He.length; e++)
-                        Ye[He[e]] = new We.Howl({
+                      for (var e = 0; e < Ue.length; e++)
+                        ze[Ue[e]] = new Ye.Howl({
                           src: [
-                            "../library/interval-finder/lydfiler/guitar/".concat(He[e], ".mp3"),
+                            "../library/interval-finder/lydfiler/guitar/".concat(Ue[e], ".mp3"),
                           ],
                         });
-                      (ze.e0 = Ye.f1),
-                        (ze.e1 = Ye.f2),
-                        (ze.e2 = Ye.f3),
-                        (ze.e3 = Ye.f4),
-                        (ze.e4 = Ye.f5),
-                        (ze.e5 = Ye.f6),
-                        (ze.e6 = Ye.f7),
-                        (ze.e7 = Ye.f8),
-                        (ze.e8 = Ye.f9),
-                        (ze.e9 = Ye.f10),
-                        (ze.e10 = Ye.f11),
-                        (ze.e11 = Ye.f12),
-                        (ze.e12 = Ye.f13),
-                        (ze.e13 = Ye.f14),
-                        (ze.b0 = Ye.h1),
-                        (ze.b1 = Ye.h2),
-                        (ze.b2 = Ye.h3),
-                        (ze.b3 = Ye.h4),
-                        (ze.b4 = Ye.h5),
-                        (ze.b5 = Ye.f1),
-                        (ze.b6 = Ye.f2),
-                        (ze.b7 = Ye.f3),
-                        (ze.b8 = Ye.f4),
-                        (ze.b9 = Ye.f5),
-                        (ze.b10 = Ye.f6),
-                        (ze.b11 = Ye.f7),
-                        (ze.b12 = Ye.f8),
-                        (ze.b13 = Ye.f9),
-                        (ze.g0 = Ye.g1),
-                        (ze.g1 = Ye.g2),
-                        (ze.g2 = Ye.g3),
-                        (ze.g3 = Ye.g4),
-                        (ze.g4 = Ye.h1),
-                        (ze.g5 = Ye.h2),
-                        (ze.g6 = Ye.h3),
-                        (ze.g7 = Ye.h4),
-                        (ze.g8 = Ye.h5),
-                        (ze.g9 = Ye.f1),
-                        (ze.g10 = Ye.f2),
-                        (ze.g11 = Ye.f3),
-                        (ze.g12 = Ye.f4),
-                        (ze.g13 = Ye.f5),
-                        (ze.d0 = Ye.d1),
-                        (ze.d1 = Ye.d2),
-                        (ze.d2 = Ye.d3),
-                        (ze.d3 = Ye.d4),
-                        (ze.d4 = Ye.d5),
-                        (ze.d5 = Ye.g1),
-                        (ze.d6 = Ye.g2),
-                        (ze.d7 = Ye.g3),
-                        (ze.d8 = Ye.g4),
-                        (ze.d9 = Ye.h1),
-                        (ze.d10 = Ye.h2),
-                        (ze.d11 = Ye.h3),
-                        (ze.d12 = Ye.h4),
-                        (ze.d13 = Ye.h5),
-                        (ze.a0 = Ye.a1),
-                        (ze.a1 = Ye.a2),
-                        (ze.a2 = Ye.a3),
-                        (ze.a3 = Ye.a4),
-                        (ze.a4 = Ye.a5),
-                        (ze.a5 = Ye.d1),
-                        (ze.a6 = Ye.d2),
-                        (ze.a7 = Ye.d3),
-                        (ze.a8 = Ye.d4),
-                        (ze.a9 = Ye.d5),
-                        (ze.a10 = Ye.g1),
-                        (ze.a11 = Ye.g2),
-                        (ze.a12 = Ye.g3),
-                        (ze.a13 = Ye.g4),
-                        (ze.E0 = Ye.e1),
-                        (ze.E1 = Ye.e2),
-                        (ze.E2 = Ye.e3),
-                        (ze.E3 = Ye.e4),
-                        (ze.E4 = Ye.e5),
-                        (ze.E5 = Ye.a1),
-                        (ze.E6 = Ye.a2),
-                        (ze.E7 = Ye.a3),
-                        (ze.E8 = Ye.a4),
-                        (ze.E9 = Ye.a5),
-                        (ze.E10 = Ye.d1),
-                        (ze.E11 = Ye.d2),
-                        (ze.E12 = Ye.d3),
-                        (ze.E13 = Ye.d4);
+                      (Ve.e0 = ze.f1),
+                        (Ve.e1 = ze.f2),
+                        (Ve.e2 = ze.f3),
+                        (Ve.e3 = ze.f4),
+                        (Ve.e4 = ze.f5),
+                        (Ve.e5 = ze.f6),
+                        (Ve.e6 = ze.f7),
+                        (Ve.e7 = ze.f8),
+                        (Ve.e8 = ze.f9),
+                        (Ve.e9 = ze.f10),
+                        (Ve.e10 = ze.f11),
+                        (Ve.e11 = ze.f12),
+                        (Ve.e12 = ze.f13),
+                        (Ve.e13 = ze.f14),
+                        (Ve.b0 = ze.h1),
+                        (Ve.b1 = ze.h2),
+                        (Ve.b2 = ze.h3),
+                        (Ve.b3 = ze.h4),
+                        (Ve.b4 = ze.h5),
+                        (Ve.b5 = ze.f1),
+                        (Ve.b6 = ze.f2),
+                        (Ve.b7 = ze.f3),
+                        (Ve.b8 = ze.f4),
+                        (Ve.b9 = ze.f5),
+                        (Ve.b10 = ze.f6),
+                        (Ve.b11 = ze.f7),
+                        (Ve.b12 = ze.f8),
+                        (Ve.b13 = ze.f9),
+                        (Ve.g0 = ze.g1),
+                        (Ve.g1 = ze.g2),
+                        (Ve.g2 = ze.g3),
+                        (Ve.g3 = ze.g4),
+                        (Ve.g4 = ze.h1),
+                        (Ve.g5 = ze.h2),
+                        (Ve.g6 = ze.h3),
+                        (Ve.g7 = ze.h4),
+                        (Ve.g8 = ze.h5),
+                        (Ve.g9 = ze.f1),
+                        (Ve.g10 = ze.f2),
+                        (Ve.g11 = ze.f3),
+                        (Ve.g12 = ze.f4),
+                        (Ve.g13 = ze.f5),
+                        (Ve.d0 = ze.d1),
+                        (Ve.d1 = ze.d2),
+                        (Ve.d2 = ze.d3),
+                        (Ve.d3 = ze.d4),
+                        (Ve.d4 = ze.d5),
+                        (Ve.d5 = ze.g1),
+                        (Ve.d6 = ze.g2),
+                        (Ve.d7 = ze.g3),
+                        (Ve.d8 = ze.g4),
+                        (Ve.d9 = ze.h1),
+                        (Ve.d10 = ze.h2),
+                        (Ve.d11 = ze.h3),
+                        (Ve.d12 = ze.h4),
+                        (Ve.d13 = ze.h5),
+                        (Ve.a0 = ze.a1),
+                        (Ve.a1 = ze.a2),
+                        (Ve.a2 = ze.a3),
+                        (Ve.a3 = ze.a4),
+                        (Ve.a4 = ze.a5),
+                        (Ve.a5 = ze.d1),
+                        (Ve.a6 = ze.d2),
+                        (Ve.a7 = ze.d3),
+                        (Ve.a8 = ze.d4),
+                        (Ve.a9 = ze.d5),
+                        (Ve.a10 = ze.g1),
+                        (Ve.a11 = ze.g2),
+                        (Ve.a12 = ze.g3),
+                        (Ve.a13 = ze.g4),
+                        (Ve.E0 = ze.e1),
+                        (Ve.E1 = ze.e2),
+                        (Ve.E2 = ze.e3),
+                        (Ve.E3 = ze.e4),
+                        (Ve.E4 = ze.e5),
+                        (Ve.E5 = ze.a1),
+                        (Ve.E6 = ze.a2),
+                        (Ve.E7 = ze.a3),
+                        (Ve.E8 = ze.a4),
+                        (Ve.E9 = ze.a5),
+                        (Ve.E10 = ze.d1),
+                        (Ve.E11 = ze.d2),
+                        (Ve.E12 = ze.d3),
+                        (Ve.E13 = ze.d4);
                     })(),
                     document.addEventListener("keydown", this.onKeyDown),
                     document.addEventListener("keyup", this.onKeyUp),
                     this.props.addEventListener(
-                      Ge,
+                      Be,
                       this,
                       this.playChordHandler
                     );
@@ -8797,7 +8861,7 @@
                     document.removeEventListener("keydown", this.onKeyDown),
                     document.removeEventListener("keyup", this.onKeyUp),
                     this.props.removeEventListener(
-                      Ge,
+                      Be,
                       this,
                       this.playChordHandler
                     );
@@ -8819,21 +8883,21 @@
                     x = o.interval,
                     l = i.noteNames,
                     m = i.switchFingering,
-                    b = Qe[x],
-                    u = [],
+                    u = qe[x],
+                    b = [],
                     d = B(s, c),
                     h = 0,
                     E = -1;
                   return (
-                    (this.activeNotesScales = u),
+                    (this.activeNotesScales = b),
                     a.a.createElement(
                       "div",
                       { className: "guitar-neck-wrap" },
                       a.a.createElement(
                         "div",
                         { className: "guitar-neck" },
-                        a.a.createElement(Ke, null),
-                        Le.map(function (t, i) {
+                        a.a.createElement(We, null),
+                        He.map(function (t, i) {
                           var o = y ? f[i] : f[i].split(",");
                           return a.a.createElement(
                             "ul",
@@ -8847,25 +8911,25 @@
                                 x.push("marked"),
                                   (c = !0),
                                   r === t && x.push("active");
-                                var v = Je[l[t]];
+                                var v = Ze[l[t]];
                                 (g = m ? v : n[h]), (s = !!c && t), h++;
-                              } else if (j && t === d)
+                              } else if (_ && t === d)
                                 (c = !0),
                                   x.push("marked"),
-                                  p === Ie[i] + f && x.push("active"),
-                                  (g = Je[l[0]]);
-                              else if (!y && !j) {
+                                  p === Le[i] + f && x.push("active"),
+                                  (g = Ze[l[0]]);
+                              else if (!y && !_) {
                                 var C;
                                 o.forEach(function (e) {
                                   e === f.toString() &&
-                                    ((C = _ ? t : h),
+                                    ((C = j ? t : h),
                                     E++,
-                                    b.includes(E) &&
+                                    u.includes(E) &&
                                       ((c = !0),
                                       x.push("marked"),
-                                      (g = Je[l[h]]),
+                                      (g = Ze[l[h]]),
                                       r === C && x.push("active"),
-                                      u.push(Ie[i] + f),
+                                      b.push(Le[i] + f),
                                       h++));
                                 }),
                                   (s = !!c && C);
@@ -8876,14 +8940,14 @@
                                   ((g =
                                     "x" === o[0]
                                       ? '<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 25 25">\n  <path transform="translate(4,5), scale(0.7)" fill="#D73E4D"\n      d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0   l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7   c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>\n</svg>'
-                                      : qe[i]),
+                                      : $e[i]),
                                   (x = ["open-string-note"])),
                                 a.a.createElement(
                                   "li",
                                   {
                                     key: f,
                                     onClick: function () {
-                                      return e.playSingleSound(Ie[i] + f);
+                                      return e.playSingleSound(Le[i] + f);
                                     },
                                     onMouseOver: function () {
                                       !1 !== s && e.props.highlightNote(s);
@@ -8891,7 +8955,7 @@
                                     onMouseOut: function () {
                                       !1 !== s && e.props.highlightNote(!1);
                                     },
-                                    style: { width: 0 === f && $e },
+                                    ref: 0 === f ? e.elementRefs[i] : null,
                                   },
                                   3 === i &&
                                     [3, 5, 7, 9].includes(f) &&
@@ -8921,7 +8985,7 @@
             f
           );
         })(n.Component),
-        ft = Object(m.b)(
+        tt = Object(m.b)(
           function (e) {
             return {
               chords: {
@@ -8937,19 +9001,19 @@
           function (e) {
             return {
               addEventListener: function (t, f, n, a) {
-                return e(Object(Me.addEventListener)(t, f, n, a));
+                return e(Object(Ge.addEventListener)(t, f, n, a));
               },
               removeEventListener: function (t, f, n) {
-                return e(Object(Me.removeEventListener)(t, f, n));
+                return e(Object(Ge.removeEventListener)(t, f, n));
               },
               highlightNote: function (t) {
                 e({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: t });
               },
             };
           }
-        )(tt);
+        )(et);
       f(69);
-      function nt(e) {
+      function ft(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -8975,9 +9039,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var at = (function (e) {
+      var nt = (function (e) {
         Object(s.a)(f, e);
-        var t = nt(f);
+        var t = ft(f);
         function f(e) {
           var n;
           return (
@@ -9153,7 +9217,7 @@
         );
       })(n.Component);
       f(71);
-      function pt(e) {
+      function at(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -9179,9 +9243,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var it = (function (e) {
+      var pt = (function (e) {
         Object(s.a)(f, e);
-        var t = pt(f);
+        var t = at(f);
         function f(e) {
           var n;
           return (
@@ -9220,9 +9284,9 @@
                 return a.a.createElement(
                   "div",
                   { className: "Guitar" },
-                  a.a.createElement(at, { note: this.state.activeNote }),
+                  a.a.createElement(nt, { note: this.state.activeNote }),
                   a.a.createElement(
-                    ft,
+                    tt,
                     Object.assign({}, this.props, {
                       setActiveNote: this.setActiveNote,
                     })
@@ -9234,7 +9298,7 @@
           f
         );
       })(n.Component);
-      function rt(e, t) {
+      function it(e, t) {
         var f = e.chords,
           n = f.chord,
           a = f.altered,
@@ -9260,20 +9324,24 @@
             "D#m13",
             "D#Maj13",
           ].includes(n + a + p);
-        !j && (o || s || c) && (r -= 12),
-          t(
-            i[p].map(function (e) {
-              return e + r;
-            })
-          );
+        if (!_ && (o || s || c)) r -= 12;
+        else if (_) {
+          var x = Math.max.apply(Math, Object(Re.a)(i[""]));
+          x + r > 35 ? (r -= 12) : x + r + 12 <= 35 && (r += 12);
+        }
+        t(
+          i[p].map(function (e) {
+            return e + r;
+          })
+        );
       }
-      var ot = {};
+      var rt = {};
       !(function () {
         for (
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : 27,
+                : 11,
             t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -9286,12 +9354,12 @@
           n < t;
           n++
         )
-          ot[n] = new We.Howl({
+          rt[n] = new Ye.Howl({
             src: ["../library/interval-finder/lydfiler/piano/".concat(n, ".mp3")],
             volume: f,
           });
       })();
-      var st = [
+      var ot = [
         {
           name: "C",
           key: "1C",
@@ -9300,7 +9368,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[28],
+          note: rt[28],
         },
         {
           name: "C#",
@@ -9311,7 +9379,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-left key--left",
-          note: ot[29],
+          note: rt[29],
         },
         {
           name: "D",
@@ -9321,7 +9389,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[30],
+          note: rt[30],
         },
         {
           name: "D#",
@@ -9332,7 +9400,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-right key--right",
-          note: ot[31],
+          note: rt[31],
         },
         { color: "black", isEmpty: !0, keyIndex: 3.5 },
         {
@@ -9343,7 +9411,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[32],
+          note: rt[32],
         },
         {
           name: "F",
@@ -9353,7 +9421,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[33],
+          note: rt[33],
         },
         {
           name: "F#",
@@ -9364,7 +9432,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-left",
-          note: ot[34],
+          note: rt[34],
         },
         {
           name: "G",
@@ -9374,7 +9442,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[35],
+          note: rt[35],
         },
         {
           name: "G#",
@@ -9384,7 +9452,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[36],
+          note: rt[36],
         },
         {
           name: "A",
@@ -9394,7 +9462,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[37],
+          note: rt[37],
         },
         {
           name: "A#",
@@ -9405,7 +9473,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-right",
-          note: ot[38],
+          note: rt[38],
         },
         { color: "black", isEmpty: !0, keyIndex: 10.5 },
         {
@@ -9416,7 +9484,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[39],
+          note: rt[39],
         },
         {
           name: "C",
@@ -9426,7 +9494,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[40],
+          note: rt[40],
         },
         {
           name: "C#",
@@ -9437,7 +9505,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-left key--left",
-          note: ot[41],
+          note: rt[41],
         },
         {
           name: "D",
@@ -9447,7 +9515,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[42],
+          note: rt[42],
         },
         {
           name: "D#",
@@ -9458,7 +9526,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-right key--right",
-          note: ot[43],
+          note: rt[43],
         },
         { color: "black", isEmpty: !0, keyIndex: 15.5 },
         {
@@ -9469,7 +9537,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[44],
+          note: rt[44],
         },
         {
           name: "F",
@@ -9479,7 +9547,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[45],
+          note: rt[45],
         },
         {
           name: "F",
@@ -9489,7 +9557,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[46],
+          note: rt[46],
           className: "key-left",
         },
         {
@@ -9500,7 +9568,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[47],
+          note: rt[47],
         },
         {
           name: "G#",
@@ -9510,7 +9578,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[48],
+          note: rt[48],
         },
         {
           name: "A",
@@ -9520,7 +9588,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[49],
+          note: rt[49],
         },
         {
           name: "A#",
@@ -9530,7 +9598,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[50],
+          note: rt[50],
           className: "key-right",
         },
         { color: "black", isEmpty: !0, keyIndex: 22.5 },
@@ -9542,7 +9610,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[51],
+          note: rt[51],
         },
         {
           name: "C",
@@ -9552,7 +9620,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[52],
+          note: rt[52],
         },
         {
           name: "C",
@@ -9563,7 +9631,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-left key--left",
-          note: ot[53],
+          note: rt[53],
         },
         {
           name: "D",
@@ -9573,7 +9641,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[54],
+          note: rt[54],
         },
         {
           name: "D#",
@@ -9584,7 +9652,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-right key--right",
-          note: ot[55],
+          note: rt[55],
         },
         { color: "black", isEmpty: !0, keyIndex: 27.5 },
         {
@@ -9595,7 +9663,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[56],
+          note: rt[56],
         },
         {
           name: "F",
@@ -9605,7 +9673,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[57],
+          note: rt[57],
         },
         {
           name: "F#",
@@ -9615,7 +9683,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[58],
+          note: rt[58],
           className: "key-left",
         },
         {
@@ -9626,7 +9694,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[59],
+          note: rt[59],
         },
         {
           name: "G#",
@@ -9636,7 +9704,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[60],
+          note: rt[60],
         },
         {
           name: "A",
@@ -9646,7 +9714,7 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[61],
+          note: rt[61],
         },
         {
           name: "A#",
@@ -9657,7 +9725,7 @@
           isPressed: !1,
           isMarked: !1,
           className: "key-right",
-          note: ot[62],
+          note: rt[62],
         },
         {
           name: "B",
@@ -9667,11 +9735,11 @@
           isActive: !1,
           isPressed: !1,
           isMarked: !1,
-          note: ot[63],
+          note: rt[63],
         },
       ];
       f(73);
-      function ct(e) {
+      function st(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -9697,10 +9765,10 @@
           return Object(c.a)(this, f);
         };
       }
-      var xt = window.keyCodes.piano,
-        lt = (function (e) {
+      var ct = window.keyCodes.piano,
+        xt = (function (e) {
           Object(s.a)(f, e);
-          var t = ct(f);
+          var t = st(f);
           function f(e) {
             var n;
             return (
@@ -9718,9 +9786,9 @@
                 });
               }),
               (n.onKeyPressPlaySound = function (e) {
-                if (xt[e.keyCode]) {
+                if (ct[e.keyCode]) {
                   n.state.PIANO_KEYS.forEach(function (t) {
-                    t.key === xt[e.keyCode] &&
+                    t.key === ct[e.keyCode] &&
                       (function (e) {
                         if (!e.isPressed) {
                           0 === Object.keys(n.state.keyPressLock).length &&
@@ -9758,7 +9826,7 @@
                 }
               }),
               (n.onKyeUpMuteSound = function (e) {
-                xt[e.keyCode] &&
+                ct[e.keyCode] &&
                   n.state.PIANO_KEYS.forEach(function (e) {
                     e.isPressed &&
                       n.setState(function (t) {
@@ -9800,9 +9868,8 @@
                       f(e[t], 1300), t++, --p > 0 && a(p, i);
                     }, i);
                   };
-                C || j
+                C || _
                   ? (clearTimeout(n.playNoteTimeout),
-                    e[t] <= 0 && t++,
                     f(e[t], 1300),
                     t++,
                     a(e.length, 650))
@@ -9835,7 +9902,7 @@
                 isNotesArray: [],
                 isPlayingNotesArray: [],
                 keyPressLock: {},
-                PIANO_KEYS: st,
+                PIANO_KEYS: ot,
               }),
               (n.playNoteTimeout = null),
               (n.playWithDelayTimeout = null),
@@ -9893,7 +9960,7 @@
                   var e,
                     t = this;
                   (this._isMounted = !0),
-                    rt(this.props, function (t) {
+                    it(this.props, function (t) {
                       return (e = t);
                     }),
                     this.setState({ chords: e }),
@@ -9910,7 +9977,7 @@
                       this.onKyeUpMuteSound,
                       !1
                     ),
-                    this.props.addEventListener(Ge, this, this.playChord);
+                    this.props.addEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -9919,7 +9986,7 @@
                   var t,
                     f = e.chords,
                     n = f.chord + f.altered + f.interval;
-                  rt(e, function (e) {
+                  it(e, function (e) {
                     return (t = e);
                   }),
                     this.setState({ chords: t, chordName: n }),
@@ -9942,7 +10009,7 @@
                       this.onKeyPressPlaySound,
                       !1
                     ),
-                    this.props.removeEventListener(Ge, this, this.playChord);
+                    this.props.removeEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -10048,7 +10115,7 @@
                             },
                             a.a.createElement("i", {
                               onMouseOver: function () {
-                                f && e.props.highlightNote(!!j || p);
+                                f && e.props.highlightNote(!!_ || p);
                               },
                               onMouseOut: function () {
                                 f && e.props.highlightNote(!1);
@@ -10068,7 +10135,7 @@
             f
           );
         })(n.Component),
-        mt = Object(m.b)(
+        lt = Object(m.b)(
           function (e) {
             return {
               chords: {
@@ -10082,25 +10149,25 @@
           function (e) {
             return {
               addEventListener: function (t, f, n, a) {
-                return e(Object(Me.addEventListener)(t, f, n, a));
+                return e(Object(Ge.addEventListener)(t, f, n, a));
               },
               removeEventListener: function (t, f, n) {
-                return e(Object(Me.removeEventListener)(t, f, n));
+                return e(Object(Ge.removeEventListener)(t, f, n));
               },
               highlightNote: function (t) {
                 e({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: t });
               },
             };
           }
-        )(lt),
-        bt = ["g", "c", "e", "a"],
+        )(xt),
+        mt = ["g", "c", "e", "a"],
         ut = [
           [7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8],
           [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1],
           [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5],
           [9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         ],
-        dt = [
+        bt = [
           "f1",
           "f2",
           "f3",
@@ -10125,7 +10192,7 @@
           "h4",
           "h5",
         ];
-      function ht(e, t) {
+      function dt(e, t) {
         var f,
           n = e.chord,
           a = e.altered,
@@ -10144,23 +10211,23 @@
           r = [n, a].join(""),
           o = [(r = i[r] ? i[r] : [n, a].join("")), p.toLowerCase()].join(""),
           s = [];
-        if (y) (s = Re.GCEA[o][0].p.split(",")), (f = Re.GCEA[o][0].f);
-        else if (j) {
+        if (y) (s = Ie.GCEA[o][0].p.split(",")), (f = Ie.GCEA[o][0].f);
+        else if (_) {
           var c = B(n, a);
           ut.forEach(function (e, t) {
             var f = [];
             e.forEach(function (e, n) {
-              e === c && f.push(bt[t] + n);
+              e === c && f.push(mt[t] + n);
             }),
               s.push(f.join(","));
           });
         } else if (C) {
           var x = [n, a].join("");
-          s = Re.chromatic.GCEA[x];
+          s = Ie.chromatic.GCEA[x];
         }
         t(s, f);
       }
-      var Et = function () {
+      var ht = function () {
           return a.a.createElement(
             "div",
             { className: "ukulele-headstock-wrap" },
@@ -10186,9 +10253,9 @@
             )
           );
         },
-        gt = {},
-        vt = {};
-      function yt(e) {
+        Et = {},
+        gt = {};
+      function vt(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -10214,16 +10281,14 @@
           return Object(c.a)(this, f);
         };
       }
-      var Ct = window.translation,
-        _t = Ct.root_note_green_circle,
-        jt = Ct.guitarSettings,
-        At = jt.open_string_fret_width,
-        Dt = jt.open_string_notes_ukulele,
-        Nt = A.semitones,
-        Ft = window.keyCodes.guitar,
-        Mt = (function (e) {
+      var yt = window.translation,
+        Ct = yt.root_note_green_circle,
+        jt = yt.guitarSettings.open_string_notes_ukulele,
+        _t = A.semitones,
+        At = window.keyCodes.guitar,
+        Dt = (function (e) {
           Object(s.a)(f, e);
-          var t = yt(f);
+          var t = vt(f);
           function f(e) {
             var n;
             return (
@@ -10242,16 +10307,16 @@
                         e
                       );
                     });
-                var t = vt[e].play();
+                var t = gt[e].play();
                 n.setState(function (f) {
                   return (
                     (f.isPlayingNote = t),
-                    (f.prevHowlerNote = vt[e]),
+                    (f.prevHowlerNote = gt[e]),
                     (f.isPlayingFretNote = e),
                     f
                   );
                 }),
-                  vt[e].fade(1, 0, 2e3, t),
+                  gt[e].fade(1, 0, 2e3, t),
                   (n.isPlayingFretNoteTimeout = setTimeout(function () {
                     n.setState(function (e) {
                       return (e.isPlayingFretNote = null), e;
@@ -10260,8 +10325,8 @@
               }),
               (n.playSound = function (e) {
                 n.props.setActiveNote(e);
-                var t = vt[e].play();
-                vt[e].fade(1, 0, 2e3, t);
+                var t = gt[e].play();
+                gt[e].fade(1, 0, 2e3, t);
               }),
               (n.onClickPlayNoteHandler = function (e) {
                 n.playSingleSound(e);
@@ -10269,8 +10334,8 @@
               (n.playFullChord = function (e) {
                 var t = 0,
                   f = e.length,
-                  a = Object(Oe.a)(bt),
-                  p = Object(Oe.a)(e);
+                  a = Object(Re.a)(mt),
+                  p = Object(Re.a)(e);
                 !(function e(f, i) {
                   clearTimeout(n.playNoteTimeout),
                     setTimeout(function () {
@@ -10314,10 +10379,10 @@
               }),
               (n.playChord = function () {
                 var e = n.state.activeNotes;
-                C ? n.playScale(e) : j ? n.playNotes(e) : n.playFullChord(e);
+                C ? n.playScale(e) : _ ? n.playNotes(e) : n.playFullChord(e);
               }),
               (n.onKeyDown = function (e) {
-                if (!e.repeat && Ft.keyPressHandle[e.keyCode]) {
+                if (!e.repeat && At.keyPressHandle[e.keyCode]) {
                   e.preventDefault();
                   !(function (t) {
                     var f =
@@ -10333,17 +10398,17 @@
                         );
                       })),
                       n.props.setActiveNote(f);
-                    var a = vt[f].play();
+                    var a = gt[f].play();
                     n.setState(function (t) {
                       return (
                         (t.isPlayingNote = a),
-                        t.isNotesArray.push(vt[f]),
+                        t.isNotesArray.push(gt[f]),
                         t.isPlayingNotesArray.push(a),
                         (t.keyPressLock[e.keyCode] = !0),
                         t
                       );
                     });
-                  })(Ft.keyPressHandle[e.keyCode]);
+                  })(At.keyPressHandle[e.keyCode]);
                 }
               }),
               (n.onKeyUp = function (e) {
@@ -10364,6 +10429,11 @@
               }),
               (n.isPlayingFretNoteTimeout = null),
               (n.playNoteTimeout = null),
+              (n.elementRefs = Array(4)
+                .fill()
+                .map(function () {
+                  return a.a.createRef();
+                })),
               n
             );
           }
@@ -10375,7 +10445,7 @@
                   var t, f;
                   Array.isArray(e.chord)
                     ? (t = e.chord)
-                    : ht(e.chords, function (e, n) {
+                    : dt(e.chords, function (e, n) {
                         (t = e), (f = n);
                       }),
                     e.playChord && this.playChordHandler(t),
@@ -10398,80 +10468,90 @@
                 key: "componentDidMount",
                 value: function () {
                   var e, t;
-                  ht(this.props.chords, function (f, n) {
+                  dt(this.props.chords, function (f, n) {
                     (e = f), (t = n);
                   }),
-                    this.setState({ activeNotes: e, fingering: t }),
+                    this.setState({ activeNotes: e, fingering: t });
+                  var f = Math.max.apply(
+                    Math,
+                    Object(Re.a)(
+                      this.elementRefs.map(function (e) {
+                        return e.current.offsetWidth;
+                      })
+                    )
+                  );
+                  this.elementRefs.forEach(function (e) {
+                    e.current.style.width = "".concat(f, "px");
+                  }),
                     (function () {
-                      for (var e = 0; e < dt.length; e++)
-                        gt[dt[e]] = new We.Howl({
+                      for (var e = 0; e < bt.length; e++)
+                        Et[bt[e]] = new Ye.Howl({
                           src: [
-                            // "/lydfiler/guitar/classical/".concat(dt[e], ".mp3"),
-                            "../library/interval-finder/lydfiler/guitar/".concat(dt[e], ".mp3"),
+                            "../library/interval-finder/lydfiler/guitar/".concat(bt[e], ".mp3"),
                           ],
                         });
-                      vt = {
-                        a0: gt.f6,
-                        a1: gt.f7,
-                        a2: gt.f8,
-                        a3: gt.f9,
-                        a4: gt.f10,
-                        a5: gt.f11,
-                        a6: gt.f12,
-                        a7: gt.f13,
-                        a8: gt.f14,
-                        a9: gt.f15,
-                        a10: gt.f16,
-                        a11: gt.f17,
-                        a12: gt.f18,
-                        a13: gt.f19,
-                        e0: gt.f1,
-                        e1: gt.f2,
-                        e2: gt.f3,
-                        e3: gt.f4,
-                        e4: gt.f5,
-                        e5: gt.f6,
-                        e6: gt.f7,
-                        e7: gt.f8,
-                        e8: gt.f9,
-                        e9: gt.f10,
-                        e10: gt.f11,
-                        e11: gt.f12,
-                        e12: gt.f13,
-                        e13: gt.f14,
-                        c0: gt.h2,
-                        c1: gt.h3,
-                        c2: gt.h4,
-                        c3: gt.h5,
-                        c4: gt.f1,
-                        c5: gt.f2,
-                        c6: gt.f3,
-                        c7: gt.f4,
-                        c8: gt.f5,
-                        c9: gt.f6,
-                        c10: gt.f7,
-                        c11: gt.f8,
-                        c12: gt.f9,
-                        c13: gt.f10,
-                        g0: gt.f4,
-                        g1: gt.f5,
-                        g2: gt.f6,
-                        g3: gt.f7,
-                        g4: gt.f8,
-                        g5: gt.f9,
-                        g6: gt.f10,
-                        g7: gt.f11,
-                        g8: gt.f12,
-                        g9: gt.f13,
-                        g10: gt.f14,
-                        g11: gt.f15,
-                        g12: gt.f16,
-                        g13: gt.f17,
+                      gt = {
+                        a0: Et.f6,
+                        a1: Et.f7,
+                        a2: Et.f8,
+                        a3: Et.f9,
+                        a4: Et.f10,
+                        a5: Et.f11,
+                        a6: Et.f12,
+                        a7: Et.f13,
+                        a8: Et.f14,
+                        a9: Et.f15,
+                        a10: Et.f16,
+                        a11: Et.f17,
+                        a12: Et.f18,
+                        a13: Et.f19,
+                        e0: Et.f1,
+                        e1: Et.f2,
+                        e2: Et.f3,
+                        e3: Et.f4,
+                        e4: Et.f5,
+                        e5: Et.f6,
+                        e6: Et.f7,
+                        e7: Et.f8,
+                        e8: Et.f9,
+                        e9: Et.f10,
+                        e10: Et.f11,
+                        e11: Et.f12,
+                        e12: Et.f13,
+                        e13: Et.f14,
+                        c0: Et.h2,
+                        c1: Et.h3,
+                        c2: Et.h4,
+                        c3: Et.h5,
+                        c4: Et.f1,
+                        c5: Et.f2,
+                        c6: Et.f3,
+                        c7: Et.f4,
+                        c8: Et.f5,
+                        c9: Et.f6,
+                        c10: Et.f7,
+                        c11: Et.f8,
+                        c12: Et.f9,
+                        c13: Et.f10,
+                        g0: Et.f4,
+                        g1: Et.f5,
+                        g2: Et.f6,
+                        g3: Et.f7,
+                        g4: Et.f8,
+                        g5: Et.f9,
+                        g6: Et.f10,
+                        g7: Et.f11,
+                        g8: Et.f12,
+                        g9: Et.f13,
+                        g10: Et.f14,
+                        g11: Et.f15,
+                        g12: Et.f16,
+                        g13: Et.f17,
                       };
                     })(),
                     document.addEventListener("keydown", this.onKeyDown),
                     document.addEventListener("keyup", this.onKeyUp),
-                    this.props.addEventListener(Ge, this, this.playChord);
+                    this.props.addEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -10481,7 +10561,7 @@
                     clearTimeout(this.isPlayingFretNoteTimeout),
                     document.removeEventListener("keydown", this.onKeyDown),
                     document.removeEventListener("keyup", this.onKeyUp),
-                    this.props.removeEventListener(Ge, this, this.playChord);
+                    this.props.removeEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -10500,8 +10580,8 @@
                     x = o.interval,
                     l = i.noteNames,
                     m = i.switchFingering,
-                    b = Nt[x],
-                    u = B(s, c),
+                    u = _t[x],
+                    b = B(s, c),
                     d = 0,
                     h = -1,
                     E = [];
@@ -10513,7 +10593,7 @@
                       a.a.createElement(
                         "div",
                         { className: "ukulele-neck" },
-                        a.a.createElement(Et, null),
+                        a.a.createElement(ht, null),
                         ut.map(function (t, i) {
                           var o = y ? f[i] : f[i].split(",");
                           return a.a.createElement(
@@ -10529,27 +10609,27 @@
                                 x.push("marked"),
                                   (c = !0),
                                   r === t && x.push("active");
-                                var v = _t[l[t]];
+                                var v = Ct[l[t]];
                                 (g = m ? v : n[d]), d++, (s = !!c && t);
                               } else
-                                j && t === u
+                                _ && t === b
                                   ? ((c = !0),
                                     x.push("marked"),
-                                    p === bt[i] + f && x.push("active"),
-                                    (g = _t[l[0]]),
+                                    p === mt[i] + f && x.push("active"),
+                                    (g = Ct[l[0]]),
                                     (s = t))
                                   : y ||
-                                    j ||
+                                    _ ||
                                     (o.forEach(function (e) {
                                       e === f.toString() &&
                                         (h++,
-                                        b.includes(h) &&
+                                        u.includes(h) &&
                                           ((c = !0),
                                           x.push("marked"),
-                                          (g = _t[l[d]]),
+                                          (g = Ct[l[d]]),
                                           r === d && x.push("active"),
                                           d++,
-                                          E.push(bt[i] + f)));
+                                          E.push(mt[i] + f)));
                                     }),
                                     (s = !!c && d - 1));
                               return (
@@ -10558,7 +10638,7 @@
                                   ((g =
                                     "x" === o[0]
                                       ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">\n  <path transform="translate(4,5), scale(0.7)" fill="#D73E4D"\n      d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0   l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7   c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>\n</svg>'
-                                      : Dt[i]),
+                                      : jt[i]),
                                   (x = ["open-string-note"])),
                                 a.a.createElement(
                                   "li",
@@ -10566,7 +10646,7 @@
                                     key: f,
                                     onClick: function () {
                                       return e.onClickPlayNoteHandler(
-                                        bt[i] + f
+                                        mt[i] + f
                                       );
                                     },
                                     onMouseOver: function () {
@@ -10575,7 +10655,7 @@
                                     onMouseOut: function () {
                                       !1 !== s && e.props.highlightNote(!1);
                                     },
-                                    style: { width: 0 === f && At },
+                                    ref: 0 === f ? e.elementRefs[i] : null,
                                   },
                                   2 === i &&
                                     [5, 7, 10].includes(f) &&
@@ -10605,7 +10685,7 @@
             f
           );
         })(n.Component),
-        Gt = Object(m.b)(
+        Nt = Object(m.b)(
           function (e) {
             return {
               chords: {
@@ -10621,19 +10701,19 @@
           function (e) {
             return {
               addEventListener: function (t, f, n, a) {
-                return e(Object(Me.addEventListener)(t, f, n, a));
+                return e(Object(Ge.addEventListener)(t, f, n, a));
               },
               removeEventListener: function (t, f, n) {
-                return e(Object(Me.removeEventListener)(t, f, n));
+                return e(Object(Ge.removeEventListener)(t, f, n));
               },
               highlightNote: function (t) {
                 e({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: t });
               },
             };
           }
-        )(Mt);
+        )(Dt);
       f(75);
-      function Bt(e) {
+      function Mt(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -10659,9 +10739,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var kt = (function (e) {
+      var Ft = (function (e) {
         Object(s.a)(f, e);
-        var t = Bt(f);
+        var t = Mt(f);
         function f(e) {
           var n;
           return (
@@ -10797,7 +10877,7 @@
         );
       })(n.Component);
       f(77);
-      function wt(e) {
+      function Gt(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -10823,9 +10903,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var St = (function (e) {
+      var Bt = (function (e) {
           Object(s.a)(f, e);
-          var t = wt(f);
+          var t = Gt(f);
           function f(e) {
             var n;
             return (
@@ -10866,9 +10946,9 @@
                   return a.a.createElement(
                     "div",
                     { className: "ukuleleGuitar" },
-                    a.a.createElement(kt, { note: this.state.activeNote }),
+                    a.a.createElement(Ft, { note: this.state.activeNote }),
                     a.a.createElement(
-                      Gt,
+                      Nt,
                       Object.assign({}, this.props, {
                         setActiveNote: this.setActiveNote,
                       })
@@ -10880,7 +10960,7 @@
             f
           );
         })(n.Component),
-        Pt = function (e) {
+        kt = function (e) {
           var t = e.clef,
             f = e.sign;
           return a.a.createElement(
@@ -10900,7 +10980,7 @@
             )
           );
         },
-        Tt = function () {
+        wt = function () {
           return a.a.createElement(
             "g",
             null,
@@ -10946,16 +11026,16 @@
             })
           );
         },
-        Ot = f(26),
-        Rt = f(10),
-        It = function (e) {
+        St = f(26),
+        Ot = f(11),
+        Pt = function (e) {
           var t = e.noteY,
             f = e.noteX,
             n = e.interval,
             p = e.clickHandler,
             i = e.highlightAccidental,
             r = e.highlight,
-            o = Object(Rt.a)(e, [
+            o = Object(Ot.a)(e, [
               "noteY",
               "noteX",
               "interval",
@@ -10967,11 +11047,11 @@
             c = o.animateNoteIndex,
             x = o.isAllNotesAnimate,
             l = o.noteIndex,
-            b = Object(m.c)(),
-            u = "chromatic" === n,
+            u = Object(m.c)(),
+            b = "chromatic" === n,
             d = {
-              line: { x1: u ? -2 : -10, x2: u ? 26 : 35 },
-              transform: u
+              line: { x1: b ? -2 : -10, x2: b ? 26 : 35 },
+              transform: b
                 ? "translate(2,5) scale(0.8)"
                 : "translate(-3,2) scale(1.2)",
             };
@@ -10988,10 +11068,10 @@
                 style: { cursor: "pointer" },
                 onClick: p,
                 onMouseOver: function () {
-                  b({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: l }), i(!0);
+                  u({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: l }), i(!0);
                 },
                 onMouseOut: function () {
-                  b({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: !1 }), i(!1);
+                  u({ type: "INSTRUMENT/HIGHLIGHT_NOTE", payload: !1 }), i(!1);
                 },
                 fill: r === l ? "#c1c1c1" : "black",
               },
@@ -11005,13 +11085,13 @@
             )
           );
         },
-        Lt = function (e) {
+        Tt = function (e) {
           var t = e.noteY,
             f = e.interval,
             n = e.hasMiddleLine,
             p = e.accidentals,
             i = e.highlightItem,
-            r = Object(Rt.a)(e, [
+            r = Object(Ot.a)(e, [
               "noteY",
               "interval",
               "hasMiddleLine",
@@ -11050,9 +11130,9 @@
               ? ((m.accidentals = p + 10),
                 (m.middleLine = n ? -4 : 0),
                 l && ((m.accidentals = p - 17), (m.middleLine -= 2)))
-              : _
+              : j
               ? (m.middleLine = n ? -4 : 0)
-              : j && ((m.accidentals = 255), (m.middleLine = n ? -4 : 0)),
+              : _ && ((m.accidentals = 255), (m.middleLine = n ? -4 : 0)),
             a.a.createElement(
               "g",
               { className: "accidentals" },
@@ -11074,14 +11154,14 @@
             )
           );
         },
-        Ht = function (e) {
+        Rt = function (e) {
           var t = e.noteY,
             f = e.interval,
             n = e.hasMiddleLine,
             p = e.accidentals,
             i = e.highlightItem,
             r = e.isTriple,
-            o = Object(Rt.a)(e, [
+            o = Object(Ot.a)(e, [
               "noteY",
               "interval",
               "hasMiddleLine",
@@ -11094,7 +11174,7 @@
             x = o.isAllNotesAnimate,
             l = o.noteIndex,
             m = "chromatic" === f,
-            b = {
+            u = {
               middleLine: 0,
               transform: m ? "translate(13,7) scale(0.9)" : "scale(1.2)",
               accidentals:
@@ -11118,12 +11198,12 @@
             };
           return (
             C
-              ? ((b.accidentals = p + 10),
-                (b.middleLine = n ? -4 : 0),
-                m && (b.middleLine = n ? 4 : 7))
-              : _
-              ? (b.middleLine = n ? -4 : 0)
-              : j && ((b.accidentals = 255), (b.middleLine = n && -6)),
+              ? ((u.accidentals = p + 10),
+                (u.middleLine = n ? -4 : 0),
+                m && (u.middleLine = n ? 4 : 7))
+              : j
+              ? (u.middleLine = n ? -4 : 0)
+              : _ && ((u.accidentals = 255), (u.middleLine = n && -6)),
             a.a.createElement(
               a.a.Fragment,
               null,
@@ -11135,7 +11215,7 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.accidentals + b.middleLine,
+                        x: u.accidentals + u.middleLine,
                         y: t + 21,
                         fill: i ? "#c1c1c1" : "#db4437",
                       },
@@ -11150,14 +11230,14 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.accidentals + b.middleLine - 20,
+                        x: u.accidentals + u.middleLine - 20,
                         y: t + 5,
                         fill: i ? "#c1c1c1" : "#db4437",
                       },
                       a.a.createElement("path", {
                         style: { transitionDuration: "400ms" },
                         fill: l === c || x || s ? "#72ac51" : "",
-                        transform: b.transform,
+                        transform: u.transform,
                         d: "M 11.2800004631281, 13.379997253418 C 11.2800004631281, 13.379997253418, 13.9800002723932, 12.4199981689453, 13.9800002723932, 12.4199981689453 C 14.6400001198053, 12.1800003051758,\r 14.9400003105402, 10.6800003051758, 14.9400003105402, 9.29999923706055 C 14.9400003105402, 8.09999847412109, 14.6999995857477, 7.02000045776367, 14.1599996238947, 7.02000045776367 C 14.1000001579523,\r 7.02000045776367, 14.0399997383356, 7.08000183105469, 13.9800002723932, 7.08000183105469 C 13.9800002723932, 7.08000183105469, 11.2800004631281, 8.04000091552734, 11.2800004631281,\r 8.04000091552734 C 11.2800004631281, 8.04000091552734, 11.2800004631281, 0.419998168945313, 11.2800004631281, 0.419998168945313 C 11.2800004631281, 0.119998931884766, 10.9800002723932,\r 0, 10.6800000816584, 0 C 10.3799998909235, 0, 10.0799997001886, 0.119998931884766, 10.0799997001886, 0.419998168945313 C 10.0799997001886, 0.419998168945313, 10.0799997001886, 8.45999908447266,\r 10.0799997001886, 8.45999908447266 C 10.0799997001886, 8.45999908447266, 4.79999996721745, 10.4400024414062, 4.79999996721745, 10.4400024414062 C 4.79999996721745, 10.4400024414062,\r 4.79999996721745, 2.34000015258789, 4.79999996721745, 2.34000015258789 C 4.79999996721745, 2.04000091552734, 4.43999983370304, 1.91999816894531, 4.14000011980534, 1.91999816894531 C 3.83999992907047, \r 1.91999816894531, 3.53999997675419, 2.04000091552734, 3.53999997675419, 2.34000015258789 C 3.53999997675419, 2.34000015258789, 3.53999997675419, 10.8600006103516, 3.53999997675419,\r 10.8600006103516 C 3.53999997675419, 10.8600006103516, 0.779999986290932, 12, 0.779999986290932, 12 C 0.30000002682209, 12.2399978637695, 0, 13.6800003051758, 0, 15 C 0, 16.1399993896484,\r 0.179999992251396, 17.2200012207031, 0.779999986290932, 17.2200012207031 C 0.779999986290932, 17.2200012207031, 3.53999997675419, 16.1999969482422, 3.53999997675419, 16.1999969482422 C 3.53999997675419,\r 16.1999969482422, 3.53999997675419, 26.879997253418, 3.53999997675419, 26.879997253418 C 3.53999997675419, 26.879997253418, 0.779999986290932, 27.9000015258789, 0.779999986290932,\r 27.9000015258789 C 0.239999994635582, 28.1399993896484, 0, 29.5199966430664, 0, 30.8399963378906 C 0, 32.0999984741211, 0.239999994635582, 33.2399978637695, 0.779999986290932, 33.2399978637695 C 0.779999986290932,\r 33.2399978637695, 3.53999997675419, 32.1600036621094, 3.53999997675419, 32.1600036621094 C 3.53999997675419, 32.1600036621094, 3.53999997675419, 40.2600021362305, 3.53999997675419, 40.2600021362305 C 3.53999997675419,\r 40.5599975585937, 3.83999992907047, 40.7399978637695, 4.14000011980534, 40.7399978637695 C 4.43999983370304, 40.7399978637695, 4.79999996721745, 40.5599975585937, 4.79999996721745, 40.2600021362305 C 4.79999996721745,\r 40.2600021362305, 4.79999996721745, 31.6800003051758, 4.79999996721745, 31.6800003051758 C 4.79999996721745, 31.6800003051758, 10.0799997001886, 29.7600021362305, 10.0799997001886, 29.7600021362305 C 10.0799997001886,\r 29.7600021362305, 10.0799997001886, 38.5800018310547, 10.0799997001886, 38.5800018310547 C 10.0799997001886, 38.879997253418, 10.3799998909235, 39, 10.6800000816584, 39 C 10.9800002723932, 39, 11.2800004631281, 38.879997253418, \r 11.2800004631281, 38.5800018310547 C 11.2800004631281, 38.5800018310547, 11.2800004631281, 29.3399963378906, 11.2800004631281, 29.3399963378906 C 11.2800004631281, 29.3399963378906, 13.9800002723932, 28.379997253418, 13.9800002723932,\r 28.379997253418 C 14.6400001198053, 28.1399993896484, 14.9400003105402, 26.5800018310547, 14.9400003105402, 25.2600021362305 C 14.9400003105402, 24.0599975585938, 14.6999995857477, 23.0400009155273, 14.1599996238947,\r 23.0400009155273 C 14.1000001579523, 23.0400009155273, 14.0399997383356, 23.0999984741211, 13.9800002723932, 23.0999984741211 C 13.9800002723932, 23.0999984741211, 11.2800004631281, 24.0599975585938, 11.2800004631281,\r 24.0599975585938 C 11.2800004631281, 13.379997253418, 11.2800004631281, 13.379997253418, 11.2800004631281, 13.379997253418zM 10.0799997001886, 13.8600006103516 C 10.0799997001886, 13.8600006103516, 10.0799997001886, \r 24.4800033569336, 10.0799997001886, 24.4800033569336 C 10.0799997001886, 24.4800033569336, 4.79999996721745, 26.4000015258789, 4.79999996721745, 26.4000015258789 C 4.79999996721745, 26.4000015258789, 4.79999996721745,\r 15.7799987792969, 4.79999996721745, 15.7799987792969 C 10.0799997001886, 13.8600006103516, 10.0799997001886, 13.8600006103516, 10.0799997001886, 13.8600006103516",
                       })
                     )
@@ -11169,7 +11249,7 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.accidentals + b.middleLine,
+                        x: u.accidentals + u.middleLine,
                         y: t + 19.5,
                         fill: i ? "#c1c1c1" : "#000",
                       },
@@ -11184,14 +11264,14 @@
             )
           );
         },
-        Ut = function (e) {
+        It = function (e) {
           var t = e.noteY,
             f = e.interval,
             n = e.hasMiddleLine,
             p = e.isDouble,
             i = e.accidentals,
             r = e.highlightItem,
-            o = Object(Rt.a)(e, [
+            o = Object(Ot.a)(e, [
               "noteY",
               "interval",
               "hasMiddleLine",
@@ -11204,7 +11284,7 @@
             x = o.isAllNotesAnimate,
             l = o.noteIndex,
             m = "chromatic" === f,
-            b = {
+            u = {
               middleLine: 0,
               doubled: {
                 left: 0,
@@ -11276,25 +11356,25 @@
             };
           return (
             C
-              ? ((b.accidentals = i + 13),
-                (b.doubled.accidentalLeft = i + 12),
-                (b.doubled.accidentalRight = i - 12),
-                (b.doubled.left = 2),
-                (b.doubled.right = 14),
-                (b.middleLine = n ? -5 : 0),
+              ? ((u.accidentals = i + 13),
+                (u.doubled.accidentalLeft = i + 12),
+                (u.doubled.accidentalRight = i - 12),
+                (u.doubled.left = 2),
+                (u.doubled.right = 14),
+                (u.middleLine = n ? -5 : 0),
                 m &&
-                  ((b.middleLine -= 2),
-                  (b.doubled.left -= 4),
-                  (b.accidentals -= 26)))
-              : _
-              ? (b.middleLine = n ? -5 : 0)
-              : j &&
-                ((b.accidentals = 258),
-                (b.doubled.accidentalLeft += 17),
-                (b.doubled.accidentalRight += 17),
-                (b.doubled.left -= n ? 5 : 0),
-                (b.doubled.right -= n ? 5 : 0),
-                (b.middleLine = n ? -5 : 0)),
+                  ((u.middleLine -= 2),
+                  (u.doubled.left -= 4),
+                  (u.accidentals -= 26)))
+              : j
+              ? (u.middleLine = n ? -5 : 0)
+              : _ &&
+                ((u.accidentals = 258),
+                (u.doubled.accidentalLeft += 17),
+                (u.doubled.accidentalRight += 17),
+                (u.doubled.left -= n ? 5 : 0),
+                (u.doubled.right -= n ? 5 : 0),
+                (u.middleLine = n ? -5 : 0)),
             a.a.createElement(
               a.a.Fragment,
               null,
@@ -11306,14 +11386,14 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.accidentals + b.middleLine,
+                        x: u.accidentals + u.middleLine,
                         y: t - 2,
                         fill: r ? "#c1c1c1" : "#000",
                       },
                       a.a.createElement("path", {
                         style: { transitionDuration: "400ms" },
                         fill: l === c || x || s ? "#72ac51" : "",
-                        transform: b.transform,
+                        transform: u.transform,
                         d: "M 1.37999999523163, 21.7799987792969 C 2.27999997138977, 20.9400024414062, 3.42000007629395, 20.5200042724609, 4.38000011444092, 20.5200042724609 C 5.88000011444092, 20.5200042724609, 7.07999992370605, 21.4800033569336, 7.07999992370605, 23.7000045776367 C 7.07999992370605, 27.120002746582, 3.48000001907349, 31.2000045776367, 1.20000004768372, 33.1800003051758 C 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969zM 11.6400003433228, 23.7000045776367 C 11.6400003433228, 19.6800003051758, 9.65999984741211, 18.3000030517578, 7.26000022888184, 18.3000030517578 C 5.28000020980835, 18.3000030517578, 3.05999994277954, 19.2600021362305, 1.37999999523163, 20.4000015258789 C 1.37999999523163, 20.4000015258789, 1.37999999523163, 0, 1.37999999523163, 0 C 1.37999999523163, 0, 0, 0, 0, 0 C 0, 0, 0, 37.2000045776367, 0, 37.2000045776367 C 3.29999995231628, 35.0400009155273, 11.6400003433228, 27.6600036621094, 11.6400003433228, 23.7000045776367",
                       })
                     )
@@ -11326,14 +11406,14 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.doubled.accidentalLeft + b.doubled.left,
+                        x: u.doubled.accidentalLeft + u.doubled.left,
                         y: t - 2,
                         fill: r ? "#c1c1c1" : "#000",
                       },
                       a.a.createElement("path", {
                         style: { transitionDuration: "400ms" },
                         fill: l === c || x || s ? "#72ac51" : "",
-                        transform: b.transform,
+                        transform: u.transform,
                         d: "M 1.37999999523163, 21.7799987792969 C 2.27999997138977, 20.9400024414062, 3.42000007629395, 20.5200042724609, 4.38000011444092, 20.5200042724609 C 5.88000011444092, 20.5200042724609, 7.07999992370605, 21.4800033569336, 7.07999992370605, 23.7000045776367 C 7.07999992370605, 27.120002746582, 3.48000001907349, 31.2000045776367, 1.20000004768372, 33.1800003051758 C 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969zM 11.6400003433228, 23.7000045776367 C 11.6400003433228, 19.6800003051758, 9.65999984741211, 18.3000030517578, 7.26000022888184, 18.3000030517578 C 5.28000020980835, 18.3000030517578, 3.05999994277954, 19.2600021362305, 1.37999999523163, 20.4000015258789 C 1.37999999523163, 20.4000015258789, 1.37999999523163, 0, 1.37999999523163, 0 C 1.37999999523163, 0, 0, 0, 0, 0 C 0, 0, 0, 37.2000045776367, 0, 37.2000045776367 C 3.29999995231628, 35.0400009155273, 11.6400003433228, 27.6600036621094, 11.6400003433228, 23.7000045776367",
                       })
                     ),
@@ -11341,14 +11421,14 @@
                       "svg",
                       {
                         viewBox: "177 0 226 250",
-                        x: b.doubled.accidentalRight + b.doubled.right,
+                        x: u.doubled.accidentalRight + u.doubled.right,
                         y: t - 2,
                         fill: r ? "#c1c1c1" : "#000",
                       },
                       a.a.createElement("path", {
                         style: { transitionDuration: "400ms" },
                         fill: l === c || x || s ? "#72ac51" : "",
-                        transform: b.transform,
+                        transform: u.transform,
                         d: "M 1.37999999523163, 21.7799987792969 C 2.27999997138977, 20.9400024414062, 3.42000007629395, 20.5200042724609, 4.38000011444092, 20.5200042724609 C 5.88000011444092, 20.5200042724609, 7.07999992370605, 21.4800033569336, 7.07999992370605, 23.7000045776367 C 7.07999992370605, 27.120002746582, 3.48000001907349, 31.2000045776367, 1.20000004768372, 33.1800003051758 C 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969, 1.37999999523163, 21.7799987792969zM 11.6400003433228, 23.7000045776367 C 11.6400003433228, 19.6800003051758, 9.65999984741211, 18.3000030517578, 7.26000022888184, 18.3000030517578 C 5.28000020980835, 18.3000030517578, 3.05999994277954, 19.2600021362305, 1.37999999523163, 20.4000015258789 C 1.37999999523163, 20.4000015258789, 1.37999999523163, 0, 1.37999999523163, 0 C 1.37999999523163, 0, 0, 0, 0, 0 C 0, 0, 0, 37.2000045776367, 0, 37.2000045776367 C 3.29999995231628, 35.0400009155273, 11.6400003433228, 27.6600036621094, 11.6400003433228, 23.7000045776367",
                       })
                     )
@@ -11403,13 +11483,13 @@
             )
           );
         },
-        Kt = function (e) {
+        Lt = function (e) {
           var t = e.noteY,
             f = e.interval,
             n = e.hasMiddleLine,
             p = e.accidentals,
             i = e.highlightItem,
-            r = Object(Rt.a)(e, [
+            r = Object(Ot.a)(e, [
               "noteY",
               "interval",
               "hasMiddleLine",
@@ -11445,7 +11525,7 @@
             )
           );
         },
-        Wt = function (e) {
+        Ht = function (e) {
           var t = e.noteIndex,
             f = e.notePosition,
             p = e.accidentals,
@@ -11457,25 +11537,25 @@
             x = e.noteSound,
             l = e.noteSign,
             m = e.highlight,
-            b = e.interval,
-            u = [165, 145, 185, 25, 5, -15].includes(o),
+            u = e.interval,
+            b = [165, 145, 185, 25, 5, -15].includes(o),
             d = [175, 155].includes(o),
             h = [15, -5].includes(o),
             E = Object(n.useState)(!1),
-            g = Object(Ot.a)(E, 2),
+            g = Object(St.a)(E, 2),
             v = g[0],
             y = g[1],
             C = Object(n.useState)(!1),
-            _ = Object(Ot.a)(C, 2),
-            j = _[0],
-            A = _[1],
+            j = Object(St.a)(C, 2),
+            _ = j[0],
+            A = j[1],
             D = {
               index: t,
               accidentals: p,
-              interval: b,
-              hasMiddleLine: u,
+              interval: u,
+              hasMiddleLine: b,
               noteY: o,
-              highlightItem: j,
+              highlightItem: _,
               animation: {
                 isNoteAnimate: v,
                 animateNoteIndex: r,
@@ -11487,18 +11567,18 @@
           return a.a.createElement(
             a.a.Fragment,
             null,
-            "#" === l && a.a.createElement(Lt, D),
-            "\u266e" === l && a.a.createElement(Kt, D),
+            "#" === l && a.a.createElement(Tt, D),
+            "\u266e" === l && a.a.createElement(Lt, D),
             "b" === l &&
-              a.a.createElement(Ut, Object.assign({}, D, { isDouble: 1 })),
+              a.a.createElement(It, Object.assign({}, D, { isDouble: 1 })),
             "bb" === l &&
-              a.a.createElement(Ut, Object.assign({}, D, { isDouble: 2 })),
+              a.a.createElement(It, Object.assign({}, D, { isDouble: 2 })),
             "bbb" === l &&
-              a.a.createElement(Ut, Object.assign({}, D, { isDouble: 3 })),
-            "##" === l && a.a.createElement(Ht, D),
+              a.a.createElement(It, Object.assign({}, D, { isDouble: 3 })),
+            "##" === l && a.a.createElement(Rt, D),
             "###" === l &&
-              a.a.createElement(Ht, Object.assign({ isTriple: !0 }, D)),
-            a.a.createElement(It, {
+              a.a.createElement(Rt, Object.assign({ isTriple: !0 }, D)),
+            a.a.createElement(Pt, {
               noteY: o,
               noteX: s,
               clickHandler: function () {
@@ -11519,12 +11599,12 @@
                 notePosition: f,
               },
               highlight: m,
-              line: { hasMiddleLine: u, hasTopLine: d, hasBottomLine: h },
-              interval: b,
+              line: { hasMiddleLine: b, hasTopLine: d, hasBottomLine: h },
+              interval: u,
             })
           );
         },
-        Yt = function (e) {
+        Ut = function (e) {
           var t = e.notesPositions,
             f =
               { unison: 240, minor_second: 225, major_second: 225 }[
@@ -11535,7 +11615,7 @@
             i = 155 - 10 * t[1],
             r = p >= 165 ? 2 : p >= 145 ? 1 : 0;
           i <= 35 && ((n = [53, 34]), (r = i <= 5 ? 2 : i <= 25 ? 1 : 0)),
-            _ || (r = 0);
+            j || (r = 0);
           for (var o = [], s = 0; s < r; s++)
             o.push(
               a.a.createElement(
@@ -11560,8 +11640,8 @@
             );
           return a.a.createElement("g", { className: "accidentals" }, o);
         },
-        zt = f(79),
-        Vt = function (e) {
+        Kt = f(79),
+        Wt = function (e) {
           var t = e.notesPositions,
             f = "chromatic" === e.interval,
             n = { x: -96, x1: 150, x2: 204 };
@@ -11585,7 +11665,7 @@
                       x: n.x,
                       y: e,
                       fill: "#000",
-                      key: zt.generate(),
+                      key: Kt.generate(),
                     },
                     a.a.createElement("line", {
                       x1: n.x1,
@@ -11610,7 +11690,7 @@
             a.a.createElement("g", { className: "accidentals" }, p)
           );
         },
-        Xt = function (e) {
+        Yt = function (e) {
           for (
             var t = e.notesPositions,
               f = (e.interval, t[0]),
@@ -11663,12 +11743,12 @@
             );
           return a.a.createElement("g", null, r);
         },
-        Jt = function (e) {
+        zt = function (e) {
           for (
             var t = e.notesPositions,
               f = e.chord,
               n = e.clef,
-              p = u.ledgerLines[n],
+              p = b.ledgerLines[n],
               i = !!p.hasOwnProperty(f) && p[f],
               r = t[0],
               o = t[t.length - 1],
@@ -11720,19 +11800,19 @@
             );
           return a.a.createElement("g", null, x);
         },
-        Zt = function (e) {
+        Vt = function (e) {
           var t = e.notesPositions,
             f = e.interval,
             n = e.chord,
             p = e.clef;
           return C
-            ? a.a.createElement(Vt, { notesPositions: t, interval: f })
-            : j
-            ? a.a.createElement(Xt, { notesPositions: t, interval: f })
+            ? a.a.createElement(Wt, { notesPositions: t, interval: f })
             : _
             ? a.a.createElement(Yt, { notesPositions: t, interval: f })
+            : j
+            ? a.a.createElement(Ut, { notesPositions: t, interval: f })
             : y
-            ? a.a.createElement(Jt, {
+            ? a.a.createElement(zt, {
                 notesPositions: t,
                 interval: f,
                 chord: n,
@@ -11740,27 +11820,27 @@
               })
             : null;
         };
-      function $t(e, t) {
+      function Xt(e, t) {
         var f = e.chord,
           n = e.altered,
           a = e.interval,
-          p = u.alterPos,
-          i = u.alterPosBass,
-          r = u.alterPosALto,
-          o = u.alterPosTenor,
-          s = u.alteration,
+          p = b.alterPos,
+          i = b.alterPosBass,
+          r = b.alterPosALto,
+          o = b.alterPosTenor,
+          s = b.alteration,
           c = A.semitones,
           x = A.scaleSteps,
           l = A.accidentals,
           m = A.chromatic_scales,
-          b = "chromatic" === a,
+          u = "chromatic" === a,
           d = "".concat(f, a),
           h = s[f][d] || s[f][""],
-          E = j ? [-13, -6, 1, 8, 15] : x[a];
+          E = _ ? [1, 8, 15] : x[a];
         y ||
           ((h = l[f][""]),
           l[f][a] && (h = l[f][a]),
-          b
+          u
             ? ((h = l[f][[n, a].join("")] ? l[f][[n, a].join("")] : l[f][""]),
               (E = m[[f, n].join("")]))
             : "whole_tone" === a &&
@@ -11770,36 +11850,32 @@
           v = "".concat(f, n, a);
         p.hasOwnProperty(v) && (g = p[v]);
         var C = 0,
-          _ = 2,
-          D = 40;
+          j = _ ? 52 : 40;
         switch (t) {
           case "bass":
-            (C = 5), i.hasOwnProperty(v) && (g = i[v]), (_ = 4);
+            (C = 5), i.hasOwnProperty(v) && (g = i[v]);
             break;
           case "alto":
-            r.hasOwnProperty(v) && (g = r[v]), (C = 6), (_ = 3);
+            r.hasOwnProperty(v) && (g = r[v]), (C = 6);
             break;
           case "tenor":
-            o.hasOwnProperty(v) && (g = o[v]), (C = 8), (_ = 1);
-            break;
-          default:
-            D = j ? 52 : 40;
+            o.hasOwnProperty(v) && (g = o[v]), (C = 8);
         }
-        var N = U[f].sound;
+        var D = U[f].sound;
         switch (n) {
           case "#":
-            N += 1;
+            D += 1;
             break;
           case "b":
-            N -= 1;
+            D -= 1;
             break;
           case "x":
-            N += 2;
+            D += 2;
             break;
           case "bb":
-            N -= 2;
+            D -= 2;
         }
-        var F = {
+        var N = {
           notePosition: E.map(function (e) {
             return e + U[f].index + C;
           }),
@@ -11807,22 +11883,22 @@
           accidentals: {},
           accidentalPosition: {},
         };
-        if (!j) {
+        if (!_) {
           var M = function () {
-            (D -= 12),
-              (F.notePosition = F.notePosition.map(function (e) {
+            (j -= 12),
+              (N.notePosition = N.notePosition.map(function (e) {
                 return e - 7;
               }));
           };
           ["G", "A", "B"].includes(f) && M();
-          var G = Math.max.apply(Math, Object(Oe.a)(F.notePosition));
-          G > 16 && M(), G >= 24 && M();
+          var F = Math.max.apply(Math, Object(Re.a)(N.notePosition));
+          F > 16 && M(), F >= 24 && M();
         }
         if (
           (c[a].map(function (e, t) {
-            var f = F.accidentals,
-              p = F.accidentalPosition,
-              i = F.sound,
+            var f = N.accidentals,
+              p = N.accidentalPosition,
+              i = N.sound,
               r = {
                 "#": { "": "#", "#": "##", "##": "###", bb: "b", b: "" },
                 b: { "": "b", b: "bb", bb: "bbb", "#": "", "##": "#" },
@@ -11834,22 +11910,32 @@
                 ? (h[e] ? (f[t] = r[n][h[e]]) : (f[t] = r[n][""]),
                   (p[t] = g[t]))
                 : h[e] && ((f[t] = h[e]), (p[t] = g[t])),
-              (b || "whole_tone" === a) && ((f[t] = h[e] || ""), (p[t] = g[t])),
-              i.push(D + e + N),
+              (u || "whole_tone" === a) && ((f[t] = h[e] || ""), (p[t] = g[t])),
+              i.push(j + e + D),
               e
             );
           }),
-          j)
+          _)
         ) {
-          var B = U[f].index;
-          (F.notePosition = F.notePosition.filter(function (e, t) {
-            return e >= -3 && e < 18;
-          })),
-            (F.sound = B > _ ? F.sound.slice(0, 3) : F.sound.slice(1, 4));
+          var G = Math.max.apply(Math, Object(Re.a)(N.notePosition));
+          G > 17 &&
+            ((N.notePosition = N.notePosition.map(function (e) {
+              return e - 7;
+            })),
+            (N.sound = N.sound.map(function (e) {
+              return e - 12;
+            }))),
+            G > 24 &&
+              ((N.notePosition = N.notePosition.map(function (e) {
+                return e - 7;
+              })),
+              (N.sound = N.sound.map(function (e) {
+                return e - 12;
+              })));
         }
-        return F;
+        return N;
       }
-      function qt(e) {
+      function Jt(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -11875,9 +11961,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var Qt = (function (e) {
+      var Zt = (function (e) {
           Object(s.a)(f, e);
-          var t = qt(f);
+          var t = Jt(f);
           function f(e) {
             var n;
             return (
@@ -11897,7 +11983,7 @@
                     );
                   });
                 var t = "?" === n.state.clef ? e - 12 : e,
-                  f = ot[t];
+                  f = rt[t];
                 n.setState(function (e) {
                   return (
                     (e.isPlayingNote = f.play()), (e.prevHowlerNote = f), e
@@ -11906,7 +11992,7 @@
               }),
               (n.playNotes = function (e) {
                 var t = "?" === n.state.clef ? e - 12 : e,
-                  f = ot[t],
+                  f = rt[t],
                   a = f.play();
                 n.setState(function (e) {
                   return (
@@ -11920,7 +12006,7 @@
                   f = 0,
                   a = t.sound.length,
                   p = t.sound;
-                y || _
+                y || j
                   ? ((e = p),
                     clearTimeout(n.playNoteTimeout),
                     n.setState({ isAllNotesAnimate: !0 }),
@@ -12010,7 +12096,7 @@
               {
                 key: "UNSAFE_componentWillReceiveProps",
                 value: function (e) {
-                  var t = $t(e.chords, e.clef.name);
+                  var t = Xt(e.chords, e.clef.name);
                   this.setState({
                     clef: e.clef.sign,
                     clefName: e.clef.name,
@@ -12032,9 +12118,9 @@
                 key: "componentDidMount",
                 value: function (e) {
                   this._isMounted = !0;
-                  var t = $t(this.props.chords, this.props.clef.name);
+                  var t = Xt(this.props.chords, this.props.clef.name);
                   this.setState({ chord: t }),
-                    this.props.addEventListener(Ge, this, this.playChord);
+                    this.props.addEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -12042,7 +12128,7 @@
                 value: function () {
                   clearTimeout(this.playNoteTimeout),
                     (this._isMounted = !1),
-                    this.props.removeEventListener(Ge, this, this.playChord);
+                    this.props.removeEventListener(Be, this, this.playChord);
                 },
               },
               {
@@ -12061,10 +12147,10 @@
                     x = 0,
                     l = !1,
                     m = !1,
-                    b = null,
-                    u = this.props.chords,
-                    d = u.chord,
-                    h = u.interval,
+                    u = null,
+                    b = this.props.chords,
+                    d = b.chord,
+                    h = b.interval,
                     E = d + h,
                     g = "chromatic" === h,
                     v = { note: -35, accidental: g ? 60 : 35 },
@@ -12072,7 +12158,7 @@
                   return a.a.createElement(
                     a.a.Fragment,
                     null,
-                    a.a.createElement(Zt, {
+                    a.a.createElement(Vt, {
                       notesPositions: i,
                       interval: h,
                       chord: E,
@@ -12080,21 +12166,21 @@
                     }),
                     i.map(function (t, p) {
                       var i = 155 - 10 * t,
-                        u = 220,
+                        b = 220,
                         d = s[p],
                         E = o[p];
                       return (
-                        b === t && m && !E && (E = "\u266e"),
-                        (b = t),
+                        u === t && m && !E && (E = "\u266e"),
+                        (u = t),
                         (m = o[p]),
-                        x - i !== 10 || l ? (l = !1) : ((u = 250), (l = !0)),
-                        _ && x === i
-                          ? (u = 265)
+                        x - i !== 10 || l ? (l = !1) : ((b = 250), (l = !0)),
+                        j && x === i
+                          ? (b = 265)
                           : C
-                          ? ((u = v.note += y), (d = v.accidental += y))
-                          : j && (u = 238),
+                          ? ((b = v.note += y), (d = v.accidental += y))
+                          : _ && (b = 238),
                         (x = i),
-                        a.a.createElement(Wt, {
+                        a.a.createElement(Ht, {
                           key: p,
                           noteIndex: p,
                           noteSign: E,
@@ -12105,7 +12191,7 @@
                           isAllNotesAnimate: f,
                           animateNoteIndex: n,
                           noteY: i,
-                          noteX: u,
+                          noteX: b,
                           playNote: e.playNote,
                         })
                       );
@@ -12117,7 +12203,7 @@
             f
           );
         })(n.Component),
-        ef = Object(m.b)(
+        $t = Object(m.b)(
           function (e) {
             return {
               clef: e.buttonsReducer.clef,
@@ -12133,15 +12219,82 @@
           function (e) {
             return {
               addEventListener: function (t, f, n, a) {
-                return e(Object(Me.addEventListener)(t, f, n, a));
+                return e(Object(Ge.addEventListener)(t, f, n, a));
               },
               removeEventListener: function (t, f, n) {
-                return e(Object(Me.removeEventListener)(t, f, n));
+                return e(Object(Ge.removeEventListener)(t, f, n));
               },
             };
           }
-        )(Qt);
+        )(Zt);
       f(88);
+      function qt(e) {
+        var t = (function () {
+          if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
+          if (Reflect.construct.sham) return !1;
+          if ("function" === typeof Proxy) return !0;
+          try {
+            return (
+              Date.prototype.toString.call(
+                Reflect.construct(Date, [], function () {})
+              ),
+              !0
+            );
+          } catch (e) {
+            return !1;
+          }
+        })();
+        return function () {
+          var f,
+            n = Object(x.a)(e);
+          if (t) {
+            var a = Object(x.a)(this).constructor;
+            f = Reflect.construct(n, arguments, a);
+          } else f = n.apply(this, arguments);
+          return Object(c.a)(this, f);
+        };
+      }
+      var Qt = (function (e) {
+          Object(s.a)(f, e);
+          var t = qt(f);
+          function f() {
+            return Object(r.a)(this, f), t.apply(this, arguments);
+          }
+          return (
+            Object(o.a)(f, [
+              {
+                key: "render",
+                value: function () {
+                  var e = this.props.clef,
+                    t = e.sign,
+                    f = e.name;
+                  return a.a.createElement(
+                    "div",
+                    {
+                      className: _
+                        ? "notation-wrapper note-finder"
+                        : "notation-wrapper",
+                    },
+                    a.a.createElement(
+                      "svg",
+                      { className: C ? "notation scale-finder" : "notation" },
+                      a.a.createElement(wt, null),
+                      a.a.createElement($t, null),
+                      a.a.createElement(kt, { clef: f, sign: t })
+                    )
+                  );
+                },
+              },
+            ]),
+            f
+          );
+        })(n.Component),
+        ef = Object(m.b)(function (e) {
+          return {
+            clef: e.buttonsReducer.clef,
+            interval: e.chordSelectReducer.interval,
+          };
+        }, null)(Qt);
       function tf(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
@@ -12168,7 +12321,13 @@
           return Object(c.a)(this, f);
         };
       }
-      var ff = (function (e) {
+      var ff = {
+          Piano: a.a.createElement(lt, null),
+          Guitar: a.a.createElement(pt, null),
+          Ukulele: a.a.createElement(Bt, null),
+          Notation: a.a.createElement(ef, null),
+        },
+        nf = (function (e) {
           Object(s.a)(f, e);
           var t = tf(f);
           function f() {
@@ -12179,92 +12338,19 @@
               {
                 key: "render",
                 value: function () {
-                  var e = this.props.clef,
-                    t = e.sign,
-                    f = e.name;
-                  return a.a.createElement(
-                    "div",
-                    {
-                      className: j
-                        ? "notation-wrapper note-finder"
-                        : "notation-wrapper",
-                    },
-                    a.a.createElement(
-                      "svg",
-                      { className: C ? "notation scale-finder" : "notation" },
-                      a.a.createElement(Tt, null),
-                      a.a.createElement(ef, null),
-                      a.a.createElement(Pt, { clef: f, sign: t })
-                    )
-                  );
-                },
-              },
-            ]),
-            f
-          );
-        })(n.Component),
-        nf = Object(m.b)(function (e) {
-          return {
-            clef: e.buttonsReducer.clef,
-            interval: e.chordSelectReducer.interval,
-          };
-        }, null)(ff);
-      function af(e) {
-        var t = (function () {
-          if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
-          if (Reflect.construct.sham) return !1;
-          if ("function" === typeof Proxy) return !0;
-          try {
-            return (
-              Date.prototype.toString.call(
-                Reflect.construct(Date, [], function () {})
-              ),
-              !0
-            );
-          } catch (e) {
-            return !1;
-          }
-        })();
-        return function () {
-          var f,
-            n = Object(x.a)(e);
-          if (t) {
-            var a = Object(x.a)(this).constructor;
-            f = Reflect.construct(n, arguments, a);
-          } else f = n.apply(this, arguments);
-          return Object(c.a)(this, f);
-        };
-      }
-      var pf = {
-          Piano: a.a.createElement(mt, null),
-          Guitar: a.a.createElement(it, null),
-          Ukulele: a.a.createElement(St, null),
-          Notation: a.a.createElement(nf, null),
-        },
-        rf = (function (e) {
-          Object(s.a)(f, e);
-          var t = af(f);
-          function f() {
-            return Object(r.a)(this, f), t.apply(this, arguments);
-          }
-          return (
-            Object(o.a)(f, [
-              {
-                key: "render",
-                value: function () {
                   var e = this.props.instrument;
-                  return pf[e];
+                  return ff[e];
                 },
               },
             ]),
             f
           );
         })(n.Component),
-        of = Object(m.b)(function (e) {
+        af = Object(m.b)(function (e) {
           return { instrument: e.buttonsReducer.instrument };
-        }, null)(rf);
+        }, null)(nf);
       f(90);
-      function sf(e) {
+      function pf(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -12290,9 +12376,9 @@
           return Object(c.a)(this, f);
         };
       }
-      var cf = (function (e) {
+      var rf = (function (e) {
         Object(s.a)(f, e);
-        var t = sf(f);
+        var t = pf(f);
         function f() {
           var e;
           return Object(r.a)(this, f), ((e = t.call(this)).state = {}), e;
@@ -12305,9 +12391,9 @@
                 return a.a.createElement(
                   "div",
                   { className: "App" },
-                  a.a.createElement(oe, null),
+                  a.a.createElement(se, null),
                   a.a.createElement(Te, null),
-                  a.a.createElement(of, null)
+                  a.a.createElement(af, null)
                 );
               },
             },
@@ -12322,8 +12408,8 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var xf = f(16),
-        lf = {
+      var of = f(16),
+        sf = {
           chord: "C",
           altered: "",
           interval:
@@ -12336,19 +12422,19 @@
           noteGuitar: !1,
           noteNotation: !1,
         },
-        mf = {
+        cf = {
           instrument: "Piano",
           clef: { name: "treble", sign: "&" },
           isActiveClef: !1,
           isActiveThumb: !1,
           isActiveFingering: !1,
         },
-        bf = Object(xf.b)({
+        xf = Object(of.b)({
           chordSelectReducer: function () {
             var e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : lf,
+                  : sf,
               t = arguments.length > 1 ? arguments[1] : void 0;
             switch (t.type) {
               case "SELECT/SWITCH_CHORD":
@@ -12375,7 +12461,7 @@
             var e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : mf,
+                  : cf,
               t = arguments.length > 1 ? arguments[1] : void 0;
             switch (t.type) {
               case "BUTTONS/SWITCH_INSTRUMENT":
@@ -12393,17 +12479,17 @@
                 return e;
             }
           },
-          reactReduxEvents: Me.reduxEventReducer,
+          reactReduxEvents: Ge.reduxEventReducer,
         }),
-        uf = Object(xf.d)(
-          bf,
-          Object(xf.c)(
+        lf = Object(of.d)(
+          xf,
+          Object(of.c)(
             window.__REDUX_DEVTOOLS_EXTENSION__ &&
               window.__REDUX_DEVTOOLS_EXTENSION__()
           )
         );
       i.a.render(
-        a.a.createElement(m.a, { store: uf }, a.a.createElement(cf, null)),
+        a.a.createElement(m.a, { store: lf }, a.a.createElement(rf, null)),
         document.getElementById("interactive-finder")
       ),
         "serviceWorker" in navigator &&

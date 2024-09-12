@@ -10,36 +10,30 @@
     align-items: center;
     color: #72ac51;
     font-size: 4rem;
-    height: 45px
+    min-height: 45px
 }
 
-.selector-wrap .selector-chord-name.notes-finder {
-    padding-bottom: 50px
-}
-
-.selector-wrap .selector-chord-name.notes-finder>span {
+.chord-selector {
     display: flex;
-    align-items: baseline
+    justify-content: center;
+    min-height: 200px;
+    width: 100%
 }
 
-.selector-wrap .selector-interval-name {
-    display: flex;
-    align-items: flex-start;
-    color: #72ac51;
-    font-size: 40px;
-    height: 45px;
-    padding-top: 10px
+.notes-finder {
+    min-height: 150px
+}
+
+.selector-interval p {
+    line-height: 35px;
+    text-align: center;
+    padding-bottom: 0
 }
 
 .selector-wrap .selector-altered {
     font-family: Opus Chords Std;
     height: 100%;
     padding-top: 10px
-}
-
-.\--accidentals.double-sharp {
-    display: flex;
-    align-self: flex-end
 }
 
 .selector-wrap .selector-minor {
@@ -60,14 +54,17 @@
     font-size: 40px
 }
 
+.selector-root-alter .\--accidentals {
+    line-height: 0
+}
+
 .\--accidentals,
 .\--accidentals-circle {
     font-family: Opus Chords Std
 }
 
 .\--accidentals-circle {
-    font-style: normal;
-    padding-top: 3px
+    font-style: normal
 }
 
 .selector {
@@ -81,6 +78,7 @@
 
 .select {
     width: 80px;
+    min-width: 60px;
     z-index: 11;
     margin: 0 .3rem;
     font-family: Opus Chords Std;
@@ -95,6 +93,7 @@
 
 .select-chord {
     width: 83px;
+    min-width: 60px;
     z-index: 11
 }
 
@@ -102,25 +101,21 @@
     z-index: 11
 }
 
-.selector-wrap .selector-interval .sign-maj {
-    line-height: .7
-}
-
-.selector-wrap .selector-interval .sign-dim {
-    margin-top: -6px
-}
-
-.selector-wrap .selector-interval .sign-spacing {
-    letter-spacing: -6px;
-    margin-left: -3px
+.selector-wrap .selector-interval sup {
+    top: 10px;
+    left: 3px
 }
 
 .chord-notes {
+    display: flex;
+    align-items: center;
     position: relative
 }
 
-.chord-notes .notes>span {
-    color: #888
+.chord-notes .chord-notes-text {
+    text-wrap: nowrap;
+    color: #888;
+    padding-right: 5px
 }
 
 .notes {
@@ -140,7 +135,7 @@
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    margin: 0 .4rem;
+    margin: 0 5px;
     background-color: #72ac51;
     font-size: 14px;
     font-family: Open Sans, sans-serif;
@@ -161,13 +156,8 @@
     background-color: #c1c1c1
 }
 
-.notes li:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    position: absolute;
-    background-color: initial
+.notes li span {
+    pointer-events: none
 }
 
 .notes li:hover {
@@ -175,18 +165,33 @@
     transition: background-color .3s
 }
 
+.dropdown ::-webkit-scrollbar {
+    width: 12px
+}
+
+.dropdown ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 2px solid #fff
+}
+
+.dropdown ::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+.dropdown ::-webkit-scrollbar-track:hover {
+    background-color: #f8f8f8
+}
+
+@media screen and (max-width:1005px) {
+    .chord-selector {
+        margin-top: 20px
+    }
+}
+
 @media screen and (max-width:520px) {
     .chord-notes {
         overflow-x: scroll
-    }
-
-    .chord-notes .notes>span {
-        white-space: nowrap;
-        padding-left: 1rem
-    }
-
-    .chord-notes .notes {
-        width: 150%
     }
 }
 
@@ -515,12 +520,20 @@ button:hover {
 
 .guitar-neck-wrap ul {
     display: flex;
-    justify-content: space-around;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
-.guitar-neck-wrap li {
-    width: 100%;
+.guitar-neck li:first-of-type {
+    box-sizing: border-box;
+    flex: none;
+    padding: 0 2px;
+    min-width: 40px
+}
+
+.guitar-neck li {
+    box-sizing: border-box;
+    flex: 1 1;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -1247,12 +1260,20 @@ button:hover {
 
 .ukulele-neck-wrap ul {
     display: flex;
-    justify-content: space-around;
-    height: 100%
+    height: 100%;
+    width: 100%
+}
+
+.ukulele-neck li:first-of-type {
+    box-sizing: border-box;
+    flex: none;
+    padding: 0 2px;
+    min-width: 40px
 }
 
 .ukulele-neck-wrap li {
-    width: 100%;
+    box-sizing: border-box;
+    flex: 1 1;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -1542,19 +1563,6 @@ button:hover {
 @font-face {
     font-family: Opus Chords Std;
     src: url(./OpusChordsStd.otf) format("truetype")
-}
-
-.chord-selector {
-    display: flex;
-    justify-content: center;
-    min-height: 200px;
-    width: 100%
-}
-
-.chord-selector.notes-finder {
-    min-height: 137px;
-    align-items: flex-end;
-    padding-bottom: 10px
 }
 
 .default__page__content ul {
