@@ -150,8 +150,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <script src="../library/piano/files/scripts/virtual-piano/translation/Vietnamese.js"></script>
-                            <script src="../library/piano/files/scripts/virtual-piano/static/js/scripts.min.js"></script>
+                            <script src="../library/piano/files/scripts/virtual-piano/translation/key.js"></script>
+                            <script src="../library/piano/files/scripts/virtual-piano/static/js/2.js"></script>
                         </div>
                     </div>
                 </article>

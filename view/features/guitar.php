@@ -86,6 +86,9 @@
 	#main-header .navbar {
 		margin-right:16px;
 	}
+	.dropdown-content li{
+		margin-left:-32px;
+	}
 </style>
 <link href="../library/guitar/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
 <link href="../library/guitar/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />

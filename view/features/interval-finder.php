@@ -149,8 +149,8 @@
                                         </div>
                                         <script src="../library/interval-finder/translation/Vietnamese.js"></script>
                                         <script src="../library/interval-finder/keycodes.js"></script>
-                                        <script src="../library/interval-finder/audio.js"></script>
-                                        <script src="../library/interval-finder/process_audio.js"></script>
+                                        <script src="../library/interval-finder/audio2.js"></script>
+                                        <script src="../library/interval-finder/process_audio2.js"></script>
                                         <script src="../library/interval-finder/runtime_main.js"></script>
 
                                     </div>

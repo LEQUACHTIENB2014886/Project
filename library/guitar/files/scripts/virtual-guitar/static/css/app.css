@@ -132,7 +132,7 @@
 
 .buttons-module button {
     height: 37px;
-    margin-right: 8px;
+    margin-right: 18px;
     font-size: 14px;
     font-family: Open Sans, sans-serif;
     background: #f8f8f8;
@@ -173,13 +173,14 @@
     border-radius: 4px;
     background-color: #f1f1f1;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-    z-index: 3
+    z-index: 3;
+
 }
 
 .dropdown-content li {
     color: #000;
     font-size: 13px;
-    padding: 10px 14px;
+    padding: 10px 10px;
     text-decoration: none;
     cursor: pointer;
     transition: all .2s ease

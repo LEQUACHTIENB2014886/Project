@@ -1,6 +1,0 @@
-var PIANO_TRANSLATION={url:"piano?",buttonNames:{markNotes:'Marquer',showHideNotes:{show:'Afficher le nom des note',hide:'Masquer le nom des notes'},playNotes:'Jouer',reset:'Effacer'},noteNames:{c:'do',cis:'<span><span>do</span><span class="accidental">♯</span></span>'+
-'<span><span>ré</span><span class="accidental">♭</span></span>',d:'ré',dis:'<span><span>ré</span><span class="accidental">♯</span></span>'+
-'<span><span>mi</span><span class="accidental">♭</span></span>',e:'mi',f:'fa',fis:'<span><span>fa</span><span class="accidental">♯</span></span>'+
-'<span><span>sol</span><span class="accidental">♭</span></span>',g:'sol',gis:'<span><span>sol</span><span class="accidental">♯</span></span>'+
-'<span><span>la</span><span class="accidental">♭</span></span>',a:'la',ais:'<span><span>la</span><span class="accidental">♯</span></span>'+
-'<span><span>si</span><span class="accidental">♭</span></span>',b:'si',},keys:{'1c':[87],'1cis':[83],'1d':[88],'1dis':[68],'1e':[67],'1f':[65],'1fis':[50],'1g':[90],'1gis':[51],'2a':[69],'2ais':[52],'2b':[82],'2c':[84],'2cis':[54],'2d':[89],'2dis':[55],'2e':[85],'2f':[73],'2fis':[57],'2g':[79],'2gis':[48],'3a':[80],'3ais':[187,169],'3b':[219],'3c':[221],'3cis':[70],'3d':[86],'3dis':[71],'3e':[66],'3f':[78],'3fis':[74],'3g':[188],'3gis':[75],'4a':[190],'4ais':[76],'4b':[]},};
