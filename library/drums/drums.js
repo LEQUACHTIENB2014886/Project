@@ -16208,22 +16208,22 @@
         },
         hi =
           n.p +
-          "../library/drums/drum-kit-standard.eb6cdcf0e2d2b6c360fb.png",
+          "../library/drums/drum-kit-1.png",
         mi =
           n.p +
-          "../library/drums/drum-kit-powerful.78d86422eefbbf8e260a.png",
+          "../library/drums/drum-kit-2.png",
         _i =
           n.p +
-          "../library/drums/drum-kit-monumental.b0171cb723a2e7f276af.png",
+          "../library/drums/drum-kit-3.png",
         gi =
           n.p +
-          "../library/drums/drum-kit-minimalistic.7e68037b956863be4251.png",
+          "../library/drums/drum-kit-4.png",
         vi =
           n.p +
-          "../library/drums/drum-kit-smooth.b13115727ee3d7ea1576.png",
+          "../library/drums/drum-kit-5.png",
         yi =
           n.p +
-          "../library/drums/drum-kit-energetic.f936dddefd272872c094.png",
+          "../library/drums/drum-kit-6.png",
         bi = () => {
           const {
               state: { soundType: t },

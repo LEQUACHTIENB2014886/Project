@@ -1,11 +1,11 @@
 <link href="../library/drums/style.min5034.css?v=202402141905" rel="stylesheet" />
-<link href="../library/drums/1.css" rel="stylesheet" />
+<link href="../library/drums/2.css" rel="stylesheet" />
 <script src="../library/drums/jquery.min84e3.js?3.6.0"></script>
 <script defer src="../library/drums/app.minc683.js?v=?v=20231207215500"></script>
-<div class="drumss bg-white" >
+<div class="drumss bg-white">
     <div class="wrapper">
         <div class="content">
-            <div class="container" >
+            <div class="container no-scroll">
                 <div class="row flex__row">
                     <aside class="navigation__left col-3-m">
                         <div class="ads-box_navigation" data-ads-box="navigation">
@@ -21,18 +21,17 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="content__right col-9-m col-" style="margin-top:-400px;" >                         -->
-                    <div class="content__right col-9-m col-"  >
+                    <div class="content__right col-9-m col-" style="margin-top:-400px; margin-left:200px" >                        
+                    <div class="content__right col-9-m col-">
                         <div id="system-message-container" aria-live="polite"></div>
                         <article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
                             <meta itemprop="inLanguage" content="vi-VN">
-
                             <div class="page-header default__page__header">
                                 <h1 class="h1 default__page__title text-center" itemprop="name">
                                     Trống ảo </h1>
                             </div>
                             <div itemprop="articleBody">
-                                <div class="default__page__content" >
+                                <div class="default__page__content">
                                     <link href="../library/drums/drums.css" rel="stylesheet" />
                                     <div id="drums"></div>
                                     <script src="../library/drums/Vietnamese.js"></script>
@@ -71,34 +70,3 @@
         </div>
     </div>
 </div>
-<!-- <style>
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown button {
-        background: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-
-    .dropdown ul {
-        display: none;
-        position: absolute;
-        background: #fff;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dropdown ul.no-bullet {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .dropdown ul li {
-        display: block;
-        margin-left:- 15em;
-    }
-</style> -->

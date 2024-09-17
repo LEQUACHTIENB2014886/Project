@@ -50,7 +50,7 @@
 }
 
 .bass-pedal-wrapper .pedal {
-    background: url(../drums/bass-pedal.f3c4b63025fd07851d98.png) no-repeat 50%;
+    background: url(../drums/bass-pedal.png) no-repeat 50%;
     background-size: 60%;
     bottom: 0;
     height: 50%;
@@ -148,7 +148,7 @@
 }
 
 .--crash-cymbal {
-    background: url(../drums/crash1.3c815765ac8af650c261.png) no-repeat;
+    background: url(../drums/crash1.png) no-repeat;
     background-size: contain;
     filter: brightness(1);
     height: 100%;
@@ -170,7 +170,7 @@
 }
 
 .--crash-flicker {
-    background: url(../drums/crash2.d0c44402959a982dfce6.png) no-repeat;
+    background: url(../drums/crash2.png) no-repeat;
     background-size: contain;
     filter: brightness(1)
 }
@@ -199,7 +199,7 @@
 }
 
 .--ride-cymbal {
-    background: url(../drums/ride.628f22b25f74234ef305.png) no-repeat;
+    background: url(../drums/ride.png) no-repeat;
     background-size: contain;
     filter: brightness(1);
     transform: scaleY(1.03)
@@ -239,7 +239,7 @@
 }
 
 .hihat .hihat-cymbal {
-    background: url(../drums/hihat.0670dc7ae0ae338cd074.png) no-repeat;
+    background: url(../drums/hihat.png) no-repeat;
     background-size: contain;
     filter: brightness(1);
     height: 100%;
