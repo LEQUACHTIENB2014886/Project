@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content__right col-9-m col-" style="margin-top:-400px;margin-right:550px;" >   
+                    <div class="content__right col-9-m col-" style="margin-top:-400px;margin-right:550px;">
                         <div id="system-message-container" aria-live="polite"></div>
                         <article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
                             <meta itemprop="inLanguage" content="vi-VN">
@@ -31,14 +31,14 @@
                             </div>
                             <div itemprop="articleBody">
                                 <div class="default__page__content">
-                                    <link href="../library/drums/drums.css" rel="stylesheet" />
+                                    <link href="../library/drums/d.css" rel="stylesheet" />
                                     <div id="drums"></div>
                                     <script src="../library/drums/Vietnamese.js"></script>
                                     <script src="../library/drums/drums.js"></script>
                                     <script src="../library/drums/main.chunk.js"></script>
                                     <div class="tools__page__content">
                                         <h2>Chơi trống trực tuyến</h2>
-                                        <p >Sử dụng bàn phím máy vi tính của bạn hoặc nhấp vào dàn trống để chơi trống ảo. Nhấp vào nút "Thể hiện các phím tắt" bên trên dàn trống để xác định các phím tắt dành cho các loại trống và chũm chọe trong dàn trống. Bạn có thể sử dụng các phím tắt sau đây:</p>
+                                        <p>Sử dụng bàn phím máy vi tính của bạn hoặc nhấp vào dàn trống để chơi trống ảo. Nhấp vào nút "Thể hiện các phím tắt" bên trên dàn trống để xác định các phím tắt dành cho các loại trống và chũm chọe trong dàn trống. Bạn có thể sử dụng các phím tắt sau đây:</p>
                                         <ul class="liste" style="margin-top:0px">
                                             <li>Chũm chọe trung: <span class="shortcut-code">y</span></li>
                                             <li>Chũm chọe to: <span class="shortcut-code">u</span></li>
