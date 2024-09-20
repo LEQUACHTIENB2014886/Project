@@ -186,7 +186,7 @@
         </div>
     </div>
     <br><br>
-</div>
+
 <style>
     ul {
         list-style-type: none;

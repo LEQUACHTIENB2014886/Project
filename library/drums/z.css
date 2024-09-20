@@ -22,13 +22,13 @@
 
 
 
-@media all and (min-width:806px) {
+@media all and (min-width:1080px) {
 
     .default__content,
     .content__right .finder,
     .contact__content {
-        padding: 15px 75px;
-        max-width: 70%;
+        padding: 10px 60px;
+        max-width: 95%;
         border-radius: 4px
     }
 }
@@ -112,8 +112,4 @@
 
 .profile__content .default__page__header {
     margin-bottom: 15px
-}
-.no-scroll {
-    white-space: nowrap; 
-    overflow-x: hidden;
 }

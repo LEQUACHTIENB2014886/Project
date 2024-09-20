@@ -73,7 +73,7 @@
 			<h2></h2>
 		</div>
 	</div>
-</div>
+
 <style>
 	p {
 		text-align: justify;

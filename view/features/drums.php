@@ -1,5 +1,5 @@
 <link href="../library/drums/style.min5034.css?v=202402141905" rel="stylesheet" />
-<link href="../library/drums/2.css" rel="stylesheet" />
+<link href="../library/drums/z.css" rel="stylesheet" />
 <script src="../library/drums/jquery.min84e3.js?3.6.0"></script>
 <script defer src="../library/drums/app.minc683.js?v=?v=20231207215500"></script>
 <div class="drumss bg-white">
@@ -21,13 +21,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content__right col-9-m col-" style="margin-top:-400px; margin-left:200px" >                        
-                    <div class="content__right col-9-m col-">
+                    <div class="content__right col-9-m col-" style="margin-top:-400px;margin-right:550px;" >   
                         <div id="system-message-container" aria-live="polite"></div>
                         <article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
                             <meta itemprop="inLanguage" content="vi-VN">
-                            <div class="page-header default__page__header">
-                                <h1 class="h1 default__page__title text-center" itemprop="name">
+                            <div class="page-header default__page__header text-center">
+                                <h1 class="h1 default__page__title" itemprop="name">
                                     Trống ảo </h1>
                             </div>
                             <div itemprop="articleBody">
@@ -39,7 +38,7 @@
                                     <script src="../library/drums/main.chunk.js"></script>
                                     <div class="tools__page__content">
                                         <h2>Chơi trống trực tuyến</h2>
-                                        <p>Sử dụng bàn phím máy vi tính của bạn hoặc nhấp vào dàn trống để chơi trống ảo. Nhấp vào nút "Thể hiện các phím tắt" bên trên dàn trống để xác định các phím tắt dành cho các loại trống và chũm chọe trong dàn trống. Bạn có thể sử dụng các phím tắt sau đây:</p>
+                                        <p >Sử dụng bàn phím máy vi tính của bạn hoặc nhấp vào dàn trống để chơi trống ảo. Nhấp vào nút "Thể hiện các phím tắt" bên trên dàn trống để xác định các phím tắt dành cho các loại trống và chũm chọe trong dàn trống. Bạn có thể sử dụng các phím tắt sau đây:</p>
                                         <ul class="liste" style="margin-top:0px">
                                             <li>Chũm chọe trung: <span class="shortcut-code">y</span></li>
                                             <li>Chũm chọe to: <span class="shortcut-code">u</span></li>
@@ -54,7 +53,7 @@
                                             <li>Trống bass: <span class="shortcut-code">x</span> hay <span class="shortcut-code">z</span></li>
                                         </ul>
                                         <p>Các tay chơi trống thường dùng bàn tay phải để chơi các chũm chọe (chũm chọe trung, chũm chọe to and chũm chọe hi-hat) và dùng tay trái để chơi trống lẫy. Khi sử dụng các phím tắt, hãy dùng tay trái để chơi cả trống lẫy và trống bass.</p>
-                                        <p>Hãy chơi trống ảo và áp dụng các kỹ năng mà bạn mới học được để chơi trống thật. Hãy sử dụng <a href="https://www.musicca.com/drum-machine">máy đánh trống</a> để tìm cảm hứng ở các nhịp trống và các khuôn mẫu nhịp điệu. Một cách tạo cảm hứng khi tập chơi trống ảo là chơi trống ảo dựa trên những bài hát ưa thích của bạn.</p>
+                                        <p> Hãy chơi trống ảo và áp dụng các kỹ năng mà bạn mới học được để chơi trống thật. Hãy sử dụng <a href="https://www.musicca.com/drum-machine">máy đánh trống</a> để tìm cảm hứng ở các nhịp trống và các khuôn mẫu nhịp điệu. Một cách tạo cảm hứng khi tập chơi trống ảo là chơi trống ảo dựa trên những bài hát ưa thích của bạn.</p>
                                         <h2>Các bài tập luyện nhịp điệu trực tuyến miễn phí</h2>
                                         <p>Hãy thử tiến hành <a href="bai-tap/cac-loai-nhip-dieu.html">các bài tập luyện nhịp điệu miễn phí của chúng tôi</a> và học cách đọc, ghi lại và chơi các loại nhịp điệu. Bạn cũng sẽ tìm thấy rất nhiều bài tập nhạc khác có khả năng phát triển sự hiểu biết âm nhạc của bạn và giúp bạn chơi các loại trống thiện nghệ hơn.</p>
                                     </div>
@@ -69,4 +68,3 @@
             </div>
         </div>
     </div>
-</div>
