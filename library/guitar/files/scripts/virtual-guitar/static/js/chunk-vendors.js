@@ -348,15 +348,7 @@
     "1e5c": function (t, e, n) {
       (function (n) {
         var r, i;
-        /*!
-         * howler.js v2.2.4
-         * howlerjs.com
-         *
-         * (c) 2013-2020, James Simpson of GoldFire Studios
-         * goldfirestudios.com
-         *
-         * MIT License
-         */ (function () {
+        (function () {
           "use strict";
           var o = function () {
             this.init();
@@ -1822,17 +1814,7 @@
                 (window.Howl = s),
                 (window.Sound = u));
         })(),
-          /*!
-           * Spatial Plugin - Adds support for stereo and 3D audio where Web Audio is supported.
-           *
-           * howler.js v2.2.4
-           * howlerjs.com
-           *
-           * (c) 2013-2020, James Simpson of GoldFire Studios
-           * goldfirestudios.com
-           *
-           * MIT License
-           */ (function () {
+           (function () {
             "use strict";
             (HowlerGlobal.prototype._pos = [0, 0, 0]),
               (HowlerGlobal.prototype._orientation = [0, 0, -1, 0, 1, 0]),
@@ -16638,17 +16620,7 @@
           !0
         );
       var p = r["g"].TimelineLite;
-      /*!
-       * VERSION: 2.1.3
-       * DATE: 2019-05-17
-       * UPDATES AND DOCS AT: http://greensock.com
-       *
-       * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
-       * This work is subject to the terms at http://greensock.com/standard-license or for
-       * Club GreenSock members, the software agreement that was issued with your membership.
-       *
-       * @author: Jack Doyle, jack@greensock.com
-       */ r["e"]._gsDefine(
+      r["e"]._gsDefine(
         "TimelineMax",
         ["TimelineLite", "TweenLite", "easing.Ease"],
         function () {
@@ -17586,17 +17558,7 @@
           },
         }),
         R = C.prototype;
-      /*!
-       * VERSION: 1.3.9
-       * DATE: 2019-05-17
-       * UPDATES AND DOCS AT: http://greensock.com
-       *
-       * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
-       * This work is subject to the terms at http://greensock.com/standard-license or for
-       * Club GreenSock members, the software agreement that was issued with your membership.
-       *
-       * @author: Jack Doyle, jack@greensock.com
-       **/ (C.bezierThrough = P),
+     (C.bezierThrough = P),
         (C.cubicToQuadratic = x),
         (C._autoCSS = !0),
         (C.quadraticToCubic = function (t, e, n) {
@@ -17672,17 +17634,7 @@
           }
           return this._super._kill.call(this, t);
         }),
-        /*!
-         * VERSION: 1.16.1
-         * DATE: 2018-08-27
-         * UPDATES AND DOCS AT: http://greensock.com
-         *
-         * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
-         * This work is subject to the terms at http://greensock.com/standard-license or for
-         * Club GreenSock members, the software agreement that was issued with your membership.
-         *
-         * @author: Jack Doyle, jack@greensock.com
-         **/ r["e"]._gsDefine(
+        r["e"]._gsDefine(
           "easing.Back",
           ["easing.Ease"],
           function () {

@@ -1,4 +1,4 @@
-<!-- <link rel="stylesheet" href="./course.css"> -->
+<!-- <link rel="stylesheet" href="./course.css"> --><br>
 <div class="container course fst-italic slide-in" style="margin-top:0px;">
     <a href="../public/index.php">
         <div class="back text-light">
@@ -57,7 +57,7 @@
         </a>
     </div>
 </div>
-</div><br><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br>
 <style>
     .back:hover {
         transform: scale(1.02);
@@ -128,5 +128,10 @@
 
     .tools:hover {
         color: inherit;
+    }
+
+    h1,
+    h5 {
+        text-shadow: 2px 3px 5px black;
     }
 </style>
