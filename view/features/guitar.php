@@ -19,7 +19,7 @@
 								<div id="classic-guitar"></div>
 								<script src="../library/guitar/files/scripts/virtual-guitar/translation/Vietnamese.js"></script>
 								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/chunk-vendors.js"></script>
-								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/t.js"></script>
+								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/ttt.js"></script>
 							</div>
 						</div>
 					</article>
