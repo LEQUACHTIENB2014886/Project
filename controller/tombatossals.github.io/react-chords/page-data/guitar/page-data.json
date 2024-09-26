@@ -1,1 +1,10 @@
-{"componentChunkName":"component---src-pages-index-js","path":"/guitar","result":{"pageContext":{"isCreatedByStatefulCreatePages":false,"instrument":"guitar"}}}
+{
+  "componentChunkName": "component---src-pages-index-js",
+  "path": "/guitar",
+  "result": {
+    "pageContext": {
+      "isCreatedByStatefulCreatePages": false,
+      "instrument": "guitar"
+    }
+  }
+}

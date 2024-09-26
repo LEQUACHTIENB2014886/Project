@@ -1,8 +1,9 @@
-<link href="../library/piano_react/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
-<link href="../library/piano_react/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
-<script src="../library/piano_react/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
-<script src="../library/piano_react/media/merged_joomla_script.min9aa9.js?20231024"></script>
-<script src="../library/piano_react/modules/mod_ads/js/min/width_test.min5034.js?v=202402141905"></script>
+<link href="../library/piano/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
+<link href="../library/piano/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
+<script src="../library/piano/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
+<script src="../library/piano/media/merged_joomla_script.min9aa9.js?20231024"></script>
+<script src="../library/piano/modules/mod_ads/js/min/width_test.min5034.js?v=202402141905"></script>
+<link rel="stylesheet" href="../public/css/piano.css">
 <div class="wrapper bg-white" style="margin-top:0px">
     <br>
     <div class="content fst-italic ">
@@ -17,7 +18,7 @@
                     </div>
                     <div itemprop="articleBody">
                         <div class="default__page__content">
-                            <link rel="stylesheet" href="../library/piano_react/files/scripts/virtual-piano/static/css/style.css">
+                            <link rel="stylesheet" href="../library/piano/files/scripts/virtual-piano/static/css/style.css">
                             <div id="piano">
                                 <section class="buttons-wrapper">
                                     <div class="buttons-container">
@@ -149,8 +150,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <script src="../library/piano_react/files/scripts/virtual-piano/translation/Vietnamese.js"></script>
-                            <script src="../library/piano_react/files/scripts/virtual-piano/static/js/scripts.min.js"></script>
+                            <script src="../library/piano/files/scripts/virtual-piano/translation/key.js"></script>
+                            <script src="../library/piano/files/scripts/virtual-piano/static/js/2.js"></script>
                         </div>
                     </div>
                 </article>
@@ -185,7 +186,7 @@
         </div>
     </div>
     <br><br>
-</div>
+
 <style>
     ul {
         list-style-type: none;

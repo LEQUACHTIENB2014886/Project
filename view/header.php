@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en" class="full-height">
 
 <head>
@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="../public/js/scripts.js">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<!--Main Navigation-->
 
 <body class="view intro-2" id="main-body">
     <header id="main-header">
         <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark black fst-italic">
             <div class="container">
                 <a class="navbar-brand" href="#"><strong>MelodyTalent</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;font-size:18px;">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only">(current)</span></a>
                         </li>

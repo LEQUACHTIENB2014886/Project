@@ -1,0 +1,115 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul.no-bullet {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dropdown ul li {
+    display: block;
+    margin-left: - 15em;
+}
+
+
+
+@media all and (min-width:1080px) {
+
+    .default__content,
+    .content__right .finder,
+    .contact__content {
+        padding: 10px 60px;
+        max-width: 95%;
+        border-radius: 4px
+    }
+}
+
+.content__right.col-ovelser {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 15px;
+    overflow-x: auto
+}
+
+
+.content__right.col-ovelser td {
+    display: block
+}
+
+.default__content dt,
+.content__right .finder dt,
+.contact__content dt,
+.default__content dd,
+.content__right .finder dd,
+.contact__content dd {
+    float: left;
+    margin-right: 10px
+}
+
+.default__content dt:last-child,
+.content__right .finder dt:last-child,
+.contact__content dt:last-child,
+.default__content dd:last-child,
+.content__right .finder dd:last-child,
+.contact__content dd:last-child {
+    margin-right: 0
+}
+
+
+.default__page__content img {
+    display: inline-block;
+    margin: 8px 0 8px 0;
+    height: auto;
+    max-width: 100%
+}
+
+.default__page__content table img {
+    margin: 0
+}
+
+.billedeudenmargin img {
+    margin: 0
+}
+
+.contentlist {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8f8f8;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    border-radius: 4px
+}
+
+
+.default__page__content ol.menulist a:hover {
+    color: #72ac51
+}
+
+.content__section {
+    margin-bottom: 30px
+}
+
+.default__content audio,
+.content__right .finder audio,
+.contact__content audio {
+    width: 100%;
+    max-width: 100%
+}
+
+.table__scroll {
+    overflow-x: hidden
+}
+
+.profile__content .default__page__header {
+    margin-bottom: 15px
+}

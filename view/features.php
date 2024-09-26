@@ -50,10 +50,10 @@
         </div>
     </div>
 
-    <div class="box" onclick="redirectToPage('../public/drum.php')">
+    <div class="box" onclick="redirectToPage('../public/drums.php')">
         <div class="content">
             <h2>Trống</h2>
-            <p>Chơi trống ảo và thực hành tập chơi các nhịp trống.<a href="#"></a></p>
+            <p>Chơi trống ảo và thực hành tập chơi các nhịp trống.<a href="../public/drums.php"></a></p>
         </div>
         <div class="image">
             <img src="../library/image/features/drums.jpg">

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../public/css/course.css">
+<link rel="stylesheet" href="../public/css/course.css"><br>
 <div class="container course fst-italic " style="margin-top:0px;">
     <a href="../public/course.php">
         <div class="back text-light">
@@ -67,5 +67,10 @@
 <style>
     .back:hover {
         transform: scale(1.02);
+    }
+
+    h1,
+    h5 {
+        text-shadow: 2px 3px 5px black;
     }
 </style>
