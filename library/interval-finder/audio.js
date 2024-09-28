@@ -9336,16 +9336,39 @@
         );
       }
       var rt = {};
+      // !(function () {
+      //   for (
+      //     var e =
+      //         arguments.length > 0 && void 0 !== arguments[0]
+      //           ? arguments[0]
+      //           : 11,
+      //       t =
+      //         arguments.length > 1 && void 0 !== arguments[1]
+      //           ? arguments[1]
+      //           : 72,
+      //       f =
+      //         arguments.length > 2 && void 0 !== arguments[2]
+      //           ? arguments[2]
+      //           : 0.5,
+      //       n = e;
+      //     n < t;
+      //     n++
+      //   )
+      //     rt[n] = new Ye.Howl({
+      //       src: ["../library/interval-finder/lydfiler/piano/".concat(n, ".mp3")],
+      //       volume: f,
+      //     });
+      // })();
       !(function () {
         for (
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : 11,
+                : 19,
             t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
-                : 72,
+                : 63,
             f =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]

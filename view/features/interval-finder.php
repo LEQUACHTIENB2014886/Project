@@ -21,7 +21,7 @@
                                 <meta itemprop="inLanguage" content="en-GB">
                                 <div itemprop="articleBody">
                                     <div class="default__page__content">
-                                        <link href="../library/interval-finder/strings.css" rel="stylesheet">
+                                        <link href="../library/interval-finder/tool.css" rel="stylesheet">
                                         <div id="interactive-finder">
                                             <div class="App">
                                                 <div class="chord-selector">
@@ -54,7 +54,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="css-13fuigh-container select-interval">
+                                                            <div class="css-13fuigh-container select-interval" >
                                                                 <div class="css-bg1rzq-control">
                                                                     <div class="css-1hwfws3">
                                                                         <div class="css-151xaom-placeholder">unison</div><input id="react-select-4-input" readonly="" tabindex="0" class="css-gj7qu5-dummyInput" value="">
@@ -149,7 +149,7 @@
                                         </div>
                                         <script src="../library/interval-finder/translation/Vietnamese.js"></script>
                                         <script src="../library/interval-finder/keycodes.js"></script>
-                                        <script src="../library/interval-finder/audio2.js"></script>
+                                        <script src="../library/interval-finder/audio.js"></script>
                                         <script src="../library/interval-finder/process_audio2.js"></script>
                                         <script src="../library/interval-finder/runtime_main.js"></script>
 
@@ -171,5 +171,4 @@
 
     <iframe name="__tcfapiLocator" style="display: none;"></iframe><img src="https://ad-delivery.net/px.gif?ch=2" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="https://ad.doubleclick.net/favicon.ico?ad=300x250&amp;ad_box_=1&amp;adnet=1&amp;showad=1&amp;size=250x250" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="https://ad-delivery.net/px.gif?ch=1&amp;e=0.5702153985794876" style="display: none !important; width: 1px !important; height: 1px !important;">
 </body>
-
 </html>
