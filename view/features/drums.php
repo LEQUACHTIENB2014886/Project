@@ -34,7 +34,7 @@
                                     <link href="../library/drums/image.css" rel="stylesheet" />
                                     <div id="drums"></div>
                                     <script src="../library/drums/Vietnamese.js"></script>
-                                    <script src="../library/drums/drums.js"></script>
+                                    <script src="../library/drums/drums_audio.js"></script>
                                     <script src="../library/drums/main.chunk.js"></script>
                                     <div class="tools__page__content">
                                         <h2>Chơi trống trực tuyến</h2>

@@ -1,4 +1,4 @@
-/*!For license information please see main.4e25a160.js.LICENSE.txt*/ (() => {
+(() => {
   var e = {
       718: (e, t, n) => {
         var r;
@@ -16232,23 +16232,23 @@
           return (
             (0, e.useEffect)(() => {
               switch (t) {
-                case "standard":
+                case "standard"://Tiêu chuẩn
                 default:
                   i(hi);
                   break;
-                case "powerful":
+                case "powerful"://Mạnh mẽ
                   i(mi);
                   break;
-                case "monumental":
+                case "monumental"://Hùng vĩ
                   i(_i);
                   break;
-                case "smooth":
+                case "smooth"://Tươi mới
                   i(vi);
                   break;
-                case "energetic":
+                case "energetic"://Năng động
                   i(yi);
                   break;
-                case "minimalistic":
+                case "minimalistic"://Tối giản
                   i(gi);
               }
             }, [t]),
@@ -16266,7 +16266,7 @@
               const e = (e) =>
                   new wi.Howl({
                     src: [
-                      "../library/drums/"
+                      "../library/drums/audio/"
                         .concat(n, "/")
                         .concat(e, ".mp3"),
                     ],
