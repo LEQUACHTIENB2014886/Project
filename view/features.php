@@ -60,6 +60,16 @@
         </div>
     </div>
 
+    <div class="box" onclick="redirectToPage('../public/drum-machine.php')">
+        <div class="content">
+            <h2>Trống điện tử</h2>
+            <p>Sáng tạo và nghe thử giai điệu trống của bạn.<a href="../public/drum-machine.php"></a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/drum-machine.jpg">
+        </div>
+    </div>
+
     <div class="box" onclick="redirectToPage('../public/chord_player.php')">
         <div class="content">
             <h2>Ứng dụng Đệm Hợp âm</h2>
@@ -80,15 +90,6 @@
         </div>
     </div>
 
-    <div class="box">
-        <div class="content">
-            <h2>Trống điện tử</h2>
-            <p>Sáng tạo và nghe thử giai điệu trống của bạn.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/drum-machine.jpg">
-        </div>
-    </div>
 
     <div class="box">
         <div class="content">
