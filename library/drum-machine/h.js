@@ -29,6 +29,7 @@ function generateURL() {
     for (var n in e) t += n;
     return t;
   }
+
   function n(e) {
     var t = {
       standard: "a",
@@ -668,6 +669,11 @@ var AUDIO = new (window.AudioContext || window.webkitAudioContext)(),
     function n(e) {
       dispatcher.register(i), new a(e).render();
     }
+    const BUTTON_NAMES = {
+      settings: "Cài đặt",
+      presetsButtonName: "Nhịp điệu",
+      reset: "Xóa",
+    };
     var i = {
         TRANSPORT_PLAY: "transport:play",
         TRANSPORT_STOP: "transport:stop",
@@ -1273,6 +1279,14 @@ var AUDIO = new (window.AudioContext || window.webkitAudioContext)(),
     function e(e) {
       dispatcher.register(t), new r(e).render();
     }
+    const SOUND_TYPES = {
+      standard: "Mặc định",
+      powerful: "Mạnh mẽ",
+      monumental: "Vĩ đại",
+      smooth: "Mượt mà",
+      minimalistic: "Tối giản",
+      energetic: "Năng động",
+    };
     var t = { SOUND_SELECTED: "sound:selected" },
       n = Handlebars.compile(
         '        {{#each items}}            <li data-sound-id="{{ @key }}" class="sound-item">{{ lookup ../SOUND_TYPES @key }}</li>        {{/each}}    '
@@ -1500,19 +1514,28 @@ var AUDIO = new (window.AudioContext || window.webkitAudioContext)(),
     function e(e) {
       dispatcher.register(t), new i(e).render();
     }
+    const MODAL_NAMES = {
+      drums: "Tên trống",
+      TimeSignature: "Số chỉ nhịp",
+      swing: "Swing",
+    };
+
+    const SOUND_TYPES = {
+      standard: "Mặc định",
+    };
+
     var t = { MODAL_OPEN: "modal:open", MODAL_CLOSE: "modal:close" },
-    n = Handlebars.compile(
-      '    <div class="modal">        <div class="modal-content">            <div class="modal-item">                <span class="modal-item-title">' +
-        MODAL_NAMES.drums +
-        '</span>                <div class="modal-item-selector">                    <div class="dropdown__select">                        <div class="dropdown__button">                            <div class="sound-types-button">' +
-        SOUND_TYPES.standard +
-        '</div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="sound-types dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
-        MODAL_NAMES.TimeSignature +
-        '</span>                <div class="modal-item-selector">                <div class="dropdown__select">                    <div class="dropdown__button">                            <div class="beatTime dropButton"></div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="time-signature dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
-        MODAL_NAMES.swing +
-        '</span>                <div class="modal-item-selector">                    <div class="swing-selector"></div>                </div>            </div>        </div>    </div>'
-    ),
-    i = Back  
+      n = Handlebars.compile(
+        '    <div class="modal">        <div class="modal-content">            <div class="modal-item">                <span class="modal-item-title">' +
+          MODAL_NAMES.drums +
+          '</span>                <div class="modal-item-selector">                    <div class="dropdown__select">                        <div class="dropdown__button">                            <div class="sound-types-button">' +
+          SOUND_TYPES.standard +
+          '</div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="sound-types dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
+          MODAL_NAMES.TimeSignature +
+          '</span>                <div class="modal-item-selector">                <div class="dropdown__select">                    <div class="dropdown__button">                            <div class="beatTime dropButton"></div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="time-signature dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
+          MODAL_NAMES.swing +
+          '</span>                <div class="modal-item-selector">                    <div class="swing-selector"></div>                </div>            </div>        </div>    </div>'
+      ),
       i = Backbone.View.extend({
         events: { "click .dropdown__select": "toggleDropdown" },
         initialize: function () {
