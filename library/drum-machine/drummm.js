@@ -1509,189 +1509,213 @@ var AUDIO = new (window.AudioContext || window.webkitAudioContext)(),
         },
       });
     return { init: e };
-  })(),
-  Modal = (function () {
-    function e(e) {
-      dispatcher.register(t), new i(e).render();
-    }
-    const MODAL_NAMES = {
-      drums: "Tên trống",
-      TimeSignature: "Số chỉ nhịp",
-      swing: "Swing",
-    };
+  })();
+const Modal = (function () {
+  function e(e) {
+    dispatcher.register(t), new i(e).render();
+  }
 
-    const SOUND_TYPES = {
-      standard: "Mặc định",
-    };
-
-    var t = { MODAL_OPEN: "modal:open", MODAL_CLOSE: "modal:close" },
-      n = Handlebars.compile(
-        '    <div class="modal">        <div class="modal-content">            <div class="modal-item">                <span class="modal-item-title">' +
-          MODAL_NAMES.drums +
-          '</span>                <div class="modal-item-selector">                    <div class="dropdown__select">                        <div class="dropdown__button">                            <div class="sound-types-button">' +
-          SOUND_TYPES.standard +
-          '</div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="sound-types dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
-          MODAL_NAMES.TimeSignature +
-          '</span>                <div class="modal-item-selector">                <div class="dropdown__select">                    <div class="dropdown__button">                            <div class="beatTime dropButton"></div>                            <div class="dropdown__icons">                            <span class="dropdown__separator"></span>                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>                            </div>                        </div>                        <ul class="time-signature dropdown__content"></ul>                    </div>                </div>            </div>            <div class="modal-item">                <span class="modal-item-title">' +
-          MODAL_NAMES.swing +
-          '</span>                <div class="modal-item-selector">                    <div class="swing-selector"></div>                </div>            </div>        </div>    </div>'
-      ),
-      i = Backbone.View.extend({
-        events: { "click .dropdown__select": "toggleDropdown" },
-        initialize: function () {
-          this.listenTo(dispatcher, dispatcher.EventKeys.MODAL_OPEN, this.open),
-            this.listenTo(
-              dispatcher,
-              dispatcher.EventKeys.MODAL_CLOSE,
-              this.close
-            ),
-            (this.toggleDropdown = this.toggleDropdown.bind(this));
-        },
-        render: function () {
-          var e = n();
-          return (
-            this.$el.html(e),
-            $(".modal").on("click", this.outsideClick.bind(this)),
-            this
-          );
-        },
-        outsideClick: function (e) {
-          0 === $(e.target).closest(".dropdown__select").length &&
-            0 === $(e.target).closest(".dropdown__content").length &&
-            this.$el.find(".dropdown__content").removeClass("active");
-        },
-        toggleDropdown: function (e) {
-          e.stopPropagation(),
-            this.$el
-              .find(".dropdown__content")
-              .not($(e.currentTarget).find(".dropdown__content"))
-              .removeClass("active"),
-            $(e.currentTarget).find(".dropdown__content").toggleClass("active");
-        },
-        open: function () {
-          this.$el.show();
-        },
-        close: function () {
-          this.$el.hide();
-        },
-      });
-    return { init: e };
-  })(),
-  App = {
-    _connectModules: function () {
-      dispatcher.on(dispatcher.EventKeys.TRANSPORT_REQUEST_PLAY, function () {
-        dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_PLAY);
-      }),
-        dispatcher.on(dispatcher.EventKeys.TRANSPORT_REQUEST_STOP, function () {
-          dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_STOP);
-        }),
-        dispatcher.on(
-          dispatcher.EventKeys.TRANSPORT_REQUEST_MUTE,
-          function (e) {
-            dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_PATTERN, e);
-          }
-        ),
-        dispatcher.on(
-          dispatcher.EventKeys.TRANSPORT_TEMPO_CHANGED,
-          function (e) {
-            dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_TEMPO, e);
-          }
-        ),
-        dispatcher.on(dispatcher.EventKeys.PRESET_SELECTED, function (e) {
-          dispatcher.trigger(
-            dispatcher.EventKeys.TRANSPORT_CHANGE_TEMPO,
-            e.tempo
-          ),
-            dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_PATTERN, e);
-        }),
-        dispatcher.on(dispatcher.EventKeys.SOUND_SELECTED, function (e) {
-          var t = "../library/drum-machine/audio/" + e + "/",
-            n = {
-              hihatfod: t + "hihat-foot.mp3",
-              sidetamlys: t + "tom1.mp3",
-              gulvtam: t + "floor-tom.mp3",
-              ride: t + "ride.mp3",
-              hihat: t + "hihat.mp3",
-              kantslag: t + "snare-stick.mp3",
-              stortromme: t + "bass.mp3",
-              aabenhihat: t + "hihat-open.mp3",
-              lilletromme: t + "snare-drum.mp3",
-              sidetamdyb: t + "tom2.mp3",
-            };
-          SampleBank.loadNew(n, function () {});
-        });
-    },
-    onLoad: function () {
-      var e = {
-          sequence: {
-            hihatfod: "0000000000000000",
-            sidetamlys: "0000000000000000",
-            gulvtam: "0000000000000000",
-            ride: "0000000000000000",
-            hihat: "1010101010101010",
-            lilletromme: "0000100000001000",
-            stortromme: "1000000010000000",
-          },
-          muted: {},
-          swing: !1,
-          rhythm: "4/4",
-          tempo: 90,
-          sound: "standard",
-        },
-        t = parseURLData(),
-        n = t ? t : e;
-      this._connectModules(),
-        (url_collection = n),
-        $(".beatTime").text(n.rhythm),
-        "standard" !== n.sound &&
-          $(".sound-types-button").text(SOUND_TYPES[n.sound]),
-        dispatcher.trigger(dispatcher.EventKeys.SOUND_SELECTED, n.sound),
-        n.swing
-          ? (dispatcher.trigger(dispatcher.EventKeys.PRESET_SELECTED, n),
-            dispatcher.trigger(dispatcher.EventKeys.SWING_SELECTED))
-          : (dispatcher.trigger(dispatcher.EventKeys.PRESET_SELECTED, n),
-            dispatcher.trigger(
-              dispatcher.EventKeys.TRANSPORT_TEMPO_CHANGED,
-              n.tempo
-            ));
-    },
-    init: function () {
-      document.addEventListener(
-        "visibilitychange",
-        function (e) {
-          document.hidden &&
-            dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_STOP);
-        },
-        !1
-      );
-      var e = {
-          hihatfod: "hihat-foot",
-          sidetamlys: "tom1",
-          gulvtam: "floor-tom",
-          ride: "ride",
-          hihat: "hihat",
-          kantslag: "snare-stick",
-          stortromme: "bass",
-          aabenhihat: "hihat-open",
-          lilletromme: "snare-drum",
-          sidetamdyb: "tom2",
-        },
-        t = {},
-        n = Object.keys(e);
-      n.forEach(function (n) {
-        var i = e[n];
-        t[n] = "../library/drum-machine/audio/standard/" + i + ".mp3";
-      }),
-        Sequencer.init({ el: $("#r-mid") }),
-        Transport.init({ el: $("#r-top") }),
-        PresetList.init({ el: $(".presets") }),
-        Modal.init({ el: $(".modal-container") }),
-        SoundTypes.init({ el: $(".sound-types") }),
-        TimeSignature.init({ el: $(".time-signature") }),
-        SwingRhythm.init({ el: $(".swing-selector") }),
-        SampleBank.init(t, this.onLoad.bind(this));
-    },
+  const MODAL_NAMES = {
+    drums: "Tên trống",
+    TimeSignature: "Số chỉ nhịp",
+    swing: "Swing",
   };
+
+  const SOUND_TYPES = {
+    standard: "Mặc định",
+  };
+
+  var t = { MODAL_OPEN: "modal:open", MODAL_CLOSE: "modal:close" },
+    n = Handlebars.compile(`
+      <div class="custom-modal">
+            <div class="custom-modal-content">
+                <div class="modal-item">
+                    <span class="modal-item-title">${MODAL_NAMES.drums}</span>
+                    <div class="modal-item-selector">
+                        <div class="dropdown__select">
+                            <div class="dropdown__button">
+                                <div class="sound-types-button">${SOUND_TYPES.standard}</div>
+                                <div class="dropdown__icons">
+                                    <span class="dropdown__separator"></span>
+                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon">
+                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="sound-types dropdown__content"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-item">
+                    <span class="modal-item-title">${MODAL_NAMES.TimeSignature}</span>
+                    <div class="modal-item-selector">
+                        <div class="dropdown__select">
+                            <div class="dropdown__button">
+                                <div class="beatTime dropButton"></div>
+                                <div class="dropdown__icons">
+                                    <span class="dropdown__separator"></span>
+                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="dropdown__icon">
+                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="time-signature dropdown__content"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-item">
+                    <span class="modal-item-title">${MODAL_NAMES.swing}</span>
+                    <div class="modal-item-selector">
+                        <div class="swing-selector"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `),
+    i = Backbone.View.extend({
+      events: { "click .dropdown__select": "toggleDropdown" },
+      initialize: function () {
+        this.listenTo(dispatcher, dispatcher.EventKeys.MODAL_OPEN, this.open);
+        this.listenTo(dispatcher, dispatcher.EventKeys.MODAL_CLOSE, this.close);
+        this.toggleDropdown = this.toggleDropdown.bind(this);
+      },
+      render: function () {
+        var e = n();
+        return (
+          this.$el.html(e),
+          $(".custom-modal").on("click", this.outsideClick.bind(this)),
+          this
+        );
+      },
+      outsideClick: function (e) {
+        if (
+          $(e.target).closest(".dropdown__select").length === 0 &&
+          $(e.target).closest(".dropdown__content").length === 0
+        ) {
+          this.$el.find(".dropdown__content").removeClass("active");
+        }
+      },
+      toggleDropdown: function (e) {
+        e.stopPropagation();
+        this.$el
+          .find(".dropdown__content")
+          .not($(e.currentTarget).find(".dropdown__content"))
+          .removeClass("active");
+        $(e.currentTarget).find(".dropdown__content").toggleClass("active");
+      },
+      open: function () {
+        this.$el.show();
+      },
+      close: function () {
+        this.$el.hide();
+      },
+    });
+  return { init: e };
+})();
+
+const App = {
+  _connectModules: function () {
+    dispatcher.on(dispatcher.EventKeys.TRANSPORT_REQUEST_PLAY, function () {
+      dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_PLAY);
+    });
+    dispatcher.on(dispatcher.EventKeys.TRANSPORT_REQUEST_STOP, function () {
+      dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_STOP);
+    });
+    dispatcher.on(dispatcher.EventKeys.TRANSPORT_REQUEST_MUTE, function (e) {
+      dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_PATTERN, e);
+    });
+    dispatcher.on(dispatcher.EventKeys.TRANSPORT_TEMPO_CHANGED, function (e) {
+      dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_TEMPO, e);
+    });
+    dispatcher.on(dispatcher.EventKeys.PRESET_SELECTED, function (e) {
+      dispatcher.trigger(dispatcher.EventKeys.TRANSPORT_CHANGE_TEMPO, e.tempo);
+      dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_SET_PATTERN, e);
+    });
+    dispatcher.on(dispatcher.EventKeys.SOUND_SELECTED, function (e) {
+      var t = "../library/drum-machine/audio/" + e + "/",
+        n = {
+          hihatfod: t + "hihat-foot.mp3",
+          sidetamlys: t + "tom1.mp3",
+          gulvtam: t + "floor-tom.mp3",
+          ride: t + "ride.mp3",
+          hihat: t + "hihat.mp3",
+          kantslag: t + "snare-stick.mp3",
+          stortromme: t + "bass.mp3",
+          aabenhihat: t + "hihat-open.mp3",
+          lilletromme: t + "snare-drum.mp3",
+          sidetamdyb: t + "tom2.mp3",
+        };
+      SampleBank.loadNew(n, function () {});
+    });
+  },
+  onLoad: function () {
+    var e = {
+        sequence: {
+          hihatfod: "0000000000000000",
+          sidetamlys: "0000000000000000",
+          gulvtam: "0000000000000000",
+          ride: "0000000000000000",
+          hihat: "1010101010101010",
+          lilletromme: "0000100000001000",
+          stortromme: "1000000010000000",
+        },
+        muted: {},
+        swing: false,
+        rhythm: "4/4",
+        tempo: 90,
+        sound: "standard",
+      },
+      t = parseURLData(),
+      n = t ? t : e;
+    this._connectModules();
+    url_collection = n;
+    $(".beatTime").text(n.rhythm);
+    if ("standard" !== n.sound) {
+      $(".sound-types-button").text(SOUND_TYPES[n.sound]);
+    }
+    dispatcher.trigger(dispatcher.EventKeys.SOUND_SELECTED, n.sound);
+    if (n.swing) {
+      dispatcher.trigger(dispatcher.EventKeys.PRESET_SELECTED, n);
+      dispatcher.trigger(dispatcher.EventKeys.SWING_SELECTED);
+    } else {
+      dispatcher.trigger(dispatcher.EventKeys.PRESET_SELECTED, n);
+      dispatcher.trigger(dispatcher.EventKeys.TRANSPORT_TEMPO_CHANGED, n.tempo);
+    }
+  },
+  init: function () {
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        dispatcher.trigger(dispatcher.EventKeys.SEQUENCER_STOP);
+      }
+    });
+    var e = {
+        hihatfod: "hihat-foot",
+        sidetamlys: "tom1",
+        gulvtam: "floor-tom",
+        ride: "ride",
+        hihat: "hihat",
+        kantslag: "snare-stick",
+        stortromme: "bass",
+        aabenhihat: "hihat-open",
+        lilletromme: "snare-drum",
+        sidetamdyb: "tom2",
+      },
+      t = {},
+      n = Object.keys(e);
+    n.forEach(function (n) {
+      var i = e[n];
+      t[n] = "../library/drum-machine/audio/standard/" + i + ".mp3";
+    });
+    Sequencer.init({ el: $("#r-mid") });
+    Transport.init({ el: $("#r-top") });
+    PresetList.init({ el: $(".presets") });
+    Modal.init({ el: $(".modal-container") });
+    SoundTypes.init({ el: $(".sound-types") });
+    TimeSignature.init({ el: $(".time-signature") });
+    SwingRhythm.init({ el: $(".swing-selector") });
+    SampleBank.init(t, this.onLoad.bind(this));
+  },
+};
 App.init(),
   $("input").on("change", function () {
     var e = Math.abs(parseInt(this.value, 10) || 1);

@@ -1,4 +1,4 @@
 <?php
-// include '../view/header_login.php';
-include __DIR__ . '/../view/features/drum-machine.php';
-// include '../view/footer.php';
+include '../view/header.php';
+include '../view/features/drum-machine.php';
+include '../view/footer.php';
