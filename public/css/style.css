@@ -54,6 +54,7 @@ html {
     font-size: 20px;
     border: 2px solid rgb(55, 66, 76);
     transition: border-color 0.3s;
+    transition: transform 100ms;
 }
 
 #main-header .buttonToCourse:hover {
@@ -114,6 +115,7 @@ html {
     font-size: 20px;
     border: 2px solid rgb(55, 66, 76);
     transition: border-color 0.3s;
+    transition: transform 100ms;
 }
 
 #homepage-button .buttonToCourse:hover {
