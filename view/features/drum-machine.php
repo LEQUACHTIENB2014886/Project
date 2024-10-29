@@ -11,8 +11,6 @@
                             <h1 class="h1 default__page__title text-center" itemprop="name">
                                 Trống điện tử</h1>
                         </div>
-
-
                         <div itemprop="articleBody">
                             <div class="default__page__content">
                                 <link rel="stylesheet" href="../library/drum-machine/drum-machine.css">
@@ -58,17 +56,17 @@
                                             reset: 'Clear'
                                         },
                                         patternName: {
-                                            hihatfod: 'Hi-hat (foot)',
-                                            sidetamlys: 'Tom-tom',
-                                            gulvtam: 'Floor tom',
-                                            ride: 'Ride cymbal',
+                                            hihatfod: 'Bàn đạp hi-hat',
+                                            sidetamlys: 'Trống tom',
+                                            gulvtam: 'Sàn tom',
+                                            ride: 'Cymbal',
                                             hihat: 'Hi-hat',
-                                            lilletromme: 'Snare drum',
-                                            stortromme: 'Bass drum'
+                                            lilletromme: 'Snare',
+                                            stortromme: 'Trống Bass'
                                         },
                                     }
                                 </script>
-                                <script src="../library/drum-machine/drummm.js"></script><br>
+                                <script src="../library/drum-machine/drum.js"></script><br>
                                 
                             </div>
                         </div>
