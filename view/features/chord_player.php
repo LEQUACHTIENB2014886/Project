@@ -1,34 +1,179 @@
-<link href="../library/chord_player/style.min5034.css?v=202402141905" rel="stylesheet" />
-<script src="../library/chord_player/jquery.min84e3.js?3.6.0"></script>
-<script defer src="../library/chord_player/app.minc683.js?v=?v=20231207215500"></script>
-
+<link href="../library/chord_player/style.min5034.css" rel="stylesheet" />
+<link href="../library/chord_player/main.css" rel="stylesheet" />
+<script src="../library/chord_player/jquery.min84e3.js"></script>
+<script defer src="../library/chord_player/app.minc683.js"></script>
 <div class="fix__content bg-white" style="margin-right:-70px;">
-    <div class="wrapper" >
+    <div class="wrapper">
         <div class="content">
-            <div class="container" >
+            <div class="container">
                 <div class="row flex__row">
                     <div class="content__right col-9-m col-">
                         <div class="page-header default__page__header">
                             <h1 class="h1 default__page__title text-center" itemprop="name">
                                 Ứng dụng đệm hợp âm</h1>
                         </div>
-                        <div itemprop="articleBody" >
+                        <div itemprop="articleBody">
                             <div class="default__page__content">
-                                <div id="chord-player" ></div>
-                                <script src="../library/chord_player/vi.js"></script>
+                                <div id="chord-player"></div>
+                                <script src="../library/chord_player/vnm.js"></script>
                                 <script src="../library/chord_player/presets.js"></script>
                                 <script src="../library/chord_player/progressions.js"></script>
-                                <script src="../library/chord_player/main.js"></script>
+                                <script src="../library/chord_player/gt.js"></script>
                                 <script src="../library/chord_player/chunk.js"></script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
 </div>
 <style>
+    #main-header .navbar {
+        margin-right: 16px;
+    }
+
+    .dropdown-content li {
+        margin-left: -32px;
+    }
+
+    .dropdown--highlight {
+        padding-left: 0px;
+    }
+
+    .modal--select-instrument {
+        border-bottom: 1px solid rgba(0, 0, 0, .085)
+    }
+
+    .select-instrument {
+        height: 90px;
+        padding: 0 20px
+    }
+
+    .audio-wave-wrapper,
+    .select-instrument {
+        align-items: center;
+        display: flex;
+        justify-content: space-between
+    }
+
+
+    .handle--resizer {
+        height: 100%;
+        width: 100%
+    }
+
+    .handle--line {
+        background-color: #909090;
+        border-radius: 10px;
+        height: 90%;
+        opacity: 0;
+        position: absolute;
+        right: 10px;
+        top: 5%;
+        transition: .5s ease-in;
+        width: 4px
+    }
+
+    .sequencer--cell:hover .handle--line {
+        opacity: 1
+    }
+
+    .sequencer--circle-counter {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: 60px;
+        box-shadow: 0 3px 5px 3px rgba(0, 0, 0, .2);
+        color: #555;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.1rem;
+        height: 35px;
+        justify-content: center;
+        position: absolute;
+        right: -5px;
+        transition: .7s;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 35px;
+        z-index: 4
+    }
+
+    .sequencer--circle-counter:hover {
+        background-color: #e4e4e4;
+        color: #151515
+    }
+
+    .accidentals,
+    .accidentals-select {
+        font-family: Opus Chords Std
+    }
+
+    .accidentals-select {
+        font-size: 1.1rem
+    }
+
+    .ReactModalPortal {
+        z-index: 101
+    }
+
+    .modal--button-red {
+        background-color: #db4437;
+        color: #fff
+    }
+
+    .modal--button-red:hover {
+        background-color: #bc3c31
+    }
+
+    .modal--button-green {
+        background-color: #72ac51;
+        color: #fff
+    }
+
+    .modal--button-green:hover {
+        background-color: #5f9a43
+    }
+
+    .modal--buttons,
+    .modal--duration,
+    .modal--select-chord {
+        align-items: center;
+        display: flex;
+        padding: 0 20px
+    }
+
+    .modal--buttons,
+    .modal--select-chord {
+        height: 85px
+    }
+
+    .modal--duration {
+        height: 50px;
+        justify-content: end
+    }
+
+    .modal--buttons {
+        justify-content: space-between
+    }
+
+    .modal--text {
+        color: #4e5056;
+        font-size: 1.2rem;
+        font-weight: 700
+    }
+
+    .modal--confirm-btn {
+        background-color: #72ac51;
+        height: 40px;
+        line-height: 0;
+        margin: 0;
+        padding: 0;
+        transition: .3s;
+        width: 40px
+    }
+
     .buttons-wrapper {
         height: 73px
     }
@@ -758,5 +903,4 @@
     .sequencer--cell--draggable.dragging {
         background: repeating-linear-gradient(320deg, #d3d3d3, #d3d3d3 5px, #a9a9a9 0, #a9a9a9 10px)
     }
-
 </style>

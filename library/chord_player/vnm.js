@@ -110,8 +110,8 @@ window.translation = {
         "Tạo một tài khoản miễn phí hoặc đăng nhập để lưu các hợp âm của bạn.",
       login: "Đăng nhập",
       register: "Tạo tài khoản",
-      login_url: "/vi/dang-nhap",
-      register_url: "/vi/tao-tai-khoan",
+      login_url: "/public/user.php#custom-login",
+      register_url: "/public/user.php#custom-register",
     },
     share: {
       share: "Chia sẻ",

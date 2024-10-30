@@ -23527,8 +23527,8 @@
                                     (c =
                                       "" === n.baseUrl ||
                                       n.baseUrl.endsWith("/")
-                                        ? n.baseUrl
-                                        : n.baseUrl + "/"),
+                                        ? "../library/chord_player/lydfiler/" + n.baseUrl
+                                        :"../library/chord_player/lydfiler/" + n.baseUrl ),
                                     (t.next = 26),
                                     fetch(c + e)
                                   );
@@ -32848,7 +32848,8 @@
         },
         Yo = new jo({
           urls: $o,
-          baseUrl: "../library/chord_player/lydfiler/guitar/steel/",
+          // baseUrl: "../library/chord_player/lydfiler/guitar/steel/",
+          baseUrl: "guitar/steel/",
         }).toDestination(),
         Xo = function () {
           var t = (0, e.useContext)(m),
@@ -32861,7 +32862,7 @@
                 if (i.current !== n) {
                   (Yo = new jo({
                     urls: $o,
-                    baseUrl: "/guitar/" + n + "/",
+                    baseUrl: "guitar/" + n + "/",
                     onerror: console.error,
                     onload: function () {
                       r({ type: "IS_LOADER", payload: !1 }),
@@ -32916,7 +32917,7 @@
             C57: "57.mp3",
             C58: "58.mp3",
           },
-          baseUrl: "../library/chord_player/lydfiler/piano/",
+          baseUrl: "piano/",
         }).toDestination(),
         Qo = new jo({
           urls: {
@@ -32945,7 +32946,7 @@
             C23: "g8.mp3",
             C24: "g9.mp3",
           },
-          baseUrl: "../library/chord_player/lydfiler/guitar/electric/",
+          baseUrl: "guitar/electric/",
         }).toDestination(),
         Ko = function () {
           var t = (0, e.useContext)(m).state,
@@ -33276,9 +33277,7 @@
               },
             });
         },
-        ss = ""
-          .concat(window.location.protocol, "//")
-          .concat(window.location.host, "/chord-player"),
+        ss = "".concat(window.location.protocol, "//").concat(window.location.host, "./public/chord_player.php"),
         us = function () {
           var t = (0, e.useContext)(m),
             n = t.state,
@@ -34888,7 +34887,7 @@
             A11: "snare-stick.mp3", 
           },
           volume: 0,
-          baseUrl: "../library/chord_player/lydfiler/drumkit/",
+          baseUrl: "drumkit/",
         }).toDestination(),
         Tu = function (e) {
           var t = [],
