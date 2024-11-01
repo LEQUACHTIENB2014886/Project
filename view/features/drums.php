@@ -1,7 +1,7 @@
-<link href="../library/drums/style.min5034.css?v=202402141905" rel="stylesheet" />
+<link href="../library/drums/style.css" rel="stylesheet" />
 <link href="../library/drums/drums.css" rel="stylesheet" />
-<script src="../library/drums/jquery.min84e3.js?3.6.0"></script>
-<script defer src="../library/drums/app.minc683.js?v=?v=20231207215500"></script>
+<script src="../library/drums/jquery.js"></script>
+<script defer src="../library/drums/app.js"></script>
 <div class="drumss bg-white">
     <div class="wrapper">
         <div class="content">

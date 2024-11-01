@@ -1,12 +1,9 @@
-<link href="../library/interval-finder/style.min5034.css?v=202402141905" rel="stylesheet">
+<link href="../library/interval-finder/style.css" rel="stylesheet">
 <script async="" type="text/javascript" src="https://cdn.fuseplatform.net/prebid/prebid-24aa1eea9ef8d73f209c0c3c68a7371a.js"></script>
-<script src="../library/interval-finder/jquery.min84e3.js?3.6.0"></script>
-<script src="../library/interval-finder/merged_joomla_script.min9aa9.js?20231024"></script>
-<script src="../library/interval-finder/width_test.min5034.js?v=202402141905"></script>
-<!-- <link rel="stylesheet" href="../library/interval-finder/screen.mine4c3.css?v=?v=20240402160335"> -->
+<script src="../library/interval-finder/jquery.js"></script>
 <link rel="stylesheet" href="../public/css/guitar.css">
 <link rel="stylesheet" href="../public/css/piano.css">
-<script defer="" src="../library/interval-finder/app.minc683.js?v=?v=20231207215500"></script>
+<script defer="" src="../library/interval-finder/app.js"></script>
 
 
 <body class="en-GB is-desktop">
@@ -17,8 +14,6 @@
                     <div class="row flex__row">
                         <div class="content__right text-center">
                             <div id="system-message-container" aria-live="polite"></div>
-                            <article class="default__content item-page " itemscope="" itemtype="https://schema.org/Article">
-                                <meta itemprop="inLanguage" content="en-GB">
                                 <div itemprop="articleBody">
                                     <div class="default__page__content">
                                         <link href="../library/interval-finder/tool.css" rel="stylesheet">
@@ -151,7 +146,7 @@
                                         <script src="../library/interval-finder/keycodes.js"></script>
                                         <script src="../library/interval-finder/audio.js"></script>
                                         <script src="../library/interval-finder/process_audio2.js"></script>
-                                        <script src="../library/interval-finder/runtime_main.js"></script>
+                                        <script src="../library/interval-finder/main.js"></script>
 
                                     </div>
                                 </div>

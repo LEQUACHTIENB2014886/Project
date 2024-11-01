@@ -1,4 +1,4 @@
-<script src="../library/drum-machine/jquery.min84e3.js"></script>
+<script src="../library/drum-machine/jquery.js"></script>
 <div class="bg-white"><br><br>
     <div class="wrapper">
         <div class="content">

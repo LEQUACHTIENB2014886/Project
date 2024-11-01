@@ -5,21 +5,19 @@
 			<div class="row flex__row">
 				<div class="content__right col-9-m col-">
 					<div id="system-message-container" aria-live="polite"></div>
-					<article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
-						<meta itemprop="inLanguage" content="en-GB">
 						<div itemprop="articleBody">
 							<div class="default__page__content">
 								<h1 class="text-center">Guitar Online</h1><br>
-								<link href="../library/guitar/files/scripts/virtual-guitar/static/css/app.css" rel="stylesheet">
+								<link href="../library/guitar/app.css" rel="stylesheet">
 								<script>
 									document.addEventListener('click', function() {
 										var audioContext = new(window.AudioContext || window.webkitAudioContext)();
 									});
 								</script>
 								<div id="classic-guitar"></div>
-								<script src="../library/guitar/files/scripts/virtual-guitar/translation/vn.js"></script>
-								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/chunk-vendors.js"></script>
-								<script src="../library/guitar/files/scripts/virtual-guitar/static/js/note_guitar.js"></script>
+								<script src="../library/guitar/vn.js"></script>
+								<script src="../library/guitar/chunk.js"></script>
+								<script src="../library/guitar/note_guitar.js"></script>
 							</div>
 						</div>
 					</article>
@@ -92,6 +90,5 @@
 			margin-left: -32px;
 		}
 	</style>
-	<link href="../library/guitar/media/vendor/joomla-custom-elements/css/joomla-alert.min44b7.css?0.2.0" rel="stylesheet" />
-	<link href="../library/guitar/modules/mod_ads/css/min/style.min5034.css?v=202402141905" rel="stylesheet" />
-	<script src="../library/guitar/media/vendor/jquery/js/jquery.min84e3.js?3.6.0"></script>
+	<link href="../library/guitar/style.css" rel="stylesheet" />
+	<script src="../library/guitar/jquery.js"></script>
