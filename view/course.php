@@ -59,10 +59,6 @@
 </div>
 </div><br><br><br><br><br><br><br>
 <style>
-    .back:hover {
-        transform: scale(1.02);
-    }
-
     .course {
         display: flex;
         flex-wrap: wrap;
@@ -71,8 +67,20 @@
         margin-top: -600px;
     }
 
+    .back:hover {
+        transform: scale(1.1);
+    }
+
+    .back:hover {
+        transition: transform 0.3s;
+    }
+
+    .box {
+        transition: transform 0.3s;
+    }
+
     .box:hover {
-        transform: scale(1.03);
+        transform: scale(1.025);
     }
 
     div.title_course {

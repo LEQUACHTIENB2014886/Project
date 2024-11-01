@@ -30,3 +30,19 @@
         </div>
     </div>
 </main><br>
+<style>
+      .back:hover {
+        transform: scale(1.1);
+    }
+    .back:hover {
+        transition: transform 0.3s;
+    }
+
+    .box {
+        transition: transform 0.3s;
+    }
+
+    .box:hover {
+        transform: scale(1.025);
+    }
+</style>

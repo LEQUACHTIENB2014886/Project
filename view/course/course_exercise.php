@@ -65,10 +65,20 @@
 </div>
 </div><br><br><br><br><br><br><br>
 <style>
+      .back:hover {
+        transform: scale(1.1);
+    }
     .back:hover {
-        transform: scale(1.02);
+        transition: transform 0.3s;
     }
 
+    .box {
+        transition: transform 0.3s;
+    }
+
+    .box:hover {
+        transform: scale(1.025);
+    }
     h1,
     h5 {
         text-shadow: 2px 3px 5px black;
