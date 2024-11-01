@@ -5,29 +5,24 @@
     }
 </script>
 <div class="container instrument fadeHomepage" style="margin-top:0px">
-
     <div class="box" onclick="redirectToPage('../public/guitar.php')">
-        <a class="custom-link" href="#">
-            <div class="content">
-                <h2 class="text-dark">Guitar</h2>
-                <p><a class="tools">Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.</a></p>
-            </div>
-            <div class="image">
-                <img src="../library/image/features/guitar.jpg">
-            </div>
-        </a>
+        <div class="content">
+            <h2 class="text-dark">Guitar</h2>
+            <p><a class="tools">Chơi guitar ảo và hình dung nốt, hợp âm và âm giai.</a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/guitar.jpg">
+        </div>
     </div>
 
     <div class="box" onclick="redirectToPage('../public/piano.php')">
-        <a class="custom-link" href="../public/piano.php">
-            <div class="content">
-                <h2 class="text-dark">Piano</h2>
-                <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
-            </div>
-            <div class="image">
-                <img src="../library/image/features/piano.jpg">
-            </div>
-        </a>
+        <div class="content">
+            <h2 class="text-dark">Piano</h2>
+            <p><a class="tools">Chơi piano ảo và hình dung nốt, hợp âm và âm giai.</a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/piano.jpg">
+        </div>
     </div>
 
     <div class="box" onclick="redirectToPage('../public/chords_find.php')">
@@ -60,6 +55,16 @@
         </div>
     </div>
 
+    <div class="box" onclick="redirectToPage('../public/drum-machine.php')">
+        <div class="content">
+            <h2>Trống điện tử</h2>
+            <p>Sáng tạo và nghe thử giai điệu trống của bạn.<a href="../public/drum-machine.php"></a></p>
+        </div>
+        <div class="image">
+            <img src="../library/image/features/drum-machine.jpg">
+        </div>
+    </div>
+
     <div class="box" onclick="redirectToPage('../public/chord_player.php')">
         <div class="content">
             <h2>Ứng dụng Đệm Hợp âm</h2>
@@ -80,15 +85,6 @@
         </div>
     </div>
 
-    <div class="box">
-        <div class="content">
-            <h2>Trống điện tử</h2>
-            <p>Sáng tạo và nghe thử giai điệu trống của bạn.<a href="#"></a></p>
-        </div>
-        <div class="image">
-            <img src="../library/image/features/drum-machine.jpg">
-        </div>
-    </div>
 
     <div class="box">
         <div class="content">
@@ -162,6 +158,10 @@
 
 </div><br><br>
 <style>
+    .box {
+        transition: transform 0.3s;
+    }
+
     .box:hover {
         transform: scale(1.025);
     }
