@@ -20,7 +20,6 @@
 </div>
 </body>
 
-</html>
 <style>
   body {
     display: flex;

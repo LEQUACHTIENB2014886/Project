@@ -31,14 +31,15 @@
 </div>
 
 <style>
-    
-
+    h1{
+        font-style: italic;
+    }
     #main-header .navbar {
         margin-right: 16px;
     }
 
     .dropdown-content li {
-        margin-left: -2px;
+        margin-left: -32px;
     }
 
     .dropdown--highlight {

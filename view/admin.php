@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../public/css/admin.css">
+<!-- <link rel="stylesheet" href="../public/css/admin.css"> -->
 <button onclick="showCourses()">Courses</button>
 <button onclick="showUsers()">Users</button>
 <div id="result"></div>
@@ -8,17 +8,17 @@
     <h3>Add/Edit Course</h3>
     <form id="addEditForm" method="post">
         <input type="hidden" id="courseId" name="courseId">
-        <label for="courseLevel">Course Level:</label>
+        <br><label for="courseLevel">Course Level:&nbsp;</label>
         <input type="text" id="courseLevel" name="courseLevel" required><br>
-        <label for="courseAnswer">Course Answer:</label>
+        <br><label for="courseAnswer">Course Answer:</label>
         <input type="text" id="courseAnswer" name="courseAnswer" required><br>
-        <label for="courseType">Course Type:</label>
+        <br><label for="courseType">Course Type:</label>
         <input type="text" id="courseType" name="courseType" required><br>
-        <label for="courseQuestion">Course Question:</label>
+        <br><label for="courseQuestion">Course Question:</label>
         <input type="text" id="courseQuestion" name="courseQuestion" required><br>
         <button type="submit" name="addCourse">Add Course</button>
-        <button type="submit" name="editCourse">Save Changes</button>
-        <button type="submit" name="deleteCourse">Delete Course</button>
+        <!-- <button type="submit" name="editCourse">Save Changes</button> -->
+        <!-- <button type="submit" name="deleteCourse">Delete Course</button> -->
         <button type="button" onclick="hideCourseForm()">Cancel</button>
     </form>
 </div>
@@ -37,8 +37,8 @@
         <label for="role">Role:</label>
         <input type="text" id="role" name="role" required><br>
         <button type="submit" name="addUser">Add User</button>
-        <button type="submit" name="editUser">Save Changes</button>
-        <button type="submit" name="deleteUser">Delete User</button>
+        <!-- <button type="submit" name="editUser">Save Changes</button> -->
+        <!-- <button type="submit" name="deleteUser">Delete User</button> -->
         <button type="button" onclick="hideUserForm()">Cancel</button>
     </form>
 </div>
@@ -119,22 +119,97 @@
             document.getElementById('courseAnswer').value = course.course_answer;
             document.getElementById('courseType').value = course.course_type;
             document.getElementById('courseQuestion').value = course.course_question;
-        }
-    }
 
-    function editUser(userId) {
-        var users = <?php echo json_encode($users); ?>;
-        var user = users.find(function(u) {
-            return u.id === userId;
-        });
-
-        if (user) {
-            document.getElementById('userForm').style.display = 'block';
-            document.getElementById('userId').value = user.id;
-            document.getElementById('username').value = user.username;
-            document.getElementById('password').value = user.password;
-            document.getElementById('level').value = user.level;
-            document.getElementById('role').value = user.role;
+            // Update the button text for editing
+            var addButton = document.querySelector('button[name="addCourse"]');
+            addButton.innerHTML = 'Save Changes';
+            addButton.setAttribute('name', 'editCourse');
+            addButton.setAttribute('onclick', 'saveCourseChanges()');
         }
     }
 </script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 6px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 6px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        padding: 8px 16px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"],
+    button[name="addUser"],
+    button[name="editUser"],
+    button[name="deleteUser"],
+    button[name="addCourse"] {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    button[type="button"] {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    h3 {
+        color: #333;
+        margin-top: 20px;
+    }
+
+    form {
+        margin: 20px 0;
+    }
+
+    button:hover {
+        background-color: #1e8449;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>

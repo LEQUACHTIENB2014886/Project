@@ -1,4 +1,4 @@
-<!-- <link rel="stylesheet" href="./course.css"> --><br>
+<br>
 <div class="container course fst-italic slide-in" style="margin-top:0px;">
     <a href="../public/index.php">
         <div class="back text-light">
@@ -120,7 +120,7 @@
     .image {
         text-align: center;
         padding: 10px;
-        height: 100%;
+        /* height: 100%; */
     }
 
     .image img {

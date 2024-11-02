@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" class="full-height">
 
 <head>
     <title>Never late to LEARN</title>
@@ -19,9 +17,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-shadow: 1px 2px 4px black;font-size:18px;">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active ">
-                            <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only ">(current)</span></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/course.php">Khóa học</a>
@@ -31,9 +29,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/user.php">Tài khoản</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/chord_database.php">Tra cứu</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="../public/user.php">Đăng xuất</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/theory_basic.php">Lý thuyết</a>
@@ -183,18 +180,3 @@
             }, 200); // Delay of 200 milliseconds
         });
     </script>
-               
-            </div>
-        </nav>
-    </header>
-    <style>
-        .navbar-brand {
-            border: 1px solid white;
-            padding: 5px 10px;
-        }
-
-        .view {
-            background: url("../library/image/interview/background.jpg")no-repeat center center;
-            background-size: cover;
-        }
-    </style>

@@ -8,7 +8,7 @@
                         <div id="system-message-container" aria-live="polite"></div>
 
                         <div class="page-header default__page__header">
-                            <h1 class="h1 default__page__title text-center" itemprop="name">
+                            <h1 class="h1 text-center">
                                 Trống điện tử</h1>
                         </div>
                         <div itemprop="articleBody">
@@ -83,6 +83,9 @@
         </div>
     </div>
     <style>
+        h1{
+            font-style: italic;
+        }
         ul.sound-types,
         ul.dropdown__content {
             list-style-type: none;

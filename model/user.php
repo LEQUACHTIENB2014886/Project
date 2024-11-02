@@ -38,6 +38,8 @@ try {
         }
     }
 
+    session_start();
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['loginName']) && isset($_POST['loginPassword'])) {
         $email = $_POST['loginName'];
         $password = $_POST['loginPassword'];
@@ -50,6 +52,8 @@ try {
 
         if ($user) {
             $_SESSION['user'] = $user;
+            $_SESSION['role'] = $user['role']; // Lưu role vào session
+
             if ($user['role'] == 1) {
                 header("Location: index.php");
             } else {

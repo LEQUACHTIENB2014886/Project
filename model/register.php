@@ -1,13 +1,12 @@
-php
-Copy
+
 <?php
 $servername = "localhost";
 $dbname = "webhocnhacly";
 $username = "root";
 $password = "";
 
-$errorMessage = ""; // Biến để lưu thông báo lỗi
-$successMessage = ""; // Biến để lưu thông báo thành công
+$errorMessage = ""; 
+$successMessage = ""; 
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -19,7 +18,7 @@ try {
         $confirmPassword = $_POST['confirmPassword'];
 
         if ($password !== $confirmPassword) {
-            $errorMessage = 'Mật khẩu xác nhận không khớp.'; // Lưu thông báo lỗi
+            $errorMessage = 'Mật khẩu xác nhận không khớp.'; 
         } else {
             $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email");
             $stmt->bindParam(':email', $email);
@@ -27,14 +26,14 @@ try {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($user) {
-                $errorMessage = 'Tài khoản đã tồn tại.'; // Lưu thông báo lỗi
+                $errorMessage = 'Tài khoản đã tồn tại.';
             } else {
                 $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (:email, :password)");
                 $stmt->bindParam(':email', $email);
                 $stmt->bindParam(':password', $password);
                 $stmt->execute();
                 $successMessage = 'Đăng ký thành công!';
-                $activeTab = 'custom-login'; // Chuyển sang tab đăng nhập
+                $activeTab = 'custom-login'; 
             }
         }
     }

@@ -26,7 +26,7 @@
                         <article class="default__content item-page " itemscope itemtype="https://schema.org/Article">
                             <meta itemprop="inLanguage" content="vi-VN">
                             <div class="page-header default__page__header text-center">
-                                <h1 class="h1 default__page__title" itemprop="name">
+                                <h1 class="text-center">
                                     Trống ảo </h1>
                             </div>
                             <div itemprop="articleBody">
@@ -68,3 +68,9 @@
             </div>
         </div>
     </div>
+    <style>
+        h1{
+            font-style: italic;
+            /* font-weight: lighter; */
+        }
+    </style>

@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" class="full-height">
 
 <head>
     <title>Never late to LEARN</title>
@@ -30,7 +28,7 @@
                             <a class="nav-link" href="../public/features.php">Công cụ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/user.php">Tài khoản</a>
+                            <a class="nav-link" href="../public/user.php">Đăng Nhập</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/theory_basic.php">Lý thuyết</a>
