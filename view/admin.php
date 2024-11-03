@@ -1,6 +1,6 @@
-<!-- <link rel="stylesheet" href="../public/css/admin.css"> -->
 <button onclick="showCourses()">Courses</button>
 <button onclick="showUsers()">Users</button>
+<button onclick="logout()">Logout</button>
 <div id="result"></div>
 
 <!-- Form thêm/sửa/xóa khóa học -->
@@ -44,6 +44,20 @@
 </div>
 
 <script>
+    function logout() {
+        fetch('../model/logout.php')
+            .then(response => {
+                console.log(response); // Kiểm tra phản hồi
+                if (response.ok) {
+                    window.location.href = '../public/index.php';
+                } else {
+                    console.error('Logout failed');
+                    window.location.href = '../public/index.php'
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
     function showCourses() {
         var courses = <?php echo json_encode($courses); ?>;
         var table = '<table><tr><th>Course ID</th><th>Course Level</th><th>Course Answer</th><th>Course Type</th><th>Course Question</th></tr>';

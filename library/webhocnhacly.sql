@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 29, 2024 lúc 06:53 PM
+-- Thời gian đã tạo: Th10 02, 2024 lúc 07:09 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
--- Phiên bản PHP: 8.2.12
+-- Phiên bản PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -81,16 +81,17 @@ CREATE TABLE `users` (
   `id` int(200) NOT NULL,
   `username` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL,
-  `tien_do` varchar(10) NOT NULL DEFAULT '1,0,0'
+  `level` varchar(10) NOT NULL DEFAULT '1,0,0',
+  `role` int(10) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `tien_do`) VALUES
-(1, 'binh', 'binh', '1,0,0'),
-(2, 'tien', '123', '1,0,0');
+INSERT INTO `users` (`id`, `username`, `password`, `level`, `role`) VALUES
+(1, 'binh', 'binh', '1,0,0', 1),
+(2, 'tien', '123', '1,0,0', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ

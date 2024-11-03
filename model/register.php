@@ -1,12 +1,9 @@
-
 <?php
 $servername = "localhost";
 $dbname = "webhocnhacly";
 $username = "root";
 $password = "";
 
-$errorMessage = ""; 
-$successMessage = ""; 
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -33,11 +30,10 @@ try {
                 $stmt->bindParam(':password', $password);
                 $stmt->execute();
                 $successMessage = 'Đăng ký thành công!';
-                $activeTab = 'custom-login'; 
+                $activeTab = 'custom-login';
             }
         }
     }
 } catch (PDOException $e) {
     echo "Kết nối thất bại: " . $e->getMessage();
 }
-?>

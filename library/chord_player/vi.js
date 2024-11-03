@@ -48,6 +48,7 @@ window.translation = {
       classical1: "Cổ điển 1",
       classical2: "Cổ điển 2",
     },
+    tempo: "tempo",
     select_instrument_text: "Nhạc cụ",
     download_text: "Download",
     save_text: "Save",

@@ -15,10 +15,10 @@
                             <div itemprop="articleBody">
                                 <div class="default__page__content">
                                     <div id="chord-player"></div>
-                                    <script src="../library/chord_player/vnm.js"></script>
+                                    <script src="../library/chord_player/vi.js"></script>
                                     <script src="../library/chord_player/presets.js"></script>
-                                    <script src="../library/chord_player/aa.js"></script>
-                                    <script src="../library/chord_player/g8.js"></script>
+                                    <script src="../library/chord_player/chord.js"></script>
+                                    <script src="../library/chord_player/view.js"></script>
                                     <script src="../library/chord_player/chunk.js"></script>
                                 </div>
                             </div>

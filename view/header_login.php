@@ -1,4 +1,3 @@
-
 <head>
     <title>Never late to LEARN</title>
     <link rel="icon" href="../library/image/interview/favicon.png" type="image/x-icon">
@@ -28,15 +27,16 @@
                             <a class="nav-link" href="../public/features.php">Công cụ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/user.php">Tài khoản</a>
-                        </li><li class="nav-item">
-                            <a class="nav-link" href="../public/user.php">Đăng xuất</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="../public/theory_basic.php">Lý thuyết</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/introduce.php">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/user.php">Tài khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../model/logout.php">Đăng xuất</a>
                         </li>
                     </ul>
                 </div>

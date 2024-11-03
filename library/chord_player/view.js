@@ -1,4 +1,4 @@
-/*!For license information please see main.5471ac1f.js.LICENSE.txt*/ !(function () {
+!(function () {
   var e = {
       5: function (e, t, n) {
         !(function (e, t, n, r) {
@@ -12068,7 +12068,7 @@
                 isLogged: !1,
                 isPlaying: !1,
                 isPaused: !1,
-                tempo: 100,
+                tempo: 65,
                 time: "4/4",
                 isSwing: !1,
                 type: "pop",
@@ -12086,7 +12086,7 @@
                   data: { id: 0, name: "" },
                   sampleActiveId: null,
                   sampleName: null,
-                  sampleTempo: 100,
+                  sampleTempo: 65,
                   sampleBody: "",
                   sampleUrlBody: "",
                   sampleStyleName: "",

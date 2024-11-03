@@ -1,16 +1,16 @@
 <?php
-ob_start();
-session_start(); 
-if (!isset($_SESSION['role'])) {
-    header("Location: login.php");
-    exit();
+include "db.php";
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
 
-if ($_SESSION['role'] == 1) {
+$role = $_SESSION['role'] ?? null;
+
+if ($role === '0') {
+    header("Location: admin.php");
+    exit();
+} elseif ($role === '1') {
     include '../view/header_login.php';
-} 
-if ($_SESSION['role'] == null) {
+} else {
     include '../view/header.php';
 }
-ob_end_flush(); 
-
