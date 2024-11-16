@@ -1,67 +1,86 @@
 <?php
-$servername = "localhost";
-$dbname = "webhocnhacly";
-$username = "root";
-$password = "";
+session_start();
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Xử lý thêm, sửa, xóa dữ liệu
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $response = ['status' => 'error', 'message' => ''];
-
-        // Thêm khóa học
-        if (isset($_POST['addCourse'])) {
-            $courseLevel = $_POST['courseLevel'];
-            $courseAnswer = $_POST['courseAnswer'];
-            $courseType = $_POST['courseType'];
-            $courseQuestion = $_POST['courseQuestion'];
-
-            $insertQuery = $conn->prepare("INSERT INTO courses (course_level, course_answer, course_type, course_question) VALUES (?, ?, ?, ?)");
-            $insertQuery->execute([$courseLevel, $courseAnswer, $courseType, $courseQuestion]);
-            $response = ['status' => 'success', 'message' => 'Khóa học đã được thêm thành công.'];
-        }
-
-        // Sửa khóa học
-        if (isset($_POST['editCourse'])) {
-            $courseId = $_POST['courseId'];
-            $courseLevel = $_POST['courseLevel'];
-            $courseAnswer = $_POST['courseAnswer'];
-            $courseType = $_POST['courseType'];
-            $courseQuestion = $_POST['courseQuestion'];
-
-            $updateQuery = $conn->prepare("UPDATE courses SET course_level = ?, course_answer = ?, course_type = ?, course_question = ? WHERE course_id = ?");
-            $updateQuery->execute([$courseLevel, $courseAnswer, $courseType, $courseQuestion, $courseId]);
-            $response = ['status' => 'success', 'message' => 'Khóa học đã được cập nhật thành công.'];
-        }
-
-        // Xóa khóa học
-        if (isset($_POST['deleteCourse'])) {
-            $courseId = $_POST['courseId'];
-
-            $deleteQuery = $conn->prepare("DELETE FROM courses WHERE course_id = ?");
-            $deleteQuery->execute([$courseId]);
-            $response = ['status' => 'success', 'message' => 'Khóa học đã được xóa thành công.'];
-        }
-
-        // Gửi phản hồi dưới dạng JSON
-        echo json_encode($response);
-        exit; // Dừng thực thi mã tiếp theo
-    }
-
-    // Lấy dữ liệu từ bảng "Courses"
-    $coursesQuery = $conn->query("SELECT * FROM courses");
-    $courses = $coursesQuery->fetchAll(PDO::FETCH_ASSOC);
-
-    // Lấy dữ liệu từ bảng "Users"
-    $usersQuery = $conn->query("SELECT * FROM users");
-    $users = $usersQuery->fetchAll(PDO::FETCH_ASSOC);
-
-    // Đóng kết nối
-    $conn = null;
-} catch (PDOException $e) {
-    echo json_encode(['status' => 'error', 'message' => 'Lỗi kết nối cơ sở dữ liệu: ' . $e->getMessage()]);
+// Kiểm tra nếu người dùng chưa đăng nhập, chuyển hướng tới trang đăng nhập
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: ../public/index.php");
+    exit;
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chọn bảng</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            padding: 15px 30px;
+            margin: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .logout-btn {
+            background-color: #dc3545;
+        }
+        .logout-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chọn Bảng</h1>
+
+        <!-- Nút để chọn bảng 'users' -->
+        <button class="button" onclick="redirectToTable('users')">Bảng Users</button>
+
+        <!-- Nút để chọn bảng 'courses' -->
+        <button class="button" onclick="redirectToTable('courses')">Bảng Courses</button>
+
+        <!-- Nút đăng xuất -->
+        <button class="button logout-btn" onclick="logout()">Đăng xuất</button>
+    </div>
+
+    <script>
+        // Hàm chuyển hướng tới trang 'table.php' với tham số bảng
+        function redirectToTable(tableName) {
+            window.location.href = "table.php?table=" + tableName;
+        }
+
+        // Hàm đăng xuất
+        function logout() {
+            fetch('../model/logout.php')
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '../public/index.php';
+                    } else {
+                        console.error('Logout failed');
+                        window.location.href = '../public/index.php';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
