@@ -30,31 +30,33 @@ try {
                 } else {
                     $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (:email, :password)");
                     $stmt->bindParam(':email', $email);
-                    $stmt->bindParam(':password', $password); // Không hash mật khẩu ở đây
+
+                    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                    $stmt->bindParam(':password', $hashedPassword);
                     $stmt->execute();
                     $successMessage = 'Đăng ký thành công!';
                 }
             }
         }
+    }
 
-        // Xử lý đăng nhập
-        if (isset($_POST['loginName']) && isset($_POST['loginPassword'])) {
-            $email = $_POST['loginName'];
-            $password = $_POST['loginPassword'];
+    // Xử lý đăng nhập
+    if (isset($_POST['loginName']) && isset($_POST['loginPassword'])) {
+        $email = $_POST['loginName'];
+        $password = $_POST['loginPassword'];
 
-            $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email AND password = :password");
-            $stmt->bindParam(':email', $email);
-            $stmt->bindParam(':password', $password);
-            $stmt->execute();
-            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email");
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            if ($user) {
-                $_SESSION['role'] = $user['role'];
-                header("Location: ../public/index.php");
-                exit;
-            } else {
-                $errorMessage = 'Tài khoản hoặc mật khẩu không đúng.';
-            }
+        if ($user && password_verify($password, $user['password'])) { 
+            $_SESSION['role'] = $user['role']; 
+
+            header("Location: ../public/index.php"); 
+            exit;
+        } else {
+            $errorMessage = 'Tài khoản hoặc mật khẩu không đúng.';
         }
     }
 } catch (PDOException $e) {
