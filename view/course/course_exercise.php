@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../public/css/course.css"><br>
-<div class="container course fst-italic " style="margin-top:0px;">
+<br>
+<div class="container course fst-italic slide-in" style="margin-top:0px;">
     <a href="../public/course.php">
         <div class="back text-light">
             <h5>
@@ -64,23 +64,3 @@
     </div>
 </div>
 </div><br><br><br><br><br><br><br>
-<style>
-      .back:hover {
-        transform: scale(1.1);
-    }
-    .back:hover {
-        transition: transform 0.3s;
-    }
-
-    .box {
-        transition: transform 0.3s;
-    }
-
-    .box:hover {
-        transform: scale(1.025);
-    }
-    h1,
-    h5 {
-        text-shadow: 2px 3px 5px black;
-    }
-</style>

@@ -1,4 +1,13 @@
-<link rel="stylesheet" href="../public/css/course_selected.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<br>
 <main class="main-flex" style="margin-top:-120px;">
     <div>
         <div class="full-bg-img fst-italic" >
@@ -30,19 +39,5 @@
         </div>
     </div>
 </main><br>
-<style>
-      .back:hover {
-        transform: scale(1.1);
-    }
-    .back:hover {
-        transition: transform 0.3s;
-    }
-
-    .box {
-        transition: transform 0.3s;
-    }
-
-    .box:hover {
-        transform: scale(1.025);
-    }
-</style>
+</body>
+</html>

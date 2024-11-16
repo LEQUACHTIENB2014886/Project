@@ -1,9 +1,18 @@
-.course {
+<style>
+    .box {
+        transition: transform 0.3s;
+    }
+
+    .box:hover {
+        transform: scale(1.025);
+    }
+/* features */
+.instrument {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
-    margin-top: -600px;
+    /* margin-top: -600px; */
 }
 
 .box {
@@ -18,23 +27,10 @@
     padding: 15px;
 }
 
-.box a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.box a:hover {
-    color: gray;
-}
-
-.box a:active {
-    color: white;
-}
-
 .image {
     text-align: center;
     padding: 10px;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .image img {
@@ -51,16 +47,5 @@
 .tools:hover {
     color: inherit;
 }
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h5 {
-    text-shadow: 2px 3px 5px black;
-}
-
-.box:hover {
-    transform: scale(1.03);
-}
+/* features */
+</style>

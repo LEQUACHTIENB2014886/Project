@@ -1,4 +1,3 @@
-
 <?php
 $currentQuestionIndex = isset($_POST['questionIndex']) ? $_POST['questionIndex'] : 0;
 $selectedAnswer = [];
@@ -43,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$query = $conn->prepare("SELECT course_id, course_question FROM courses WHERE course_level = :course_level AND course_type = :course_type LIMIT 1 OFFSET :questionIndex");
+$query = $conn->prepare("SELECT id, course_question FROM courses WHERE course_level = :course_level AND course_type = :course_type LIMIT 1 OFFSET :questionIndex");
 $query->bindParam(':course_level', $course_level);
 $query->bindParam(':course_type', $course_type);
 $query->bindParam(':questionIndex', $currentQuestionIndex, PDO::PARAM_INT);
@@ -55,7 +54,18 @@ $conn = null;
 
 <?php if (!$completed) : ?>
     <h1>Hãy chọn tên nốt nhạc nằm trên khuông nhạc !</h1><br>
-    <div id="questionText" class="img text-center"><img src="<?php echo $question['course_question']; ?>" alt="Câu hỏi" class="question-image"></div>
+    <style>
+        #questionText .question-image {
+            max-width: 100%;
+            /* Giới hạn chiều rộng tối đa là 100% */
+            height: auto;
+            /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
+        }
+    </style>
+
+    <div id="questionText" class="img text-center">
+        <img src="<?php echo $question['course_question']; ?>" alt="Câu hỏi" class="question-image">
+    </div>
     <br>
     <form method="POST" action="">
         <div class='answer-buttons'>
@@ -70,7 +80,7 @@ $conn = null;
                 echo "<button id='answer-6' type='submit' name='answer' value='6' class='" . ($selectedAnswer == 6 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>La</button>";
                 echo "<button id='answer-7' type='submit' name='answer' value='7' class='" . ($selectedAnswer == 7 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Si</button>";
             }
-            if ($course_type === 'chord'){
+            if ($course_type === 'chord') {
                 echo "<button id='answer-1' type='submit' name='answer' value='1' class='" . ($selectedAnswer == 1 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Trưởng</button>";
                 echo "<button id='answer-2' type='submit' name='answer' value='2' class='" . ($selectedAnswer == 2 ? ($selectedAnswer == $correctAnswer ? "" : "wrong-answer") : "") . "'>Thứ</button>";
             }
@@ -99,7 +109,9 @@ $conn = null;
         button.addEventListener('click', function(event) {
             var selectedButton = event.target;
             var selectedAnswer = selectedButton.value;
-            var correctAnswer = <?php echo $correctAnswer; ?>;
+
+            // Sử dụng json_encode để đảm bảo biến PHP được chuyển thành một chuỗi hợp lệ trong JavaScript
+            var correctAnswer = <?php echo json_encode($correctAnswer); ?>;
 
             if (selectedAnswer != correctAnswer) {
                 selectedButton.classList.add('wrong-answer');

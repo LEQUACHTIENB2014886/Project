@@ -1,13 +1,12 @@
-<link rel="stylesheet" href="../public/css/course.css">
 <br>
-<div class="container course fst-italic slide-in" style="margin-top:0px;">
+<div class="container course fst-italic slide-in" style="margin-top:-0px;">
     <a href="../public/course.php">
         <div class="back text-light">
             <h5>
                 << Trở về</h5>
         </div>
     </a>
-    <div class="container" style="margin-top:-20px;">
+    <div class="container">
         <div class="row">
             <div class="col-1">
             </div>
@@ -59,19 +58,3 @@
     </div>
 </div>
 </div><br><br><br><br><br><br><br>
-<style>
-    .back:hover {
-        transform: scale(1.1);
-    }
-    .back:hover {
-        transition: transform 0.3s;
-    }
-
-    .box {
-        transition: transform 0.3s;
-    }
-
-    .box:hover {
-        transform: scale(1.025);
-    }
-</style>
