@@ -11,6 +11,8 @@ if ($role === '0') {
     exit();
 } elseif ($role === '1') {
     include '../view/header_login.php';
+    include '../public/css/header.php';
 } else {
     include '../view/header.php';
+    include '../public/css/header.php';
 }
