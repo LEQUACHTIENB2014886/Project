@@ -1,99 +1,3 @@
-<?php
-$servername = "localhost";
-$dbname = "webhocnhacly";
-$username = "root";
-$password = "";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Bộ lọc
-    $courseTypeFilter = isset($_POST['course_type']) ? $_POST['course_type'] : '';
-    $courseLevelFilter = isset($_POST['course_level']) ? $_POST['course_level'] : '';
-
-    $tablesQuery = $conn->query("SHOW TABLES");
-    $tables = $tablesQuery->fetchAll(PDO::FETCH_COLUMN);
-
-    // Kiểm tra phương thức POST và lấy giá trị của table từ GET thay vì POST
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['table'])) {
-        $table = $_GET['table'];  // Sử dụng GET để lấy tên bảng
-
-        // Sửa dữ liệu trong bảng
-        if (isset($_POST['editRow']) && isset($_POST['id'])) {
-            $id = (int)$_POST['id'];
-            $updates = [];
-            foreach ($_POST['data'] as $column => $value) {
-                if ($column == 'password' && !empty($value)) {
-                    $value = password_hash($value, PASSWORD_DEFAULT);
-                }
-                $updates[] = "$column = :$column";
-            }
-            $updateQuery = "UPDATE $table SET " . implode(", ", $updates) . " WHERE id = :id";
-            $stmt = $conn->prepare($updateQuery);
-            foreach ($_POST['data'] as $column => $value) {
-                $stmt->bindValue(":$column", $value);
-            }
-            $stmt->bindValue(':id', $id);
-            $stmt->execute();
-        }
-
-        // Thêm dữ liệu mới vào bảng
-        if (isset($_POST['addRow'])) {
-            $columns = implode(", ", array_keys($_POST['data']));
-            $placeholders = implode(", ", array_map(fn($col) => ":$col", array_keys($_POST['data'])));
-            $insertQuery = "INSERT INTO $table ($columns) VALUES ($placeholders)";
-            $stmt = $conn->prepare($insertQuery);
-            foreach ($_POST['data'] as $column => $value) {
-                if ($column == 'password' && !empty($value)) {
-                    $value = password_hash($value, PASSWORD_DEFAULT);
-                }
-                $stmt->bindValue(":$column", $value);
-            }
-            $stmt->execute();
-        }
-
-        // Xóa dữ liệu trong bảng
-        if (isset($_POST['deleteRow']) && isset($_POST['id'])) {
-            $id = (int)$_POST['id'];
-            $deleteQuery = "DELETE FROM $table WHERE id = :id";
-            $stmt = $conn->prepare($deleteQuery);
-            $stmt->bindValue(':id', $id);
-            $stmt->execute();
-        }
-    }
-
-    // Lấy thông tin cột và dữ liệu bảng
-    $columns = [];
-    $rows = [];
-    if (isset($_GET['table'])) {
-        $table = $_GET['table'];  // Lấy giá trị từ GET
-        $columnsQuery = $conn->query("SHOW COLUMNS FROM $table");
-        $columns = $columnsQuery->fetchAll(PDO::FETCH_ASSOC);
-
-        // Truy vấn lọc
-        $query = "SELECT * FROM $table WHERE 1=1";
-        if ($courseTypeFilter) {
-            $query .= " AND course_type = :course_type";
-        }
-        if ($courseLevelFilter) {
-            $query .= " AND course_level = :course_level";
-        }
-        $stmt = $conn->prepare($query);
-        if ($courseTypeFilter) {
-            $stmt->bindValue(':course_type', $courseTypeFilter);
-        }
-        if ($courseLevelFilter) {
-            $stmt->bindValue(':course_level', $courseLevelFilter);
-        }
-        $stmt->execute();
-        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-} catch (PDOException $e) {
-    echo "<p style='color:red;'>Lỗi kết nối: " . $e->getMessage() . "</p>";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -130,7 +34,8 @@ try {
 
     <div class="horizontal-container">
         <div class="item">
-            <form method="POST" id="filter-form">
+            <!-- Lọc khóa học -->
+            <form method="POST" id="filter-form-courses">
                 <label for="course_type">Loại Khóa Học:</label>
                 <select name="course_type" id="course_type">
                     <option value="">Tất cả</option>
@@ -138,7 +43,6 @@ try {
                     <option value="chord" <?php echo ($courseTypeFilter == 'chord') ? 'selected' : ''; ?>>Chord</option>
                     <option value="melody" <?php echo ($courseTypeFilter == 'melody') ? 'selected' : ''; ?>>Melody</option>
                 </select>
-
                 <label for="course_level">Cấp Độ:</label>
                 <select name="course_level" id="course_level">
                     <option value="">Tất cả</option>
@@ -146,12 +50,23 @@ try {
                     <option value="medium" <?php echo ($courseLevelFilter == 'medium') ? 'selected' : ''; ?>>Medium</option>
                     <option value="hard" <?php echo ($courseLevelFilter == 'hard') ? 'selected' : ''; ?>>Hard</option>
                 </select>
-
                 <button type="submit">Lọc</button>
             </form>
+            <form method="POST" id="filter-form-users">
+    <label for="level">Tiến độ người dùng:</label>
+    <select name="level" id="level">
+        <option value="">Tất cả</option>
+        <option value="1,0,0" <?php echo ($levelFilter == '1,0,0') ? 'selected' : ''; ?>>1,0,0</option>
+        <option value="1,1,0" <?php echo ($levelFilter == '1,1,0') ? 'selected' : ''; ?>>1,1,0</option>
+        <option value="1,1,1" <?php echo ($levelFilter == '1,1,1') ? 'selected' : ''; ?>>1,1,1</option>
+    </select>
+    <button type="submit">Lọc</button>
+</form>
+
         </div>
         <div class="item"><button onclick="showModal('add')">Thêm Dữ Liệu</button></div>
     </div>
+
 
     <table>
         <thead>
@@ -178,7 +93,7 @@ try {
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="<?php echo count($columns) + 1; ?>">Hãy chọn bảng</td>
+                    <!-- <td colspan="<?php echo count($columns) + 1; ?>">Hãy chọn bảng</td> -->
                 </tr>
             <?php endif; ?>
         </tbody>
@@ -208,6 +123,9 @@ try {
     </div>
 
     <script>
+        document.getElementById('filter-form-courses').style.display = 'none';
+        document.getElementById('filter-form-users').style.display = 'none';
+
         document.getElementById('coursesButton').onclick = function() {
             navigateToCourses();
         };
@@ -233,16 +151,17 @@ try {
 
             // Nếu table=courses, hiển thị form lọc, nếu không, ẩn form lọc
             if (table === 'courses') {
-                document.getElementById('filter-form').style.display = 'block';
-            } else {
-                document.getElementById('filter-form').style.display = 'none';
+                document.getElementById('filter-form-courses').style.display = 'block';
+                document.getElementById('filter-form-users').style.display = 'none';
             }
+            if (table === 'users') {
+                document.getElementById('filter-form-courses').style.display = 'none';
+                document.getElementById('filter-form-users').style.display = 'block';
+            }
+
         }
 
-        // Gọi hàm kiểm tra khi tải trang
         window.onload = checkPageForFilter;
-
-
 
         function showModal(type) {
             document.getElementById('modal').style.display = 'block';

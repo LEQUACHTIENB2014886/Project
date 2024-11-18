@@ -34,10 +34,10 @@
     }
 
     button {
-        padding: 12px 25px;
+        padding: 12px 36px;
         margin: 10px;
         border: none;
-        background-color: #f0f0f0;
+        background-color: #90EE90;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,7 +45,7 @@
     }
 
     button:hover {
-        background-color: #b0bec5;
+        background-color: #8FBC8F;
         transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -105,7 +105,7 @@
         width: 100%;
         max-width: 100%;
         border-collapse: collapse;
-        margin-top: 30px;
+        margin-top: 10px;
         table-layout: fixed;
     }
 
