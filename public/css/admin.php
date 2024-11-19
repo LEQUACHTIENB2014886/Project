@@ -6,15 +6,14 @@
     }
 
     .horizontal-container {
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 20px;
-            background-color: #f0f0f0; 
-            border: 1px solid #ccc; 
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+    }
 
-       
     body {
         font-family: 'Arial', sans-serif;
         background-color: #f7f7f7;
@@ -31,6 +30,10 @@
         text-align: center;
         border-radius: 8px;
         font-size: 2em;
+    }
+
+    html {
+        overflow-y: scroll;
     }
 
     button {

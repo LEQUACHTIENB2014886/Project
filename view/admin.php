@@ -15,17 +15,6 @@
         <div class="item">
             <button id="usersButton" onclick="navigateToUsers()">Bảng Người dùng</button>
         </div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
@@ -53,15 +42,15 @@
                 <button type="submit">Lọc</button>
             </form>
             <form method="POST" id="filter-form-users">
-    <label for="level">Tiến độ người dùng:</label>
-    <select name="level" id="level">
-        <option value="">Tất cả</option>
-        <option value="1,0,0" <?php echo ($levelFilter == '1,0,0') ? 'selected' : ''; ?>>1,0,0</option>
-        <option value="1,1,0" <?php echo ($levelFilter == '1,1,0') ? 'selected' : ''; ?>>1,1,0</option>
-        <option value="1,1,1" <?php echo ($levelFilter == '1,1,1') ? 'selected' : ''; ?>>1,1,1</option>
-    </select>
-    <button type="submit">Lọc</button>
-</form>
+                <label for="level">Tiến độ người dùng:</label>
+                <select name="level" id="level">
+                    <option value="">Tất cả</option>
+                    <option value="1,0,0" <?php echo ($levelFilter == '1,0,0') ? 'selected' : ''; ?>>1,0,0</option>
+                    <option value="1,1,0" <?php echo ($levelFilter == '1,1,0') ? 'selected' : ''; ?>>1,1,0</option>
+                    <option value="1,1,1" <?php echo ($levelFilter == '1,1,1') ? 'selected' : ''; ?>>1,1,1</option>
+                </select>
+                <button type="submit">Lọc</button>
+            </form>
 
         </div>
         <div class="item"><button onclick="showModal('add')">Thêm Dữ Liệu</button></div>
