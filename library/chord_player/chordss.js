@@ -29,6 +29,32 @@ window.progressions = {
       },
       {
         section_a: [
+          { root: "D#", duration: 2 },
+          { root: "F", duration: 2 },
+          { root: "Dm", duration: 2 },
+          { root: "Gm", duration: 2 },
+          { root: "D#", duration: 2 },
+          { root: "F", duration: 2 },
+          { root: "A#", duration: 2 },
+          { root: "A#7", duration: 2 },
+          { root: "D#", duration: 2 },
+          { root: "F", duration: 2 },
+          { root: "Dm", duration: 2 },
+          { root: "Gm", duration: 2 },
+          { root: "D#", duration: 2 },
+          { root: "F", duration: 2 },
+          { root: "Gsus4", duration: 2 },
+          { root: "G", duration: 2 },
+        ],
+        section_b: [
+          { root: "Am", duration: 4 },
+          { root: "F", duration: 4 },
+          { root: "Gsus4", duration: 4 },
+          { root: "G", duration: 4 },
+        ],
+      },
+      {
+        section_a: [
           { root: "F", duration: 4 },
           { root: "G", duration: 4 },
           { root: "Em", duration: 4 },
