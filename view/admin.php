@@ -15,6 +15,9 @@
         <div class="item">
             <button id="usersButton" onclick="navigateToUsers()">Bảng Người dùng</button>
         </div>
+        <div class="item">
+            <button id="featuresButton" onclick="navigateToFeatures()">Bảng Nhạc cụ</button>
+        </div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
@@ -118,9 +121,11 @@
         document.getElementById('coursesButton').onclick = function() {
             navigateToCourses();
         };
-
         document.getElementById('usersButton').onclick = function() {
             navigateToUsers();
+        };
+        document.getElementById('featuresButton').onclick = function() {
+            navigateToFeatures();
         };
 
         function navigateToCourses() {
@@ -133,6 +138,10 @@
             window.location.href = 'admin.php?table=users';
         }
 
+        function navigateToFeatures() {
+            // Chuyển tới bảng người dùng và đảm bảo form lọc ẩn đi
+            window.location.href = 'admin.php?table=features';
+        }
         function checkPageForFilter() {
             // Kiểm tra giá trị của tham số "table" trong URL
             var urlParams = new URLSearchParams(window.location.search);
