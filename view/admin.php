@@ -142,6 +142,7 @@
             // Chuyển tới bảng người dùng và đảm bảo form lọc ẩn đi
             window.location.href = 'admin.php?table=features';
         }
+
         function checkPageForFilter() {
             // Kiểm tra giá trị của tham số "table" trong URL
             var urlParams = new URLSearchParams(window.location.search);
@@ -191,6 +192,7 @@
                     form.submit();
                 }
             };
+
         }
 
         document.getElementById('modal-overlay').onclick = function() {
