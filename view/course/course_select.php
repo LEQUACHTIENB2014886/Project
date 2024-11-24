@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/course_selected.php?course_type=note&course_level=<?php echo $_GET['course_level'] ?>">
+        <a href="../public/course_selected.php?loai=note&capdo=<?php echo $_GET['capdo'] ?>">
             <div class="content">
                 <h2>Nốt nhạc</h2>
                 <p>Là những nốt cơ bản nhất, cấu tạo nên nhạc</p>
@@ -34,7 +34,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_selected.php?course_type=chord&course_level=<?php echo $_GET['course_level'] ?>">
+        <a href="../public/course_selected.php?loai=chord&capdo=<?php echo $_GET['capdo'] ?>">
             <div class="content">
                 <h2>Hợp âm</h2>
                 <p>Là tập hợp của nhiều nốt nhạc</p>
@@ -46,7 +46,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_selected.php?course_type=melody&course_level=<?php echo $_GET['course_level'] ?>">
+        <a href="../public/course_selected.php?loai=melody&capdo=<?php echo $_GET['capdo'] ?>">
             <div class="content">
                 <h2>Nhịp diệu</h2>
                 <p>Sự kết hợp của các hợp âm theo qui luật</p>

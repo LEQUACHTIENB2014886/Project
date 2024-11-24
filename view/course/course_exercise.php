@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/course_select.php?course_level=basic">
+        <a href="../public/course_select.php?capdo=basic">
             <div class="content">
                 <h2>Người mới bắt đầu</h2>
                 <p>Bước đầu trong việc học nhạc lý</p>
@@ -39,7 +39,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_select.php?course_level=medium">
+        <a href="../public/course_select.php?capdo=medium">
             <div class="content">
                 <h2>Người đã có nền cơ bản</h2>
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
@@ -51,7 +51,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_select.php?course_level=hard">
+        <a href="../public/course_select.php?capdo=hard">
             <div class="content">
                 <h2>Người học nâng cao</h2>
                 <p>Sau khi đã có nền tảng vững chắc.</p>
