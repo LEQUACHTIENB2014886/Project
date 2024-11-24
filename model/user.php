@@ -20,7 +20,7 @@ try {
             if ($password !== $confirmPassword) {
                 $errorMessage = 'Mật khẩu xác nhận không khớp.';
             } else {
-                $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email");
+                $stmt = $conn->prepare("SELECT * FROM nguoidung WHERE ten = :email");
                 $stmt->bindParam(':email', $email);
                 $stmt->execute();
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@ try {
                 if ($user) {
                     $errorMessage = 'Tài khoản đã tồn tại.';
                 } else {
-                    $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (:email, :password)");
+                    $stmt = $conn->prepare("INSERT INTO nguoidung (ten, matkhau) VALUES (:email, :password)");
                     $stmt->bindParam(':email', $email);
 
                     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -45,13 +45,13 @@ try {
         $email = $_POST['loginName'];
         $password = $_POST['loginPassword'];
 
-        $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email");
+        $stmt = $conn->prepare("SELECT * FROM nguoidung WHERE ten = :email");
         $stmt->bindParam(':email', $email);
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && password_verify($password, $user['password'])) { 
-            $_SESSION['role'] = $user['role']; 
+        if ($user && password_verify($password, $user['matkhau'])) { 
+            $_SESSION['quyen'] = $user['quyen']; 
 
             header("Location: ../public/index.php"); 
             exit;

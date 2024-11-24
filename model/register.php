@@ -17,7 +17,7 @@ try {
         if ($password !== $confirmPassword) {
             $errorMessage = 'Mật khẩu xác nhận không khớp.'; 
         } else {
-            $stmt = $conn->prepare("SELECT * FROM users WHERE username = :email");
+            $stmt = $conn->prepare("SELECT * FROM nguoidung WHERE ten = :email");
             $stmt->bindParam(':email', $email);
             $stmt->execute();
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -25,7 +25,7 @@ try {
             if ($user) {
                 $errorMessage = 'Tài khoản đã tồn tại.';
             } else {
-                $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (:email, :password)");
+                $stmt = $conn->prepare("INSERT INTO nguoidung (ten, password) VALUES (:email, :password)");
                 $stmt->bindParam(':email', $email);
                 $stmt->bindParam(':password', $password);
                 $stmt->execute();

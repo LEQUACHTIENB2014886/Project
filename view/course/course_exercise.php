@@ -45,7 +45,7 @@
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/tuner.jpg">
+                <img src="../library/image/features/chords_find.jpg">
             </div>
             <br>
         </a>

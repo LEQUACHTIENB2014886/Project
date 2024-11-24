@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$role = $_SESSION['role'] ?? null;
+$role = $_SESSION['quyen'] ?? null;
 
 if ($role === '0') {
     header("Location: admin.php");

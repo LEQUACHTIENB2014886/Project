@@ -3,63 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ADMIN</title>
+    <title>Quản lý Hệ Thống</title>
 </head>
 
 <body>
-    <h1>ADMIN</h1>
+    <h1>Quản lý Hệ Thống</h1>
+
+    <!-- Thanh điều hướng -->
     <div class="horizontal-container">
         <div class="item">
-            <button id="coursesButton" onclick="navigateToCourses()">Bảng khóa học</button>
+            <button id="nguoidungButton" onclick="navigateToNguoidung()">Bảng Người Dùng</button>
         </div>
         <div class="item">
-            <button id="usersButton" onclick="navigateToUsers()">Bảng Người dùng</button>
+            <button id="khoahocButton" onclick="navigateToKhoahoc()">Bảng Khóa Học</button>
         </div>
         <div class="item">
-            <button id="featuresButton" onclick="navigateToFeatures()">Bảng Nhạc cụ</button>
+            <button id="nhaccuButton" onclick="navigateToNhaccu()">Bảng Nhạc Cụ</button>
         </div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"><button onclick="logout()">Logout</button></div>
+        <div class="item">
+            <button onclick="logout()">Đăng Xuất</button>
+        </div>
     </div>
 
-    <div class="horizontal-container">
-        <div class="item">
-            <!-- Lọc khóa học -->
-            <form method="POST" id="filter-form-courses">
-                <label for="course_type">Loại Khóa Học:</label>
-                <select name="course_type" id="course_type">
-                    <option value="">Tất cả</option>
-                    <option value="note" <?php echo ($courseTypeFilter == 'note') ? 'selected' : ''; ?>>Note</option>
-                    <option value="chord" <?php echo ($courseTypeFilter == 'chord') ? 'selected' : ''; ?>>Chord</option>
-                    <option value="melody" <?php echo ($courseTypeFilter == 'melody') ? 'selected' : ''; ?>>Melody</option>
-                </select>
-                <label for="course_level">Cấp Độ:</label>
-                <select name="course_level" id="course_level">
-                    <option value="">Tất cả</option>
-                    <option value="basic" <?php echo ($courseLevelFilter == 'basic') ? 'selected' : ''; ?>>Basic</option>
-                    <option value="medium" <?php echo ($courseLevelFilter == 'medium') ? 'selected' : ''; ?>>Medium</option>
-                    <option value="hard" <?php echo ($courseLevelFilter == 'hard') ? 'selected' : ''; ?>>Hard</option>
-                </select>
-                <button type="submit">Lọc</button>
-            </form>
-            <form method="POST" id="filter-form-users">
-                <label for="level">Tiến độ người dùng:</label>
-                <select name="level" id="level">
-                    <option value="">Tất cả</option>
-                    <option value="1,0,0" <?php echo ($levelFilter == '1,0,0') ? 'selected' : ''; ?>>1,0,0</option>
-                    <option value="1,1,0" <?php echo ($levelFilter == '1,1,0') ? 'selected' : ''; ?>>1,1,0</option>
-                    <option value="1,1,1" <?php echo ($levelFilter == '1,1,1') ? 'selected' : ''; ?>>1,1,1</option>
-                </select>
-                <button type="submit">Lọc</button>
-            </form>
+    <!-- Bộ lọc -->
+   <!-- Bộ lọc -->
+<div class="horizontal-container">
+    <form method="POST" id="filter-form-nguoidung" style="display: none;">
+        <label for="tiendo">Tiến Độ:</label>
+        <select name="tiendo" id="tiendo">
+            <option value="" <?= (!isset($_POST['tiendo']) || $_POST['tiendo'] === '') ? 'selected' : '' ?>>Tất cả</option>
+            <option value="1,0,0" <?= (isset($_POST['tiendo']) && $_POST['tiendo'] === '1,0,0') ? 'selected' : '' ?>>1,0,0</option>
+            <option value="1,1,0" <?= (isset($_POST['tiendo']) && $_POST['tiendo'] === '1,1,0') ? 'selected' : '' ?>>1,1,0</option>
+            <option value="1,1,1" <?= (isset($_POST['tiendo']) && $_POST['tiendo'] === '1,1,1') ? 'selected' : '' ?>>1,1,1</option>
+        </select>
+        <button type="submit">Lọc</button>
+    </form>
 
-        </div>
-        <div class="item"><button onclick="showModal('add')">Thêm Dữ Liệu</button></div>
-    </div>
+    <form method="POST" id="filter-form-khoahoc" style="display: none;">
+        <label for="loai">Loại Khóa Học:</label>
+        <select name="loai" id="loai">
+            <option value="" <?= (!isset($_POST['loai']) || $_POST['loai'] === '') ? 'selected' : '' ?>>Tất cả</option>
+            <option value="note" <?= (isset($_POST['loai']) && $_POST['loai'] === 'note') ? 'selected' : '' ?>>Note</option>
+            <option value="chord" <?= (isset($_POST['loai']) && $_POST['loai'] === 'chord') ? 'selected' : '' ?>>Chord</option>
+            <option value="melody" <?= (isset($_POST['loai']) && $_POST['loai'] === 'melody') ? 'selected' : '' ?>>Melody</option>
+        </select>
+
+        <label for="capdo">Cấp Độ:</label>
+        <select name="capdo" id="capdo">
+            <option value="" <?= (!isset($_POST['capdo']) || $_POST['capdo'] === '') ? 'selected' : '' ?>>Tất cả</option>
+            <option value="basic" <?= (isset($_POST['capdo']) && $_POST['capdo'] === 'basic') ? 'selected' : '' ?>>Basic</option>
+            <option value="medium" <?= (isset($_POST['capdo']) && $_POST['capdo'] === 'medium') ? 'selected' : '' ?>>Medium</option>
+            <option value="hard" <?= (isset($_POST['capdo']) && $_POST['capdo'] === 'hard') ? 'selected' : '' ?>>Hard</option>
+        </select>
+
+        <button type="submit">Lọc</button>
+    </form>
+</div>
 
 
+    <!-- Bảng hiển thị -->
     <table>
         <thead>
             <tr>
@@ -85,7 +87,7 @@
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <!-- <td colspan="<?php echo count($columns) + 1; ?>">Hãy chọn bảng</td> -->
+                    <td colspan="<?php echo count($columns) + 1; ?>">Chưa có dữ liệu</td>
                 </tr>
             <?php endif; ?>
         </tbody>
@@ -97,77 +99,35 @@
         <form method="POST" id="modal-form">
             <input type="hidden" name="table" value="<?php echo $table; ?>">
             <input type="hidden" name="id" id="form-id">
-            <h2 id="modal-title">Thêm Dữ Liệu</h2>
+            <h2 id="modal-title">Thêm/Sửa Dữ Liệu</h2>
             <?php foreach ($columns as $column): ?>
-                <?php if ($column['Field'] !== 'id'): ?>
+                <?php if ($column['Field'] !== 'ma'): ?>
                     <div class="form-group">
                         <label><?php echo $column['Field']; ?>:</label>
-                        <input type="text" name="data[<?php echo $column['Field']; ?>]" id="form-<?php echo $column['Field']; ?>" required>
+                        <input type="text" name="data[<?php echo $column['Field']; ?>]" id="form-<?php echo $column['Field']; ?>">
                     </div>
                 <?php endif; ?>
             <?php endforeach; ?>
             <div class="modal-actions">
-                <button type="submit" name="addRow" id="modal-submit">Lưu</button>
-                <button type="button" id="modal-delete">Xóa</button>
-                <button type="button" id="modal-close" onclick="closeModal()">Đóng</button>
+                <button type="submit" name="addRow">Thêm</button>
+                <button type="submit" name="editRow">Sửa</button>
+                <button type="button" onclick="closeModal()">Đóng</button>
             </div>
         </form>
     </div>
 
+    <!-- Script -->
     <script>
-        document.getElementById('filter-form-courses').style.display = 'none';
-        document.getElementById('filter-form-users').style.display = 'none';
-
-        document.getElementById('coursesButton').onclick = function() {
-            navigateToCourses();
-        };
-        document.getElementById('usersButton').onclick = function() {
-            navigateToUsers();
-        };
-        document.getElementById('featuresButton').onclick = function() {
-            navigateToFeatures();
-        };
-
-        function navigateToCourses() {
-            // Chuyển tới bảng khóa học và đảm bảo form lọc hiển thị
-            window.location.href = 'admin.php?table=courses';
+        function navigateToNguoidung() {
+            window.location.href = 'admin.php?table=nguoidung';
         }
 
-        function navigateToUsers() {
-            // Chuyển tới bảng người dùng và đảm bảo form lọc ẩn đi
-            window.location.href = 'admin.php?table=users';
+        function navigateToKhoahoc() {
+            window.location.href = 'admin.php?table=khoahoc';
         }
 
-        function navigateToFeatures() {
-            // Chuyển tới bảng người dùng và đảm bảo form lọc ẩn đi
-            window.location.href = 'admin.php?table=features';
-        }
-
-        function checkPageForFilter() {
-            // Kiểm tra giá trị của tham số "table" trong URL
-            var urlParams = new URLSearchParams(window.location.search);
-            var table = urlParams.get('table');
-
-            // Nếu table=courses, hiển thị form lọc, nếu không, ẩn form lọc
-            if (table === 'courses') {
-                document.getElementById('filter-form-courses').style.display = 'block';
-                document.getElementById('filter-form-users').style.display = 'none';
-            }
-            if (table === 'users') {
-                document.getElementById('filter-form-courses').style.display = 'none';
-                document.getElementById('filter-form-users').style.display = 'block';
-            }
-
-        }
-
-        window.onload = checkPageForFilter;
-
-        function showModal(type) {
-            document.getElementById('modal').style.display = 'block';
-            document.getElementById('modal-overlay').style.display = 'block';
-            document.getElementById('modal-title').textContent = type === 'add' ? 'Thêm Dữ Liệu' : 'Sửa Dữ Liệu';
-            document.getElementById('modal-submit').name = type === 'add' ? 'addRow' : 'editRow';
-            document.getElementById('modal-delete').style.display = type === 'edit' ? 'inline' : 'none';
+        function navigateToNhaccu() {
+            window.location.href = 'admin.php?table=nhaccu';
         }
 
         function closeModal() {
@@ -176,41 +136,27 @@
         }
 
         function showEditModal(rowData) {
-            showModal('edit');
-            document.getElementById('form-id').value = rowData.id;
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modal-overlay').style.display = 'block';
+            document.getElementById('form-id').value = rowData.ma;
             <?php foreach ($columns as $column): ?>
                 document.getElementById('form-<?php echo $column['Field']; ?>').value = rowData['<?php echo $column['Field']; ?>'];
             <?php endforeach; ?>
-            document.getElementById('modal-delete').onclick = function() {
-                if (confirm('Bạn có chắc chắn muốn xóa không?')) {
-                    const form = document.getElementById('modal-form');
-                    const deleteInput = document.createElement('input');
-                    deleteInput.type = 'hidden';
-                    deleteInput.name = 'deleteRow';
-                    deleteInput.value = '1';
-                    form.appendChild(deleteInput);
-                    form.submit();
-                }
-            };
-
         }
 
-        document.getElementById('modal-overlay').onclick = function() {
-            document.getElementById('modal').style.display = 'none';
-            document.getElementById('modal-overlay').style.display = 'none';
-        };
-
         function logout() {
-            fetch('../model/logout.php')
-                .then(response => {
-                    if (response.ok) {
-                        window.location.href = '../public/index.php';
-                    } else {
-                        console.error('Logout failed');
-                        window.location.href = '../public/index.php'
-                    }
-                })
-                .catch(error => console.error('Error:', error));
+            fetch('../model/logout.php').then(response => {
+                if (response.ok) window.location.href = '../public/index.php';
+            }).catch(error => console.error('Error:', error));
+        }
+
+        // Hiển thị form lọc phù hợp với bảng
+        const urlParams = new URLSearchParams(window.location.search);
+        const table = urlParams.get('table');
+        if (table === 'nguoidung') {
+            document.getElementById('filter-form-nguoidung').style.display = 'block';
+        } else if (table === 'khoahoc') {
+            document.getElementById('filter-form-khoahoc').style.display = 'block';
         }
     </script>
 </body>
