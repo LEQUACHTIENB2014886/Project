@@ -5,4 +5,4 @@ include '../model/user.php';
 include '../view/user.php';
 include '../model/user.php';
 include '../view/footer.php';
-
+ob_end_flush();

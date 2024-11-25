@@ -33,7 +33,7 @@
                 <p>Bước đầu trong việc học nhạc lý</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/guitar.jpg">
+                <img src="../library/image/nhaccu/guitar.jpg">
             </div>
             <br>
         </a>
@@ -45,7 +45,7 @@
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/chords_find.jpg">
+                <img src="../library/image/nhaccu/chords_find.jpg">
             </div>
             <br>
         </a>
@@ -57,7 +57,7 @@
                 <p>Sau khi đã có nền tảng vững chắc.</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/bass-guitar.jpg">
+                <img src="../library/image/nhaccu/bass-guitar.jpg">
             </div>
             <br>
         </a>

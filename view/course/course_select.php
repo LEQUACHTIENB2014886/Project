@@ -28,7 +28,7 @@
                 <p>Là những nốt cơ bản nhất, cấu tạo nên nhạc</p>
             </div>
             <div class="image">
-                <img src="../library/image/courses/4_1.png">
+                <img src="../library/image/khoahoc/4_1.png">
             </div>
             <br>
         </a>
@@ -40,7 +40,7 @@
                 <p>Là tập hợp của nhiều nốt nhạc</p>
             </div>
             <div class="image">
-                <img src="../library/image/courses/4_2.png">
+                <img src="../library/image/khoahoc/4_2.png">
             </div>
             <br>
         </a>
@@ -52,7 +52,7 @@
                 <p>Sự kết hợp của các hợp âm theo qui luật</p>
             </div>
             <div class="image">
-                <img src="../library/image/courses/4_3.png">
+                <img src="../library/image/khoahoc/4_3.png">
             </div>
             <br>
         </a>
