@@ -1,5 +1,4 @@
 <?php
-
 include '../controller/course.php';
 include '../model/check_header.php';
 // include '../model/db.php';

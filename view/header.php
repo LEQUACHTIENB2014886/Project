@@ -11,7 +11,7 @@
     <header id="main-header">
         <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark black fst-italic">
             <div class="container">
-                <a class="navbar-brand" href="#"><strong>MelodyTalent</strong></a>
+                <a class="navbar-brand" href="../public/introduce.php"><strong>MelodyTalent</strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,9 +25,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/features.php">Công cụ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../public/introduce.php">Giới thiệu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/user.php">Đăng Nhập</a>

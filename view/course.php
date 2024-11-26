@@ -33,10 +33,10 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_exercise.php">
+        <a href="../model/course.php">
             <div class="content">
-                <h2>Bài tập nhạc lý</h2>
-                <p>Bước tiếp theo sao khi đã tiếp thu lý thuyết.</p>
+                <h2>Bài tập thực hành</h2>
+                <p>Bước tiếp theo sau khi đã tiếp thu lý thuyết.</p>
             </div>
             <div class="image">
                 <img src="../library/image/features/staff-paper.jpg">
@@ -44,6 +44,10 @@
             <br>
         </a>
     </div>
+
+
+
+
     <div class="box">
         <a href="../public/features.php">
             <div class="content">
