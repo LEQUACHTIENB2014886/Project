@@ -1,40 +1,53 @@
 <style>
-    .answer-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
 
-    .answer-buttons button {
-        padding: 5px 15px;
-        border: 2px solid black;
-        background-color: gray;
-        color: white;
+    .question-container {
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
+    .question-container.hidden {
+        opacity: 0;
+    }
+
+    .question {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .answers button {
+        margin: 10px;
+        padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
-        width: 55px;
-        height: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
-    .answer-buttons button.wrong-answer {
-        background-color: red;
+    .answers button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
     }
 
-    .answer-buttons button:hover {
-        background-color: #434d54;
-        border: 2px solid rgb(151, 150, 150);
+    .progress {
+        width: 80%;
+        margin: 20px auto;
+        background: #eee;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
-    .answer-buttons button {
-        border-radius: 5px;
+    .progress-bar {
+        height: 20px;
+        background: green;
+        transition: width 0.9s;
     }
 
     .question-image {
-        width: 100%;
-        border-radius: 5px;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 </style>

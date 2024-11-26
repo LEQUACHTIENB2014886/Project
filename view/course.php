@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/theory.php">
+        <a href="../public/theory_exercise.php">
             <div class="content">
                 <h2>Lý thuyết âm nhạc</h2>
                 <p>Nhạc lý rất quan trọng, lý thuyết là nền tảng.</p>

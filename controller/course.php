@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Database configuration
 $host = 'localhost';
@@ -49,18 +51,21 @@ if ($current_question_index >= $total_questions) {
 // Lấy câu hỏi hiện tại
 $current_question = $questions[$current_question_index];
 
-// Xử lý câu trả lời
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $answer = $_POST['answer'] ?? '';
     if ($answer == $current_question['dapan']) {
-        $_SESSION['score']++;
-        $_SESSION['current_question']++; // Chuyển sang câu hỏi tiếp theo
-        $_SESSION['answered'] = []; // Reset đáp án đã trả lời sai
+        $_SESSION['score']++; // Cộng điểm
+        $_SESSION['current_question']++; // Chuyển sang câu tiếp theo
+        $_SESSION['answered'] = []; // Reset danh sách đáp án sai
         header("Location: course_selected.php?loai=$loai&capdo=$capdo"); // Chuyển hướng
         exit;
     } else {
-        $_SESSION['answered'][] = $answer; // Lưu đáp án sai
+        // Lưu đáp án sai cho câu hiện tại
+        if (!in_array($answer, $_SESSION['answered'])) {
+            $_SESSION['answered'][] = $answer;
+        }
     }
 }
+
 // Tạo danh sách nốt nhạc
 $notes = ['đô', 'rê', 'mi', 'fa', 'sol', 'la', 'si'];

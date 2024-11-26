@@ -26,9 +26,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../public/features.php">Công cụ</a>
                         </li>
-                                                <li class="nav-item">
-                            <a class="nav-link" href="../public/theory.php">Lý thuyết</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/introduce.php">Giới thiệu</a>
                         </li>
@@ -40,7 +37,7 @@
             </div>
         </nav>
     </header>
-   
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {

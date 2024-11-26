@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/theory_basic.php">
+        <a href="../public/theory_select.php?loai=note">
             <div class="content">
                 <h2>Lý thuyết về nốt</h2>
                 <p>Lý thuyết rất quan trọng, là nền tảng.</p>
@@ -33,10 +33,10 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_exercise.php">
+        <a href="../public/theory_select.php?loai=chord">
             <div class="content">
-                <h2>Lý thuyết về đàn guitar</h2>
-                <p>Hướng dẫn cơ bản về đàn guitar</p>
+                <h2>Lý thuyết về hợp âm</h2>
+                <p>Hướng dẫn cơ bản về hợp âm</p>
             </div>
             <div class="image">
                 <img src="../library/image/features/bass-guitar.jpg">
@@ -45,7 +45,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/features.php">
+        <a href="../public/theory_select.php?loai=melody">
             <div class="content">
                 <h2>Lý thuyết nâng cao khác</h2>
                 <p>Hỗ trợ cho âm nhạc.</p>

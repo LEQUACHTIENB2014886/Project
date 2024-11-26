@@ -48,8 +48,7 @@
         .progress-bar {
             height: 20px;
             background: green;
-            width: <?= $total_questions > 0 ? round(($current_question_index / $total_questions) * 100) : 0 ?>%;
-            transition: width 0.3s;
+            transition: width 0.9s;
         }
 
         .question-image {
@@ -63,8 +62,11 @@
 
 <body>
     <div class="progress">
-        <div class="progress-bar"></div>
+        <div class="progress-bar"
+            style="width: <?= $total_questions > 0 ? round(($current_question_index / $total_questions) * 100) : 0 ?>%;">
+        </div>
     </div>
+
     <br>
     <div class="question-container" id="questionContainer">
         <div id="question" class="img text-center">
@@ -79,6 +81,30 @@
                 </button>
             <?php endforeach; ?>
         </form>
+
     </div>
 </body>
+<script>
+    const questionContainer = document.getElementById('questionContainer');
+    const buttons = document.querySelectorAll('.answers button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            const selectedAnswer = parseInt(event.target.value);
+            const correctAnswer = <?= $current_question['dapan'] ?>;
+
+            // Nếu đáp án sai, disable nút
+            if (selectedAnswer !== correctAnswer) {
+                event.target.disabled = true;
+            } else {
+                // Hiệu ứng ẩn câu hỏi khi trả lời đúng
+                questionContainer.classList.add('hidden');
+                setTimeout(() => {
+                    questionContainer.classList.remove('hidden');
+                }, 500); // Thời gian chờ 0.5s
+            }
+        });
+    });
+</script>
+
 </html>
