@@ -5,21 +5,16 @@
         box-sizing: border-box;
     }
 
-    .horizontal-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-    }
-
     body {
         font-family: 'Arial', sans-serif;
         background-color: #f7f7f7;
         color: #444;
         text-align: left;
         padding: 20px;
+    }
+
+    html {
+        overflow-y: scroll;
     }
 
     h1 {
@@ -32,8 +27,13 @@
         font-size: 2em;
     }
 
-    html {
-        overflow-y: scroll;
+    .horizontal-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
     }
 
     button {
@@ -136,19 +136,23 @@
         background-color: #f1f1f1;
     }
 
-    table th,
-    table td {
-        width: 150px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
     table tr:hover {
         background-color: #e8f5e9;
     }
 
-    #modal {
+    /* Modal Styles */
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .modal {
         display: none;
         position: fixed;
         top: 50%;
@@ -164,18 +168,7 @@
         transition: all 0.3s ease;
     }
 
-    .modal-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-
-    #modal h2 {
+    .modal h2 {
         margin-bottom: 20px;
         color: #333;
         font-size: 1.5em;
@@ -206,16 +199,23 @@
         border-color: #4CAF50;
     }
 
-    #modal-submit {
-        background-color: #28a745;
-        color: #fff;
+    .modal-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #modal-submit, #modal-delete {
         padding: 12px 20px;
         border: none;
         cursor: pointer;
-        margin-right: 10px;
         border-radius: 8px;
         font-size: 16px;
         transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #modal-submit {
+        background-color: #28a745;
+        color: #fff;
     }
 
     #modal-submit:hover {
@@ -226,12 +226,6 @@
     #modal-delete {
         background-color: #dc3545;
         color: #fff;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 8px;
-        font-size: 16px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     #modal-delete:hover {
@@ -250,22 +244,5 @@
 
     .modal-close:hover {
         color: #444;
-    }
-
-    button,
-    input,
-    select {
-        outline: none;
-    }
-
-    button:focus,
-    input:focus,
-    select:focus {
-        border-color: #4CAF50;
-    }
-
-    #modal-submit:focus,
-    #modal-delete:focus {
-        border-color: #4CAF50;
     }
 </style>

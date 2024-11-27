@@ -21,10 +21,10 @@
                             <a class="nav-link" href="../public/index.php">Trang chủ<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/course.php">Khóa học</a>
+                            <a class="nav-link" href="../public/features.php">Nhạc cụ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/features.php">Công cụ</a>
+                            <a class="nav-link" href="../public/course.php">Khóa học</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/user.php">Đăng Nhập</a>

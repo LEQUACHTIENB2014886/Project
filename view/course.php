@@ -27,7 +27,7 @@
                 <p>Nhạc lý rất quan trọng, lý thuyết là nền tảng.</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/tempo-markings.jpg">
+                <img src="../library/image/nhaccu/tempo-markings.jpg">
             </div>
             <br>
         </a>
@@ -39,7 +39,7 @@
                 <p>Bước tiếp theo sau khi đã tiếp thu lý thuyết.</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/staff-paper.jpg">
+                <img src="../library/image/nhaccu/staff-paper.jpg">
             </div>
             <br>
         </a>
@@ -55,7 +55,7 @@
                 <p>Các tính năng hỗ trợ cho âm nhạc.</p>
             </div>
             <div class="image">
-                <img src="../library/image/features/metronome.jpg">
+                <img src="../library/image/nhaccu/metronome.jpg">
             </div>
             <br>
         </a>

@@ -16,14 +16,41 @@ try {
     $tablesQuery = $conn->query("SHOW TABLES");
     $tables = $tablesQuery->fetchAll(PDO::FETCH_COLUMN);
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['table'])) {
-        $table = $_GET['table'];
+    // Xử lý Lưu dữ liệu khi nhấn "Lưu"
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['editRow']) && isset($_POST['ma'])) {
+        $id = (int)$_POST['ma'];
+        $table = $_POST['table'];
+        $data = $_POST['data'];
 
-        // Xử lý sửa dữ liệu
+        $updates = [];
+        foreach ($data as $column => $value) {
+            $updates[] = "$column = :$column";
+        }
+
+        $updateQuery = "UPDATE $table SET " . implode(", ", $updates) . " WHERE ma = :ma";
+        $stmt = $conn->prepare($updateQuery);
+
+        foreach ($data as $column => $value) {
+            $stmt->bindValue(":$column", $value);
+        }
+        $stmt->bindValue(':ma', $id);
+        $stmt->execute();
+
+        // echo "Cập nhật thành công!";
+    }
+    // Kiểm tra phương thức POST và lấy giá trị của table từ GET thay vì POST
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['table'])) {
+        $table = $_GET['table'];  // Sử dụng GET để lấy tên bảng
+
+        // Sửa dữ liệu trong bảng
         if (isset($_POST['editRow']) && isset($_POST['ma'])) {
             $id = (int)$_POST['ma'];
             $updates = [];
             foreach ($_POST['data'] as $column => $value) {
+                if ($column == 'matkhau' && !empty($value)) {
+                    // Hash mật khẩu và gán lại vào data
+                    $_POST['data'][$column] = password_hash($value, PASSWORD_DEFAULT);
+                }
                 $updates[] = "$column = :$column";
             }
             $updateQuery = "UPDATE $table SET " . implode(", ", $updates) . " WHERE ma = :ma";
@@ -35,10 +62,17 @@ try {
             $stmt->execute();
         }
 
-        // Xử lý thêm dữ liệu
+
+        // Thêm dữ liệu mới vào bảng
         if (isset($_POST['addRow'])) {
             $columns = implode(", ", array_keys($_POST['data']));
             $placeholders = implode(", ", array_map(fn($col) => ":$col", array_keys($_POST['data'])));
+
+            // Nếu mật khẩu không rỗng, thực hiện mã hóa trước khi thêm vào cơ sở dữ liệu
+            if (isset($_POST['data']['matkhau']) && !empty($_POST['data']['matkhau'])) {
+                $_POST['data']['matkhau'] = password_hash($_POST['data']['matkhau'], PASSWORD_DEFAULT);
+            }
+
             $insertQuery = "INSERT INTO $table ($columns) VALUES ($placeholders)";
             $stmt = $conn->prepare($insertQuery);
             foreach ($_POST['data'] as $column => $value) {
@@ -47,13 +81,14 @@ try {
             $stmt->execute();
         }
 
-        // Xử lý xóa dữ liệu
+        // Xóa dữ liệu trong bảng
         if (isset($_POST['deleteRow']) && isset($_POST['ma'])) {
             $id = (int)$_POST['ma'];
             $deleteQuery = "DELETE FROM $table WHERE ma = :ma";
             $stmt = $conn->prepare($deleteQuery);
-            $stmt->bindValue(':ma', $id);
+            $stmt->bindValue(':ma', $id, PDO::PARAM_INT);
             $stmt->execute();
+            echo "Xóa thành công!";
         }
     }
 
@@ -103,4 +138,3 @@ try {
 } catch (PDOException $e) {
     echo "<p style='color:red;'>Lỗi kết nối: " . $e->getMessage() . "</p>";
 }
-?>

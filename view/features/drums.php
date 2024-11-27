@@ -52,14 +52,9 @@
                                             <li>Trống lẫy (kỹ thuật dùi chéo): <span class="shortcut-code">d</span> hay <span class="shortcut-code">f</span></li>
                                             <li>Trống bass: <span class="shortcut-code">x</span> hay <span class="shortcut-code">z</span></li>
                                         </ul>
-                                        <p>Các tay chơi trống thường dùng bàn tay phải để chơi các chũm chọe (chũm chọe trung, chũm chọe to and chũm chọe hi-hat) và dùng tay trái để chơi trống lẫy. Khi sử dụng các phím tắt, hãy dùng tay trái để chơi cả trống lẫy và trống bass.</p>
-                                        <p> Hãy chơi trống ảo và áp dụng các kỹ năng mà bạn mới học được để chơi trống thật. Hãy sử dụng <a href="https://www.musicca.com/drum-machine">máy đánh trống</a> để tìm cảm hứng ở các nhịp trống và các khuôn mẫu nhịp điệu. Một cách tạo cảm hứng khi tập chơi trống ảo là chơi trống ảo dựa trên những bài hát ưa thích của bạn.</p>
-                                        <h2>Các bài tập luyện nhịp điệu trực tuyến miễn phí</h2>
-                                        <p>Hãy thử tiến hành <a href="bai-tap/cac-loai-nhip-dieu.html">các bài tập luyện nhịp điệu miễn phí của chúng tôi</a> và học cách đọc, ghi lại và chơi các loại nhịp điệu. Bạn cũng sẽ tìm thấy rất nhiều bài tập nhạc khác có khả năng phát triển sự hiểu biết âm nhạc của bạn và giúp bạn chơi các loại trống thiện nghệ hơn.</p>
-                                    </div>
+                                       </div>
                                 </div>
                             </div>
-
                         </article>
                         <div class="after__content">
                         </div>
