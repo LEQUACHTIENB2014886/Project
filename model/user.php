@@ -17,7 +17,10 @@ try {
             $password = $_POST['registerPassword'];
             $confirmPassword = $_POST['confirmPassword'];
 
-            if ($password !== $confirmPassword) {
+            // Kiểm tra điều kiện mật khẩu
+            if (strlen($password) < 8 || !preg_match('/[\W_]/', $password)) {
+                $errorMessage = 'Mật khẩu phải có ít nhất 8 ký tự và chứa ít nhất một ký tự đặc biệt.';
+            } elseif ($password !== $confirmPassword) {
                 $errorMessage = 'Mật khẩu xác nhận không khớp.';
             } else {
                 $stmt = $conn->prepare("SELECT * FROM nguoidung WHERE ten = :email");
@@ -31,6 +34,7 @@ try {
                     $stmt = $conn->prepare("INSERT INTO nguoidung (ten, matkhau) VALUES (:email, :password)");
                     $stmt->bindParam(':email', $email);
 
+                    // Mã hóa mật khẩu
                     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                     $stmt->bindParam(':password', $hashedPassword);
                     $stmt->execute();
