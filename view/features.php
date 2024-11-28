@@ -1,13 +1,3 @@
-<?php
-include "../model/db.php";
-
-// Lấy dữ liệu từ bảng `nhaccu`
-$query = "SELECT ten, thongtin, hinhanh, duongdan FROM nhaccu";
-$stmt = $conn->prepare($query);
-$stmt->execute();
-$nhaccu = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
-
 <script>
     function redirectToPage(url) {
         window.location.href = url;

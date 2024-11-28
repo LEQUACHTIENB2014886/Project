@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../model/db.php";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -16,3 +16,4 @@ if ($role === '0') {
     include '../view/header.php';
     include '../public/css/header.php';
 }
+?>

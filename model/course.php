@@ -1,5 +1,5 @@
 <?php
-include "db.php"; 
+include "../model/db.php"; 
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start(); 
