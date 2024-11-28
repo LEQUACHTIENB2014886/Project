@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 $role = $_SESSION['quyen'] ?? null;
 
 if ($role === '0') {
-    header("Location: admin.php");
+    header("Location: admin.php?table=nguoidung");
     exit();
 } elseif ($role === '1') {
     include '../view/header_login.php';

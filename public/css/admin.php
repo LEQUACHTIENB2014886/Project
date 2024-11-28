@@ -204,7 +204,8 @@
         justify-content: space-between;
     }
 
-    #modal-submit, #modal-delete {
+    #modal-submit,
+    #modal-delete {
         padding: 12px 20px;
         border: none;
         cursor: pointer;

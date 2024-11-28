@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/tone@14.8.35/build/Tone.min.js"></script>
 <link href="../library/chord_player/style.css" rel="stylesheet" />
 <link href="../library/chord_player/m3.css" rel="stylesheet" />
 <script src="../library/chord_player/jquery.js"></script>
@@ -18,7 +19,7 @@
                                     <script src="../library/chord_player/vi.js"></script>
                                     <script src="../library/chord_player/presets.js"></script>
                                     <script src="../library/chord_player/chordss.js"></script>
-                                    <script src="../library/chord_player/view.js"></script>
+                                    <script src="../library/chord_player/view2.js"></script>
                                     <script src="../library/chord_player/chunk.js"></script>
                                 </div>
                             </div>

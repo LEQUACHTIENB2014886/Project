@@ -27,7 +27,7 @@
                             <a class="nav-link" href="../public/course.php">Khóa học</a>
                         </li>                       
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/user.php">Tài khoản</a>
+                            <a class="nav-link" href="../public/account.php">Tài khoản</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../model/logout.php">Đăng xuất</a>

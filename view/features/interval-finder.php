@@ -1,5 +1,4 @@
 <link href="../library/interval-finder/style.css" rel="stylesheet">
-<script async="" type="text/javascript" src="https://cdn.fuseplatform.net/prebid/prebid-24aa1eea9ef8d73f209c0c3c68a7371a.js"></script>
 <script src="../library/interval-finder/jquery.js"></script>
 <link rel="stylesheet" href="../public/css/guitar.css">
 <link rel="stylesheet" href="../public/css/piano.css">
@@ -161,7 +160,7 @@
 </div>
 <style>
     p {
-        font-size:50px;
+        font-size: 50px;
         color: black;
         font-style: italic;
     }

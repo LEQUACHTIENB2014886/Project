@@ -23760,12 +23760,12 @@
           xa
         );
       }
-      if (Di && !Di.TONE_SILENCE_LOGGING) {
-        var _a = "v";
-        0;
-        var wa = " * Tone.js ".concat(_a).concat(b, " * ");
-        console.log("%c".concat(wa), "background: #000; color: #fff");
-      }
+      // if (Di && !Di.TONE_SILENCE_LOGGING) {
+      //   var _a = "v";
+      //   0;
+      //   var wa = " * Tone.js ".concat(_a).concat(b, " * ");
+      //   console.log("%c".concat(wa), "background: #000; color: #fff");
+      // }
       function ka(e) {
         return Math.pow(2, e / 12);
       }

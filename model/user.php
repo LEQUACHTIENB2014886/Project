@@ -39,6 +39,10 @@ try {
             }
         }
     }
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+
 
     // Xử lý đăng nhập
     if (isset($_POST['loginName']) && isset($_POST['loginPassword'])) {
@@ -50,10 +54,12 @@ try {
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && password_verify($password, $user['matkhau'])) { 
-            $_SESSION['quyen'] = $user['quyen']; 
+        if ($user && password_verify($password, $user['matkhau'])) {
+            // Lưu ID người dùng vào session
+            $_SESSION['user_id'] = $user['ma']; // Lưu ID
+            $_SESSION['quyen'] = $user['quyen']; // Nếu cần lưu quyền người dùng
 
-            header("Location: ../public/index.php"); 
+            header("Location: ../public/index.php"); // Chuyển hướng sau khi đăng nhập thành công
             exit;
         } else {
             $errorMessage = 'Tài khoản hoặc mật khẩu không đúng.';
