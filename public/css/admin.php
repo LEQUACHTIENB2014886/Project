@@ -36,6 +36,38 @@
         border: 1px solid #ccc;
     }
 
+    .item {
+        margin: 0 10px;
+    }
+
+    button.logout {
+        background-color: #FF5733;
+    }
+
+    button.logout:hover {
+        background-color: #FF4F30;
+    }
+
+
+    .filter-container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    .add-button-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .filter-container:empty+.add-button-container {
+        justify-content: flex-end;
+    }
+
+
+
+
+
     button {
         padding: 12px 36px;
         margin: 10px;
@@ -82,9 +114,6 @@
         box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
     }
 
-    .filter-container {
-        margin: 20px 0;
-    }
 
     select {
         padding: 8px;

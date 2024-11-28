@@ -26,6 +26,8 @@
 
     <!-- Bộ lọc -->
     <div class="horizontal-container">
+    <!-- Bộ lọc -->
+    <div class="filter-container">
         <form method="POST" id="filter-form-nguoidung" style="display: none;">
             <label for="tiendo">Tiến Độ:</label>
             <select name="tiendo" id="tiendo">
@@ -55,9 +57,14 @@
 
             <button type="submit">Lọc</button>
         </form>
-        <!-- Nút thêm dữ liệu -->
+    </div>
+
+    <!-- Nút thêm dữ liệu -->
+    <div class="add-button-container">
         <button onclick="showAddModal()">Thêm Dữ Liệu</button>
     </div>
+</div>
+
 
 
     <!-- Bảng hiển thị -->
