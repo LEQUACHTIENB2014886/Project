@@ -23,6 +23,10 @@
             <button id="phanhoiButton" onclick="navigateToPhanhoi()">Bảng Phản Hồi</button>
         </div>
         <div class="item">
+            <button id="dashboardButton" onclick="navigateToDashboard()">Dashboard</button>
+        </div>
+
+        <div class="item">
             <button onclick="logout()">Đăng Xuất</button>
         </div>
     </div>
@@ -154,6 +158,10 @@
             window.location.href = 'admin.php?table=nguoidung';
         }
 
+        function navigateToDashboard() {
+            window.location.href = 'admin.php?dashboard=true';
+        }
+
         function navigateToKhoahoc() {
             window.location.href = 'admin.php?table=khoahoc';
         }
@@ -261,6 +269,16 @@
                         alert('Lỗi khi xóa dữ liệu.');
                     });
             }
+        }
+
+        function showChangePasswordModal() {
+            document.getElementById('modal-password').style.display = 'block';
+            document.getElementById('modal-overlay-password').style.display = 'block';
+        }
+
+        function closeChangePasswordModal() {
+            document.getElementById('modal-password').style.display = 'none';
+            document.getElementById('modal-overlay-password').style.display = 'none';
         }
 
 

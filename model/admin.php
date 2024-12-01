@@ -62,7 +62,6 @@ try {
             $stmt->execute();
         }
 
-
         // Thêm dữ liệu mới vào bảng
         if (isset($_POST['addRow'])) {
             $columns = implode(", ", array_keys($_POST['data']));
@@ -91,6 +90,67 @@ try {
             echo "Xóa thành công!";
         }
     }
+
+    if (isset($_GET['dashboard']) && $_GET['dashboard'] === 'true') {
+        echo "<h2>Dashboard</h2>";
+
+        // Đếm số lượng "ma" trong mỗi bảng
+        foreach ($tables as $table) {
+            $countQuery = $conn->query("SELECT COUNT(ma) AS total FROM $table");
+            $countResult = $countQuery->fetch(PDO::FETCH_ASSOC);
+            echo "<p>Bảng $table có tổng cộng: " . $countResult['total'] . " bản ghi</p>";
+        }
+
+        // Hiển thị thông tin Admin (role = 0)
+        $adminQuery = $conn->query("SELECT * FROM nguoidung WHERE quyen = 0");
+        $admin = $adminQuery->fetch(PDO::FETCH_ASSOC);
+
+        if ($admin) {
+            echo "<h3>Thông tin Admin</h3>";
+            echo "<p>Mã Admin: " . htmlspecialchars($admin['ma']) . "</p>";
+            echo "<p>Tên: " . htmlspecialchars($admin['ten']) . "</p>";
+
+            // Nút đổi mật khẩu
+            echo "
+                <form method='POST'>
+                    <label for='new_password'>Mật khẩu mới:</label>
+                    <input type='password' id='new_password' name='new_password' required>
+                    <button type='submit' name='changePassword'>Đổi Mật Khẩu</button>
+                </form>
+            ";
+        }
+    }
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['changePassword'])) {
+        $oldPassword = $_POST['old_password'];
+        $newPassword = $_POST['new_password'];
+        $confirmPassword = $_POST['confirm_password'];
+    
+        // Kiểm tra xác nhận mật khẩu mới
+        if ($newPassword !== $confirmPassword) {
+            echo "<p style='color:red;'>Mật khẩu mới và xác nhận không khớp!</p>";
+        } else {
+            // Lấy mật khẩu hiện tại của admin
+            $stmt = $conn->prepare("SELECT matkhau FROM nguoidung WHERE role = 0 LIMIT 1");
+            $stmt->execute();
+            $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+            if ($admin && password_verify($oldPassword, $admin['matkhau'])) {
+                // Mã hóa mật khẩu mới
+                $hashedNewPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+    
+                // Cập nhật mật khẩu mới
+                $updateStmt = $conn->prepare("UPDATE nguoidung SET matkhau = :newPassword WHERE role = 0");
+                $updateStmt->bindValue(':newPassword', $hashedNewPassword);
+                $updateStmt->execute();
+    
+                echo "<p style='color:green;'>Đổi mật khẩu thành công!</p>";
+            } else {
+                echo "<p style='color:red;'>Mật khẩu cũ không đúng!</p>";
+            }
+        }
+    }
+    
 
     // Lấy dữ liệu cột và hàng
     $columns = [];
