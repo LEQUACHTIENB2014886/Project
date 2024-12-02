@@ -33,7 +33,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../model/course.php">
+        <a href="../public/course_exercise.php">
             <div class="content">
                 <h2>Bài tập thực hành</h2>
                 <p>Bước tiếp theo sau khi đã tiếp thu lý thuyết.</p>
@@ -44,10 +44,6 @@
             <br>
         </a>
     </div>
-
-
-
-
     <div class="box">
         <a href="../public/features.php">
             <div class="content">
