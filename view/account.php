@@ -14,7 +14,7 @@
         <div class="profile-page">
             <div class="profile-container">
                 <div class="profile-header">
-                    <img src="https://via.placeholder.com/100" alt="User Avatar" />
+                    <img src="<?php echo htmlspecialchars($avatarUrl); ?>"/>
                     <h2>Thông tin cá nhân</h2>
                     <p><strong>Tên:</strong> <?= htmlspecialchars($ten) ?></p>
                     <p><strong>Tham gia khóa học:</strong> <?= isset($tiendoStatus) ? $tiendoStatus : 'Chưa có tiến độ' ?></p>

@@ -23,7 +23,7 @@ try {
     }
 
     // Lấy thông tin cá nhân
-    $stmt = $conn->prepare("SELECT ten, tiendo, matkhau FROM nguoidung WHERE ma = :userId");
+    $stmt = $conn->prepare("SELECT ten, tiendo, matkhau, anhdaidien FROM nguoidung WHERE ma = :userId");
     $stmt->bindParam(':userId', $userId);
     $stmt->execute();
 
@@ -32,6 +32,7 @@ try {
         $ten = htmlspecialchars($userInfo['ten']);
         $tiendo = htmlspecialchars($userInfo['tiendo']);
         $hashed_password = $userInfo['matkhau']; // Lưu mật khẩu hash
+        $avatarUrl = !empty($userInfo['anhdaidien']) ? $userInfo['anhdaidien'] : 'https://via.placeholder.com/100'; // Kiểm tra nếu có ảnh thì sử dụng, nếu không thì ảnh mặc định
 
         // Phân tích giá trị tiendo và gán nhãn
         $tiendoArray = explode(',', $tiendo); // Tách chuỗi tiendo thành mảng
@@ -60,10 +61,18 @@ try {
         $new_password = $_POST['new_password']; // Mật khẩu mới
         $confirm_password = $_POST['confirm_password']; // Xác nhận mật khẩu mới
 
-        // Kiểm tra mật khẩu hiện tại có đúng không
-        if (password_verify($current_password, $hashed_password)) {
-            // Kiểm tra mật khẩu mới và xác nhận mật khẩu mới có giống nhau không
-            if ($new_password === $confirm_password) {
+        // Ràng buộc mật khẩu
+        $passwordPattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/"; // Tối thiểu 8 ký tự, có ít nhất một chữ cái viết hoa, một chữ cái viết thường và một số
+
+        if (!preg_match($passwordPattern, $new_password)) {
+            $message = "Mật khẩu mới phải có ít nhất 8 ký tự, bao gồm một chữ cái viết hoa, một chữ cái viết thường và một số.";
+            $message_type = "error"; // Đánh dấu thông báo lỗi
+        } elseif ($new_password !== $confirm_password) {
+            $message = "Mật khẩu mới và mật khẩu xác nhận không khớp!";
+            $message_type = "error"; // Đánh dấu thông báo lỗi
+        } else {
+            // Kiểm tra mật khẩu hiện tại có đúng không
+            if (password_verify($current_password, $hashed_password)) {
                 // Hash mật khẩu mới
                 $new_password_hashed = password_hash($new_password, PASSWORD_BCRYPT);
 
@@ -74,12 +83,9 @@ try {
                 $message = "Mật khẩu đã được thay đổi thành công!";
                 $message_type = "success"; // Đánh dấu thông báo thành công
             } else {
-                $message = "Mật khẩu mới và xác nhận mật khẩu không khớp!";
+                $message = "Mật khẩu hiện tại không đúng!";
                 $message_type = "error"; // Đánh dấu thông báo lỗi
             }
-        } else {
-            $message = "Mật khẩu hiện tại không đúng!";
-            $message_type = "error"; // Đánh dấu thông báo lỗi
         }
     }
 
@@ -95,3 +101,50 @@ try {
     echo "Kết nối thất bại: " . $e->getMessage();
 }
 ?>
+
+<!-- Thêm SweetAlert vào phần <head> của HTML -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    // Nếu có thông báo, hiển thị SweetAlert
+    <?php if (!empty($message)) : ?>
+        Swal.fire({
+            title: '<?php echo $message_type === 'success' ? 'Thành công' : 'Lỗi'; ?>',
+            text: '<?php echo $message; ?>',
+            icon: '<?php echo $message_type; ?>',
+            confirmButtonText: 'OK'
+        });
+    <?php endif; ?>
+    // Kiểm tra tính hợp lệ của mật khẩu khi người dùng gửi biểu mẫu
+    document.getElementById('changePasswordForm').addEventListener('submit', function(event) {
+        var currentPassword = document.getElementById('current_password').value;
+        var newPassword = document.getElementById('new_password').value;
+        var confirmPassword = document.getElementById('confirm_password').value;
+
+        // Ràng buộc mật khẩu
+        var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/; // Tối thiểu 8 ký tự, có ít nhất một chữ cái viết hoa, một chữ cái viết thường và một số
+
+        if (!passwordPattern.test(newPassword)) {
+            Swal.fire({
+                title: 'Lỗi',
+                text: 'Mật khẩu mới phải có ít nhất 8 ký tự, bao gồm một chữ cái viết hoa, một chữ cái viết thường và một số.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            event.preventDefault(); // Ngừng gửi form
+            return;
+        }
+
+        // Kiểm tra mật khẩu xác nhận
+        if (newPassword !== confirmPassword) {
+            Swal.fire({
+                title: 'Lỗi',
+                text: 'Mật khẩu mới và mật khẩu xác nhận không khớp!',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            event.preventDefault(); // Ngừng gửi form
+            return;
+        }
+    });
+</script>
