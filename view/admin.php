@@ -8,6 +8,31 @@
 
 <body>
     <h1>Quản lý Hệ Thống</h1>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <?php if ($addMessage != ''): ?>
+        <script>
+            Swal.fire({
+                title: '<?php echo $addMessage == 'Thêm thành công!' ? 'Thành công!' : 'Lỗi!'; ?>',
+                text: '<?php echo $addMessage; ?>',
+                icon: '<?php echo $addMessage == 'Thêm thành công!' ? 'success' : 'error'; ?>',
+                confirmButtonText: 'Đóng'
+            });
+        </script>
+    <?php endif; ?>
+
+    <?php if ($message != ''): ?>
+        <script>
+            Swal.fire({
+                title: '<?php echo $message == 'Cập nhật thành công!' ? 'Thành công!' : 'Lỗi!'; ?>',
+                text: '<?php echo $message; ?>',
+                icon: '<?php echo $message == 'Cập nhật thành công!' ? 'success' : 'error'; ?>',
+                confirmButtonText: 'Đóng'
+            });
+        </script>
+    <?php endif; ?>
+
+
     <!-- Thanh điều hướng -->
     <div class="horizontal-container">
         <div class="item">
@@ -22,10 +47,6 @@
         <div class="item">
             <button id="phanhoiButton" onclick="navigateToPhanhoi()">Bảng Phản Hồi</button>
         </div>
-        <div class="item">
-            <button id="dashboardButton" onclick="navigateToDashboard()">Dashboard</button>
-        </div>
-
         <div class="item">
             <button onclick="logout()">Đăng Xuất</button>
         </div>
@@ -71,8 +92,6 @@
             <button onclick="showAddModal()">Thêm Dữ Liệu</button>
         </div>
     </div>
-
-
 
     <!-- Bảng hiển thị -->
     <table>
@@ -144,22 +163,16 @@
             <?php endforeach; ?>
             <div class="modal-actions">
                 <button type="submit" name="editRow">Lưu</button>
-                <!-- Nút xóa dữ liệu -->
                 <button type="button" name="deleteRow" id="deleteRowButton">Xóa</button>
                 <button type="button" onclick="closeEditModal()">Đóng</button>
             </div>
         </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Script -->
     <script>
         function navigateToNguoidung() {
             window.location.href = 'admin.php?table=nguoidung';
-        }
-
-        function navigateToDashboard() {
-            window.location.href = 'admin.php?dashboard=true';
         }
 
         function navigateToKhoahoc() {
@@ -233,25 +246,6 @@
             }
         }
 
-        function showChangePasswordModal() {
-            document.getElementById('modal-password').style.display = 'block';
-            document.getElementById('modal-overlay-password').style.display = 'block';
-        }
-
-        function closeChangePasswordModal() {
-            document.getElementById('modal-password').style.display = 'none';
-            document.getElementById('modal-overlay-password').style.display = 'none';
-        }
-
-
-        // Hiển thị form lọc phù hợp với bảng
-        const urlParams = new URLSearchParams(window.location.search);
-        const table = urlParams.get('table');
-        if (table === 'nguoidung') {
-            document.getElementById('filter-form-nguoidung').style.display = 'block';
-        } else if (table === 'khoahoc') {
-            document.getElementById('filter-form-khoahoc').style.display = 'block';
-        }
         // Đóng form sửa
         function closeEditModal() {
             document.getElementById('modal-edit').style.display = 'none';
@@ -260,17 +254,19 @@
 
         document.getElementById('deleteRowButton').addEventListener('click', deleteRow);
 
+
         function deleteRow() {
             const id = document.getElementById('edit-form-id').value;
-            const tableValue = '<?php echo $table ?? "nguoidung"; ?>'; // Sử dụng "nguoidung" nếu $table là null
+            const tableValue = '<?php echo $table ?? "nguoidung"; ?>'; // Use "nguoidung" if $table is null
 
+            // Show confirmation dialog with SweetAlert
             Swal.fire({
-                title: 'Xác nhận',
-                text: 'Bạn có chắc muốn xóa dữ liệu này không?',
+                title: 'Bạn có chắc muốn xóa dữ liệu này không?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Có, xóa nó!',
-                cancelButtonText: 'Hủy'
+                confirmButtonText: 'Có, xóa!',
+                cancelButtonText: 'Không, hủy',
+                reverseButtons: true
             }).then((result) => {
                 if (result.isConfirmed) {
                     fetch('admin.php?table=' + tableValue, {
@@ -285,19 +281,21 @@
                         })
                         .then(response => {
                             if (response.ok) {
+                                // Show success message
                                 Swal.fire({
+                                    title: 'Thành công!',
+                                    text: 'Dữ liệu đã được xóa.',
                                     icon: 'success',
-                                    title: 'Đã xóa!',
-                                    text: 'Dữ liệu đã được xóa thành công.',
-                                    confirmButtonText: 'OK'
+                                    confirmButtonText: 'Đóng'
                                 }).then(() => {
                                     location.reload();
                                 });
                             } else {
+                                // Show error message
                                 Swal.fire({
+                                    title: 'Lỗi!',
+                                    text: 'Có lỗi khi xóa dữ liệu.',
                                     icon: 'error',
-                                    title: 'Lỗi',
-                                    text: 'Đã xảy ra lỗi khi xóa dữ liệu.',
                                     confirmButtonText: 'Đóng'
                                 });
                             }
@@ -305,52 +303,24 @@
                         .catch(error => {
                             console.error('Lỗi:', error);
                             Swal.fire({
+                                title: 'Lỗi!',
+                                text: 'Có lỗi khi xóa dữ liệu.',
                                 icon: 'error',
-                                title: 'Lỗi',
-                                text: 'Đã xảy ra lỗi khi xóa dữ liệu.',
                                 confirmButtonText: 'Đóng'
                             });
                         });
                 }
             });
         }
-        document.getElementById('modal-edit-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Ngăn form gửi trực tiếp
 
-            const formData = new FormData(this); // Thu thập dữ liệu form
-
-            fetch('', { // Gửi yêu cầu đến trang hiện tại (admin.php hoặc trang xử lý)
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.text()) // Nhận phản hồi từ server dưới dạng text
-                .then(data => {
-                    if (data.includes('Cập nhật thành công!')) { // Kiểm tra nếu server trả về thông báo thành công
-                        Swal.fire({
-                            title: 'Thành công!',
-                            text: 'Cập nhật dữ liệu thành công.',
-                            icon: 'success'
-                        }).then(() => {
-                            window.location.reload(); // Tải lại trang sau khi cập nhật thành công
-                        });
-                    } else {
-                        Swal.fire({
-                            title: 'Lỗi',
-                            text: 'Đã xảy ra lỗi khi cập nhật dữ liệu.',
-                            icon: 'error'
-                        });
-                    }
-                })
-                .catch(error => {
-                    Swal.fire({
-                        title: 'Lỗi',
-                        text: 'Đã xảy ra lỗi khi gửi yêu cầu.',
-                        icon: 'error'
-                    });
-                    console.error('Lỗi:', error);
-                });
-        });
-
+        // Hiển thị form lọc phù hợp với bảng
+        const urlParams = new URLSearchParams(window.location.search);
+        const table = urlParams.get('table');
+        if (table === 'nguoidung') {
+            document.getElementById('filter-form-nguoidung').style.display = 'block';
+        } else if (table === 'khoahoc') {
+            document.getElementById('filter-form-khoahoc').style.display = 'block';
+        }
     </script>
 </body>
 

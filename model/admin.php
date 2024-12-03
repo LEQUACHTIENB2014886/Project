@@ -1,10 +1,11 @@
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php
 $servername = "localhost";
 $dbname = "webhocnhacly";
 $username = "root";
 $password = "";
 
+$addMessage = ''; // Khởi tạo biến addMessage để chứa thông báo khi thêm
+$message = ''; // Khởi tạo biến message để chứa thông báo khi cập nhật hoặc xử lý khác
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -43,7 +44,27 @@ try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['table'])) {
         $table = $_GET['table'];  // Sử dụng GET để lấy tên bảng
 
-        // Sửa dữ liệu trong bảng
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addRow'])) {
+            $columns = implode(", ", array_keys($_POST['data']));
+            $placeholders = implode(", ", array_map(fn($col) => ":$col", array_keys($_POST['data'])));
+
+            // Nếu mật khẩu không rỗng, thực hiện mã hóa trước khi thêm vào cơ sở dữ liệu
+            if (isset($_POST['data']['matkhau']) && !empty($_POST['data']['matkhau'])) {
+                $_POST['data']['matkhau'] = password_hash($_POST['data']['matkhau'], PASSWORD_DEFAULT);
+            }
+
+            $insertQuery = "INSERT INTO $table ($columns) VALUES ($placeholders)";
+            $stmt = $conn->prepare($insertQuery);
+            foreach ($_POST['data'] as $column => $value) {
+                $stmt->bindValue(":$column", $value);
+            }
+            if ($stmt->execute()) {
+                $addMessage = 'Thêm thành công!';
+            } else {
+                $addMessage = 'Có lỗi xảy ra khi thêm dữ liệu.';
+            }
+        }
+
         if (isset($_POST['editRow']) && isset($_POST['ma'])) {
             $id = (int)$_POST['ma'];
             $updates = [];
@@ -60,25 +81,11 @@ try {
                 $stmt->bindValue(":$column", $value);
             }
             $stmt->bindValue(':ma', $id);
-            $stmt->execute();
-        }
-
-        // Thêm dữ liệu mới vào bảng
-        if (isset($_POST['addRow'])) {
-            $columns = implode(", ", array_keys($_POST['data']));
-            $placeholders = implode(", ", array_map(fn($col) => ":$col", array_keys($_POST['data'])));
-
-            // Nếu mật khẩu không rỗng, thực hiện mã hóa trước khi thêm vào cơ sở dữ liệu
-            if (isset($_POST['data']['matkhau']) && !empty($_POST['data']['matkhau'])) {
-                $_POST['data']['matkhau'] = password_hash($_POST['data']['matkhau'], PASSWORD_DEFAULT);
+            if ($stmt->execute()) {
+                $message = 'Cập nhật thành công!';
+            } else {
+                $message = 'Có lỗi xảy ra khi cập nhật dữ liệu.';
             }
-
-            $insertQuery = "INSERT INTO $table ($columns) VALUES ($placeholders)";
-            $stmt = $conn->prepare($insertQuery);
-            foreach ($_POST['data'] as $column => $value) {
-                $stmt->bindValue(":$column", $value);
-            }
-            $stmt->execute();
         }
 
         // Xóa dữ liệu trong bảng
@@ -88,85 +95,9 @@ try {
             $stmt = $conn->prepare($deleteQuery);
             $stmt->bindValue(':ma', $id, PDO::PARAM_INT);
             $stmt->execute();
+            // echo "Xóa thành công!";
         }
     }
-
-    if (isset($_GET['dashboard']) && $_GET['dashboard'] === 'true') {
-        echo "<h2>Dashboard</h2>";
-
-        // Đếm số lượng "ma" trong mỗi bảng
-        foreach ($tables as $table) {
-            $countQuery = $conn->query("SELECT COUNT(ma) AS total FROM $table");
-            $countResult = $countQuery->fetch(PDO::FETCH_ASSOC);
-            echo "<p>Bảng $table có tổng cộng: " . $countResult['total'] . " bản ghi</p>";
-        }
-
-        // Hiển thị thông tin Admin (role = 0)
-        $adminQuery = $conn->query("SELECT * FROM nguoidung WHERE quyen = 0");
-        $admin = $adminQuery->fetch(PDO::FETCH_ASSOC);
-
-        if ($admin) {
-            echo "<h3>Thông tin Admin</h3>";
-            echo "<p>Mã Admin: " . htmlspecialchars($admin['ma']) . "</p>";
-            echo "<p>Tên: " . htmlspecialchars($admin['ten']) . "</p>";
-
-            // Nút đổi mật khẩu
-            echo "
-                <form method='POST'>
-                    <label for='new_password'>Mật khẩu mới:</label>
-                    <input type='password' id='new_password' name='new_password' required>
-                    <button type='submit' name='changePassword'>Đổi Mật Khẩu</button>
-                </form>
-            ";
-        }
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['changePassword'])) {
-        $oldPassword = $_POST['old_password'];
-        $newPassword = $_POST['new_password'];
-        $confirmPassword = $_POST['confirm_password'];
-
-        if ($newPassword !== $confirmPassword) {
-            echo "<script>
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Lỗi',
-                    text: 'Mật khẩu mới và xác nhận không khớp!',
-                    confirmButtonText: 'Đóng'
-                });
-            </script>";
-        } else {
-            $stmt = $conn->prepare("SELECT matkhau FROM nguoidung WHERE role = 0 LIMIT 1");
-            $stmt->execute();
-            $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            if ($admin && password_verify($oldPassword, $admin['matkhau'])) {
-                $hashedNewPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-                $updateStmt = $conn->prepare("UPDATE nguoidung SET matkhau = :newPassword WHERE role = 0");
-                $updateStmt->bindValue(':newPassword', $hashedNewPassword);
-                $updateStmt->execute();
-
-                echo "<script>
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Thành công',
-                        text: 'Đổi mật khẩu thành công!',
-                        confirmButtonText: 'OK'
-                    });
-                </script>";
-            } else {
-                echo "<script>
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Lỗi',
-                        text: 'Mật khẩu cũ không đúng!',
-                        confirmButtonText: 'Đóng'
-                    });
-                </script>";
-            }
-        }
-    }
-
 
     // Lấy dữ liệu cột và hàng
     $columns = [];
