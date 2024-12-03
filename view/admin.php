@@ -145,12 +145,12 @@
             <div class="modal-actions">
                 <button type="submit" name="editRow">Lưu</button>
                 <!-- Nút xóa dữ liệu -->
-                <!-- Nút xóa dữ liệu -->
                 <button type="button" name="deleteRow" id="deleteRowButton">Xóa</button>
                 <button type="button" onclick="closeEditModal()">Đóng</button>
             </div>
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Script -->
     <script>
@@ -233,44 +233,6 @@
             }
         }
 
-        // Đóng form sửa
-        function closeEditModal() {
-            document.getElementById('modal-edit').style.display = 'none';
-            document.getElementById('modal-overlay-edit').style.display = 'none';
-        }
-
-        document.getElementById('deleteRowButton').addEventListener('click', deleteRow);
-
-        function deleteRow() {
-            const id = document.getElementById('edit-form-id').value;
-            const tableValue = '<?php echo $table ?? "nguoidung"; ?>'; // Sử dụng "nguoidung" nếu $table là null
-
-            if (confirm('Bạn có chắc muốn xóa dữ liệu này không?')) {
-                fetch('admin.php?table=' + tableValue, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        body: new URLSearchParams({
-                            deleteRow: true,
-                            ma: id
-                        })
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            alert('Dữ liệu đã được xóa.');
-                            location.reload();
-                        } else {
-                            alert('Lỗi khi xóa dữ liệu.');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Lỗi:', error);
-                        alert('Lỗi khi xóa dữ liệu.');
-                    });
-            }
-        }
-
         function showChangePasswordModal() {
             document.getElementById('modal-password').style.display = 'block';
             document.getElementById('modal-overlay-password').style.display = 'block';
@@ -290,6 +252,105 @@
         } else if (table === 'khoahoc') {
             document.getElementById('filter-form-khoahoc').style.display = 'block';
         }
+        // Đóng form sửa
+        function closeEditModal() {
+            document.getElementById('modal-edit').style.display = 'none';
+            document.getElementById('modal-overlay-edit').style.display = 'none';
+        }
+
+        document.getElementById('deleteRowButton').addEventListener('click', deleteRow);
+
+        function deleteRow() {
+            const id = document.getElementById('edit-form-id').value;
+            const tableValue = '<?php echo $table ?? "nguoidung"; ?>'; // Sử dụng "nguoidung" nếu $table là null
+
+            Swal.fire({
+                title: 'Xác nhận',
+                text: 'Bạn có chắc muốn xóa dữ liệu này không?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Có, xóa nó!',
+                cancelButtonText: 'Hủy'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    fetch('admin.php?table=' + tableValue, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded'
+                            },
+                            body: new URLSearchParams({
+                                deleteRow: true,
+                                ma: id
+                            })
+                        })
+                        .then(response => {
+                            if (response.ok) {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Đã xóa!',
+                                    text: 'Dữ liệu đã được xóa thành công.',
+                                    confirmButtonText: 'OK'
+                                }).then(() => {
+                                    location.reload();
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Lỗi',
+                                    text: 'Đã xảy ra lỗi khi xóa dữ liệu.',
+                                    confirmButtonText: 'Đóng'
+                                });
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Lỗi:', error);
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Lỗi',
+                                text: 'Đã xảy ra lỗi khi xóa dữ liệu.',
+                                confirmButtonText: 'Đóng'
+                            });
+                        });
+                }
+            });
+        }
+        document.getElementById('modal-edit-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Ngăn form gửi trực tiếp
+
+            const formData = new FormData(this); // Thu thập dữ liệu form
+
+            fetch('', { // Gửi yêu cầu đến trang hiện tại (admin.php hoặc trang xử lý)
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text()) // Nhận phản hồi từ server dưới dạng text
+                .then(data => {
+                    if (data.includes('Cập nhật thành công!')) { // Kiểm tra nếu server trả về thông báo thành công
+                        Swal.fire({
+                            title: 'Thành công!',
+                            text: 'Cập nhật dữ liệu thành công.',
+                            icon: 'success'
+                        }).then(() => {
+                            window.location.reload(); // Tải lại trang sau khi cập nhật thành công
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Lỗi',
+                            text: 'Đã xảy ra lỗi khi cập nhật dữ liệu.',
+                            icon: 'error'
+                        });
+                    }
+                })
+                .catch(error => {
+                    Swal.fire({
+                        title: 'Lỗi',
+                        text: 'Đã xảy ra lỗi khi gửi yêu cầu.',
+                        icon: 'error'
+                    });
+                    console.error('Lỗi:', error);
+                });
+        });
+
     </script>
 </body>
 

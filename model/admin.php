@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php
 $servername = "localhost";
 $dbname = "webhocnhacly";
@@ -87,7 +88,6 @@ try {
             $stmt = $conn->prepare($deleteQuery);
             $stmt->bindValue(':ma', $id, PDO::PARAM_INT);
             $stmt->execute();
-            echo "Xóa thành công!";
         }
     }
 
@@ -125,32 +125,48 @@ try {
         $oldPassword = $_POST['old_password'];
         $newPassword = $_POST['new_password'];
         $confirmPassword = $_POST['confirm_password'];
-    
-        // Kiểm tra xác nhận mật khẩu mới
+
         if ($newPassword !== $confirmPassword) {
-            echo "<p style='color:red;'>Mật khẩu mới và xác nhận không khớp!</p>";
+            echo "<script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Lỗi',
+                    text: 'Mật khẩu mới và xác nhận không khớp!',
+                    confirmButtonText: 'Đóng'
+                });
+            </script>";
         } else {
-            // Lấy mật khẩu hiện tại của admin
             $stmt = $conn->prepare("SELECT matkhau FROM nguoidung WHERE role = 0 LIMIT 1");
             $stmt->execute();
             $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-    
+
             if ($admin && password_verify($oldPassword, $admin['matkhau'])) {
-                // Mã hóa mật khẩu mới
                 $hashedNewPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-    
-                // Cập nhật mật khẩu mới
                 $updateStmt = $conn->prepare("UPDATE nguoidung SET matkhau = :newPassword WHERE role = 0");
                 $updateStmt->bindValue(':newPassword', $hashedNewPassword);
                 $updateStmt->execute();
-    
-                echo "<p style='color:green;'>Đổi mật khẩu thành công!</p>";
+
+                echo "<script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thành công',
+                        text: 'Đổi mật khẩu thành công!',
+                        confirmButtonText: 'OK'
+                    });
+                </script>";
             } else {
-                echo "<p style='color:red;'>Mật khẩu cũ không đúng!</p>";
+                echo "<script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Lỗi',
+                        text: 'Mật khẩu cũ không đúng!',
+                        confirmButtonText: 'Đóng'
+                    });
+                </script>";
             }
         }
     }
-    
+
 
     // Lấy dữ liệu cột và hàng
     $columns = [];
