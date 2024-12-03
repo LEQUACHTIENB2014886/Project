@@ -19,9 +19,6 @@
                     <p><strong>Tên:</strong> <?= htmlspecialchars($ten) ?></p>
                     <p><strong>Tham gia khóa học:</strong> <?= isset($tiendoStatus) ? $tiendoStatus : 'Chưa có tiến độ' ?></p>
                 </div>
-
-
-
                 <!-- Nút thay đổi mật khẩu -->
                 <button class="btn-custom" data-bs-toggle="modal" data-bs-target="#changePasswordModal">Thay đổi mật khẩu</button>
 
