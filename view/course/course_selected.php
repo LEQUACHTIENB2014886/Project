@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trắc nghiệm</title>
+
+    <!-- Thêm CDN SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,6 +65,7 @@
 </head>
 
 <body>
+    <h1 class="text-white">Hãy chọn nốt trong khuông nhạc !</h1>
     <div class="progress">
         <div class="progress-bar"
             style="width: <?= $total_questions > 0 ? round(($current_question_index / $total_questions) * 100) : 0 ?>%;">
@@ -81,30 +86,39 @@
                 </button>
             <?php endforeach; ?>
         </form>
-
     </div>
-</body>
-<script>
-    const questionContainer = document.getElementById('questionContainer');
-    const buttons = document.querySelectorAll('.answers button');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            const selectedAnswer = parseInt(event.target.value);
-            const correctAnswer = <?= $current_question['dapan'] ?>;
+    <script>
+        const questionContainer = document.getElementById('questionContainer');
+        const buttons = document.querySelectorAll('.answers button');
+        let answeredQuestions = 0;
+        const totalQuestions = <?= $total_questions ?>; // Tổng số câu hỏi
 
-            // Nếu đáp án sai, disable nút
-            if (selectedAnswer !== correctAnswer) {
-                event.target.disabled = true;
-            } else {
-                // Hiệu ứng ẩn câu hỏi khi trả lời đúng
-                questionContainer.classList.add('hidden');
-                setTimeout(() => {
-                    questionContainer.classList.remove('hidden');
-                }, 500); // Thời gian chờ 0.5s
-            }
+        buttons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                const selectedAnswer = parseInt(event.target.value);
+                const correctAnswer = <?= $current_question['dapan'] ?>;
+
+                // Nếu đáp án sai, disable nút
+                if (selectedAnswer !== correctAnswer) {
+                    event.target.disabled = true;
+                } else {
+                    // Tăng số câu hỏi đã trả lời đúng
+                    answeredQuestions++;
+                    // Kiểm tra nếu đã trả lời xong tất cả câu hỏi
+                    if (answeredQuestions === totalQuestions) {
+                        // Hiển thị thông báo chúc mừng khi hoàn thành khóa học
+                        Swal.fire({
+                            title: 'Chúc mừng!',
+                            text: 'Bạn đã hoàn thành khóa học!',
+                            icon: 'success',
+                            confirmButtonText: 'Hoàn tất'
+                        });
+                    }
+                }
+            });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>

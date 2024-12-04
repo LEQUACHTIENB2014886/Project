@@ -89,9 +89,21 @@ try {
             // Lưu ID và quyền người dùng vào session
             $_SESSION['user_id'] = $user['ma']; // Lưu ID người dùng
             $_SESSION['quyen'] = $user['quyen']; // Lưu quyền người dùng
-
             // Chuyển hướng đến trang chính sau khi đăng nhập thành công
-            header("Location: ../public/index.php");
+            echo "
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Đăng nhập thành công!',
+                    showConfirmButton: false,
+                    timer: 1200
+                }).then(() => {
+                    window.location.href = '../public/index.php'; // Chuyển hướng sau khi đóng alert
+                });
+            </script>
+        ";
+
             exit;
         } else {
             echo "<script>
@@ -103,8 +115,6 @@ try {
                  </script>";
         }
     }
-
 } catch (PDOException $e) {
     echo "Kết nối thất bại: " . $e->getMessage();
 }
-?>

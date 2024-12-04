@@ -21,31 +21,31 @@
         </div>
     </div>
     <div class="box">
-        <a href="../public/theory_select.php?capdo=basic">
+        <a href="../public/theory_note.php">
             <div class="content">
-                <h2>Người mới bắt đầu</h2>
-                <p>Bước đầu trong việc học nhạc lý</p>
+                <h2>Lý thuyết cơ bản</h2>
+                <p>Nền tản cơ bản nhất của âm nhạc</p>
             </div>
             <div class="image">
-                <img src="../library/image/nhaccu/tempo-markings.jpg">
+                <img src="../library/image/nhaccu/interval-finder.jpg">
             </div>
             <br>
         </a>
     </div>
     <div class="box">
-        <a href="../public/theory_select.php?capdo=medium">
+        <a href="../public/theory_2.php">
             <div class="content">
-                <h2>Người đã có nền cơ bản</h2>
+                <h2>Lý thuyết tư duy âm nhạc</h2>
                 <p>Bước tiếp theo trong việc học nhạc lý</p>
             </div>
             <div class="image">
-                <img src="../library/image/nhaccu/staff-paper.jpg">
+                <img src="../library/image/nhaccu/note-finder.jpg">
             </div>
             <br>
         </a>
     </div>
     <div class="box">
-        <a href="../public/theory_select.php?capdo=hard">
+        <a href="../public/theory_3.php">
             <div class="content">
                 <h2>Người học nâng cao</h2>
                 <p>Sau khi đã có nền tảng vững chắc.</p>

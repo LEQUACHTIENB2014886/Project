@@ -6,7 +6,7 @@
                 << Trở về</h5>
         </div>
     </a>
-    <a href="../public/theory_basic.php">
+    <a href="../public/theory_note.php">
         <div class="back text-light text-right">
             <h5>
                 Lý thuyết cơ bản >></h5>
