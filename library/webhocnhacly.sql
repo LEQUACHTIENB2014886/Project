@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 24, 2024 lúc 04:06 PM
+-- Thời gian đã tạo: Th12 04, 2024 lúc 04:41 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.0.30
 
@@ -69,24 +69,7 @@ INSERT INTO `khoahoc` (`ma`, `loai`, `capdo`, `cauhoi`, `dapan`) VALUES
 (115, 'note', 'basic', '../library/image/khoahoc/note/basic/4.png', '2'),
 (116, 'note', 'basic', '../library/image/khoahoc/note/basic/5.png', '7'),
 (117, 'note', 'basic', '../library/image/khoahoc/note/basic/6.png', '4'),
-(118, 'note', 'basic', '../library/image/khoahoc/note/basic/7.png', '5'),
-(121, '1', '1', '1', '1'),
-(122, '1', '1', '1', '1'),
-(123, '123', '1', '123', '12'),
-(124, '2', '1', '3', '2'),
-(125, 'z', 'z', 'z', 'z'),
-(126, 'z', 'z', 'z', 'z'),
-(127, 'z', 'z1', 'z', 'z'),
-(134, 'h', 'h', 'h', 'h'),
-(135, 'h', 'h', 'h', 'h'),
-(136, 'h', 'h', 'h', 'h'),
-(137, 'asd', 'ggg', 'gg', 'ggg'),
-(138, 'asd', 'ggg', 'gg', 'ggg'),
-(139, 'asd', 'ggg', 'gg', 'ggg'),
-(140, 'asd', 'ggg', 'gg', 'ggg'),
-(141, 'asd', 'ggg', 'gg', 'ggg'),
-(142, 'u', 'u', 'u', 'u'),
-(145, 'tien', '1linh', 'linh', '1');
+(118, 'note', 'basic', '../library/image/khoahoc/note/basic/7.png', '5');
 
 -- --------------------------------------------------------
 
@@ -98,22 +81,25 @@ CREATE TABLE `nguoidung` (
   `ma` int(200) NOT NULL,
   `ten` varchar(200) NOT NULL,
   `matkhau` varchar(9999) NOT NULL,
+  `anhdaidien` varchar(200) NOT NULL,
   `tiendo` varchar(10) NOT NULL DEFAULT '1,0,0',
-  `diem` int(20) NOT NULL DEFAULT 0,
-  `quyen` int(10) DEFAULT 1
+  `quyen` int(10) DEFAULT 1,
+  `reset_token` varchar(999) NOT NULL,
+  `reset_expiry` varchar(999) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `nguoidung`
 --
 
-INSERT INTO `nguoidung` (`ma`, `ten`, `matkhau`, `tiendo`, `diem`, `quyen`) VALUES
-(20, 'lequachtien1234@gmail.com', '$2y$10$b1d/J83ysSRXGlYUhCoJMOIrSMFsQzKAp2vqtAEez66cnhQHtAJIW', '1,0,0', 0, 1),
-(27, 'admin2@gmail.com', '$2y$10$4e/AhLj8pEp4.rMKo6ds2OXQbY0nW6RfQ5BLba2ybmhmobq1m8Z9C', '1,1,0', 0, 0),
-(29, 'admin@gmail.com', '$2y$10$cgTClIlOTND4knkB1PwAB.t1pMGIvfsVQhx/OFEnwRlyCCwgWsfWW', '1,0,0', 0, 0),
-(30, 'linh@gmail.com', '$2y$10$aneCfYJBnC2tGOnEcP/p8uSqjPhrXT.m6jly.9dHWm38mJGRpWx5i', '1,1,1', 100, 0),
-(32, 'a@gmail.com', '$2y$10$iW8eawpC0iFuLkDdshxS5OGIjZRn6.nn4n5liOGjeQKPaw3sCkYm.', '1,0,0', 0, 0),
-(33, 'huyen@gmail.com', '$2y$10$lge.myI/j6Vp3O4cX55jqO4J7GiMIpicKA.YixECzu4K0Iyqopktu', '1,0,0', 0, 1);
+INSERT INTO `nguoidung` (`ma`, `ten`, `matkhau`, `anhdaidien`, `tiendo`, `quyen`, `reset_token`, `reset_expiry`) VALUES
+(65, 'admin@gmail.com', '$2y$10$ADRKzKDqYNrV2iFPpUtyuu6IXxiE8vTw5FO149emgnM/YChghHRea', '', '1,0,0', 1, '005ea6fff2131efd865f34fbf48331ee1d1e39fc86a46b08b4195a3328c3b86bd7de5bba930091413ce828675d05ba9d3cd8', '2024-12-04 16:48:21'),
+(66, 'asd@gmail.com', '$2y$10$gD9RjV6LghueXciLM0gJ0evOY1/7Z0.vMA3qPQHqseDqi6a6lGXFa', '', '1,0,0', 1, '', ''),
+(67, 'lequachtien123123@gmail.com', '$2y$10$IIOHaDsI4UVB75y/UMfYa.45s9o6gyZQgFKjJDo.1iir3vu5EXqRu', '', '1,0,0', 1, '', ''),
+(68, '123123@gmail.com', '$2y$10$vQuIJN6qTFOfbv365BXxbeKxcqSeC/QpTu5R.YxemY7xy.zuD90Vy', '', '1,0,0', 1, '', ''),
+(69, '123@gmail.com', '$2y$10$drYQv.eBvZxyNhQKHqecGeAxhtPqi4852vwUUXsRU5A82WfJXqgZG', '', '1,0,0', 1, '', ''),
+(70, 'a@gmail.com', '$2y$10$3x4CDNQbzWylYhfq46Ym2O/FkHpl/OGTxiiD69LXUOTudurg32a7W', '', '1,0,0', 1, '', ''),
+(71, 'lequachtien123@gmail.com', '$2y$10$9/0gCxhfFQE2Fo6rykblY.pI4Jvy0J5qPHSvdPdi7mgyUajkh1yt.', '', '1,0,0', 1, 'c184ab3186bbcecc5dc618bdd8154e31d6137a6b6e705423d21588f56bf32b34b2e6c9e1992f1cb552f91e6ed44a5ff4f68d', '2024-12-04 16:52:00');
 
 -- --------------------------------------------------------
 
@@ -141,8 +127,28 @@ INSERT INTO `nhaccu` (`ma`, `ten`, `thongtin`, `hinhanh`, `duongdan`) VALUES
 (5, 'Trống điện tử', 'Sáng tạo và nghe thử giai điệu trống của bạn.', '../library/image/nhaccu/drum-machine.jpg', '../public/drum-machine.php'),
 (7, 'Ứng dụng Đệm Hợp âm', 'Tạo ra các chùm hợp âm và nhạc nền.', '../library/image/nhaccu/chord-player.jpg', '../public/chord_player.php'),
 (8, 'Tìm kiếm hợp âm', 'Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.', '../library/image/nhaccu/chords_find.jpg', '../public/chords_find.php'),
-(9, 'Tìm kiếm hợp âm', 'Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.', '../library/image/nhaccu/chords_find.jpg', '../public/chords_find.php'),
-(10, 'Tìm kiếm hợp âm', 'Tìm kiếm hợp âm trên các nhạc cụ và khuông nhạc.', '../library/image/nhaccu/chords_find.jpg', '../public/chords_find.php');
+(12, 'Giấy chép nhạc', 'Một bản thảo định dạng PDF phù hợp in ấn giấy A4', '../library/image/nhaccu/staff-paper.jpg', '../public/music-paper.php'),
+(13, 'Máy đếm nhịp', 'Sử dụng luyện tập để đếm nhịp', '../library/image/nhaccu/metronome.jpg', '../public/metronome.php');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `phanhoi`
+--
+
+CREATE TABLE `phanhoi` (
+  `ma` int(11) NOT NULL,
+  `nguoiphanhoi` varchar(255) NOT NULL,
+  `noidung` longtext NOT NULL,
+  `thoigian` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `phanhoi`
+--
+
+INSERT INTO `phanhoi` (`ma`, `nguoiphanhoi`, `noidung`, `thoigian`) VALUES
+(38, 'lequachtien123@gmail.com', '123', '2024-12-04 15:59:55');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -167,6 +173,12 @@ ALTER TABLE `nhaccu`
   ADD PRIMARY KEY (`ma`);
 
 --
+-- Chỉ mục cho bảng `phanhoi`
+--
+ALTER TABLE `phanhoi`
+  ADD PRIMARY KEY (`ma`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -174,19 +186,25 @@ ALTER TABLE `nhaccu`
 -- AUTO_INCREMENT cho bảng `khoahoc`
 --
 ALTER TABLE `khoahoc`
-  MODIFY `ma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `ma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
 
 --
 -- AUTO_INCREMENT cho bảng `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `ma` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `ma` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT cho bảng `nhaccu`
 --
 ALTER TABLE `nhaccu`
-  MODIFY `ma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
+-- AUTO_INCREMENT cho bảng `phanhoi`
+--
+ALTER TABLE `phanhoi`
+  MODIFY `ma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

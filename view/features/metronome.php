@@ -19,7 +19,7 @@
 										Bạn cần kích hoạt JavaScript để sử dụng máy đếm nhịp.
 									</noscript>
 									<div id="metronome"></div>
-									<script src="../library/metronome/Vietnamese.js"></script>
+									<script src="../library/metronome/v.js"></script>
 									<script src="../library/metronome/main.js"></script>
 									<script src="../library/metronome/chunk.js"></script>
 									<br><br>

@@ -17,16 +17,18 @@
 
         .question-container {
             opacity: 1;
-            transition: opacity 0.5s;
+            transition: opacity 0.5s ease; /* Hiệu ứng chuyển câu hỏi */
         }
 
         .question-container.hidden {
             opacity: 0;
         }
 
-        .question {
-            font-size: 20px;
-            margin: 20px;
+        .correct {
+            background-color: #28a745; /* Màu xanh cho đáp án đúng */
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .answers button {
@@ -40,36 +42,14 @@
             background-color: #ccc;
             cursor: not-allowed;
         }
-
-        .progress {
-            width: 80%;
-            margin: 20px auto;
-            background: #eee;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            height: 20px;
-            background: green;
-            transition: width 0.9s;
-        }
-
-        .question-image {
-            max-width: 80%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
     </style>
 </head>
 
 <body>
-    <h1 class="text-white">Hãy chọn nốt trong khuông nhạc !</h1>
+    <h1 class="text-white">Hãy chọn <?= $loai == 'chord' ? 'hợp âm' : 'nốt nhạc' ?> đúng!</h1>
     <div class="progress">
         <div class="progress-bar"
-            style="width: <?= $total_questions > 0 ? round(($current_question_index / $total_questions) * 100) : 0 ?>%;">
-        </div>
+            style="width: <?= $total_questions > 0 ? round(($current_question_index / $total_questions) * 100) : 0 ?>%;"></div>
     </div>
 
     <br>
@@ -79,46 +59,66 @@
         </div>
         <br>
         <form method="post" class="answers">
-            <?php foreach ($notes as $index => $note): ?>
-                <button type="submit" name="answer" value="<?= $index + 1 ?>"
-                    <?= in_array($index + 1, $_SESSION['answered']) ? 'disabled' : '' ?>>
-                    <?= $note ?>
-                </button>
-            <?php endforeach; ?>
+            <?php if ($loai == 'chord'): ?>
+                <!-- Hiển thị hợp âm nếu loại là 'chord' -->
+                <?php foreach ($chords as $index => $chord): ?>
+                    <button type="submit" name="answer" value="<?= $index + 1 ?>" <?= in_array($index + 1, $_SESSION['answered']) ? 'disabled' : '' ?>>
+                        <?= $chord ?>
+                    </button>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <!-- Hiển thị nốt nhạc nếu loại là 'note' -->
+                <?php foreach ($notes as $index => $note): ?>
+                    <button type="submit" name="answer" value="<?= $index + 1 ?>" <?= in_array($index + 1, $_SESSION['answered']) ? 'disabled' : '' ?>>
+                        <?= $note ?>
+                    </button>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </form>
     </div>
 
     <script>
-        const questionContainer = document.getElementById('questionContainer');
-        const buttons = document.querySelectorAll('.answers button');
-        let answeredQuestions = 0;
-        const totalQuestions = <?= $total_questions ?>; // Tổng số câu hỏi
-
-        buttons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                const selectedAnswer = parseInt(event.target.value);
-                const correctAnswer = <?= $current_question['dapan'] ?>;
-
-                // Nếu đáp án sai, disable nút
-                if (selectedAnswer !== correctAnswer) {
-                    event.target.disabled = true;
-                } else {
-                    // Tăng số câu hỏi đã trả lời đúng
-                    answeredQuestions++;
-                    // Kiểm tra nếu đã trả lời xong tất cả câu hỏi
-                    if (answeredQuestions === totalQuestions) {
-                        // Hiển thị thông báo chúc mừng khi hoàn thành khóa học
-                        Swal.fire({
-                            title: 'Chúc mừng!',
-                            text: 'Bạn đã hoàn thành khóa học!',
-                            icon: 'success',
-                            confirmButtonText: 'Hoàn tất'
-                        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Kiểm tra nếu bài kiểm tra đã hoàn thành
+            <?php if (isset($_SESSION['completed']) && $_SESSION['completed'] === true): ?>
+                Swal.fire({
+                    title: 'Chúc mừng!',
+                    text: 'Bạn đã hoàn thành bài kiểm tra!',
+                    icon: 'success',
+                    showCancelButton: true, 
+                    cancelButtonText: 'Quay về khóa học', 
+                    confirmButtonText: 'Thực hiện lại', 
+                    backdrop: 'static',
+                    allowOutsideClick: false,
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'course_selected.php?loai=<?= $loai ?>&capdo=<?= $capdo ?>';
+                    } else {
+                        window.location.href = '../public/course_exercise.php'; 
                     }
-                }
-            });
+                });
+            <?php unset($_SESSION['completed']); endif; ?>
+
+            // Nếu chọn đáp án đúng
+            <?php if ($_SERVER['REQUEST_METHOD'] == 'POST' && $answer == $current_question['dapan']): ?>
+                const selectedButton = document.querySelector('button[name="answer"][value="<?= $answer ?>"]');
+                // Thêm class 'correct' vào nút đúng
+                selectedButton.classList.add('correct');
+                
+                // Ẩn câu hỏi hiện tại và chuyển hướng sau khi 0.5 giây
+                setTimeout(function() {
+                    const questionContainer = document.getElementById('questionContainer');
+                    questionContainer.classList.add('hidden');  // Ẩn câu hỏi hiện tại
+
+                    // Sau 0.5 giây chuyển sang câu hỏi tiếp theo
+                    setTimeout(function() {
+                        window.location.href = 'course_selected.php?loai=<?= $loai ?>&capdo=<?= $capdo ?>';
+                    }, 500);
+                }, 500); // Sau 0.5 giây thêm màu xanh
+            <?php endif; ?>
         });
     </script>
+
 </body>
 
 </html>

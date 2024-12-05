@@ -38,13 +38,11 @@ $total_questions = count($questions);
 
 // Xử lý khi hoàn thành bài kiểm tra
 if ($current_question_index >= $total_questions) {
-    echo "<h1>Chúc mừng bạn đã hoàn thành bài kiểm tra!</h1>";
-    echo "<p>Điểm số của bạn: {$_SESSION['score']}/$total_questions</p>";
-    echo '<a href="../public/course_exercise.php" class="btn-back">Quay lại trang bài tập</a>';
-    // Đặt lại các giá trị session
+    $_SESSION['completed'] = true; // Đặt biến hoàn thành
     $_SESSION['current_question'] = 0; // Reset về câu hỏi đầu tiên
     $_SESSION['score'] = 0;            // Reset điểm
     $_SESSION['answered'] = [];        // Xóa danh sách câu trả lời sai
+    header("Location: course_selected.php?loai=$loai&capdo=$capdo"); // Chuyển hướng lại chính trang này
     exit;
 }
 
@@ -67,5 +65,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-// Tạo danh sách nốt nhạc
+// Tạo danh sách nốt nhạc cho loại "note"
 $notes = ['đô', 'rê', 'mi', 'fa', 'sol', 'la', 'si'];
+
+// Tạo danh sách hợp âm cho loại "chord"
+// Trưởng -> 1, Thứ -> 2
+$chords = ['trưởng', 'thứ']; // Chọn các hợp âm trưởng và thứ
+?>

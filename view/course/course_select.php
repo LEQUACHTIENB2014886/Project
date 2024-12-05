@@ -46,7 +46,7 @@
         </a>
     </div>
     <div class="box">
-        <a href="../public/course_selected.php?loai=melody&capdo=<?php echo $_GET['capdo'] ?>">
+        <a href="../public/course_melody.php">
             <div class="content">
                 <h2>Nhịp diệu</h2>
                 <p>Sự kết hợp của các hợp âm theo qui luật</p>
